@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oita by Area — Where to Go in Oita | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Oita by area: Beppu, Yufuin, Hita & Yaba-Kei — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/oita-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#oita">← Back to Oita on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Oita by Area</h1>
+  <p class="page-lede">Oita Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Oita</div>
+    <div class="area-map-hint">Oita Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 516.2 496.2" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="128.1,264.1 140.1,244.1 128.1,232.1 136.1,224.1 132.1,204.1 148.1,180.1 176.1,164.1 204.1,168.1 208.1,140.1 260.1,156.1 280.1,128.1 316.1,144.1 324.1,168.1 312.1,200.1 300.1,196.1 300.1,208.1 268.1,216.1 272.1,232.1 288.1,240.1 352.1,236.1 328.1,272.1 352.1,272.1 340.1,280.1 352.1,288.1 372.1,280.1 376.1,292.1 356.1,292.1 348.1,308.1 388.1,324.1 364.1,324.1 372.1,332.1 356.1,344.1 368.1,348.1 344.1,352.1 344.1,368.1 336.1,368.1 336.1,348.1 320.1,344.1 308.1,360.1 276.1,360.1 256.1,340.1 236.1,344.1 228.1,340.1 212.1,324.1 216.1,300.1 188.1,248.1 164.1,248.1 168.1,272.1 160.1,284.1"/>
+
+      <g class="area-pin" data-target="area-beppu">
+        <line class="area-pin-leader" x1="264.4" y1="236.5" x2="247.2" y2="182.6" style="stroke-width:1.1"/>
+        <rect x="253.2" y="225.3" width="22.4" height="22.4" fill="transparent"/>
+        <circle cx="264.4" cy="236.5" r="7.9" style="stroke-width:2.2"/>
+        <text x="247.2" y="182.6" text-anchor="end" style="font-size:12.3px">Beppu</text>
+      </g>
+      <g class="area-pin" data-target="area-yufuin">
+        <line class="area-pin-leader" x1="237.4" y1="241.2" x2="191.3" y2="208.4" style="stroke-width:1.1"/>
+        <rect x="226.20000000000002" y="230.0" width="22.4" height="22.4" fill="transparent"/>
+        <circle cx="237.4" cy="241.2" r="7.9" style="stroke-width:2.2"/>
+        <text x="191.3" y="208.4" text-anchor="end" style="font-size:12.3px">Yufuin</text>
+      </g>
+      <g class="area-pin" data-target="area-hitayabakei">
+        <line class="area-pin-leader" x1="152.7" y1="228.0" x2="98.8" y2="210.6" style="stroke-width:1.1"/>
+        <rect x="141.5" y="216.8" width="22.4" height="22.4" fill="transparent"/>
+        <circle cx="152.7" cy="228.0" r="7.9" style="stroke-width:2.2"/>
+        <text x="98.8" y="210.6" text-anchor="end" style="font-size:12.3px">Hita &amp; Yaba-Kei</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-beppu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Beppu</span><span class="area-tag">Japan's Top Hot Spring City</span></div>
+      <p class="area-desc">Japan's top hot spring destination by volume, famous for its "hells" — vividly colored, steaming scenic hot springs not meant for bathing.</p>
+      <ul class="area-highlights">
+        <li>The "Beppu Hells" — vividly colored scenic hot springs.</li>
+        <li>Japan's largest hot spring water output by volume.</li>
+        <li>Sand baths and mud baths among its many bathing styles.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yufuin">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Yufuin</span><span class="area-tag">Boutique Onsen Town</span></div>
+      <p class="area-desc">A refined hot spring resort town at the foot of Mt. Yufu, known for boutique ryokan, cafes, and art galleries.</p>
+      <ul class="area-highlights">
+        <li>A refined, boutique take on the classic hot spring town.</li>
+        <li>Mt. Yufu's scenic backdrop.</li>
+        <li>Art galleries, craft shops, and stylish cafes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hitayabakei">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Hita &amp; Yaba-Kei</span><span class="area-tag">Merchant Town &amp; Gorge</span></div>
+      <p class="area-desc">A preserved Edo-period merchant town paired with Yaba-Kei, a dramatic gorge of layered volcanic rock formations.</p>
+      <ul class="area-highlights">
+        <li>Hita's preserved Edo-period merchant streets.</li>
+        <li>Yaba-Kei's dramatic layered volcanic rock cliffs.</li>
+        <li>A quieter, scenic corner of inland Oita.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

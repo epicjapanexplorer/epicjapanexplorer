@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamaguchi by Area — Where to Go in Yamaguchi | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Yamaguchi by area: Hagi & Nagato, Akiyoshidai & Akiyoshido, Shimonoseki & Tsunoshima, Iwakuni — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/yamaguchi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#yamaguchi">← Back to Yamaguchi on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Yamaguchi by Area</h1>
+  <p class="page-lede">Yamaguchi Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Yamaguchi</div>
+    <div class="area-map-hint">Yamaguchi Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 828.6 720.6" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M428.3,248.3 L436.3,272.3 L420.3,292.3 L428.3,308.3 L448.3,308.3 L440.3,328.3 L448.3,344.3 L472.3,336.3 L480.3,344.3 L492.3,328.3 L488.3,312.3 L504.3,304.3 L504.3,332.3 L512.3,340.3 L516.3,364.3 L536.3,372.3 L536.3,392.3 L524.3,392.3 L528.3,424.3 L508.3,432.3 L508.3,464.3 L492.3,440.3 L476.3,440.3 L456.3,416.3 L436.3,424.3 L448.3,412.3 L432.3,400.3 L388.3,416.3 L376.3,404.3 L368.3,416.3 L364.3,408.3 L356.3,416.3 L356.3,400.3 L348.3,420.3 L332.3,428.3 L324.3,420.3 L312.3,428.3 L308.3,408.3 L284.3,392.3 L260.3,420.3 L260.3,392.3 L248.3,376.3 L264.3,356.3 L252.3,332.3 L264.3,316.3 L288.3,316.3 L268.3,308.3 L276.3,296.3 L312.3,304.3 L316.3,316.3 L344.3,316.3 L368.3,308.3 L364.3,296.3 L412.3,252.3 L420.3,256.3 L428.3,248.3 Z M504.3,464.3 L484.3,472.3 L496.3,456.3 L504.3,464.3 Z M548.3,448.3 L580.3,440.3 L560.3,448.3 L556.3,460.3 L540.3,448.3 L524.3,460.3 L516.3,440.3 L528.3,432.3 L548.3,448.3 Z M320.3,308.3 L320.3,300.3 L336.3,304.3 L320.3,308.3 Z M452.3,432.3 L440.3,432.3 L452.3,420.3 L452.3,432.3 Z"/>
+
+      <g class="area-pin" data-target="area-hagi">
+        <line class="area-pin-leader" x1="386.5" y1="303.4" x2="359.6" y2="245.2" style="stroke-width:1.8"/>
+        <rect x="368.5" y="285.4" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="386.5" cy="303.4" r="12.6" style="stroke-width:3.6"/>
+        <text x="359.6" y="245.2" text-anchor="end" style="font-size:19.8px">Hagi &amp; Nagato</text>
+      </g>
+      <g class="area-pin" data-target="area-akiyoshidai">
+        <line class="area-pin-leader" x1="364.8" y1="353.6" x2="305.5" y2="329.4" style="stroke-width:1.8"/>
+        <rect x="346.8" y="335.6" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="364.8" cy="353.6" r="12.6" style="stroke-width:3.6"/>
+        <text x="305.5" y="329.4" text-anchor="end" style="font-size:19.8px">Akiyoshidai &amp; Akiyoshido</text>
+      </g>
+      <g class="area-pin" data-target="area-shimonoseki">
+        <line class="area-pin-leader" x1="286.0" y1="432.8" x2="226.9" y2="457.7" style="stroke-width:1.8"/>
+        <rect x="268.0" y="414.8" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="286.0" cy="432.8" r="12.6" style="stroke-width:3.6"/>
+        <text x="226.9" y="457.7" text-anchor="end" style="font-size:19.8px">Shimonoseki &amp; Tsunoshima</text>
+      </g>
+      <g class="area-pin" data-target="area-iwakuni">
+        <line class="area-pin-leader" x1="566.4" y1="372.7" x2="630.5" y2="371.2" style="stroke-width:1.8"/>
+        <rect x="548.4" y="354.7" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="566.4" cy="372.7" r="12.6" style="stroke-width:3.6"/>
+        <text x="630.5" y="371.2" text-anchor="start" style="font-size:19.8px">Iwakuni</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-hagi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Hagi &amp; Nagato</span><span class="area-tag">Meiji Restoration Castle Town</span></div>
+      <p class="area-desc">A preserved castle town tied to the Meiji Restoration, paired with the dramatic Sea of Japan coastline around Nagato.</p>
+      <ul class="area-highlights">
+        <li>A UNESCO-linked castle town tied to Japan's Meiji Restoration.</li>
+        <li>Preserved samurai residences and white-walled streets.</li>
+        <li>Nagato's dramatic nearby coastline, including Motonosumi Shrine's torii row.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-akiyoshidai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Akiyoshidai &amp; Akiyoshido</span><span class="area-tag">Karst Plateau &amp; Cave</span></div>
+      <p class="area-desc">Japan's largest karst plateau above ground, with one of its largest limestone caves running beneath it.</p>
+      <ul class="area-highlights">
+        <li>Japan's largest karst plateau, dotted with limestone formations.</li>
+        <li>Akiyoshido, one of Japan's largest limestone caves.</li>
+        <li>Dramatic underground chambers and rock formations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shimonoseki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Shimonoseki &amp; Tsunoshima</span><span class="area-tag">Pufferfish City &amp; Blue Bridge</span></div>
+      <p class="area-desc">A historic strait-side city famous for fugu (pufferfish) cuisine, near the striking blue waters of Tsunoshima Bridge.</p>
+      <ul class="area-highlights">
+        <li>Fugu (pufferfish) cuisine, a Shimonoseki specialty.</li>
+        <li>Kanmon Strait views between Honshu and Kyushu.</li>
+        <li>Tsunoshima Bridge, spanning brilliant turquoise water.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-iwakuni">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Iwakuni</span><span class="area-tag">Iconic Wooden Bridge</span></div>
+      <p class="area-desc">Home to Kintai-kyo, an elegant five-arched wooden bridge considered one of Japan's most beautiful.</p>
+      <ul class="area-highlights">
+        <li>Kintai-kyo — a graceful five-arched wooden bridge.</li>
+        <li>A hillside castle with views over the bridge and river.</li>
+        <li>Cherry blossoms along the riverbank in spring.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

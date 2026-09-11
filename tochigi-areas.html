@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tochigi by Area — Where to Go in Tochigi | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Tochigi by area: Nikko, Nasu, Kinugawa Onsen, Utsunomiya, Ashikaga — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/tochigi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#tochigi">← Back to Tochigi on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Tochigi by Area</h1>
+  <p class="page-lede">Tochigi Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Tochigi</div>
+    <div class="area-map-hint">Tochigi Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 376.4 424.4" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="168.2,332.2 164.2,328.2 156.2,312.2 120.2,316.2 100.2,288.2 124.2,236.2 92.2,224.2 96.2,188.2 108.2,176.2 96.2,168.2 104.2,156.2 204.2,92.2 252.2,104.2 276.2,120.2 280.2,144.2 280.2,188.2 284.2,200.2 272.2,208.2 280.2,248.2 268.2,276.2 224.2,284.2 212.2,304.2 200.2,304.2 196.2,320.2"/>
+
+      <g class="area-pin" data-target="area-nikko">
+        <line class="area-pin-leader" x1="146.8" y1="193.3" x2="109.3" y2="161.4" style="stroke-width:0.8"/>
+        <rect x="138.60000000000002" y="185.10000000000002" width="16.4" height="16.4" fill="transparent"/>
+        <circle cx="146.8" cy="193.3" r="5.7" style="stroke-width:1.6"/>
+        <text x="109.3" y="161.4" text-anchor="end" style="font-size:9.0px">Nikko</text>
+      </g>
+      <g class="area-pin" data-target="area-nasu">
+        <line class="area-pin-leader" x1="231.7" y1="122.5" x2="249.4" y2="76.7" style="stroke-width:0.8"/>
+        <rect x="223.5" y="114.3" width="16.4" height="16.4" fill="transparent"/>
+        <circle cx="231.7" cy="122.5" r="5.7" style="stroke-width:1.6"/>
+        <text x="249.4" y="76.7" text-anchor="start" style="font-size:9.0px">Nasu</text>
+      </g>
+      <g class="area-pin" data-target="area-kinugawa">
+        <line class="area-pin-leader" x1="173.0" y1="175.6" x2="158.4" y2="128.6" style="stroke-width:0.8"/>
+        <rect x="164.8" y="167.4" width="16.4" height="16.4" fill="transparent"/>
+        <circle cx="173.0" cy="175.6" r="5.7" style="stroke-width:1.6"/>
+        <text x="158.4" y="128.6" text-anchor="end" style="font-size:9.0px">Kinugawa Onsen</text>
+      </g>
+      <g class="area-pin" data-target="area-utsunomiya">
+        <line class="area-pin-leader" x1="203.4" y1="238.7" x2="244.5" y2="265.6" style="stroke-width:0.8"/>
+        <rect x="195.20000000000002" y="230.5" width="16.4" height="16.4" fill="transparent"/>
+        <circle cx="203.4" cy="238.7" r="5.7" style="stroke-width:1.6"/>
+        <text x="244.5" y="265.6" text-anchor="start" style="font-size:9.0px">Utsunomiya</text>
+      </g>
+      <g class="area-pin" data-target="area-ashikaga">
+        <line class="area-pin-leader" x1="116.5" y1="296.8" x2="80.0" y2="329.9" style="stroke-width:0.8"/>
+        <rect x="108.3" y="288.6" width="16.4" height="16.4" fill="transparent"/>
+        <circle cx="116.5" cy="296.8" r="5.7" style="stroke-width:1.6"/>
+        <text x="80.0" y="329.9" text-anchor="end" style="font-size:9.0px">Ashikaga</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-nikko">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Nikko</span><span class="area-tag">UNESCO Shrine Town</span></div>
+      <p class="area-desc">A UNESCO World Heritage mountain town famous for the lavishly decorated Toshogu Shrine, dramatic waterfalls, and some of Japan's finest autumn colors.</p>
+      <ul class="area-highlights">
+        <li>Toshogu Shrine — elaborately carved, gilded UNESCO World Heritage shrine.</li>
+        <li>Kegon Falls — a dramatic 97m waterfall near Lake Chuzenji.</li>
+        <li>Irohazaka — a winding mountain road famous for autumn foliage.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-nasu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Nasu</span><span class="area-tag">Highland Retreat</span></div>
+      <p class="area-desc">A cool highland resort area popular for hot springs, dairy farms, and hiking, long favored as a retreat by Japan's imperial family.</p>
+      <ul class="area-highlights">
+        <li>Nasu Imperial Villa grounds, partly open to the public.</li>
+        <li>Dairy farms and cheese producers dotting the highlands.</li>
+        <li>Cooler summer temperatures than the Kanto plain below.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kinugawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Kinugawa Onsen</span><span class="area-tag">River Gorge Onsen</span></div>
+      <p class="area-desc">A riverside hot spring resort town near Nikko, known for its gorge views and large ryokan hotels — a popular base for exploring the area.</p>
+      <ul class="area-highlights">
+        <li>Hot spring ryokan overlooking the Kinugawa gorge.</li>
+        <li>A convenient base for day trips to Nikko.</li>
+        <li>Boat rides through the river gorge in season.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-utsunomiya">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Utsunomiya</span><span class="area-tag">Japan's Gyoza Capital</span></div>
+      <p class="area-desc">The prefectural capital, nationally famous as Japan's "gyoza (dumpling) capital," with dozens of specialist restaurants around the station.</p>
+      <ul class="area-highlights">
+        <li>Gyoza Stadium and dozens of specialist shops citywide.</li>
+        <li>A modern, easy-to-navigate prefectural capital.</li>
+        <li>Good rail access as a gateway to the rest of Tochigi.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ashikaga">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Ashikaga</span><span class="area-tag">Wisteria &amp; Old School</span></div>
+      <p class="area-desc">Home to the Ashikaga Flower Park, famous for its spectacular wisteria tunnels each spring, and one of Japan's oldest schools, Ashikaga Gakko.</p>
+      <ul class="area-highlights">
+        <li>Ashikaga Flower Park — legendary wisteria tunnels, late April–May.</li>
+        <li>Ashikaga Gakko — one of Japan's oldest schools, dating back centuries.</li>
+        <li>A quieter, less-visited alternative to nearby tourist hubs.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

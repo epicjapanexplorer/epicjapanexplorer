@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibaraki by Area — Where to Go in Ibaraki | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Ibaraki by area: Mito, Oarai, Tsukuba, Kashima — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ibaraki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#ibaraki">← Back to Ibaraki on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Ibaraki by Area</h1>
+  <p class="page-lede">Ibaraki Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Ibaraki</div>
+    <div class="area-map-hint">Ibaraki Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 468.6 524.6" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="134.3,330.3 134.3,330.3 122.3,334.3 114.3,306.3 142.3,294.3 146.3,278.3 158.3,278.3 170.3,258.3 214.3,250.3 226.3,222.3 218.3,182.3 230.3,174.3 226.3,162.3 226.3,118.3 266.3,154.3 290.3,130.3 290.3,114.3 330.3,134.3 298.3,230.3 302.3,254.3 290.3,282.3 298.3,322.3 318.3,358.3 310.3,366.3 318.3,378.3 322.3,362.3 354.3,410.3 282.3,362.3 282.3,374.3 210.3,390.3 166.3,370.3"/>
+
+      <g class="area-pin" data-target="area-mito">
+        <line class="area-pin-leader" x1="271.6" y1="261.9" x2="328.5" y2="239.8" style="stroke-width:1.0"/>
+        <rect x="261.40000000000003" y="251.7" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="271.6" cy="261.9" r="7.1" style="stroke-width:2.0"/>
+        <text x="328.5" y="239.8" text-anchor="start" style="font-size:11.2px">Mito</text>
+      </g>
+      <g class="area-pin" data-target="area-oarai">
+        <line class="area-pin-leader" x1="298.7" y1="269.4" x2="359.4" y2="264.1" style="stroke-width:1.0"/>
+        <rect x="288.5" y="259.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="298.7" cy="269.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="359.4" y="264.1" text-anchor="start" style="font-size:11.2px">Oarai</text>
+      </g>
+      <g class="area-pin" data-target="area-tsukuba">
+        <line class="area-pin-leader" x1="202.5" y1="325.4" x2="167.2" y2="375.1" style="stroke-width:1.0"/>
+        <rect x="192.3" y="315.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="202.5" cy="325.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="167.2" y="375.1" text-anchor="end" style="font-size:11.2px">Tsukuba</text>
+      </g>
+      <g class="area-pin" data-target="area-kashima">
+        <line class="area-pin-leader" x1="309.2" y1="352.1" x2="350.3" y2="397.1" style="stroke-width:1.0"/>
+        <rect x="299.0" y="341.90000000000003" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="309.2" cy="352.1" r="7.1" style="stroke-width:2.0"/>
+        <text x="350.3" y="397.1" text-anchor="start" style="font-size:11.2px">Kashima</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-mito">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Mito</span><span class="area-tag">Prefectural Capital</span></div>
+      <p class="area-desc">The prefectural capital, home to Kairaku-en — one of Japan's three great gardens, famous for its plum blossoms each spring.</p>
+      <ul class="area-highlights">
+        <li>Kairaku-en — one of Japan's three great gardens, best in plum season (Feb–Mar).</li>
+        <li>Mito Castle ruins and the adjacent Kodokan, once Japan's largest feudal school.</li>
+        <li>A compact, walkable city center.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-oarai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Oarai</span><span class="area-tag">Coastal Town</span></div>
+      <p class="area-desc">A relaxed coastal town known for its seaside shrine, major aquarium, and beaches — a popular day trip from Mito.</p>
+      <ul class="area-highlights">
+        <li>Oarai Isosaki Shrine — a torii gate standing right in the surf.</li>
+        <li>Aqua World Oarai — one of Japan's largest aquariums.</li>
+        <li>Sandy beaches popular for swimming and surfing in summer.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsukuba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Tsukuba</span><span class="area-tag">Science City</span></div>
+      <p class="area-desc">A planned science city beneath Mt. Tsukuba, home to major research institutes, a space center, and panoramic mountain-top views.</p>
+      <ul class="area-highlights">
+        <li>JAXA Tsukuba Space Center — rockets and space exhibits.</li>
+        <li>Mt. Tsukuba ropeway — panoramic views over the Kanto plain.</li>
+        <li>A modern, walkable planned city with wide green boulevards.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kashima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Kashima</span><span class="area-tag">Ancient Shrine &amp; Port</span></div>
+      <p class="area-desc">Home to Kashima Jingu, one of Japan's oldest and most revered shrines, and a major industrial port city with a storied football (soccer) tradition.</p>
+      <ul class="area-highlights">
+        <li>Kashima Jingu — one of Japan's oldest and most important shrines.</li>
+        <li>A sacred deer park within the shrine grounds.</li>
+        <li>Home of Kashima Antlers, one of Japan's most storied football clubs.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

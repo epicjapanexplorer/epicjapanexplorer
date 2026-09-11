@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanagawa by Area — Where to Go in Kanagawa | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Kanagawa by area: Yokohama, Kamakura, Hakone, Shonan — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/kanagawa-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#kanagawa">← Back to Kanagawa on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Kanagawa by Area</h1>
+  <p class="page-lede">Kanagawa Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Kanagawa</div>
+    <div class="area-map-hint">Kanagawa Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 309.5 269.5" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="106.7,66.7 162.7,90.7 178.7,110.7 178.7,90.7 186.7,90.7 174.7,82.7 186.7,74.7 242.7,102.7 226.7,118.7 210.7,114.7 222.7,130.7 210.7,130.7 210.7,158.7 234.7,170.7 218.7,186.7 222.7,198.7 206.7,198.7 210.7,178.7 198.7,162.7 170.7,154.7 126.7,166.7 110.7,178.7 114.7,202.7 106.7,202.7 82.7,186.7 82.7,134.7 66.7,134.7 102.7,102.7"/>
+
+      <g class="area-pin" data-target="area-yokohama">
+        <line class="area-pin-leader" x1="214.3" y1="123.7" x2="247.7" y2="111.4" style="stroke-width:0.7"/>
+        <rect x="207.60000000000002" y="117.0" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="214.3" cy="123.7" r="4.7" style="stroke-width:1.3"/>
+        <text x="247.7" y="111.4" text-anchor="start" style="font-size:7.4px">Yokohama</text>
+      </g>
+      <g class="area-pin" data-target="area-kamakura">
+        <line class="area-pin-leader" x1="196.1" y1="155.1" x2="227.0" y2="172.7" style="stroke-width:0.7"/>
+        <rect x="189.4" y="148.4" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="196.1" cy="155.1" r="4.7" style="stroke-width:1.3"/>
+        <text x="227.0" y="172.7" text-anchor="start" style="font-size:7.4px">Kamakura</text>
+      </g>
+      <g class="area-pin" data-target="area-hakone">
+        <line class="area-pin-leader" x1="108.1" y1="177.0" x2="77.5" y2="195.2" style="stroke-width:0.7"/>
+        <rect x="101.39999999999999" y="170.3" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="108.1" cy="177.0" r="4.7" style="stroke-width:1.3"/>
+        <text x="77.5" y="195.2" text-anchor="end" style="font-size:7.4px">Hakone</text>
+      </g>
+      <g class="area-pin" data-target="area-shonan">
+        <line class="area-pin-leader" x1="182.7" y1="152.4" x2="208.5" y2="176.9" style="stroke-width:0.7"/>
+        <rect x="176.0" y="145.70000000000002" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="182.7" cy="152.4" r="4.7" style="stroke-width:1.3"/>
+        <text x="208.5" y="176.9" text-anchor="start" style="font-size:7.4px">Shonan</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-yokohama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Yokohama</span><span class="area-tag">Japan's Second City</span></div>
+      <p class="area-desc">Japan's second-largest city, known for its waterfront Minato Mirai skyline, historic Chinatown, and cosmopolitan port-city character.</p>
+      <ul class="area-highlights">
+        <li>Minato Mirai — a futuristic waterfront skyline and Ferris wheel.</li>
+        <li>Yokohama Chinatown, one of the largest in the world.</li>
+        <li>A historic port heritage dating to Japan's 19th-century opening.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kamakura">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Kamakura</span><span class="area-tag">Former Samurai Capital</span></div>
+      <p class="area-desc">A former samurai capital famous for its Great Buddha statue, dozens of temples and shrines, and a scenic coastal train line.</p>
+      <ul class="area-highlights">
+        <li>The Great Buddha (Daibutsu) — an 11m bronze statue dating to 1252.</li>
+        <li>Dozens of historic temples and shrines throughout the town.</li>
+        <li>The Enoden coastal train line, popular for its ocean views.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hakone">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Hakone</span><span class="area-tag">Mountain Hot Springs &amp; Mt. Fuji</span></div>
+      <p class="area-desc">A mountain hot spring resort area with views of Mt. Fuji, an active volcanic valley, and a scenic lake crossed by pirate-ship-style sightseeing boats.</p>
+      <ul class="area-highlights">
+        <li>Lake Ashi, with Mt. Fuji views and pirate-ship sightseeing cruises.</li>
+        <li>Owakudani volcanic valley, with steaming vents and black eggs.</li>
+        <li>Numerous hot spring ryokan across the mountains.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shonan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Shonan</span><span class="area-tag">Surf Coast</span></div>
+      <p class="area-desc">A laid-back stretch of Pacific coastline, popular for surfing, beach towns, and views of Mt. Fuji across Sagami Bay.</p>
+      <ul class="area-highlights">
+        <li>A relaxed surf culture along Japan's most famous beach coastline.</li>
+        <li>Enoshima Island, a small scenic island connected by a bridge.</li>
+        <li>Views of Mt. Fuji across the water on clear days.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

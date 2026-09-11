@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aichi by Area — Where to Go in Aichi | Epic Japan Explorer</title>
+<meta name="description" content="A guide to Aichi by area: Nagoya, Inuyama, Chita Peninsula — what each is known for and what to see.">
+<link rel="canonical" href="https://epicjapanexplorer.com/aichi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#aichi">← Back to Aichi on the map</a>
+</header>
+
+<main>
+  <div class="eyebrow">Prefecture Area Guide</div>
+  <h1>Aichi by Area</h1>
+  <p class="page-lede">Aichi Prefecture breaks down into a handful of distinct areas, each with its own character. Click a pin on the map, or scroll down, to explore each one.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">Where each area sits within Aichi</div>
+    <div class="area-map-hint">Aichi Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
+    <svg class="area-map-svg" viewBox="0 0 473.5 441.5" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="284.8,300.8 188.8,324.8 196.8,304.8 208.8,312.8 240.8,288.8 248.8,300.8 256.8,288.8 252.8,276.8 228.8,264.8 220.8,280.8 188.8,276.8 172.8,264.8 180.8,232.8 164.8,276.8 180.8,296.8 168.8,296.8 152.8,280.8 156.8,260.8 148.8,248.8 148.8,228.8 164.8,200.8 136.8,216.8 116.8,184.8 120.8,160.8 136.8,128.8 176.8,116.8 200.8,148.8 220.8,156.8 248.8,148.8 272.8,164.8 300.8,148.8 304.8,172.8 324.8,160.8 356.8,168.8 316.8,248.8 284.8,268.8"/>
+
+      <g class="area-pin" data-target="area-nagoya">
+        <line class="area-pin-leader" x1="163.2" y1="167.7" x2="132.5" y2="127.3" style="stroke-width:1.0"/>
+        <rect x="152.89999999999998" y="157.39999999999998" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="163.2" cy="167.7" r="7.2" style="stroke-width:2.1"/>
+        <text x="132.5" y="127.3" text-anchor="end" style="font-size:11.3px">Nagoya</text>
+      </g>
+      <g class="area-pin" data-target="area-inuyama">
+        <line class="area-pin-leader" x1="171.3" y1="117.0" x2="154.1" y2="69.2" style="stroke-width:1.0"/>
+        <rect x="161.0" y="106.7" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="171.3" cy="117.0" r="7.2" style="stroke-width:2.1"/>
+        <text x="154.1" y="69.2" text-anchor="end" style="font-size:11.3px">Inuyama</text>
+      </g>
+      <g class="area-pin" data-target="area-chita">
+        <line class="area-pin-leader" x1="163.9" y1="232.3" x2="113.1" y2="231.2" style="stroke-width:1.0"/>
+        <rect x="153.6" y="222.0" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="163.9" cy="232.3" r="7.2" style="stroke-width:2.1"/>
+        <text x="113.1" y="231.2" text-anchor="end" style="font-size:11.3px">Chita Peninsula</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-nagoya">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Nagoya</span><span class="area-tag">Japan's 4th-Largest City</span></div>
+      <p class="area-desc">Japan's fourth-largest city, known for its reconstructed castle, distinctive local cuisine, and major automotive industry heritage.</p>
+      <ul class="area-highlights">
+        <li>Nagoya Castle, with its famous golden shachihoko roof ornaments.</li>
+        <li>Distinctive local dishes like miso katsu and hitsumabushi.</li>
+        <li>Home to Toyota and a major center of Japan's auto industry.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-inuyama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Inuyama</span><span class="area-tag">Original Castle on a River</span></div>
+      <p class="area-desc">Home to one of Japan's oldest original castles, perched above the Kiso River, with a charming traditional castle-town street below.</p>
+      <ul class="area-highlights">
+        <li>Inuyama Castle — one of Japan's oldest surviving original castles.</li>
+        <li>A charming preserved castle-town shopping street.</li>
+        <li>Traditional cormorant fishing on the Kiso River in summer.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-chita">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">Chita Peninsula</span><span class="area-tag">Coastal Peninsula</span></div>
+      <p class="area-desc">A coastal peninsula known for seafood, hot springs, and a more relaxed pace just outside central Nagoya.</p>
+      <ul class="area-highlights">
+        <li>Fresh seafood from the surrounding waters.</li>
+        <li>A handful of relaxed hot spring towns.</li>
+        <li>An easy, quieter contrast to central Nagoya.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>
