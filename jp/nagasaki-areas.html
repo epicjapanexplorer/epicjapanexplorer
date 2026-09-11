@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>長崎県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="長崎県をエリア別にご紹介:長崎市・佐世保・雲仙・島原・五島列島。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/nagasaki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#nagasaki">← 地図で長崎県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>長崎県 エリアガイド</h1>
+  <p class="page-lede">長崎県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">長崎県内のエリア位置</div>
+    <div class="area-map-hint">長崎県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 848.6 1008.6" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M448.3,240.3 L456.3,236.3 L464.3,244.3 L452.3,256.3 L456.3,272.3 L432.3,296.3 L428.3,312.3 L440.3,308.3 L432.3,324.3 L440.3,320.3 L428.3,336.3 L428.3,316.3 L420.3,324.3 L420.3,312.3 L416.3,324.3 L404.3,316.3 L412.3,316.3 L416.3,296.3 L424.3,296.3 L416.3,292.3 L432.3,276.3 L420.3,268.3 L428.3,248.3 L444.3,248.3 L448.3,240.3 Z M420.3,352.3 L408.3,376.3 L384.3,380.3 L396.3,324.3 L400.3,332.3 L416.3,336.3 L412.3,324.3 L416.3,340.3 L428.3,336.3 L420.3,352.3 Z M504.3,472.3 L508.3,480.3 L492.3,488.3 L476.3,472.3 L484.3,472.3 L480.3,460.3 L492.3,448.3 L504.3,456.3 L500.3,464.3 L508.3,468.3 L504.3,472.3 Z M348.3,676.3 L336.3,696.3 L340.3,676.3 L328.3,664.3 L340.3,660.3 L340.3,644.3 L348.3,644.3 L356.3,612.3 L348.3,656.3 L368.3,660.3 L356.3,668.3 L348.3,660.3 L348.3,676.3 Z M332.3,684.3 L320.3,680.3 L320.3,672.3 L328.3,680.3 L324.3,668.3 L332.3,684.3 Z M312.3,688.3 L316.3,676.3 L312.3,700.3 L300.3,680.3 L312.3,688.3 Z M260.3,708.3 L272.3,704.3 L276.3,712.3 L284.3,696.3 L300.3,736.3 L272.3,732.3 L272.3,752.3 L236.3,740.3 L240.3,732.3 L248.3,740.3 L252.3,736.3 L244.3,736.3 L256.3,724.3 L252.3,700.3 L260.3,708.3 Z M496.3,556.3 L484.3,560.3 L492.3,548.3 L496.3,556.3 Z M504.3,564.3 L516.3,572.3 L504.3,580.3 L504.3,564.3 Z M352.3,588.3 L360.3,576.3 L368.3,584.3 L352.3,588.3 Z M452.3,540.3 L440.3,544.3 L456.3,532.3 L452.3,540.3 Z M500.3,580.3 L492.3,592.3 L500.3,620.3 L528.3,628.3 L524.3,644.3 L548.3,672.3 L580.3,684.3 L552.3,704.3 L604.3,708.3 L612.3,728.3 L604.3,756.3 L564.3,772.3 L556.3,748.3 L576.3,732.3 L572.3,724.3 L552.3,720.3 L520.3,728.3 L508.3,752.3 L476.3,772.3 L492.3,752.3 L488.3,740.3 L496.3,744.3 L504.3,728.3 L492.3,736.3 L488.3,708.3 L472.3,704.3 L460.3,680.3 L472.3,636.3 L488.3,652.3 L484.3,668.3 L488.3,660.3 L500.3,668.3 L492.3,696.3 L536.3,708.3 L520.3,684.3 L524.3,664.3 L512.3,648.3 L500.3,656.3 L496.3,632.3 L484.3,632.3 L484.3,624.3 L468.3,636.3 L476.3,628.3 L464.3,620.3 L464.3,608.3 L464.3,616.3 L448.3,608.3 L464.3,584.3 L452.3,580.3 L456.3,568.3 L476.3,564.3 L476.3,576.3 L496.3,572.3 L500.3,580.3 Z M432.3,588.3 L428.3,604.3 L404.3,612.3 L424.3,600.3 L416.3,592.3 L428.3,572.3 L444.3,572.3 L452.3,560.3 L456.3,572.3 L432.3,588.3 Z M296.3,696.3 L296.3,688.3 L308.3,700.3 L296.3,708.3 L296.3,696.3 Z M492.3,640.3 L488.3,652.3 L484.3,640.3 L492.3,628.3 L492.3,640.3 Z"/>
+
+      <g class="area-pin" data-target="area-nagasakicity">
+        <line class="area-pin-leader" x1="496.0" y1="734.3" x2="536.1" y2="831.1" style="stroke-width:1.8"/>
+        <rect x="477.6" y="715.9" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="496.0" cy="734.3" r="12.9" style="stroke-width:3.7"/>
+        <text x="536.1" y="831.1" text-anchor="start" style="font-size:20.3px">長崎市</text>
+      </g>
+      <g class="area-pin" data-target="area-sasebo">
+        <line class="area-pin-leader" x1="464.4" y1="630.9" x2="518.8" y2="720.4" style="stroke-width:1.8"/>
+        <rect x="446.0" y="612.5" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="464.4" cy="630.9" r="12.9" style="stroke-width:3.7"/>
+        <text x="518.8" y="720.4" text-anchor="start" style="font-size:20.3px">佐世保</text>
+      </g>
+      <g class="area-pin" data-target="area-unzenshimabara">
+        <line class="area-pin-leader" x1="578.4" y1="734.4" x2="649.6" y2="811.2" style="stroke-width:1.8"/>
+        <rect x="560.0" y="716.0" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="578.4" cy="734.4" r="12.9" style="stroke-width:3.7"/>
+        <text x="649.6" y="811.2" text-anchor="start" style="font-size:20.3px">雲仙・島原</text>
+      </g>
+      <g class="area-pin" data-target="area-gotoislands">
+        <line class="area-pin-leader" x1="283.7" y1="751.2" x2="217.2" y2="832.2" style="stroke-width:1.8"/>
+        <rect x="265.3" y="732.8000000000001" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="283.7" cy="751.2" r="12.9" style="stroke-width:3.7"/>
+        <text x="217.2" y="832.2" text-anchor="end" style="font-size:20.3px">五島列島</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-nagasakicity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">長崎市</span><span class="area-tag">和洋中融合の港町</span></div>
+      <p class="area-desc">日本・中国・西洋の文化が融合した独特の港町。原爆の悲劇の歴史も伝える。</p>
+      <ul class="area-highlights">
+        <li>グラバー園 — 明治時代の西洋建築群。</li>
+        <li>歴史ある中華街とオランダ貿易の遺産。</li>
+        <li>原爆資料館と平和公園。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sasebo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">佐世保</span><span class="area-tag">九十九島の玄関口</span></div>
+      <p class="area-desc">軍港の街であり、風光明媚な九十九島への玄関口。</p>
+      <ul class="area-highlights">
+        <li>九十九島 — 海岸沿いに点在する風光明媚な島々。</li>
+        <li>日米の海軍基地がある歴史ある軍港。</li>
+        <li>近隣のハウステンボス — 大規模なオランダをテーマにしたパーク。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-unzenshimabara">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">雲仙・島原</span><span class="area-tag">火山温泉</span></div>
+      <p class="area-desc">雲仙岳のふもとに広がる火山性の温泉リゾート。噴火と復興の劇的な歴史を持つ。</p>
+      <ul class="area-highlights">
+        <li>雲仙地獄 — 湯けむり立つ火山性の温泉噴出口。</li>
+        <li>1990年代の劇的な近代の噴火の歴史。</li>
+        <li>島原の城下町と、清らかな湧水の水路。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-gotoislands">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">五島列島</span><span class="area-tag">隠れキリシタンの遺産</span></div>
+      <p class="area-desc">手つかずのビーチと隠れキリシタンの歴史遺産で知られる、離れた諸島群。</p>
+      <ul class="area-highlights">
+        <li>世界遺産に登録された潜伏キリシタン関連の教会群。</li>
+        <li>手つかずの、訪れる人の少ないビーチ。</li>
+        <li>本土から離れた、ゆったりとした島の暮らし。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

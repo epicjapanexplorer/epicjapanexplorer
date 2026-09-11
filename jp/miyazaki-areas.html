@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宮崎県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="宮崎県をエリア別にご紹介:宮崎市・青島・高千穂・都井岬。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/miyazaki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#miyazaki">← 地図で宮崎県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>宮崎県 エリアガイド</h1>
+  <p class="page-lede">宮崎県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">宮崎県内のエリア位置</div>
+    <div class="area-map-hint">宮崎県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 699.4 803.4" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="363.7,219.7 371.7,223.7 391.7,219.7 411.7,239.7 443.7,239.7 455.7,223.7 471.7,227.7 471.7,247.7 479.7,247.7 435.7,287.7 431.7,303.7 443.7,307.7 427.7,311.7 423.7,319.7 431.7,323.7 407.7,355.7 383.7,423.7 375.7,515.7 355.7,535.7 347.7,583.7 327.7,575.7 307.7,555.7 315.7,543.7 315.7,515.7 287.7,511.7 275.7,475.7 255.7,467.7 259.7,447.7 239.7,427.7 219.7,399.7 223.7,391.7 307.7,383.7 295.7,359.7 311.7,339.7 291.7,311.7 291.7,283.7 311.7,275.7 347.7,219.7"/>
+
+      <g class="area-pin" data-target="area-miyazakicity">
+        <line class="area-pin-leader" x1="374.8" y1="447.5" x2="390.9" y2="517.3" style="stroke-width:1.5"/>
+        <rect x="359.6" y="432.3" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="374.8" cy="447.5" r="10.6" style="stroke-width:3.0"/>
+        <text x="390.9" y="517.3" text-anchor="middle" style="font-size:16.7px">宮崎市・青島</text>
+      </g>
+      <g class="area-pin" data-target="area-takachiho">
+        <line class="area-pin-leader" x1="349.6" y1="254.2" x2="345.8" y2="182.7" style="stroke-width:1.5"/>
+        <rect x="334.40000000000003" y="239.0" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="349.6" cy="254.2" r="10.6" style="stroke-width:3.0"/>
+        <text x="345.8" y="182.7" text-anchor="middle" style="font-size:16.7px">高千穂</text>
+      </g>
+      <g class="area-pin" data-target="area-capetoi">
+        <line class="area-pin-leader" x1="360.0" y1="584.0" x2="361.4" y2="655.6" style="stroke-width:1.5"/>
+        <rect x="344.8" y="568.8" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="360.0" cy="584.0" r="10.6" style="stroke-width:3.0"/>
+        <text x="361.4" y="655.6" text-anchor="middle" style="font-size:16.7px">都井岬</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-miyazakicity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">宮崎市・青島</span><span class="area-tag">南国の県都</span></div>
+      <p class="area-desc">ヤシの木が並ぶ南国情緒あふれる県庁所在地。すぐ沖合には神話ゆかりの小さな島・青島が浮かぶ。</p>
+      <ul class="area-highlights">
+        <li>ヤシ並木が続く、南国リゾートのような街並み。</li>
+        <li>独特の「鬼の洗濯板」に囲まれた青島。</li>
+        <li>のんびりとした、陽光あふれる海辺の雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-takachiho">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">高千穂</span><span class="area-tag">神話の渓谷</span></div>
+      <p class="area-desc">日本の国生み神話にゆかりの深い渓谷。劇的な断崖と滝、夜神楽の伝統芸能で知られる。</p>
+      <ul class="area-highlights">
+        <li>高千穂峡の劇的な断崖と真名井の滝。</li>
+        <li>古来の神話に基づく夜神楽の奉納。</li>
+        <li>日本の神道創世神話との深い結びつき。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-capetoi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">都井岬</span><span class="area-tag">野生馬の岬</span></div>
+      <p class="area-desc">草原の丘を自由に歩き回る野生馬で知られる、風の強い人里離れた岬。</p>
+      <ul class="area-highlights">
+        <li>岬の草原を自由に歩き回る野生馬(御崎馬)。</li>
+        <li>風の吹きすさぶ、開放的な海岸の草原風景。</li>
+        <li>宮崎県内でも特に訪れる人の少ない、静かな一角。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

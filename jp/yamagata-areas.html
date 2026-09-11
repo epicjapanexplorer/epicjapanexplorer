@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>山形県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="山形県をエリア別にご紹介:山形市・蔵王・米沢・銀山温泉・酒田・鶴岡。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/yamagata-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#yamagata">← 地図で山形県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>山形県 エリアガイド</h1>
+  <p class="page-lede">山形県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">山形県内のエリア位置</div>
+    <div class="area-map-hint">山形県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 525.6 661.6" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="212.8,160.8 252.8,156.8 268.8,176.8 324.8,188.8 332.8,208.8 348.8,212.8 368.8,244.8 360.8,276.8 348.8,276.8 364.8,320.8 336.8,368.8 340.8,392.8 328.8,416.8 300.8,424.8 304.8,444.8 300.8,480.8 308.8,484.8 296.8,500.8 272.8,504.8 260.8,496.8 244.8,500.8 236.8,484.8 212.8,488.8 184.8,480.8 172.8,460.8 184.8,428.8 184.8,396.8 216.8,384.8 224.8,368.8 188.8,344.8 188.8,316.8 156.8,304.8 208.8,212.8"/>
+
+      <g class="area-pin" data-target="area-yamagatacity">
+        <line class="area-pin-leader" x1="315.3" y1="383.0" x2="374.5" y2="410.4" style="stroke-width:1.1"/>
+        <rect x="303.90000000000003" y="371.6" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="315.3" cy="383.0" r="8.0" style="stroke-width:2.3"/>
+        <text x="374.5" y="410.4" text-anchor="start" style="font-size:12.6px">山形市・蔵王</text>
+      </g>
+      <g class="area-pin" data-target="area-yonezawa">
+        <line class="area-pin-leader" x1="271.1" y1="462.5" x2="273.1" y2="527.7" style="stroke-width:1.1"/>
+        <rect x="259.70000000000005" y="451.1" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="271.1" cy="462.5" r="8.0" style="stroke-width:2.3"/>
+        <text x="273.1" y="527.7" text-anchor="middle" style="font-size:12.6px">米沢</text>
+      </g>
+      <g class="area-pin" data-target="area-ginzan">
+        <line class="area-pin-leader" x1="346.7" y1="301.0" x2="398.5" y2="261.4" style="stroke-width:1.1"/>
+        <rect x="335.3" y="289.6" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="346.7" cy="301.0" r="8.0" style="stroke-width:2.3"/>
+        <text x="398.5" y="261.4" text-anchor="start" style="font-size:12.6px">銀山温泉</text>
+      </g>
+      <g class="area-pin" data-target="area-sakata">
+        <line class="area-pin-leader" x1="217.6" y1="243.8" x2="191.9" y2="183.9" style="stroke-width:1.1"/>
+        <rect x="206.2" y="232.4" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="217.6" cy="243.8" r="8.0" style="stroke-width:2.3"/>
+        <text x="191.9" y="183.9" text-anchor="end" style="font-size:12.6px">酒田・鶴岡</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-yamagatacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">山形市・蔵王</span><span class="area-tag">盆地の城下町</span></div>
+      <p class="area-desc">城跡が残る盆地の街で、蔵王温泉と冬の「樹氷」で知られる山岳地帯への玄関口。</p>
+      <ul class="area-highlights">
+        <li>山形城跡とその周辺の公園。</li>
+        <li>蔵王温泉 — 樹氷観賞にも便利な温泉地。</li>
+        <li>盆地特有の暑い夏と雪深い冬。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yonezawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">米沢</span><span class="area-tag">米沢牛と上杉家</span></div>
+      <p class="area-desc">日本を代表する和牛ブランドのひとつ「米沢牛」の産地。上杉家ゆかりの武家文化も色濃く残る。</p>
+      <ul class="area-highlights">
+        <li>米沢牛 — 日本屈指の名声を誇る和牛。</li>
+        <li>上杉神社 — 名門・上杉家を祀る神社。</li>
+        <li>こぢんまりと歩いて回れる歴史ある街並み。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ginzan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">銀山温泉</span><span class="area-tag">ガス灯の温泉街</span></div>
+      <p class="area-desc">雪の降る川沿いの通りに、ガス灯が灯る木造旅館が立ち並ぶ小さな温泉街。日本屈指の絵になる温泉郷のひとつ。</p>
+      <ul class="area-highlights">
+        <li>夕暮れ時に灯るガス灯の街並み、特に雪の日は格別。</li>
+        <li>細い川沿いに立ち並ぶ多層階の木造旅館。</li>
+        <li>車は入れず、駐車場から少し歩いてアクセス。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sakata">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">酒田・鶴岡</span><span class="area-tag">日本海の港町</span></div>
+      <p class="area-desc">庄内平野の米どころに位置する、歴史ある日本海の港町。出羽三山の巡礼路と洗練された郷土料理でも知られる。</p>
+      <ul class="area-highlights">
+        <li>山王くらしき — 保存された江戸時代の米蔵街。</li>
+        <li>出羽三山 — 何世紀も続く巡礼の道。</li>
+        <li>庄内平野の新米と日本海の海の幸。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

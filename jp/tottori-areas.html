@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鳥取県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="鳥取県をエリア別にご紹介:鳥取砂丘・鳥取市・倉吉・三朝・大山・境港・米子。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/tottori-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#tottori">← 地図で鳥取県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>鳥取県 エリアガイド</h1>
+  <p class="page-lede">鳥取県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">鳥取県内のエリア位置</div>
+    <div class="area-map-hint">鳥取県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 847.1 695.1" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="309.5,413.5 281.5,405.5 297.5,381.5 289.5,369.5 321.5,361.5 325.5,325.5 301.5,293.5 309.5,289.5 317.5,305.5 341.5,313.5 373.5,297.5 417.5,305.5 501.5,301.5 537.5,281.5 565.5,349.5 565.5,365.5 541.5,373.5 493.5,389.5 489.5,365.5 461.5,353.5 465.5,345.5 425.5,369.5 409.5,349.5 381.5,341.5 369.5,365.5 361.5,369.5 365.5,381.5 337.5,381.5 341.5,397.5 313.5,401.5"/>
+
+      <g class="area-pin" data-target="area-tottoridunes">
+        <line class="area-pin-leader" x1="515.3" y1="303.7" x2="558.7" y2="278.7" style="stroke-width:1.8"/>
+        <rect x="496.9" y="285.3" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="515.3" cy="303.7" r="12.9" style="stroke-width:3.7"/>
+        <text x="558.7" y="278.7" text-anchor="start" style="font-size:20.3px">鳥取砂丘・鳥取市</text>
+      </g>
+      <g class="area-pin" data-target="area-kurayoshimisasa">
+        <line class="area-pin-leader" x1="426.2" y1="329.1" x2="426.2" y2="379.2" style="stroke-width:1.8"/>
+        <rect x="407.8" y="310.70000000000005" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="426.2" cy="329.1" r="12.9" style="stroke-width:3.7"/>
+        <text x="426.2" y="379.2" text-anchor="middle" style="font-size:20.3px">倉吉・三朝</text>
+      </g>
+      <g class="area-pin" data-target="area-daisen">
+        <line class="area-pin-leader" x1="366.5" y1="343.6" x2="318.4" y2="329.6" style="stroke-width:1.8"/>
+        <rect x="348.1" y="325.20000000000005" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="366.5" cy="343.6" r="12.9" style="stroke-width:3.7"/>
+        <text x="318.4" y="329.6" text-anchor="end" style="font-size:20.3px">大山</text>
+      </g>
+      <g class="area-pin" data-target="area-sakaiminato">
+        <line class="area-pin-leader" x1="300.1" y1="301.7" x2="255.8" y2="278.1" style="stroke-width:1.8"/>
+        <rect x="281.70000000000005" y="283.3" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="300.1" cy="301.7" r="12.9" style="stroke-width:3.7"/>
+        <text x="255.8" y="278.1" text-anchor="end" style="font-size:20.3px">境港・米子</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-tottoridunes">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">鳥取砂丘・鳥取市</span><span class="area-tag">日本屈指の砂丘</span></div>
+      <p class="area-desc">日本海沿いに広がる、日本唯一の大規模な砂丘地帯。県庁所在地・鳥取市に隣接する。</p>
+      <ul class="area-highlights">
+        <li>日本最大かつ最も有名な砂丘地帯。</li>
+        <li>ラクダに乗る体験やパラグライダー。</li>
+        <li>緻密な大型砂像が並ぶ砂の美術館。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kurayoshimisasa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">倉吉・三朝</span><span class="area-tag">白壁の町と温泉</span></div>
+      <p class="area-desc">保存された白壁の商家町・倉吉と、世界屈指の放射能泉として知られる三朝温泉。</p>
+      <ul class="area-highlights">
+        <li>倉吉の保存された白壁土蔵群の街並み。</li>
+        <li>世界的にも珍しい高濃度の放射能泉・三朝温泉。</li>
+        <li>鳥取県内でも特に落ち着いた伝統的なエリア。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-daisen">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">大山</span><span class="area-tag">中国地方最高峰</span></div>
+      <p class="area-desc">中国地方最高峰の山。「伯耆富士」とも称される美しい山容で、ハイキングやスキーが楽しめる。</p>
+      <ul class="area-highlights">
+        <li>中国地方で最も標高の高い山。</li>
+        <li>富士山に例えられる美しい山容から「伯耆富士」の愛称。</li>
+        <li>夏はハイキング、冬はスキーが楽しめる。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sakaiminato">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">境港・米子</span><span class="area-tag">漫画の港町</span></div>
+      <p class="area-desc">水木しげるの漫画キャラクター像で知られるユニークな港町と、その玄関口となる米子。</p>
+      <ul class="area-highlights">
+        <li>水木しげるロード — 妖怪キャラクター像が並ぶ通り。</li>
+        <li>活気ある漁港と新鮮な海の幸。</li>
+        <li>山陰地方の交通の要衝・米子。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

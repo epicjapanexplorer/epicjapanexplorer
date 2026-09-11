@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>愛知県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="愛知県をエリア別にご紹介:名古屋・犬山・知多半島。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/aichi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#aichi">← 地図で愛知県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>愛知県 エリアガイド</h1>
+  <p class="page-lede">愛知県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">愛知県内のエリア位置</div>
+    <div class="area-map-hint">愛知県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 473.5 441.5" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="284.8,300.8 188.8,324.8 196.8,304.8 208.8,312.8 240.8,288.8 248.8,300.8 256.8,288.8 252.8,276.8 228.8,264.8 220.8,280.8 188.8,276.8 172.8,264.8 180.8,232.8 164.8,276.8 180.8,296.8 168.8,296.8 152.8,280.8 156.8,260.8 148.8,248.8 148.8,228.8 164.8,200.8 136.8,216.8 116.8,184.8 120.8,160.8 136.8,128.8 176.8,116.8 200.8,148.8 220.8,156.8 248.8,148.8 272.8,164.8 300.8,148.8 304.8,172.8 324.8,160.8 356.8,168.8 316.8,248.8 284.8,268.8"/>
+
+      <g class="area-pin" data-target="area-nagoya">
+        <line class="area-pin-leader" x1="163.2" y1="167.7" x2="132.5" y2="127.3" style="stroke-width:1.0"/>
+        <rect x="152.89999999999998" y="157.39999999999998" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="163.2" cy="167.7" r="7.2" style="stroke-width:2.1"/>
+        <text x="132.5" y="127.3" text-anchor="end" style="font-size:11.3px">名古屋</text>
+      </g>
+      <g class="area-pin" data-target="area-inuyama">
+        <line class="area-pin-leader" x1="171.3" y1="117.0" x2="154.1" y2="69.2" style="stroke-width:1.0"/>
+        <rect x="161.0" y="106.7" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="171.3" cy="117.0" r="7.2" style="stroke-width:2.1"/>
+        <text x="154.1" y="69.2" text-anchor="end" style="font-size:11.3px">犬山</text>
+      </g>
+      <g class="area-pin" data-target="area-chita">
+        <line class="area-pin-leader" x1="163.9" y1="232.3" x2="113.1" y2="231.2" style="stroke-width:1.0"/>
+        <rect x="153.6" y="222.0" width="20.6" height="20.6" fill="transparent"/>
+        <circle cx="163.9" cy="232.3" r="7.2" style="stroke-width:2.1"/>
+        <text x="113.1" y="231.2" text-anchor="end" style="font-size:11.3px">知多半島</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-nagoya">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">名古屋</span><span class="area-tag">日本第4の都市</span></div>
+      <p class="area-desc">日本第4の都市。復元された名古屋城と独自の郷土料理、そして自動車産業の一大拠点として知られる。</p>
+      <ul class="area-highlights">
+        <li>名古屋城 — 象徴的な金の鯱鉾で知られる城。</li>
+        <li>味噌カツ・ひつまぶしなど独自の郷土料理。</li>
+        <li>トヨタをはじめとする自動車産業の中心地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-inuyama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">犬山</span><span class="area-tag">木曽川沿いの現存天守</span></div>
+      <p class="area-desc">木曽川を見下ろす、日本最古級の現存天守を持つ城。城下には趣ある町並みが広がる。</p>
+      <ul class="area-highlights">
+        <li>犬山城 — 日本最古級とされる現存天守。</li>
+        <li>風情ある城下町の商店街。</li>
+        <li>夏の風物詩、木曽川の鵜飼い。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-chita">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">知多半島</span><span class="area-tag">海辺の半島</span></div>
+      <p class="area-desc">新鮮な海の幸と温泉、名古屋近郊ならではのゆったりとした雰囲気で知られる、海に面した半島。</p>
+      <ul class="area-highlights">
+        <li>周辺海域で獲れる新鮮な海の幸。</li>
+        <li>半島各地に点在する温泉地。</li>
+        <li>中心部の名古屋とは対照的な、落ち着いた雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

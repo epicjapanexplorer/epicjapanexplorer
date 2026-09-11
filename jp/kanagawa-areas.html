@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神奈川県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="神奈川県をエリア別にご紹介:横浜・鎌倉・箱根・湘南。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/kanagawa-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#kanagawa">← 地図で神奈川県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>神奈川県 エリアガイド</h1>
+  <p class="page-lede">神奈川県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">神奈川県内のエリア位置</div>
+    <div class="area-map-hint">神奈川県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 309.5 269.5" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="106.7,66.7 162.7,90.7 178.7,110.7 178.7,90.7 186.7,90.7 174.7,82.7 186.7,74.7 242.7,102.7 226.7,118.7 210.7,114.7 222.7,130.7 210.7,130.7 210.7,158.7 234.7,170.7 218.7,186.7 222.7,198.7 206.7,198.7 210.7,178.7 198.7,162.7 170.7,154.7 126.7,166.7 110.7,178.7 114.7,202.7 106.7,202.7 82.7,186.7 82.7,134.7 66.7,134.7 102.7,102.7"/>
+
+      <g class="area-pin" data-target="area-yokohama">
+        <line class="area-pin-leader" x1="214.3" y1="123.7" x2="247.7" y2="111.4" style="stroke-width:0.7"/>
+        <rect x="207.60000000000002" y="117.0" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="214.3" cy="123.7" r="4.7" style="stroke-width:1.3"/>
+        <text x="247.7" y="111.4" text-anchor="start" style="font-size:7.4px">横浜</text>
+      </g>
+      <g class="area-pin" data-target="area-kamakura">
+        <line class="area-pin-leader" x1="196.1" y1="155.1" x2="227.0" y2="172.7" style="stroke-width:0.7"/>
+        <rect x="189.4" y="148.4" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="196.1" cy="155.1" r="4.7" style="stroke-width:1.3"/>
+        <text x="227.0" y="172.7" text-anchor="start" style="font-size:7.4px">鎌倉</text>
+      </g>
+      <g class="area-pin" data-target="area-hakone">
+        <line class="area-pin-leader" x1="108.1" y1="177.0" x2="77.5" y2="195.2" style="stroke-width:0.7"/>
+        <rect x="101.39999999999999" y="170.3" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="108.1" cy="177.0" r="4.7" style="stroke-width:1.3"/>
+        <text x="77.5" y="195.2" text-anchor="end" style="font-size:7.4px">箱根</text>
+      </g>
+      <g class="area-pin" data-target="area-shonan">
+        <line class="area-pin-leader" x1="182.7" y1="152.4" x2="208.5" y2="176.9" style="stroke-width:0.7"/>
+        <rect x="176.0" y="145.70000000000002" width="13.4" height="13.4" fill="transparent"/>
+        <circle cx="182.7" cy="152.4" r="4.7" style="stroke-width:1.3"/>
+        <text x="208.5" y="176.9" text-anchor="start" style="font-size:7.4px">湘南</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-yokohama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">横浜</span><span class="area-tag">国内第2の都市</span></div>
+      <p class="area-desc">みなとみらいの近未来的なスカイラインと、歴史ある中華街で知られる、国際色豊かな港町。日本第2の人口を誇る都市。</p>
+      <ul class="area-highlights">
+        <li>みなとみらい — 近未来的な臨海の街並みと観覧車。</li>
+        <li>横浜中華街 — 国内最大級の規模を誇るチャイナタウン。</li>
+        <li>国際色豊かで洗練された港町の雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kamakura">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">鎌倉</span><span class="area-tag">かつての武家の都</span></div>
+      <p class="area-desc">かつて武家政権の中心だった古都。大仏や数多くの寺社、風光明媚な海沿いの鉄道路線で知られる。</p>
+      <ul class="area-highlights">
+        <li>鎌倉大仏 — 1252年建立の巨大な青銅像。</li>
+        <li>数多く点在する歴史ある寺社。</li>
+        <li>江ノ電 — 海沿いを走る人気の観光鉄道。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hakone">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">箱根</span><span class="area-tag">富士山を望む温泉郷</span></div>
+      <p class="area-desc">富士山を望む山間の温泉リゾート。活火山の谷や、海賊船をモチーフにした遊覧船が行き交う芦ノ湖で知られる。</p>
+      <ul class="area-highlights">
+        <li>芦ノ湖 — 富士山を望む湖と海賊船クルーズ。</li>
+        <li>大涌谷 — 噴煙立ち上る活火山の渓谷。</li>
+        <li>山中に点在する数多くの温泉旅館。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shonan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">湘南</span><span class="area-tag">サーフィンの海岸</span></div>
+      <p class="area-desc">サーフィンやビーチタウン、相模湾越しに望む富士山の眺めで人気の、のんびりとした太平洋岸のエリア。</p>
+      <ul class="area-highlights">
+        <li>日本を代表するサーフカルチャーが息づく海岸。</li>
+        <li>江ノ島 — 橋で渡れる小さな景勝地の島。</li>
+        <li>晴れた日には相模湾越しに富士山が望める。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

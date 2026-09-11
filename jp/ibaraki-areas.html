@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茨城県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="茨城県をエリア別にご紹介:水戸・大洗・つくば・鹿島。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/ibaraki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#ibaraki">← 地図で茨城県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>茨城県 エリアガイド</h1>
+  <p class="page-lede">茨城県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">茨城県内のエリア位置</div>
+    <div class="area-map-hint">茨城県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 468.6 524.6" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="134.3,330.3 134.3,330.3 122.3,334.3 114.3,306.3 142.3,294.3 146.3,278.3 158.3,278.3 170.3,258.3 214.3,250.3 226.3,222.3 218.3,182.3 230.3,174.3 226.3,162.3 226.3,118.3 266.3,154.3 290.3,130.3 290.3,114.3 330.3,134.3 298.3,230.3 302.3,254.3 290.3,282.3 298.3,322.3 318.3,358.3 310.3,366.3 318.3,378.3 322.3,362.3 354.3,410.3 282.3,362.3 282.3,374.3 210.3,390.3 166.3,370.3"/>
+
+      <g class="area-pin" data-target="area-mito">
+        <line class="area-pin-leader" x1="271.6" y1="261.9" x2="328.5" y2="239.8" style="stroke-width:1.0"/>
+        <rect x="261.40000000000003" y="251.7" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="271.6" cy="261.9" r="7.1" style="stroke-width:2.0"/>
+        <text x="328.5" y="239.8" text-anchor="start" style="font-size:11.2px">水戸</text>
+      </g>
+      <g class="area-pin" data-target="area-oarai">
+        <line class="area-pin-leader" x1="298.7" y1="269.4" x2="359.4" y2="264.1" style="stroke-width:1.0"/>
+        <rect x="288.5" y="259.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="298.7" cy="269.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="359.4" y="264.1" text-anchor="start" style="font-size:11.2px">大洗</text>
+      </g>
+      <g class="area-pin" data-target="area-tsukuba">
+        <line class="area-pin-leader" x1="202.5" y1="325.4" x2="167.2" y2="375.1" style="stroke-width:1.0"/>
+        <rect x="192.3" y="315.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="202.5" cy="325.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="167.2" y="375.1" text-anchor="end" style="font-size:11.2px">つくば</text>
+      </g>
+      <g class="area-pin" data-target="area-kashima">
+        <line class="area-pin-leader" x1="309.2" y1="352.1" x2="350.3" y2="397.1" style="stroke-width:1.0"/>
+        <rect x="299.0" y="341.90000000000003" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="309.2" cy="352.1" r="7.1" style="stroke-width:2.0"/>
+        <text x="350.3" y="397.1" text-anchor="start" style="font-size:11.2px">鹿島</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-mito">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">水戸</span><span class="area-tag">県庁所在地</span></div>
+      <p class="area-desc">日本三名園のひとつ「偕楽園」がある県庁所在地。梅の名所として知られる。</p>
+      <ul class="area-highlights">
+        <li>偕楽園 — 日本三名園のひとつ、梅の季節が見頃。</li>
+        <li>水戸城跡と、かつて日本最大規模を誇った藩校・弘道館。</li>
+        <li>こぢんまりと歩いて回れる市街地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-oarai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">大洗</span><span class="area-tag">海辺の町</span></div>
+      <p class="area-desc">海に浮かぶ鳥居のある神社と大規模な水族館で知られる、のどかな海辺の町。水戸から日帰りで人気。</p>
+      <ul class="area-highlights">
+        <li>大洗磯前神社 — 波打ち際に立つ鳥居。</li>
+        <li>アクアワールド茨城県大洗水族館 — 日本屈指の規模。</li>
+        <li>夏は海水浴やサーフィンで賑わう砂浜。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsukuba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">つくば</span><span class="area-tag">科学の街</span></div>
+      <p class="area-desc">筑波山のふもとに広がる計画都市。数々の研究機関が集まる、日本の科学技術の中心地のひとつ。</p>
+      <ul class="area-highlights">
+        <li>JAXA筑波宇宙センター — ロケットや宇宙関連展示。</li>
+        <li>筑波山ロープウェイ — 関東平野を一望するパノラマ。</li>
+        <li>緑豊かな大通りが特徴の、歩きやすい近代都市。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kashima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">鹿島</span><span class="area-tag">古社と港町</span></div>
+      <p class="area-desc">日本屈指の歴史と格式を誇る神社・鹿島神宮がある。サッカーの名門クラブでも知られる、工業港湾都市。</p>
+      <ul class="area-highlights">
+        <li>鹿島神宮 — 日本最古級とされる由緒ある神社。</li>
+        <li>境内にある神聖な鹿の園。</li>
+        <li>鹿島アントラーズ — 日本サッカー屈指の名門クラブの本拠地。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

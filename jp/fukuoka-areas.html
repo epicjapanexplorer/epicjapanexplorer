@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福岡県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="福岡県をエリア別にご紹介:福岡市・太宰府・糸島・柳川。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/fukuoka-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#fukuoka">← 地図で福岡県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>福岡県 エリアガイド</h1>
+  <p class="page-lede">福岡県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">福岡県内のエリア位置</div>
+    <div class="area-map-hint">福岡県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 440.3 432.3" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="260.1,312.1 228.1,292.1 224.1,308.1 208.1,304.1 188.1,320.1 192.1,332.1 172.1,332.1 172.1,308.1 160.1,296.1 168.1,268.1 200.1,248.1 204.1,224.1 176.1,232.1 152.1,208.1 100.1,208.1 128.1,192.1 112.1,180.1 140.1,160.1 152.1,184.1 180.1,180.1 184.1,160.1 168.1,168.1 156.1,156.1 176.1,160.1 192.1,148.1 200.1,120.1 240.1,112.1 244.1,100.1 268.1,104.1 252.1,120.1 264.1,120.1 272.1,108.1 284.1,116.1 312.1,100.1 296.1,132.1 308.1,140.1 300.1,144.1 320.1,188.1 340.1,188.1 336.1,216.1 308.1,212.1 280.1,228.1 264.1,252.1 268.1,272.1 260.1,280.1 272.1,292.1"/>
+
+      <g class="area-pin" data-target="area-fukuokacity">
+        <line class="area-pin-leader" x1="176.4" y1="208.5" x2="123.1" y2="212.4" style="stroke-width:1.0"/>
+        <rect x="166.8" y="198.9" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="176.4" cy="208.5" r="6.7" style="stroke-width:1.9"/>
+        <text x="123.1" y="212.4" text-anchor="end" style="font-size:10.5px">福岡市</text>
+      </g>
+      <g class="area-pin" data-target="area-dazaifu">
+        <line class="area-pin-leader" x1="201.2" y1="227.6" x2="163.5" y2="265.6" style="stroke-width:1.0"/>
+        <rect x="191.6" y="218.0" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="201.2" cy="227.6" r="6.7" style="stroke-width:1.9"/>
+        <text x="163.5" y="265.6" text-anchor="end" style="font-size:10.5px">太宰府</text>
+      </g>
+      <g class="area-pin" data-target="area-itoshima">
+        <line class="area-pin-leader" x1="131.6" y1="214.5" x2="78.5" y2="219.9" style="stroke-width:1.0"/>
+        <rect x="122.0" y="204.9" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="131.6" cy="214.5" r="6.7" style="stroke-width:1.9"/>
+        <text x="78.5" y="219.9" text-anchor="end" style="font-size:10.5px">糸島</text>
+      </g>
+      <g class="area-pin" data-target="area-yanagawa">
+        <line class="area-pin-leader" x1="176.7" y1="316.7" x2="156.0" y2="366.0" style="stroke-width:1.0"/>
+        <rect x="167.1" y="307.09999999999997" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="176.7" cy="316.7" r="6.7" style="stroke-width:1.9"/>
+        <text x="156.0" y="366.0" text-anchor="end" style="font-size:10.5px">柳川</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-fukuokacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">福岡市</span><span class="area-tag">九州最大の都市</span></div>
+      <p class="area-desc">屋台文化と博多ラーメンで知られる、歴史と現代が融合した九州最大の都市。</p>
+      <ul class="area-highlights">
+        <li>屋台 — ラーメンや郷土料理を提供する屋外の屋台。</li>
+        <li>博多とんこつラーメン — 福岡を代表する名物。</li>
+        <li>食文化の豊かな、歩きやすい近代都市。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-dazaifu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">太宰府</span><span class="area-tag">学問の神社</span></div>
+      <p class="area-desc">学問の神様を祀る、日本屈指の重要な神社・太宰府天満宮を擁する。</p>
+      <ul class="area-highlights">
+        <li>太宰府天満宮 — 学業成就で名高い神社。</li>
+        <li>伝統的な甘味処が並ぶ賑やかな参道。</li>
+        <li>近くには九州国立博物館も。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-itoshima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">糸島</span><span class="area-tag">海辺のカフェ半島</span></div>
+      <p class="area-desc">ビーチとカフェ、海を背景にした写真映えする鳥居で人気の景勝の半島。</p>
+      <ul class="area-highlights">
+        <li>桜井二見ヶ浦 — 海に立つ印象的な鳥居。</li>
+        <li>増加中のビーチサイドカフェやショップ。</li>
+        <li>福岡市内から気軽に行ける人気のビーチ。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yanagawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">柳川</span><span class="area-tag">水郷の舟下り</span></div>
+      <p class="area-desc">昔ながらの水路を巡る、伝統的な「どんこ舟」の川下りで知られる水郷の町。</p>
+      <ul class="area-highlights">
+        <li>町の水路を巡る伝統的などんこ舟の川下り。</li>
+        <li>歴史ある城下町の水路網。</li>
+        <li>柳川名物のうなぎ料理。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

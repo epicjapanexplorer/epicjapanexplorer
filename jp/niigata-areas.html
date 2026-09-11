@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新潟県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="新潟県をエリア別にご紹介:新潟市・佐渡・越後湯沢・燕市・三条市・村上・瀬波温泉。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/niigata-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#niigata">← 地図で新潟県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>新潟県 エリアガイド</h1>
+  <p class="page-lede">新潟県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">新潟県内のエリア位置</div>
+    <div class="area-map-hint">新潟県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 1071.1 1083.1" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M341.5,765.5 L329.5,721.5 L313.5,709.5 L369.5,689.5 L405.5,661.5 L433.5,661.5 L493.5,613.5 L533.5,553.5 L553.5,497.5 L629.5,449.5 L633.5,457.5 L629.5,453.5 L653.5,425.5 L689.5,313.5 L721.5,325.5 L721.5,353.5 L757.5,377.5 L749.5,393.5 L717.5,405.5 L717.5,437.5 L705.5,469.5 L717.5,489.5 L729.5,497.5 L693.5,537.5 L701.5,573.5 L669.5,573.5 L665.5,585.5 L629.5,589.5 L625.5,601.5 L633.5,617.5 L617.5,641.5 L637.5,661.5 L633.5,717.5 L605.5,689.5 L597.5,705.5 L581.5,709.5 L585.5,729.5 L573.5,733.5 L573.5,745.5 L525.5,769.5 L525.5,741.5 L505.5,725.5 L505.5,705.5 L493.5,697.5 L465.5,705.5 L445.5,725.5 L445.5,745.5 L429.5,737.5 L397.5,753.5 L389.5,749.5 L389.5,729.5 L361.5,725.5 L361.5,737.5 L341.5,765.5 Z M457.5,497.5 L425.5,501.5 L453.5,465.5 L445.5,453.5 L433.5,461.5 L433.5,437.5 L449.5,405.5 L485.5,369.5 L469.5,433.5 L497.5,437.5 L485.5,473.5 L457.5,497.5 Z"/>
+
+      <g class="area-pin" data-target="area-niigatacity">
+        <line class="area-pin-leader" x1="588.6" y1="474.1" x2="629.5" y2="380.9" style="stroke-width:2.3"/>
+        <rect x="565.3000000000001" y="450.8" width="46.6" height="46.6" fill="transparent"/>
+        <circle cx="588.6" cy="474.1" r="16.3" style="stroke-width:4.7"/>
+        <text x="629.5" y="380.9" text-anchor="start" style="font-size:25.6px">新潟市</text>
+      </g>
+      <g class="area-pin" data-target="area-sado">
+        <line class="area-pin-leader" x1="457.6" y1="440.2" x2="407.1" y2="351.8" style="stroke-width:2.3"/>
+        <rect x="434.3" y="416.9" width="46.6" height="46.6" fill="transparent"/>
+        <circle cx="457.6" cy="440.2" r="16.3" style="stroke-width:4.7"/>
+        <text x="407.1" y="351.8" text-anchor="end" style="font-size:25.6px">佐渡</text>
+      </g>
+      <g class="area-pin" data-target="area-yuzawa">
+        <line class="area-pin-leader" x1="543.5" y1="722.0" x2="546.0" y2="823.8" style="stroke-width:2.3"/>
+        <rect x="520.2" y="698.7" width="46.6" height="46.6" fill="transparent"/>
+        <circle cx="543.5" cy="722.0" r="16.3" style="stroke-width:4.7"/>
+        <text x="546.0" y="823.8" text-anchor="middle" style="font-size:25.6px">越後湯沢</text>
+      </g>
+      <g class="area-pin" data-target="area-tsubamesanjo">
+        <line class="area-pin-leader" x1="571.8" y1="534.8" x2="626.3" y2="448.8" style="stroke-width:2.3"/>
+        <rect x="548.5" y="511.49999999999994" width="46.6" height="46.6" fill="transparent"/>
+        <circle cx="571.8" cy="534.8" r="16.3" style="stroke-width:4.7"/>
+        <text x="626.3" y="448.8" text-anchor="start" style="font-size:25.6px">燕市・三条市</text>
+      </g>
+      <g class="area-pin" data-target="area-murakami">
+        <line class="area-pin-leader" x1="676.2" y1="395.7" x2="735.8" y2="313.0" style="stroke-width:2.3"/>
+        <rect x="652.9000000000001" y="372.4" width="46.6" height="46.6" fill="transparent"/>
+        <circle cx="676.2" cy="395.7" r="16.3" style="stroke-width:4.7"/>
+        <text x="735.8" y="313.0" text-anchor="start" style="font-size:25.6px">村上・瀬波温泉</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-niigatacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">新潟市</span><span class="area-tag">日本海の港町</span></div>
+      <p class="area-desc">県庁所在地であり、日本海側有数の港町。米どころ・酒どころとして知られ、川沿いの美しい街並みも魅力。</p>
+      <ul class="area-highlights">
+        <li>市内に点在する数々の酒蔵での試飲。</li>
+        <li>古町など、歴史ある花街の街並み。</li>
+        <li>萬代橋をはじめとした、美しい川沿いの街並み。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sado">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">佐渡</span><span class="area-tag">離島の歴史文化</span></div>
+      <p class="area-desc">かつて金山や流刑の地として栄えた、歴史深い離島。伝統的な太鼓芸能と、劇的な海岸線で知られる。</p>
+      <ul class="area-highlights">
+        <li>佐渡金山 — 見学可能な歴史ある鉱山跡。</li>
+        <li>世界的に知られる太鼓芸能集団「鼓童」の本拠地。</li>
+        <li>劇的な海岸線とたらい舟体験。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yuzawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">越後湯沢</span><span class="area-tag">新幹線で行くスキーの町</span></div>
+      <p class="area-desc">東京から新幹線で気軽に行ける、名高いスキーリゾート。川端康成の小説「雪国」の舞台としても有名。</p>
+      <ul class="area-highlights">
+        <li>東京から新幹線で約1時間の本格スキーリゾート。</li>
+        <li>川端康成のノーベル賞関連作「雪国」の実際の舞台。</li>
+        <li>スキー後にほっと一息つける温泉。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsubamesanjo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">燕市・三条市</span><span class="area-tag">金属加工の職人町</span></div>
+      <p class="area-desc">食器から精密工具まで、金属加工の匠の技で全国に知られる、双子のものづくりの町。</p>
+      <ul class="area-highlights">
+        <li>全国に知られる金属加工・食器製造の技術。</li>
+        <li>工場見学や職人によるワークショップも。</li>
+        <li>観光地というより「ものづくりの町」としての魅力。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-murakami">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">村上・瀬波温泉</span><span class="area-tag">城下町と鮭文化</span></div>
+      <p class="area-desc">鮭の食文化で知られる歴史ある城下町と、日本海沿いの瀬波温泉。</p>
+      <ul class="area-highlights">
+        <li>何世紀も受け継がれる鮭の伝統的な加工文化。</li>
+        <li>城下町らしい町並みが残る旧商家通り。</li>
+        <li>日本海を望む瀬波温泉。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北海道エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="北海道をエリア別にご紹介:札幌・小樽・函館・富良野・美瑛・旭川・大雪・知床・道東。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/hokkaido-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#hokkaido">← 地図で北海道を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>北海道 エリアガイド</h1>
+  <p class="page-lede">北海道は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">北海道内のエリア位置</div>
+    <div class="area-map-hint">北海道の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 3975.8 3495.8" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M1189.9,2133.9 L1185.9,2153.9 L1173.9,2157.9 L1173.9,2121.9 L1197.9,2113.9 L1189.9,2133.9 Z M1305.9,2217.9 L1301.9,2173.9 L1285.9,2145.9 L1265.9,2141.9 L1257.9,2121.9 L1241.9,2117.9 L1233.9,2097.9 L1249.9,2065.9 L1241.9,2021.9 L1249.9,2009.9 L1285.9,2001.9 L1309.9,1965.9 L1321.9,1981.9 L1329.9,1977.9 L1345.9,1941.9 L1369.9,1921.9 L1329.9,1865.9 L1333.9,1837.9 L1361.9,1829.9 L1413.9,1869.9 L1457.9,1857.9 L1457.9,1869.9 L1485.9,1881.9 L1505.9,1869.9 L1529.9,1833.9 L1505.9,1733.9 L1517.9,1713.9 L1545.9,1701.9 L1561.9,1677.9 L1557.9,1585.9 L1573.9,1553.9 L1577.9,1513.9 L1565.9,1441.9 L1533.9,1365.9 L1545.9,1329.9 L1541.9,1305.9 L1549.9,1317.9 L1569.9,1313.9 L1593.9,1285.9 L1697.9,1393.9 L1729.9,1445.9 L1793.9,1513.9 L1909.9,1589.9 L2025.9,1609.9 L2029.9,1625.9 L2049.9,1645.9 L2125.9,1645.9 L2213.9,1537.9 L2221.9,1557.9 L2181.9,1649.9 L2181.9,1689.9 L2193.9,1713.9 L2233.9,1725.9 L2225.9,1733.9 L2229.9,1721.9 L2205.9,1721.9 L2225.9,1769.9 L2249.9,1797.9 L2265.9,1801.9 L2293.9,1769.9 L2321.9,1765.9 L2281.9,1797.9 L2273.9,1825.9 L2205.9,1837.9 L2197.9,1861.9 L2181.9,1881.9 L2161.9,1881.9 L2153.9,1873.9 L2157.9,1865.9 L2145.9,1861.9 L2133.9,1885.9 L2145.9,1893.9 L2085.9,1897.9 L2053.9,1885.9 L1993.9,1917.9 L1937.9,1981.9 L1901.9,2037.9 L1889.9,2073.9 L1893.9,2133.9 L1885.9,2165.9 L1829.9,2121.9 L1737.9,2085.9 L1625.9,2017.9 L1573.9,2009.9 L1585.9,1997.9 L1525.9,2029.9 L1461.9,2093.9 L1449.9,2081.9 L1465.9,2081.9 L1445.9,2077.9 L1437.9,2053.9 L1405.9,2021.9 L1361.9,2025.9 L1341.9,2053.9 L1329.9,2093.9 L1333.9,2109.9 L1381.9,2141.9 L1421.9,2141.9 L1457.9,2189.9 L1493.9,2201.9 L1501.9,2213.9 L1477.9,2233.9 L1461.9,2241.9 L1425.9,2225.9 L1413.9,2233.9 L1413.9,2217.9 L1401.9,2213.9 L1393.9,2233.9 L1365.9,2249.9 L1365.9,2285.9 L1333.9,2301.9 L1321.9,2321.9 L1293.9,2309.9 L1281.9,2285.9 L1285.9,2249.9 L1305.9,2217.9 Z M1457.9,1365.9 L1465.9,1353.9 L1481.9,1361.9 L1489.9,1381.9 L1473.9,1393.9 L1457.9,1381.9 L1457.9,1365.9 Z M1433.9,1313.9 L1433.9,1305.9 L1441.9,1313.9 L1437.9,1353.9 L1425.9,1313.9 L1433.9,1313.9 Z M2649.9,1241.9 L2641.9,1225.9 L2633.9,1225.9 L2625.9,1241.9 L2633.9,1265.9 L2629.9,1277.9 L2609.9,1285.9 L2601.9,1313.9 L2573.9,1309.9 L2577.9,1337.9 L2537.9,1373.9 L2537.9,1389.9 L2513.9,1389.9 L2513.9,1397.9 L2529.9,1405.9 L2529.9,1421.9 L2517.9,1433.9 L2501.9,1429.9 L2501.9,1449.9 L2489.9,1437.9 L2493.9,1457.9 L2481.9,1485.9 L2497.9,1489.9 L2517.9,1453.9 L2537.9,1449.9 L2557.9,1409.9 L2597.9,1373.9 L2605.9,1333.9 L2625.9,1345.9 L2649.9,1337.9 L2709.9,1269.9 L2761.9,1233.9 L2797.9,1225.9 L2801.9,1213.9 L2789.9,1197.9 L2801.9,1181.9 L2781.9,1173.9 L2757.9,1181.9 L2709.9,1253.9 L2665.9,1261.9 L2649.9,1241.9 Z M2333.9,1569.9 L2353.9,1545.9 L2385.9,1537.9 L2405.9,1509.9 L2417.9,1513.9 L2429.9,1489.9 L2389.9,1501.9 L2357.9,1481.9 L2345.9,1489.9 L2329.9,1529.9 L2293.9,1589.9 L2293.9,1601.9 L2237.9,1661.9 L2245.9,1689.9 L2265.9,1685.9 L2265.9,1701.9 L2269.9,1649.9 L2301.9,1629.9 L2305.9,1609.9 L2317.9,1609.9 L2321.9,1581.9 L2333.9,1569.9 Z M2461.9,1673.9 L2509.9,1633.9 L2489.9,1625.9 L2473.9,1637.9 L2477.9,1641.9 L2449.9,1649.9 L2449.9,1665.9 L2457.9,1661.9 L2461.9,1673.9 Z M2373.9,1741.9 L2389.9,1721.9 L2361.9,1729.9 L2373.9,1741.9 Z M2337.9,1757.9 L2345.9,1745.9 L2329.9,1749.9 L2337.9,1757.9 Z"/>
+
+      <g class="area-pin" data-target="area-sapporo">
+        <line class="area-pin-leader" x1="1643.0" y1="1840.1" x2="1347.0" y2="1958.4" style="stroke-width:8.6"/>
+        <rect x="1556.6" y="1753.6999999999998" width="172.8" height="172.8" fill="transparent"/>
+        <circle cx="1643.0" cy="1840.1" r="60.5" style="stroke-width:17.3"/>
+        <text x="1347.0" y="1958.4" text-anchor="end" style="font-size:95.1px">札幌・小樽</text>
+      </g>
+      <g class="area-pin" data-target="area-hakodate">
+        <line class="area-pin-leader" x1="1525.1" y1="2206.3" x2="1316.5" y2="2447.3" style="stroke-width:8.6"/>
+        <rect x="1438.6999999999998" y="2119.9" width="172.8" height="172.8" fill="transparent"/>
+        <circle cx="1525.1" cy="2206.3" r="60.5" style="stroke-width:17.3"/>
+        <text x="1316.5" y="2447.3" text-anchor="end" style="font-size:95.1px">函館</text>
+      </g>
+      <g class="area-pin" data-target="area-furano">
+        <line class="area-pin-leader" x1="1949.0" y1="1743.8" x2="1970.4" y2="2061.8" style="stroke-width:8.6"/>
+        <rect x="1862.6" y="1657.3999999999999" width="172.8" height="172.8" fill="transparent"/>
+        <circle cx="1949.0" cy="1743.8" r="60.5" style="stroke-width:17.3"/>
+        <text x="1970.4" y="2061.8" text-anchor="middle" style="font-size:95.1px">富良野・美瑛</text>
+      </g>
+      <g class="area-pin" data-target="area-asahikawa">
+        <line class="area-pin-leader" x1="1981.6" y1="1655.7" x2="2134.5" y2="1376.0" style="stroke-width:8.6"/>
+        <rect x="1895.1999999999998" y="1569.3" width="172.8" height="172.8" fill="transparent"/>
+        <circle cx="1981.6" cy="1655.7" r="60.5" style="stroke-width:17.3"/>
+        <text x="2134.5" y="1376.0" text-anchor="start" style="font-size:95.1px">旭川・大雪</text>
+      </g>
+      <g class="area-pin" data-target="area-shiretoko">
+        <line class="area-pin-leader" x1="2293.9" y1="1765.9" x2="2609.7" y2="1809.1" style="stroke-width:8.6"/>
+        <rect x="2207.5" y="1679.5" width="172.8" height="172.8" fill="transparent"/>
+        <circle cx="2293.9" cy="1765.9" r="60.5" style="stroke-width:17.3"/>
+        <text x="2609.7" y="1809.1" text-anchor="start" style="font-size:95.1px">知床・道東</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-sapporo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">札幌・小樽</span><span class="area-tag">道都と運河の町</span></div>
+      <p class="area-desc">北海道の中心都市。碁盤の目状の街並みとビール文化、冬のさっぽろ雪まつりで知られ、ガス灯が並ぶ運河とガラス工芸品で有名な小樽が隣接する。</p>
+      <ul class="area-highlights">
+        <li>さっぽろ雪まつり(2月)— 大通公園を埋め尽くす雪像・氷像。</li>
+        <li>小樽運河 — ガス灯の灯る倉庫街とガラス工房。</li>
+        <li>サッポロビール博物館と賑やかなすすきの。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hakodate">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">函館</span><span class="area-tag">港町と夜景</span></div>
+      <p class="area-desc">函館山からの劇的な夜景、西洋文化の影響を受けた港町、そして日本屈指の朝市で知られる歴史ある港湾都市。</p>
+      <ul class="area-highlights">
+        <li>函館山ロープウェイ — 日本三大夜景のひとつ。</li>
+        <li>元町地区 — 明治時代の洋館と教会群。</li>
+        <li>函館朝市 — 朝から新鮮なウニ・カニ・海鮮丼。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-furano">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">富良野・美瑛</span><span class="area-tag">ラベンダー畑</span></div>
+      <p class="area-desc">夏に咲き誇る鮮やかなラベンダー畑と、十勝連峰を背景にしたパッチワークの丘。北海道でも屈指の絶景農村風景。</p>
+      <ul class="area-highlights">
+        <li>ファーム富田 — 富良野を象徴するラベンダー畑、見頃は7月。</li>
+        <li>美瑛の「パッチワークの路」— 緑の濃淡が織りなす丘陵地帯。</li>
+        <li>冬はパウダースノーを求めるスキー客にも人気。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-asahikawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">旭川・大雪</span><span class="area-tag">動物園と山の玄関口</span></div>
+      <p class="area-desc">工夫を凝らした展示で知られる旭山動物園と、北海道最大かつ最も手つかずの山岳地帯・大雪山国立公園への玄関口。</p>
+      <ul class="area-highlights">
+        <li>旭山動物園 — 行動展示で有名な人気動物園。</li>
+        <li>大雪山国立公園 — 北海道の「屋根」、日本一早い紅葉。</li>
+        <li>層雲峡温泉 — 迫力ある渓谷の入り口にある温泉地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shiretoko">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">知床・道東</span><span class="area-tag">手つかずの自然</span></div>
+      <p class="area-desc">世界自然遺産に登録された、手つかずの自然が残る半島。流氷とヒグマで知られ、道東には広大な湖や牧草地が広がる。</p>
+      <ul class="area-highlights">
+        <li>知床国立公園 — 世界自然遺産の手つかずの自然。</li>
+        <li>流氷観光(1月〜3月)、網走周辺。</li>
+        <li>摩周湖・阿寒湖 — 日本屈指の透明度を誇るカルデラ湖。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

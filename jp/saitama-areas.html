@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>埼玉県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="埼玉県をエリア別にご紹介:川越・秩父・大宮・長瀞。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/saitama-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#saitama">← 地図で埼玉県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>埼玉県 エリアガイド</h1>
+  <p class="page-lede">埼玉県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">埼玉県内のエリア位置</div>
+    <div class="area-map-hint">埼玉県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 404.3 296.3" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="274.2,98.2 278.2,102.2 286.2,130.2 298.2,126.2 298.2,126.2 322.2,178.2 322.2,206.2 298.2,198.2 290.2,206.2 274.2,202.2 250.2,214.2 250.2,198.2 222.2,210.2 202.2,194.2 142.2,178.2 130.2,190.2 86.2,178.2 82.2,158.2 146.2,122.2 166.2,82.2 210.2,90.2 234.2,106.2"/>
+
+      <g class="area-pin" data-target="area-kawagoe">
+        <line class="area-pin-leader" x1="237.9" y1="169.7" x2="263.5" y2="205.3" style="stroke-width:0.9"/>
+        <rect x="229.1" y="160.89999999999998" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="237.9" cy="169.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="263.5" y="205.3" text-anchor="start" style="font-size:9.7px">川越</text>
+      </g>
+      <g class="area-pin" data-target="area-chichibu">
+        <line class="area-pin-leader" x1="156.7" y1="152.6" x2="113.0" y2="148.9" style="stroke-width:0.9"/>
+        <rect x="147.89999999999998" y="143.79999999999998" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="156.7" cy="152.6" r="6.2" style="stroke-width:1.8"/>
+        <text x="113.0" y="148.9" text-anchor="end" style="font-size:9.7px">秩父</text>
+      </g>
+      <g class="area-pin" data-target="area-omiya">
+        <line class="area-pin-leader" x1="266.0" y1="174.5" x2="306.1" y2="192.0" style="stroke-width:0.9"/>
+        <rect x="257.2" y="165.7" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="266.0" cy="174.5" r="6.2" style="stroke-width:1.8"/>
+        <text x="306.1" y="192.0" text-anchor="start" style="font-size:9.7px">大宮</text>
+      </g>
+      <g class="area-pin" data-target="area-nagatoro">
+        <line class="area-pin-leader" x1="159.5" y1="121.1" x2="120.8" y2="100.4" style="stroke-width:0.9"/>
+        <rect x="150.7" y="112.3" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="159.5" cy="121.1" r="6.2" style="stroke-width:1.8"/>
+        <text x="120.8" y="100.4" text-anchor="end" style="font-size:9.7px">長瀞</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kawagoe">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">川越</span><span class="area-tag">小江戸</span></div>
+      <p class="area-desc">蔵造りの町並みと時の鐘で知られ、「小江戸」と呼ばれる。東京から気軽に行ける日帰り旅行先として人気。</p>
+      <ul class="area-highlights">
+        <li>蔵造りの町並み — 江戸時代の商家建築が残る通り。</li>
+        <li>時の鐘 — 川越のシンボルである木造の鐘楼。</li>
+        <li>菓子屋横丁 — 昔ながらの駄菓子店が並ぶ小道。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-chichibu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">秩父</span><span class="area-tag">山と芝桜</span></div>
+      <p class="area-desc">芝桜の丘や勇壮な夜祭り、渓谷美で知られる、山々に囲まれたエリア。</p>
+      <ul class="area-highlights">
+        <li>芝桜の丘 — 一面ピンクに染まる春の絶景。</li>
+        <li>秩父夜祭 — 日本三大曳山祭のひとつ。</li>
+        <li>渓谷めぐりも楽しめる自然豊かな景観。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-omiya">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">大宮</span><span class="area-tag">鉄道と古社</span></div>
+      <p class="area-desc">日本有数の規模を誇る鉄道博物館と、由緒ある氷川神社で知られる。</p>
+      <ul class="area-highlights">
+        <li>鉄道博物館 — 日本屈指の規模を誇る鉄道テーマの博物館。</li>
+        <li>氷川神社 — 長い参道が印象的な古社。</li>
+        <li>関東各地へのアクセスに優れた交通の要衝。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-nagatoro">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">長瀞</span><span class="area-tag">渓谷ラフティング</span></div>
+      <p class="area-desc">荒川沿いの景勝地で、荒々しい岩畳を眺めながらの穏やかな川下りが楽しめる。</p>
+      <ul class="area-highlights">
+        <li>荒川での穏やかなラフティング体験。</li>
+        <li>岩畳 — 荒川沿いに広がる岩の絶景。</li>
+        <li>秩父方面からの日帰り観光にも便利。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

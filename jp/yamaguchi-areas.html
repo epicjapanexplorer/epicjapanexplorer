@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>山口県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="山口県をエリア別にご紹介:萩・長門・秋吉台・秋芳洞・下関・角島・岩国。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/yamaguchi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#yamaguchi">← 地図で山口県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>山口県 エリアガイド</h1>
+  <p class="page-lede">山口県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">山口県内のエリア位置</div>
+    <div class="area-map-hint">山口県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 828.6 720.6" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M428.3,248.3 L436.3,272.3 L420.3,292.3 L428.3,308.3 L448.3,308.3 L440.3,328.3 L448.3,344.3 L472.3,336.3 L480.3,344.3 L492.3,328.3 L488.3,312.3 L504.3,304.3 L504.3,332.3 L512.3,340.3 L516.3,364.3 L536.3,372.3 L536.3,392.3 L524.3,392.3 L528.3,424.3 L508.3,432.3 L508.3,464.3 L492.3,440.3 L476.3,440.3 L456.3,416.3 L436.3,424.3 L448.3,412.3 L432.3,400.3 L388.3,416.3 L376.3,404.3 L368.3,416.3 L364.3,408.3 L356.3,416.3 L356.3,400.3 L348.3,420.3 L332.3,428.3 L324.3,420.3 L312.3,428.3 L308.3,408.3 L284.3,392.3 L260.3,420.3 L260.3,392.3 L248.3,376.3 L264.3,356.3 L252.3,332.3 L264.3,316.3 L288.3,316.3 L268.3,308.3 L276.3,296.3 L312.3,304.3 L316.3,316.3 L344.3,316.3 L368.3,308.3 L364.3,296.3 L412.3,252.3 L420.3,256.3 L428.3,248.3 Z M504.3,464.3 L484.3,472.3 L496.3,456.3 L504.3,464.3 Z M548.3,448.3 L580.3,440.3 L560.3,448.3 L556.3,460.3 L540.3,448.3 L524.3,460.3 L516.3,440.3 L528.3,432.3 L548.3,448.3 Z M320.3,308.3 L320.3,300.3 L336.3,304.3 L320.3,308.3 Z M452.3,432.3 L440.3,432.3 L452.3,420.3 L452.3,432.3 Z"/>
+
+      <g class="area-pin" data-target="area-hagi">
+        <line class="area-pin-leader" x1="386.5" y1="303.4" x2="359.6" y2="245.2" style="stroke-width:1.8"/>
+        <rect x="368.5" y="285.4" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="386.5" cy="303.4" r="12.6" style="stroke-width:3.6"/>
+        <text x="359.6" y="245.2" text-anchor="end" style="font-size:19.8px">萩・長門</text>
+      </g>
+      <g class="area-pin" data-target="area-akiyoshidai">
+        <line class="area-pin-leader" x1="364.8" y1="353.6" x2="305.5" y2="329.4" style="stroke-width:1.8"/>
+        <rect x="346.8" y="335.6" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="364.8" cy="353.6" r="12.6" style="stroke-width:3.6"/>
+        <text x="305.5" y="329.4" text-anchor="end" style="font-size:19.8px">秋吉台・秋芳洞</text>
+      </g>
+      <g class="area-pin" data-target="area-shimonoseki">
+        <line class="area-pin-leader" x1="286.0" y1="432.8" x2="226.9" y2="457.7" style="stroke-width:1.8"/>
+        <rect x="268.0" y="414.8" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="286.0" cy="432.8" r="12.6" style="stroke-width:3.6"/>
+        <text x="226.9" y="457.7" text-anchor="end" style="font-size:19.8px">下関・角島</text>
+      </g>
+      <g class="area-pin" data-target="area-iwakuni">
+        <line class="area-pin-leader" x1="566.4" y1="372.7" x2="630.5" y2="371.2" style="stroke-width:1.8"/>
+        <rect x="548.4" y="354.7" width="36.0" height="36.0" fill="transparent"/>
+        <circle cx="566.4" cy="372.7" r="12.6" style="stroke-width:3.6"/>
+        <text x="630.5" y="371.2" text-anchor="start" style="font-size:19.8px">岩国</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-hagi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">萩・長門</span><span class="area-tag">明治維新ゆかりの城下町</span></div>
+      <p class="area-desc">明治維新ゆかりの保存された城下町と、日本海に面した長門の劇的な海岸線。</p>
+      <ul class="area-highlights">
+        <li>明治維新と深く結びついた世界遺産関連の城下町。</li>
+        <li>保存された武家屋敷と白壁の街並み。</li>
+        <li>鳥居が連なる長門・元乃隅神社の劇的な海岸。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-akiyoshidai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">秋吉台・秋芳洞</span><span class="area-tag">カルスト台地と鍾乳洞</span></div>
+      <p class="area-desc">日本最大級のカルスト台地と、その地下に広がる日本屈指の規模を誇る鍾乳洞。</p>
+      <ul class="area-highlights">
+        <li>日本最大級の石灰岩カルスト台地。</li>
+        <li>秋芳洞 — 日本屈指の規模を誇る鍾乳洞。</li>
+        <li>劇的な地下の洞窟空間と岩の造形。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shimonoseki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">下関・角島</span><span class="area-tag">ふぐの街と青い橋</span></div>
+      <p class="area-desc">ふぐ料理で名高い海峡沿いの街と、鮮やかなターコイズブルーの海に架かる角島大橋。</p>
+      <ul class="area-highlights">
+        <li>下関の名物・ふぐ料理。</li>
+        <li>本州と九州を隔てる関門海峡の眺め。</li>
+        <li>鮮やかなターコイズブルーの海に架かる角島大橋。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-iwakuni">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">岩国</span><span class="area-tag">名橋・錦帯橋</span></div>
+      <p class="area-desc">日本屈指の美しさと言われる、五連のアーチが特徴的な木造橋・錦帯橋で知られる。</p>
+      <ul class="area-highlights">
+        <li>錦帯橋 — 優美な五連アーチの木造橋。</li>
+        <li>橋と川を見渡せる高台の城。</li>
+        <li>春には川沿いの桜も見事。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>群馬県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="群馬県をエリア別にご紹介:草津・伊香保・榛名・みなかみ・富岡。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/gunma-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#gunma">← 地図で群馬県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>群馬県 エリアガイド</h1>
+  <p class="page-lede">群馬県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">群馬県内のエリア位置</div>
+    <div class="area-map-hint">群馬県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 498.1 510.1" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="377.1,329.1 337.1,337.1 313.1,321.1 269.1,313.1 249.1,353.1 185.1,389.1 169.1,381.1 169.1,357.1 157.1,345.1 169.1,341.1 161.1,317.1 173.1,309.1 169.1,285.1 133.1,285.1 121.1,265.1 125.1,237.1 145.1,221.1 141.1,213.1 177.1,201.1 225.1,177.1 225.1,165.1 237.1,161.1 233.1,141.1 249.1,137.1 257.1,121.1 285.1,149.1 317.1,157.1 309.1,169.1 321.1,177.1 309.1,189.1 305.1,225.1 337.1,237.1 313.1,289.1 333.1,317.1 369.1,313.1"/>
+
+      <g class="area-pin" data-target="area-kusatsu">
+        <line class="area-pin-leader" x1="156.8" y1="211.7" x2="104.3" y2="184.0" style="stroke-width:1.1"/>
+        <rect x="146.0" y="200.89999999999998" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="156.8" cy="211.7" r="7.6" style="stroke-width:2.2"/>
+        <text x="104.3" y="184.0" text-anchor="end" style="font-size:11.9px">草津</text>
+      </g>
+      <g class="area-pin" data-target="area-ikaho">
+        <line class="area-pin-leader" x1="215.2" y1="250.0" x2="157.2" y2="237.8" style="stroke-width:1.1"/>
+        <rect x="204.39999999999998" y="239.2" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="215.2" cy="250.0" r="7.6" style="stroke-width:2.2"/>
+        <text x="157.2" y="237.8" text-anchor="end" style="font-size:11.9px">伊香保・榛名</text>
+      </g>
+      <g class="area-pin" data-target="area-minakami">
+        <line class="area-pin-leader" x1="235.5" y1="194.8" x2="232.1" y2="135.6" style="stroke-width:1.1"/>
+        <rect x="224.7" y="184.0" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="235.5" cy="194.8" r="7.6" style="stroke-width:2.2"/>
+        <text x="232.1" y="135.6" text-anchor="middle" style="font-size:11.9px">みなかみ</text>
+      </g>
+      <g class="area-pin" data-target="area-tomioka">
+        <line class="area-pin-leader" x1="216.3" y1="312.6" x2="194.5" y2="367.7" style="stroke-width:1.1"/>
+        <rect x="205.5" y="301.8" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="216.3" cy="312.6" r="7.6" style="stroke-width:2.2"/>
+        <text x="194.5" y="367.7" text-anchor="end" style="font-size:11.9px">富岡</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kusatsu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">草津</span><span class="area-tag">名湯の温泉町</span></div>
+      <p class="area-desc">湯畑を中心とした、日本屈指の名湯として知られる温泉町。何世紀も続く湯治文化が今も息づく。</p>
+      <ul class="area-highlights">
+        <li>湯畑 — 湯けむり立ち上る草津のシンボル。</li>
+        <li>湯もみショー — 伝統的な湯温を下げる所作。</li>
+        <li>日本屈指の湧出量を誇る名湯。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ikaho">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">伊香保・榛名</span><span class="area-tag">石段の温泉街</span></div>
+      <p class="area-desc">365段の石段沿いに店が並ぶ、歴史ある温泉街。近くには火山の榛名山とその火口湖がある。</p>
+      <ul class="area-highlights">
+        <li>伊香保の365段の石段街。</li>
+        <li>榛名山・榛名湖の風光明媚な景観。</li>
+        <li>石段街に点在する土産物店や射的場。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-minakami">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">みなかみ</span><span class="area-tag">アウトドアの町</span></div>
+      <p class="area-desc">ラフティングやキャニオニング、渓谷散策で知られる山あいのアウトドア拠点。温泉で疲れを癒すのも人気。</p>
+      <ul class="area-highlights">
+        <li>利根川での本格的なラフティング体験。</li>
+        <li>夏に人気のキャニオニングツアー。</li>
+        <li>山あいに点在する素朴な温泉地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tomioka">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">富岡</span><span class="area-tag">世界遺産の製糸場</span></div>
+      <p class="area-desc">19世紀に日本の近代製糸業の礎を築いた、世界遺産・富岡製糸場がある。</p>
+      <ul class="area-highlights">
+        <li>富岡製糸場 — 世界遺産の近代化産業遺産。</li>
+        <li>日本初の近代的な官営製糸工場。</li>
+        <li>和洋折衷の煉瓦建築が特徴。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

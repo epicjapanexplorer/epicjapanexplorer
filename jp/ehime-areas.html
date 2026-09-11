@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>愛媛県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="愛媛県をエリア別にご紹介:松山・道後・今治・しまなみ海道・内子・大洲・宇和島・南予。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/ehime-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#ehime">← 地図で愛媛県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>愛媛県 エリアガイド</h1>
+  <p class="page-lede">愛媛県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">愛媛県内のエリア位置</div>
+    <div class="area-map-hint">愛媛県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 946.3 934.3" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M431.1,379.1 L419.1,375.1 L435.1,363.1 L431.1,379.1 Z M515.1,319.1 L499.1,319.1 L515.1,295.1 L523.1,307.1 L515.1,319.1 Z M535.1,315.1 L539.1,315.1 L535.1,323.1 L523.1,319.1 L535.1,315.1 Z M527.1,335.1 L511.1,343.1 L515.1,323.1 L535.1,327.1 L527.1,335.1 Z M423.1,635.1 L395.1,627.1 L395.1,639.1 L387.1,639.1 L391.1,619.1 L403.1,623.1 L379.1,599.1 L391.1,599.1 L383.1,583.1 L395.1,583.1 L383.1,579.1 L387.1,571.1 L375.1,563.1 L391.1,575.1 L407.1,559.1 L407.1,547.1 L391.1,547.1 L403.1,535.1 L371.1,535.1 L379.1,523.1 L371.1,519.1 L383.1,499.1 L359.1,495.1 L327.1,519.1 L295.1,523.1 L435.1,443.1 L459.1,367.1 L495.1,355.1 L487.1,339.1 L499.1,335.1 L531.1,391.1 L575.1,375.1 L615.1,383.1 L631.1,367.1 L651.1,375.1 L643.1,407.1 L547.1,423.1 L519.1,459.1 L507.1,499.1 L463.1,503.1 L479.1,539.1 L459.1,551.1 L435.1,583.1 L419.1,571.1 L431.1,623.1 L423.1,635.1 Z"/>
+
+      <g class="area-pin" data-target="area-matsuyama">
+        <line class="area-pin-leader" x1="455.1" y1="404.0" x2="449.5" y2="324.9" style="stroke-width:2.1"/>
+        <rect x="434.5" y="383.4" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="455.1" cy="404.0" r="14.4" style="stroke-width:4.1"/>
+        <text x="449.5" y="324.9" text-anchor="middle" style="font-size:22.6px">松山・道後</text>
+      </g>
+      <g class="area-pin" data-target="area-imabari">
+        <line class="area-pin-leader" x1="504.8" y1="352.7" x2="535.1" y2="279.5" style="stroke-width:2.1"/>
+        <rect x="484.2" y="332.09999999999997" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="504.8" cy="352.7" r="14.4" style="stroke-width:4.1"/>
+        <text x="535.1" y="279.5" text-anchor="start" style="font-size:22.6px">今治・しまなみ海道</text>
+      </g>
+      <g class="area-pin" data-target="area-uchikoozu">
+        <line class="area-pin-leader" x1="408.8" y1="469.4" x2="330.3" y2="479.9" style="stroke-width:2.1"/>
+        <rect x="388.2" y="448.79999999999995" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="408.8" cy="469.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="330.3" y="479.9" text-anchor="end" style="font-size:22.6px">内子・大洲</text>
+      </g>
+      <g class="area-pin" data-target="area-uwajima">
+        <line class="area-pin-leader" x1="411.1" y1="543.3" x2="370.5" y2="611.4" style="stroke-width:2.1"/>
+        <rect x="390.5" y="522.6999999999999" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="411.1" cy="543.3" r="14.4" style="stroke-width:4.1"/>
+        <text x="370.5" y="611.4" text-anchor="end" style="font-size:22.6px">宇和島・南予</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-matsuyama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">松山・道後</span><span class="area-tag">名城と名湯</span></div>
+      <p class="area-desc">日本屈指の現存天守と、日本最古級の歴史を誇る温泉「道後温泉」で知られる県庁所在地。</p>
+      <ul class="area-highlights">
+        <li>松山城 — 日本屈指の現存天守。</li>
+        <li>道後温泉 — 日本最古級とされる歴史ある温泉。</li>
+        <li>文豪・夏目漱石ゆかりの地としても知られる。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-imabari">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">今治・しまなみ海道</span><span class="area-tag">サイクリングの玄関口</span></div>
+      <p class="area-desc">造船業の街であり、瀬戸内海を渡る景勝のサイクリングロード「しまなみ海道」の起点。</p>
+      <ul class="area-highlights">
+        <li>しまなみ海道サイクリングロードの南の起点。</li>
+        <li>造船業とタオル製造業の一大拠点。</li>
+        <li>瀬戸内の島々を渡る劇的な橋の連なり。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-uchikoozu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">内子・大洲</span><span class="area-tag">保存された伝統の町</span></div>
+      <p class="area-desc">伝統的な蝋・和紙産業で知られる保存された町並みと、川沿いに復元された大洲城。</p>
+      <ul class="area-highlights">
+        <li>伝統の蝋産業ゆかりの内子の保存町並み。</li>
+        <li>大洲城 — 忠実に復元された木造の城。</li>
+        <li>松山に比べ、落ち着いた伝統的な雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-uwajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">宇和島・南予</span><span class="area-tag">南予の海岸文化</span></div>
+      <p class="area-desc">独自の天守と闘牛文化、宇和海の養殖漁業で知られる、県南部の海岸地域。</p>
+      <ul class="area-highlights">
+        <li>宇和島城 — 日本に現存する天守のひとつ。</li>
+        <li>牛同士が角を突き合わせる「闘牛」の伝統。</li>
+        <li>宇和海の風光明媚な真珠・魚の養殖。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>広島県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="広島県をエリア別にご紹介:広島市・宮島・呉・江田島・尾道。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/hiroshima-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#hiroshima">← 地図で広島県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>広島県 エリアガイド</h1>
+  <p class="page-lede">広島県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">広島県内のエリア位置</div>
+    <div class="area-map-hint">広島県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 557.0 517.0" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M424.5,292.5 L420.5,300.5 L408.5,292.5 L420.5,304.5 L412.5,300.5 L404.5,320.5 L384.5,312.5 L384.5,300.5 L348.5,308.5 L336.5,324.5 L288.5,328.5 L280.5,344.5 L252.5,352.5 L244.5,344.5 L232.5,356.5 L236.5,344.5 L224.5,320.5 L232.5,312.5 L200.5,308.5 L168.5,336.5 L172.5,348.5 L152.5,340.5 L148.5,316.5 L140.5,308.5 L140.5,280.5 L132.5,272.5 L152.5,252.5 L160.5,228.5 L156.5,220.5 L180.5,200.5 L212.5,208.5 L220.5,196.5 L240.5,204.5 L272.5,196.5 L260.5,176.5 L284.5,164.5 L312.5,132.5 L364.5,140.5 L392.5,148.5 L404.5,160.5 L396.5,188.5 L412.5,208.5 L408.5,228.5 L424.5,292.5 Z M312.5,344.5 L304.5,356.5 L296.5,344.5 L316.5,336.5 L312.5,344.5 Z M216.5,348.5 L212.5,332.5 L224.5,336.5 L220.5,368.5 L208.5,368.5 L216.5,356.5 L200.5,336.5 L216.5,348.5 Z M192.5,324.5 L196.5,332.5 L180.5,340.5 L192.5,324.5 Z M272.5,360.5 L264.5,356.5 L276.5,356.5 L272.5,360.5 Z M228.5,364.5 L236.5,364.5 L232.5,376.5 L244.5,376.5 L236.5,384.5 L212.5,380.5 L224.5,356.5 L236.5,356.5 L228.5,364.5 Z M368.5,328.5 L368.5,340.5 L356.5,328.5 L368.5,328.5 Z M360.5,332.5 L344.5,340.5 L348.5,332.5 L360.5,332.5 Z M372.5,308.5 L380.5,312.5 L368.5,320.5 L372.5,308.5 Z"/>
+
+      <g class="area-pin" data-target="area-hiroshimacity">
+        <line class="area-pin-leader" x1="218.1" y1="288.6" x2="158.8" y2="271.4" style="stroke-width:1.2"/>
+        <rect x="206.0" y="276.5" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="218.1" cy="288.6" r="8.5" style="stroke-width:2.4"/>
+        <text x="158.8" y="271.4" text-anchor="end" style="font-size:13.3px">広島市</text>
+      </g>
+      <g class="area-pin" data-target="area-miyajima">
+        <line class="area-pin-leader" x1="190.8" y1="311.8" x2="129.2" y2="315.7" style="stroke-width:1.2"/>
+        <rect x="178.70000000000002" y="299.7" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="190.8" cy="311.8" r="8.5" style="stroke-width:2.4"/>
+        <text x="129.2" y="315.7" text-anchor="end" style="font-size:13.3px">宮島</text>
+      </g>
+      <g class="area-pin" data-target="area-kureetajima">
+        <line class="area-pin-leader" x1="240.3" y1="324.3" x2="184.4" y2="350.4" style="stroke-width:1.2"/>
+        <rect x="228.20000000000002" y="312.2" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="240.3" cy="324.3" r="8.5" style="stroke-width:2.4"/>
+        <text x="184.4" y="350.4" text-anchor="end" style="font-size:13.3px">呉・江田島</text>
+      </g>
+      <g class="area-pin" data-target="area-onomichi">
+        <line class="area-pin-leader" x1="369.1" y1="282.4" x2="428.7" y2="266.6" style="stroke-width:1.2"/>
+        <rect x="357.0" y="270.29999999999995" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="369.1" cy="282.4" r="8.5" style="stroke-width:2.4"/>
+        <text x="428.7" y="266.6" text-anchor="start" style="font-size:13.3px">尾道</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-hiroshimacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">広島市</span><span class="area-tag">平和記念都市</span></div>
+      <p class="area-desc">平和記念公園と原爆ドーム(世界遺産)を擁する、平和と鎮魂を象徴する都市として復興を遂げた。</p>
+      <ul class="area-highlights">
+        <li>原爆ドーム — 世界遺産に登録された平和の記念碑。</li>
+        <li>平和記念公園と平和記念資料館。</li>
+        <li>1945年以降、力強く復興を遂げた近代都市。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-miyajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">宮島</span><span class="area-tag">海に浮かぶ鳥居</span></div>
+      <p class="area-desc">厳島神社の「海に浮かぶ」朱の大鳥居と、自由に歩き回る鹿で知られる神聖な島。</p>
+      <ul class="area-highlights">
+        <li>厳島神社の象徴的な大鳥居 — 満潮時に海に浮かんで見える。</li>
+        <li>島内を自由に歩き回る鹿たち。</li>
+        <li>弥山ロープウェイからのパノラマ絶景。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kureetajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">呉・江田島</span><span class="area-tag">海軍の歴史</span></div>
+      <p class="area-desc">豊かな海軍の歴史を持つ港町と、近くの江田島の風光明媚な島の道。</p>
+      <ul class="area-highlights">
+        <li>旧日本海軍の造船・海軍拠点としての歴史。</li>
+        <li>戦艦「大和」ゆかりの大和ミュージアム。</li>
+        <li>静かな江田島の海岸ドライブ。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-onomichi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">尾道</span><span class="area-tag">坂の町と寺院</span></div>
+      <p class="area-desc">狭い路地と寺院が連なる坂の町。瀬戸内しまなみ海道サイクリングロードの起点として知られる。</p>
+      <ul class="area-highlights">
+        <li>細い路地を巡る「寺社巡りの道」。</li>
+        <li>しまなみ海道サイクリングロードの起点。</li>
+        <li>瀬戸内海を見下ろす、のんびりとした港町の雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

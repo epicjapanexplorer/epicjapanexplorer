@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高知県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="高知県をエリア別にご紹介:高知市・桂浜・四万十川・仁淀川・柏島。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/kochi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#kochi">← 地図で高知県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>高知県 エリアガイド</h1>
+  <p class="page-lede">高知県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">高知県内のエリア位置</div>
+    <div class="area-map-hint">高知県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 946.4 850.4" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M529.2,285.2 L581.2,309.2 L605.2,301.2 L609.2,333.2 L637.2,337.2 L629.2,353.2 L637.2,369.2 L661.2,373.2 L633.2,449.2 L585.2,385.2 L545.2,369.2 L505.2,377.2 L505.2,369.2 L509.2,381.2 L461.2,397.2 L485.2,397.2 L461.2,401.2 L453.2,413.2 L449.2,401.2 L437.2,417.2 L441.2,437.2 L433.2,461.2 L421.2,461.2 L405.2,493.2 L385.2,497.2 L385.2,529.2 L373.2,541.2 L385.2,565.2 L369.2,549.2 L341.2,557.2 L321.2,545.2 L305.2,553.2 L309.2,529.2 L325.2,525.2 L321.2,513.2 L309.2,513.2 L317.2,501.2 L305.2,449.2 L321.2,461.2 L345.2,429.2 L365.2,417.2 L349.2,381.2 L393.2,377.2 L405.2,337.2 L433.2,301.2 L529.2,285.2 Z M289.2,561.2 L285.2,565.2 L285.2,553.2 L289.2,561.2 Z"/>
+
+      <g class="area-pin" data-target="area-kochicity">
+        <line class="area-pin-leader" x1="490.1" y1="361.2" x2="535.0" y2="301.1" style="stroke-width:2.1"/>
+        <rect x="469.5" y="340.59999999999997" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="490.1" cy="361.2" r="14.4" style="stroke-width:4.1"/>
+        <text x="535.0" y="301.1" text-anchor="start" style="font-size:22.6px">高知市・桂浜</text>
+      </g>
+      <g class="area-pin" data-target="area-shimanto">
+        <line class="area-pin-leader" x1="365.2" y1="494.0" x2="307.6" y2="542.0" style="stroke-width:2.1"/>
+        <rect x="344.59999999999997" y="473.4" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="365.2" cy="494.0" r="14.4" style="stroke-width:4.1"/>
+        <text x="307.6" y="542.0" text-anchor="end" style="font-size:22.6px">四万十川</text>
+      </g>
+      <g class="area-pin" data-target="area-niyodoriver">
+        <line class="area-pin-leader" x1="438.4" y1="367.4" x2="443.8" y2="292.6" style="stroke-width:2.1"/>
+        <rect x="417.79999999999995" y="346.79999999999995" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="438.4" cy="367.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="443.8" y="292.6" text-anchor="middle" style="font-size:22.6px">仁淀川</text>
+      </g>
+      <g class="area-pin" data-target="area-kashiwajima">
+        <line class="area-pin-leader" x1="309.6" y1="545.4" x2="253.1" y2="594.7" style="stroke-width:2.1"/>
+        <rect x="289.0" y="524.8" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="309.6" cy="545.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="253.1" y="594.7" text-anchor="end" style="font-size:22.6px">柏島</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kochicity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">高知市・桂浜</span><span class="area-tag">龍馬ゆかりの地</span></div>
+      <p class="area-desc">現存天守と、幕末の志士・坂本龍馬にゆかりの深い桂浜の景勝地を擁する県庁所在地。</p>
+      <ul class="area-highlights">
+        <li>高知城 — 日本に現存する貴重な天守のひとつ。</li>
+        <li>桂浜 — 坂本龍馬の像が立つ景勝地。</li>
+        <li>何世紀も続く日曜市の伝統。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shimanto">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">四万十川</span><span class="area-tag">日本最後の清流</span></div>
+      <p class="area-desc">「日本最後の清流」とも称される四万十川。欄干のない沈下橋の風景で知られる。</p>
+      <ul class="area-highlights">
+        <li>「日本最後の清流」として名高い川。</li>
+        <li>欄干のない独特な「沈下橋」の景観。</li>
+        <li>手つかずの自然の中でのカヌー体験。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-niyodoriver">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">仁淀川</span><span class="area-tag">鮮やかなブルーの清流</span></div>
+      <p class="area-desc">日本でも屈指の透明度と鮮やかな青色の水で知られる川。</p>
+      <ul class="area-highlights">
+        <li>鮮やかな青緑色に輝く、特徴的な水の色。</li>
+        <li>川沿いの人気の撮影・水遊びスポット。</li>
+        <li>観光客の少ない、静かな自然の名所。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kashiwajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">柏島</span><span class="area-tag">透明度抜群のダイビングスポット</span></div>
+      <p class="area-desc">抜群の透明度を誇る海で、日本屈指のシュノーケリング・ダイビングスポットとして知られる小さな島。</p>
+      <ul class="area-highlights">
+        <li>日本屈指の透明度を誇るシュノーケリング・ダイビングスポット。</li>
+        <li>温暖な緯度にもかかわらず豊かなサンゴと海洋生物。</li>
+        <li>小規模で静かな離島の雰囲気。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

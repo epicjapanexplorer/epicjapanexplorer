@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東京都エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="東京都をエリア別にご紹介:東京駅・皇居・浅草・銀座・新宿・渋谷・お台場。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/tokyo-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#tokyo">← 地図で東京都を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>東京都 エリアガイド</h1>
+  <p class="page-lede">東京都は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">東京都内のエリア位置</div>
+    <div class="area-map-hint">東京都の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 409.5 313.5" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M298.7,134.7 L302.7,154.7 L294.7,170.7 L270.7,166.7 L278.7,182.7 L262.7,186.7 L278.7,186.7 L278.7,198.7 L222.7,170.7 L210.7,178.7 L222.7,186.7 L214.7,186.7 L214.7,206.7 L198.7,186.7 L142.7,162.7 L122.7,150.7 L106.7,118.7 L118.7,106.7 L178.7,122.7 L198.7,138.7 L226.7,126.7 L226.7,142.7 L250.7,130.7 L266.7,134.7 L274.7,126.7 L298.7,134.7 Z"/>
+
+      <g class="area-pin" data-target="area-tokyostation">
+        <line class="area-pin-leader" x1="272.5" y1="164.3" x2="342.9" y2="164.3" style="stroke-width:0.9"/>
+        <rect x="263.6" y="155.4" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="272.5" cy="164.3" r="6.2" style="stroke-width:1.8"/>
+        <text x="342.9" y="164.3" text-anchor="start" style="font-size:9.8px">東京駅・皇居</text>
+      </g>
+      <g class="area-pin" data-target="area-asakusa">
+        <line class="area-pin-leader" x1="288.7" y1="140.7" x2="334.0" y2="86.8" style="stroke-width:0.9"/>
+        <rect x="279.8" y="131.79999999999998" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="288.7" cy="140.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="334.0" y="86.8" text-anchor="start" style="font-size:9.8px">浅草</text>
+      </g>
+      <g class="area-pin" data-target="area-ginza">
+        <line class="area-pin-leader" x1="284.7" y1="180.7" x2="338.7" y2="226.0" style="stroke-width:0.9"/>
+        <rect x="275.8" y="171.79999999999998" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="284.7" cy="180.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="338.7" y="226.0" text-anchor="start" style="font-size:9.8px">銀座</text>
+      </g>
+      <g class="area-pin" data-target="area-shinjuku">
+        <line class="area-pin-leader" x1="259.9" y1="161.0" x2="189.4" y2="161.0" style="stroke-width:0.9"/>
+        <rect x="250.99999999999997" y="152.1" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="259.9" cy="161.0" r="6.2" style="stroke-width:1.8"/>
+        <text x="189.4" y="161.0" text-anchor="end" style="font-size:9.8px">新宿・渋谷</text>
+      </g>
+      <g class="area-pin" data-target="area-odaiba">
+        <line class="area-pin-leader" x1="274.2" y1="180.5" x2="274.2" y2="250.9" style="stroke-width:0.9"/>
+        <rect x="265.3" y="171.6" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="274.2" cy="180.5" r="6.2" style="stroke-width:1.8"/>
+        <text x="274.2" y="250.9" text-anchor="middle" style="font-size:9.8px">お台場</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-tokyostation">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">東京駅・皇居</span><span class="area-tag">東京の玄関口</span></div>
+      <p class="area-desc">赤レンガ造りの荘厳な東京駅と、その目の前に広がる皇居のお濠・庭園、広大な広場が印象的なエリア。</p>
+      <ul class="area-highlights">
+        <li>東京駅 — 復元された赤レンガの丸の内駅舎。</li>
+        <li>皇居東御苑 — 一般公開されている庭園。</li>
+        <li>日本各地へつながる中心的な交通拠点。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-asakusa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">浅草</span><span class="area-tag">東京の下町情緒</span></div>
+      <p class="area-desc">浅草寺と、その参道である賑やかな仲見世通りを中心とした、東京で最も下町情緒が残るエリア。</p>
+      <ul class="area-highlights">
+        <li>浅草寺 — 東京最古と言われる歴史あるお寺。</li>
+        <li>仲見世通り — お土産・食べ歩きが楽しい参道。</li>
+        <li>隅田川沿いから望む東京スカイツリー。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ginza">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">銀座</span><span class="area-tag">高級ショッピング街</span></div>
+      <p class="area-desc">老舗百貨店や高級ブランド店、洗練されたレストランが並ぶ、東京を代表する高級商業エリア。</p>
+      <ul class="area-highlights">
+        <li>国内外の高級ブランドの旗艦店が集まる。</li>
+        <li>週末は歩行者天国となる銀座通り。</li>
+        <li>東京屈指の老舗百貨店も点在。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shinjuku">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">新宿・渋谷</span><span class="area-tag">高層ビルと若者文化</span></div>
+      <p class="area-desc">高層ビル群と夜の街で知られる新宿、そしてスクランブル交差点と若者文化の発信地・渋谷、東京を代表する2つの拠点。</p>
+      <ul class="area-highlights">
+        <li>新宿の高層ビル群と、世界一利用者数の多い新宿駅。</li>
+        <li>渋谷スクランブル交差点 — 東京を象徴する光景。</li>
+        <li>両エリアとも飲食・買い物・夜のにぎわいが充実。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-odaiba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">お台場</span><span class="area-tag">近未来の臨海エリア</span></div>
+      <p class="area-desc">東京湾に浮かぶ人工島に広がる近未来的な臨海エリア。ショッピングモールや大観覧車、レインボーブリッジの眺めが楽しめる。</p>
+      <ul class="area-highlights">
+        <li>レインボーブリッジと東京湾岸の景観。</li>
+        <li>チームラボなど、テクノロジーを活かしたデジタルアート施設。</li>
+        <li>実物大のガンダム像など、サブカルチャーの名所も。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

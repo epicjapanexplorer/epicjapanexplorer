@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>静岡県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="静岡県をエリア別にご紹介:伊豆・富士山・御殿場・浜松・熱海。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/shizuoka-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#shizuoka">← 地図で静岡県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>静岡県 エリアガイド</h1>
+  <p class="page-lede">静岡県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">静岡県内のエリア位置</div>
+    <div class="area-map-hint">静岡県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 728.4 648.4" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="486.2,250.2 502.2,250.2 502.2,302.2 526.2,318.2 518.2,338.2 534.2,362.2 534.2,378.2 506.2,414.2 502.2,438.2 474.2,454.2 450.2,430.2 462.2,374.2 454.2,358.2 458.2,346.2 482.2,342.2 442.2,318.2 414.2,326.2 398.2,346.2 406.2,358.2 370.2,374.2 362.2,410.2 338.2,438.2 346.2,454.2 294.2,438.2 194.2,434.2 194.2,402.2 226.2,382.2 266.2,302.2 326.2,262.2 326.2,214.2 342.2,194.2 354.2,226.2 350.2,270.2 370.2,274.2 386.2,310.2 406.2,302.2 402.2,274.2 418.2,242.2 438.2,262.2"/>
+
+      <g class="area-pin" data-target="area-izu">
+        <line class="area-pin-leader" x1="517.9" y1="336.9" x2="586.4" y2="336.3" style="stroke-width:1.6"/>
+        <rect x="502.09999999999997" y="321.09999999999997" width="31.6" height="31.6" fill="transparent"/>
+        <circle cx="517.9" cy="336.9" r="11.1" style="stroke-width:3.2"/>
+        <text x="586.4" y="336.3" text-anchor="start" style="font-size:17.4px">伊豆</text>
+      </g>
+      <g class="area-pin" data-target="area-fujigotemba">
+        <line class="area-pin-leader" x1="486.4" y1="230.3" x2="527.9" y2="175.9" style="stroke-width:1.6"/>
+        <rect x="470.59999999999997" y="214.5" width="31.6" height="31.6" fill="transparent"/>
+        <circle cx="486.4" cy="230.3" r="11.1" style="stroke-width:3.2"/>
+        <text x="527.9" y="175.9" text-anchor="start" style="font-size:17.4px">富士山・御殿場</text>
+      </g>
+      <g class="area-pin" data-target="area-hamamatsu">
+        <line class="area-pin-leader" x1="240.2" y1="419.1" x2="178.9" y2="449.5" style="stroke-width:1.6"/>
+        <rect x="224.39999999999998" y="403.3" width="31.6" height="31.6" fill="transparent"/>
+        <circle cx="240.2" cy="419.1" r="11.1" style="stroke-width:3.2"/>
+        <text x="178.9" y="449.5" text-anchor="end" style="font-size:17.4px">浜松</text>
+      </g>
+      <g class="area-pin" data-target="area-atami">
+        <line class="area-pin-leader" x1="514.5" y1="297.1" x2="578.8" y2="273.3" style="stroke-width:1.6"/>
+        <rect x="498.7" y="281.3" width="31.6" height="31.6" fill="transparent"/>
+        <circle cx="514.5" cy="297.1" r="11.1" style="stroke-width:3.2"/>
+        <text x="578.8" y="273.3" text-anchor="start" style="font-size:17.4px">熱海</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-izu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">伊豆</span><span class="area-tag">温泉半島</span></div>
+      <p class="area-desc">温泉と劇的な海岸線、リゾートタウンで知られる景勝の半島。東京から手軽に行ける保養地として長く親しまれる。</p>
+      <ul class="area-highlights">
+        <li>海岸沿いに点在する数多くの温泉リゾート。</li>
+        <li>荒々しい岩場と美しいビーチ。</li>
+        <li>東京から気軽に行ける週末旅行先。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-fujigotemba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">富士山・御殿場</span><span class="area-tag">富士山の絶景</span></div>
+      <p class="area-desc">富士山を最も近くで劇的に望めるエリアのひとつ。大規模なアウトレットモールでも知られる。</p>
+      <ul class="area-highlights">
+        <li>富士山を間近に望む、最も劇的な絶景ポイントのひとつ。</li>
+        <li>御殿場プレミアム・アウトレット — 日本屈指の規模。</li>
+        <li>富士山5合目への登山口へのアクセスも良好。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hamamatsu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">浜松</span><span class="area-tag">楽器と産業の街</span></div>
+      <p class="area-desc">太平洋岸に位置する工業都市。日本の楽器製造・オートバイ産業発祥の地として知られる。</p>
+      <ul class="area-highlights">
+        <li>ヤマハなど主要楽器メーカーの発祥地。</li>
+        <li>オートバイ・自動車産業の重要な拠点。</li>
+        <li>浜松市楽器博物館。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-atami">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">熱海</span><span class="area-tag">定番の海辺の温泉</span></div>
+      <p class="area-desc">相模湾に面した歴史ある温泉リゾート。海の眺め、夏の花火大会、レトロな温泉街の風情で人気。</p>
+      <ul class="area-highlights">
+        <li>相模湾を彩る頻繁な花火大会。</li>
+        <li>どこか懐かしい、昭和レトロな温泉街の雰囲気。</li>
+        <li>東京からのアクセスに優れた温泉地。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

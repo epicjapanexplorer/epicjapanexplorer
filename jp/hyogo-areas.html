@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>兵庫県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="兵庫県をエリア別にご紹介:神戸・姫路・淡路島・城崎・但馬。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/hyogo-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#hyogo">← 地図で兵庫県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>兵庫県 エリアガイド</h1>
+  <p class="page-lede">兵庫県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">兵庫県内のエリア位置</div>
+    <div class="area-map-hint">兵庫県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 565.3 689.3" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M282.7,518.7 L250.7,530.7 L250.7,510.7 L238.7,514.7 L238.7,502.7 L310.7,426.7 L314.7,434.7 L286.7,474.7 L298.7,510.7 L282.7,518.7 Z M170.7,394.7 L174.7,382.7 L158.7,358.7 L166.7,346.7 L162.7,318.7 L194.7,286.7 L190.7,262.7 L214.7,254.7 L214.7,238.7 L186.7,170.7 L222.7,158.7 L290.7,162.7 L286.7,178.7 L302.7,198.7 L322.7,194.7 L326.7,202.7 L326.7,226.7 L302.7,226.7 L298.7,250.7 L326.7,270.7 L346.7,262.7 L354.7,290.7 L394.7,298.7 L390.7,318.7 L378.7,322.7 L382.7,338.7 L406.7,350.7 L398.7,354.7 L406.7,398.7 L394.7,406.7 L370.7,398.7 L318.7,422.7 L258.7,382.7 L202.7,386.7 L202.7,370.7 L190.7,390.7 L178.7,382.7 L170.7,394.7 Z"/>
+
+      <g class="area-pin" data-target="area-kobe">
+        <line class="area-pin-leader" x1="350.9" y1="399.3" x2="407.8" y2="442.7" style="stroke-width:1.2"/>
+        <rect x="338.59999999999997" y="387.0" width="24.6" height="24.6" fill="transparent"/>
+        <circle cx="350.9" cy="399.3" r="8.6" style="stroke-width:2.5"/>
+        <text x="407.8" y="442.7" text-anchor="start" style="font-size:13.5px">神戸</text>
+      </g>
+      <g class="area-pin" data-target="area-himeji">
+        <line class="area-pin-leader" x1="248.9" y1="363.0" x2="189.3" y2="402.6" style="stroke-width:1.2"/>
+        <rect x="236.6" y="350.7" width="24.6" height="24.6" fill="transparent"/>
+        <circle cx="248.9" cy="363.0" r="8.6" style="stroke-width:2.5"/>
+        <text x="189.3" y="402.6" text-anchor="end" style="font-size:13.5px">姫路</text>
+      </g>
+      <g class="area-pin" data-target="area-awajishima">
+        <line class="area-pin-leader" x1="286.6" y1="486.7" x2="290.8" y2="558.2" style="stroke-width:1.2"/>
+        <rect x="274.3" y="474.4" width="24.6" height="24.6" fill="transparent"/>
+        <circle cx="286.6" cy="486.7" r="8.6" style="stroke-width:2.5"/>
+        <text x="290.8" y="558.2" text-anchor="middle" style="font-size:13.5px">淡路島</text>
+      </g>
+      <g class="area-pin" data-target="area-kinosaki">
+        <line class="area-pin-leader" x1="272.3" y1="171.4" x2="270.0" y2="99.9" style="stroke-width:1.2"/>
+        <rect x="260.0" y="159.1" width="24.6" height="24.6" fill="transparent"/>
+        <circle cx="272.3" cy="171.4" r="8.6" style="stroke-width:2.5"/>
+        <text x="270.0" y="99.9" text-anchor="middle" style="font-size:13.5px">城崎・但馬</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kobe">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">神戸</span><span class="area-tag">港町と和牛</span></div>
+      <p class="area-desc">港の景観と中華街、そして名を冠した神戸牛で知られる国際色豊かな港町。</p>
+      <ul class="area-highlights">
+        <li>神戸牛 — 世界的にも名高い和牛ブランド。</li>
+        <li>神戸ハーバーランド — 風光明媚な臨海エリア。</li>
+        <li>南京町 — コンパクトながら活気ある中華街。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-himeji">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">姫路</span><span class="area-tag">世界遺産の現存天守</span></div>
+      <p class="area-desc">世界遺産に登録された、日本屈指の壮麗さを誇る現存天守・姫路城で知られる。</p>
+      <ul class="area-highlights">
+        <li>姫路城 — 日本屈指の壮麗な現存天守。</li>
+        <li>「白鷺城」の愛称で親しまれる世界遺産。</li>
+        <li>日本で最も保存状態の良い城郭建築のひとつ。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-awajishima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">淡路島</span><span class="area-tag">玉ねぎと花の島</span></div>
+      <p class="area-desc">瀬戸内海に浮かぶ、玉ねぎと花で知られる大きな島。本州と結ぶ長大な吊り橋の眺めも見どころ。</p>
+      <ul class="area-highlights">
+        <li>全国的に名高い、甘みの強い淡路島産玉ねぎ。</li>
+        <li>島内各地に広がる季節の花畑。</li>
+        <li>世界最長級の吊り橋・明石海峡大橋の眺め。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kinosaki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">城崎・但馬</span><span class="area-tag">浴衣で巡る温泉街</span></div>
+      <p class="area-desc">浴衣姿で7つの外湯を巡り歩く文化で知られる、兵庫県北部の落ち着いた温泉町。</p>
+      <ul class="area-highlights">
+        <li>浴衣姿で7つの共同浴場を巡り歩く文化。</li>
+        <li>町の中心を流れる柳並木の運河。</li>
+        <li>兵庫県北部の、落ち着いた静かなエリア。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

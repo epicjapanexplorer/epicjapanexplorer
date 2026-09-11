@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>和歌山県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="和歌山県をエリア別にご紹介:和歌山市・和歌浦・白浜・熊野・那智勝浦・高野山。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/wakayama-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#wakayama">← 地図で和歌山県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>和歌山県 エリアガイド</h1>
+  <p class="page-lede">和歌山県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">和歌山県内のエリア位置</div>
+    <div class="area-map-hint">和歌山県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 539.5 579.5" xmlns="http://www.w3.org/2000/svg">
+      <path class="area-pref-shape" d="M335.8,299.8 L347.8,323.8 L367.8,335.8 L351.8,355.8 L355.8,371.8 L323.8,391.8 L319.8,407.8 L311.8,407.8 L315.8,395.8 L247.8,375.8 L227.8,347.8 L239.8,335.8 L207.8,319.8 L187.8,291.8 L171.8,291.8 L183.8,271.8 L171.8,267.8 L195.8,255.8 L175.8,243.8 L191.8,235.8 L187.8,227.8 L203.8,227.8 L171.8,195.8 L179.8,183.8 L191.8,195.8 L295.8,171.8 L311.8,207.8 L295.8,211.8 L271.8,239.8 L291.8,267.8 L283.8,291.8 L335.8,299.8 Z M367.8,263.8 L367.8,275.8 L347.8,287.8 L347.8,275.8 L367.8,263.8 Z"/>
+
+      <g class="area-pin" data-target="area-wakayamacity">
+        <line class="area-pin-leader" x1="186.8" y1="203.1" x2="151.9" y2="168.6" style="stroke-width:1.2"/>
+        <rect x="175.10000000000002" y="191.4" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="186.8" cy="203.1" r="8.2" style="stroke-width:2.3"/>
+        <text x="151.9" y="168.6" text-anchor="end" style="font-size:12.9px">和歌山市・和歌浦</text>
+      </g>
+      <g class="area-pin" data-target="area-shirahama">
+        <line class="area-pin-leader" x1="227.5" y1="346.6" x2="198.2" y2="386.0" style="stroke-width:1.2"/>
+        <rect x="215.8" y="334.90000000000003" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="227.5" cy="346.6" r="8.2" style="stroke-width:2.3"/>
+        <text x="198.2" y="386.0" text-anchor="end" style="font-size:12.9px">白浜</text>
+      </g>
+      <g class="area-pin" data-target="area-kumanonachi">
+        <line class="area-pin-leader" x1="357.4" y1="349.2" x2="397.1" y2="378.1" style="stroke-width:1.2"/>
+        <rect x="345.7" y="337.5" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="357.4" cy="349.2" r="8.2" style="stroke-width:2.3"/>
+        <text x="397.1" y="378.1" text-anchor="start" style="font-size:12.9px">熊野・那智勝浦</text>
+      </g>
+      <g class="area-pin" data-target="area-koyasan">
+        <line class="area-pin-leader" x1="279.8" y1="207.7" x2="284.8" y2="158.8" style="stroke-width:1.2"/>
+        <rect x="268.1" y="196.0" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="279.8" cy="207.7" r="8.2" style="stroke-width:2.3"/>
+        <text x="284.8" y="158.8" text-anchor="middle" style="font-size:12.9px">高野山</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-wakayamacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">和歌山市・和歌浦</span><span class="area-tag">城と景勝の入り江</span></div>
+      <p class="area-desc">再建された和歌山城と、古くから和歌に詠まれてきた景勝地・和歌浦を擁する県庁所在地。</p>
+      <ul class="area-highlights">
+        <li>和歌山城 — 市街を見下ろす再建された城。</li>
+        <li>古来より和歌に詠まれてきた和歌浦の景観。</li>
+        <li>落ち着いた雰囲気の海沿いの県庁所在地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shirahama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">白浜</span><span class="area-tag">白砂と名湯</span></div>
+      <p class="area-desc">白い砂浜と、日本最古級の歴史を持つ温泉で知られる人気のビーチリゾート。</p>
+      <ul class="area-highlights">
+        <li>白良浜 — 名前の由来となった白い砂浜。</li>
+        <li>日本で最も古い記録を持つ温泉のひとつ。</li>
+        <li>劇的な海食岩の景観も見どころ。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kumanonachi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">熊野・那智勝浦</span><span class="area-tag">日本一の名瀑</span></div>
+      <p class="area-desc">日本一の落差を誇る那智の滝と、熊野古道の重要な聖地として知られる。</p>
+      <ul class="area-highlights">
+        <li>那智の滝 — 日本一の落差を誇る名瀑。</li>
+        <li>滝を背景にした青岸渡寺の三重塔。</li>
+        <li>世界遺産・熊野古道の重要な拠点。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-koyasan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">高野山</span><span class="area-tag">聖なる山上の宗教都市</span></div>
+      <p class="area-desc">世界遺産に登録された、山上の宗教都市。何世紀も続く宿坊に宿泊できる貴重な体験ができる。</p>
+      <ul class="area-highlights">
+        <li>奥之院 — 巨杉に囲まれた広大で荘厳な墓所。</li>
+        <li>宿坊(お寺への宿泊)体験ができる。</li>
+        <li>真言密教の中心地として世界遺産に登録。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

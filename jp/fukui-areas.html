@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福井県エリアガイド | 映えるトラベル&グルメ</title>
+<meta name="description" content="福井県をエリア別にご紹介:永平寺・東尋坊・あわら温泉・敦賀。それぞれの特徴と見どころをまとめました。">
+<link rel="canonical" href="https://epicjapanexplorer.com/jp/fukui-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#fafafa; --washi-deep:#f0eeec; --sumi:#2d3748; --aiiro:#1a365d; --aiiro-deep:#0f2340;
+    --shu:#c53030; --shu-deep:#9b2c2c; --gold:#ecc94b; --line:#e2e8f0; --radius:2px;
+    --font-display:'Shippori Mincho', serif; --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(26,54,93,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(197,48,48,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.8;}
+  a{color:inherit;}
+  header{padding:32px 6vw 24px;border-bottom:1px solid var(--line);}
+  .brand-logo{height:80px;display:block;mix-blend-mode:multiply;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,5vw,40px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img class="brand-logo" src="https://pub-7806a0647a9943448e15f9e00f8ed59e.r2.dev/images/travel-tips/baerulogo.jpg" alt="Baeru-Travel"></div>
+  <a class="back-link" href="index.html#fukui">← 地図で福井県を見る</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府県エリアガイド</div>
+  <h1>福井県 エリアガイド</h1>
+  <p class="page-lede">福井県は、いくつかの特色あるエリアに分かれています。地図上のピンをクリックするか、下にスクロールして各エリアをご覧ください。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">福井県内のエリア位置</div>
+    <div class="area-map-hint">福井県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
+    <svg class="area-map-svg" viewBox="0 0 498.2 450.2" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="area-pref-shape" points="269.1,109.1 293.1,141.1 333.1,145.1 353.1,165.1 373.1,161.1 365.1,185.1 389.1,217.1 377.1,233.1 325.1,237.1 321.1,245.1 297.1,233.1 277.1,269.1 249.1,257.1 253.1,289.1 241.1,285.1 241.1,297.1 217.1,309.1 205.1,301.1 193.1,329.1 181.1,325.1 169.1,341.1 121.1,333.1 109.1,313.1 113.1,289.1 121.1,305.1 149.1,293.1 133.1,305.1 161.1,309.1 169.1,297.1 161.1,301.1 161.1,289.1 185.1,297.1 177.1,289.1 189.1,281.1 181.1,269.1 213.1,273.1 209.1,249.1 221.1,241.1 225.1,261.1 233.1,265.1 237.1,237.1 209.1,185.1 245.1,133.1 245.1,117.1"/>
+
+      <g class="area-pin" data-target="area-eiheiji">
+        <line class="area-pin-leader" x1="296.5" y1="166.9" x2="331.8" y2="120.7" style="stroke-width:1.1"/>
+        <rect x="285.7" y="156.1" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="296.5" cy="166.9" r="7.6" style="stroke-width:2.2"/>
+        <text x="331.8" y="120.7" text-anchor="start" style="font-size:11.9px">永平寺</text>
+      </g>
+      <g class="area-pin" data-target="area-tojinbo">
+        <line class="area-pin-leader" x1="249.7" y1="122.8" x2="258.6" y2="65.3" style="stroke-width:1.1"/>
+        <rect x="238.89999999999998" y="112.0" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="249.7" cy="122.8" r="7.6" style="stroke-width:2.2"/>
+        <text x="258.6" y="65.3" text-anchor="middle" style="font-size:11.9px">東尋坊</text>
+      </g>
+      <g class="area-pin" data-target="area-awaraonsen">
+        <line class="area-pin-leader" x1="272.4" y1="129.5" x2="291.3" y2="74.5" style="stroke-width:1.1"/>
+        <rect x="261.59999999999997" y="118.7" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="272.4" cy="129.5" r="7.6" style="stroke-width:2.2"/>
+        <text x="291.3" y="74.5" text-anchor="start" style="font-size:11.9px">あわら温泉</text>
+      </g>
+      <g class="area-pin" data-target="area-tsuruga">
+        <line class="area-pin-leader" x1="236.8" y1="263.9" x2="273.2" y2="309.3" style="stroke-width:1.1"/>
+        <rect x="226.0" y="253.09999999999997" width="21.6" height="21.6" fill="transparent"/>
+        <circle cx="236.8" cy="263.9" r="7.6" style="stroke-width:2.2"/>
+        <text x="273.2" y="309.3" text-anchor="start" style="font-size:11.9px">敦賀</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-eiheiji">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">永平寺</span><span class="area-tag">禅の大本山</span></div>
+      <p class="area-desc">曹洞宗の大本山のひとつ。杉木立に囲まれた静かな修行道場で、一般の参拝・宿泊体験も可能。</p>
+      <ul class="area-highlights">
+        <li>曹洞宗の二大本山のひとつである、現役の修行道場。</li>
+        <li>座禅・食事作法を体験できる宿泊(参籠)。</li>
+        <li>古杉に囲まれた荘厳な木造伽藍。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tojinbo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">東尋坊</span><span class="area-tag">劇的な海食崖</span></div>
+      <p class="area-desc">世界でも稀な柱状の岩石でできた、日本海に面した劇的な断崖。</p>
+      <ul class="area-highlights">
+        <li>世界でも数少ない柱状の玄武岩の断崖。</li>
+        <li>断崖の下を巡る遊覧船。</li>
+        <li>日本海に沈む印象的な夕日。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-awaraonsen">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">あわら温泉</span><span class="area-tag">福井を代表する温泉</span></div>
+      <p class="area-desc">福井県を代表する温泉地。冬のカニのシーズンに合わせた旅館滞在で人気。</p>
+      <ul class="area-highlights">
+        <li>冬のカニ料理を目当てに訪れる旅館滞在。</li>
+        <li>東尋坊観光の拠点としても便利。</li>
+        <li>伝統的な旅館のおもてなし。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsuruga">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">敦賀</span><span class="area-tag">歴史ある港町</span></div>
+      <p class="area-desc">若狭湾に面した歴史ある港町。20世紀初頭の国際貿易にまつわる歴史でも知られる。</p>
+      <ul class="area-highlights">
+        <li>20世紀初頭の国際貿易の歴史を今に伝える港。</li>
+        <li>地域屈指の由緒ある神社・気比神宮。</li>
+        <li>北陸地方への玄関口となる交通の要衝。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>
