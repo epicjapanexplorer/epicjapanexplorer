@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,45 @@
   <div class="area-map-wrap">
     <div class="area-map-title">愛媛県内のエリア位置</div>
     <div class="area-map-hint">愛媛県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 946.3 934.3" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 1026 1014" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kagawa">
+        <path d="M651.1,375.1 L631.1,367.1 L643.1,327.1 L627.1,311.1 L651.1,323.1 L703.1,283.1 L731.1,295.1 L747.1,279.1 L751.1,299.1 L763.1,287.1 L775.1,299.1 L771.1,311.1 L807.1,331.1 L803.1,343.1 L751.1,335.1 L715.1,363.1 L687.1,351.1 L651.1,375.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="714" y="325" text-anchor="middle" fill="#7a9e6f">香川県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tokushima">
+        <path d="M807.1,331.1 L839.1,323.1 L839.1,335.1 L851.1,339.1 L835.1,375.1 L863.1,403.1 L843.1,419.1 L871.1,427.1 L795.1,467.1 L775.1,495.1 L751.1,491.1 L743.1,475.1 L751.1,459.1 L723.1,455.1 L719.1,423.1 L695.1,431.1 L643.1,407.1 L651.1,375.1 L687.1,351.1 L715.1,363.1 L751.1,335.1 L803.1,343.1 L807.1,331.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="772" y="398" text-anchor="middle" fill="#c47a2f">徳島県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kochi">
+        <path d="M643.1,407.1 L695.1,431.1 L719.1,423.1 L723.1,455.1 L751.1,459.1 L743.1,475.1 L751.1,491.1 L775.1,495.1 L747.1,571.1 L699.1,507.1 L659.1,491.1 L619.1,499.1 L619.1,491.1 L623.1,503.1 L575.1,519.1 L599.1,519.1 L575.1,523.1 L567.1,535.1 L563.1,523.1 L551.1,539.1 L555.1,559.1 L547.1,583.1 L535.1,583.1 L519.1,615.1 L499.1,619.1 L499.1,651.1 L487.1,663.1 L499.1,687.1 L483.1,671.1 L455.1,679.1 L435.1,667.1 L419.1,675.1 L423.1,651.1 L439.1,647.1 L435.1,635.1 L423.1,635.1 L431.1,623.1 L419.1,571.1 L435.1,583.1 L459.1,551.1 L479.1,539.1 L463.1,503.1 L507.1,499.1 L519.1,459.1 L547.1,423.1 L643.1,407.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="560" y="549" text-anchor="middle" fill="#7a3b8c">高知県</text>
+      </g>
       <path class="area-pref-shape" d="M431.1,379.1 L419.1,375.1 L435.1,363.1 L431.1,379.1 Z M515.1,319.1 L499.1,319.1 L515.1,295.1 L523.1,307.1 L515.1,319.1 Z M535.1,315.1 L539.1,315.1 L535.1,323.1 L523.1,319.1 L535.1,315.1 Z M527.1,335.1 L511.1,343.1 L515.1,323.1 L535.1,327.1 L527.1,335.1 Z M423.1,635.1 L395.1,627.1 L395.1,639.1 L387.1,639.1 L391.1,619.1 L403.1,623.1 L379.1,599.1 L391.1,599.1 L383.1,583.1 L395.1,583.1 L383.1,579.1 L387.1,571.1 L375.1,563.1 L391.1,575.1 L407.1,559.1 L407.1,547.1 L391.1,547.1 L403.1,535.1 L371.1,535.1 L379.1,523.1 L371.1,519.1 L383.1,499.1 L359.1,495.1 L327.1,519.1 L295.1,523.1 L435.1,443.1 L459.1,367.1 L495.1,355.1 L487.1,339.1 L499.1,335.1 L531.1,391.1 L575.1,375.1 L615.1,383.1 L631.1,367.1 L651.1,375.1 L643.1,407.1 L547.1,423.1 L519.1,459.1 L507.1,499.1 L463.1,503.1 L479.1,539.1 L459.1,551.1 L435.1,583.1 L419.1,571.1 L431.1,623.1 L423.1,635.1 Z"/>
+      <text class="area-main-label" x="441" y="442" text-anchor="middle" style="font-size:40.7px;stroke-width:6.4px">愛媛県</text>
 
       <g class="area-pin" data-target="area-matsuyama">
         <line class="area-pin-leader" x1="455.1" y1="404.0" x2="449.5" y2="324.9" style="stroke-width:2.1"/>
         <rect x="434.5" y="383.4" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="455.1" cy="404.0" r="14.4" style="stroke-width:4.1"/>
-        <text x="449.5" y="324.9" text-anchor="middle" style="font-size:22.6px">松山・道後</text>
+        <text x="449.5" y="324.9" text-anchor="middle" style="font-size:26.0px">松山・道後</text>
       </g>
       <g class="area-pin" data-target="area-imabari">
         <line class="area-pin-leader" x1="504.8" y1="352.7" x2="535.1" y2="279.5" style="stroke-width:2.1"/>
         <rect x="484.2" y="332.09999999999997" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="504.8" cy="352.7" r="14.4" style="stroke-width:4.1"/>
-        <text x="535.1" y="279.5" text-anchor="start" style="font-size:22.6px">今治・しまなみ海道</text>
+        <text x="535.1" y="279.5" text-anchor="start" style="font-size:26.0px">今治・しまなみ海道</text>
       </g>
       <g class="area-pin" data-target="area-uchikoozu">
         <line class="area-pin-leader" x1="408.8" y1="469.4" x2="330.3" y2="479.9" style="stroke-width:2.1"/>
         <rect x="388.2" y="448.79999999999995" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="408.8" cy="469.4" r="14.4" style="stroke-width:4.1"/>
-        <text x="330.3" y="479.9" text-anchor="end" style="font-size:22.6px">内子・大洲</text>
+        <text x="330.3" y="479.9" text-anchor="end" style="font-size:26.0px">内子・大洲</text>
       </g>
       <g class="area-pin" data-target="area-uwajima">
         <line class="area-pin-leader" x1="411.1" y1="543.3" x2="370.5" y2="611.4" style="stroke-width:2.1"/>
         <rect x="390.5" y="522.6999999999999" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="411.1" cy="543.3" r="14.4" style="stroke-width:4.1"/>
-        <text x="370.5" y="611.4" text-anchor="end" style="font-size:22.6px">宇和島・南予</text>
+        <text x="370.5" y="611.4" text-anchor="end" style="font-size:26.0px">宇和島・南予</text>
       </g>
     </svg>
   </div>

@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,38 +67,71 @@
   <div class="area-map-wrap">
     <div class="area-map-title">長野県内のエリア位置</div>
     <div class="area-map-hint">長野県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 608.4 784.4" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-90 -262 812 1086" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="niigata">
+        <path d="M250.2,230.2 L238.2,186.2 L222.2,174.2 L278.2,154.2 L314.2,126.2 L342.2,126.2 L402.2,78.2 L442.2,18.2 L462.2,-37.8 L538.2,-85.8 L542.2,-77.8 L538.2,-81.8 L562.2,-109.8 L598.2,-221.8 L630.2,-209.8 L630.2,-181.8 L666.2,-157.8 L658.2,-141.8 L626.2,-129.8 L626.2,-97.8 L614.2,-65.8 L626.2,-45.8 L638.2,-37.8 L602.2,2.2 L610.2,38.2 L578.2,38.2 L574.2,50.2 L538.2,54.2 L534.2,66.2 L542.2,82.2 L526.2,106.2 L546.2,126.2 L542.2,182.2 L514.2,154.2 L506.2,170.2 L490.2,174.2 L494.2,194.2 L482.2,198.2 L482.2,210.2 L434.2,234.2 L434.2,206.2 L414.2,190.2 L414.2,170.2 L402.2,162.2 L374.2,170.2 L354.2,190.2 L354.2,210.2 L338.2,202.2 L306.2,218.2 L298.2,214.2 L298.2,194.2 L270.2,190.2 L270.2,202.2 L250.2,230.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="467" y="79" text-anchor="middle" fill="#7a9e6f">新潟県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gunma">
+        <path d="M634.2,362.2 L594.2,370.2 L570.2,354.2 L526.2,346.2 L506.2,386.2 L442.2,422.2 L426.2,414.2 L426.2,390.2 L414.2,378.2 L426.2,374.2 L418.2,350.2 L430.2,342.2 L426.2,318.2 L390.2,318.2 L378.2,298.2 L382.2,270.2 L402.2,254.2 L398.2,246.2 L434.2,234.2 L482.2,210.2 L482.2,198.2 L494.2,194.2 L490.2,174.2 L506.2,170.2 L514.2,154.2 L542.2,182.2 L574.2,190.2 L566.2,202.2 L578.2,210.2 L566.2,222.2 L562.2,258.2 L594.2,270.2 L570.2,322.2 L590.2,350.2 L626.2,346.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="496" y="288" text-anchor="middle" fill="#c47a2f">群馬県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M634.2,362.2 L638.2,366.2 L646.2,394.2 L658.2,390.2 L658.2,390.2 L682.2,442.2 L682.2,470.2 L658.2,462.2 L650.2,470.2 L634.2,466.2 L610.2,478.2 L610.2,462.2 L582.2,474.2 L562.2,458.2 L502.2,442.2 L490.2,454.2 L446.2,442.2 L442.2,422.2 L506.2,386.2 L526.2,346.2 L570.2,354.2 L594.2,370.2 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="590" y="423" text-anchor="middle" fill="#7a3b8c">埼玉県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamanashi">
+        <path d="M342.2,510.2 L334.2,490.2 L346.2,482.2 L334.2,470.2 L374.2,426.2 L394.2,446.2 L418.2,438.2 L434.2,450.2 L446.2,442.2 L490.2,454.2 L506.2,486.2 L526.2,498.2 L522.2,534.2 L486.2,566.2 L438.2,578.2 L418.2,558.2 L402.2,590.2 L406.2,618.2 L386.2,626.2 L370.2,590.2 L350.2,586.2 L354.2,542.2 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="413" y="517" text-anchor="middle" fill="#2f6690">山梨県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shizuoka">
+        <path d="M486.2,566.2 L502.2,566.2 L502.2,618.2 L526.2,634.2 L518.2,654.2 L534.2,678.2 L534.2,694.2 L506.2,730.2 L502.2,754.2 L474.2,770.2 L450.2,746.2 L462.2,690.2 L454.2,674.2 L458.2,662.2 L482.2,658.2 L442.2,634.2 L414.2,642.2 L398.2,662.2 L406.2,674.2 L370.2,690.2 L362.2,726.2 L338.2,754.2 L346.2,770.2 L294.2,754.2 L194.2,750.2 L194.2,718.2 L226.2,698.2 L266.2,618.2 L326.2,578.2 L326.2,530.2 L342.2,510.2 L354.2,542.2 L350.2,586.2 L370.2,590.2 L386.2,626.2 L406.2,618.2 L402.2,590.2 L418.2,558.2 L438.2,578.2 Z" fill="none" stroke="#a3324a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="404" y="654" text-anchor="middle" fill="#a3324a">静岡県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="aichi">
+        <path d="M194.2,750.2 L98.2,774.2 L106.2,754.2 L118.2,762.2 L150.2,738.2 L158.2,750.2 L166.2,738.2 L162.2,726.2 L138.2,714.2 L130.2,730.2 L98.2,726.2 L82.2,714.2 L90.2,682.2 L74.2,726.2 L90.2,746.2 L78.2,746.2 L62.2,730.2 L66.2,710.2 L58.2,698.2 L58.2,678.2 L74.2,650.2 L46.2,666.2 L26.2,634.2 L30.2,610.2 L46.2,578.2 L86.2,566.2 L110.2,598.2 L130.2,606.2 L158.2,598.2 L182.2,614.2 L210.2,598.2 L214.2,622.2 L234.2,610.2 L266.2,618.2 L226.2,698.2 L194.2,718.2 Z" fill="none" stroke="#2f8f6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="123" y="683" text-anchor="middle" fill="#2f8f6f">愛知県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gifu">
+        <path d="M214.2,322.2 L226.2,346.2 L206.2,386.2 L218.2,402.2 L214.2,418.2 L190.2,446.2 L170.2,446.2 L162.2,466.2 L186.2,478.2 L206.2,506.2 L198.2,518.2 L222.2,542.2 L214.2,558.2 L222.2,570.2 L210.2,570.2 L218.2,586.2 L210.2,598.2 L182.2,614.2 L158.2,598.2 L130.2,606.2 L110.2,598.2 L86.2,566.2 L46.2,578.2 L30.2,610.2 L26.2,634.2 L-1.8,606.2 L-25.8,614.2 L-33.8,610.2 L-17.8,570.2 L-21.8,558.2 L-33.8,530.2 L-45.8,530.2 L-49.8,506.2 L-29.8,470.2 L-5.8,482.2 L-1.8,474.2 L50.2,470.2 L62.2,454.2 L38.2,422.2 L46.2,398.2 L66.2,358.2 L54.2,346.2 L70.2,326.2 L86.2,334.2 L90.2,350.2 L126.2,306.2 L138.2,314.2 L158.2,306.2 L158.2,314.2 L174.2,306.2 Z" fill="none" stroke="#b8862f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="106" y="479" text-anchor="middle" fill="#b8862f">岐阜県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="toyama">
+        <path d="M214.2,322.2 L174.2,306.2 L158.2,314.2 L158.2,306.2 L138.2,314.2 L126.2,306.2 L90.2,350.2 L86.2,334.2 L70.2,326.2 L54.2,346.2 L50.2,314.2 L58.2,282.2 L54.2,266.2 L62.2,254.2 L54.2,238.2 L66.2,230.2 L74.2,190.2 L106.2,182.2 L94.2,206.2 L142.2,234.2 L174.2,218.2 L182.2,186.2 L222.2,174.2 L238.2,186.2 L250.2,230.2 L246.2,274.2 L234.2,278.2 L238.2,290.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="136" y="266" text-anchor="middle" fill="#7a9e6f">富山県</text>
+      </g>
       <polygon class="area-pref-shape" points="434.2,234.2 398.2,246.2 402.2,254.2 382.2,270.2 378.2,298.2 390.2,318.2 426.2,318.2 430.2,342.2 418.2,350.2 426.2,374.2 414.2,378.2 426.2,390.2 426.2,414.2 442.2,422.2 446.2,442.2 434.2,450.2 418.2,438.2 394.2,446.2 374.2,426.2 334.2,470.2 346.2,482.2 334.2,490.2 342.2,510.2 326.2,530.2 326.2,578.2 266.2,618.2 234.2,610.2 214.2,622.2 210.2,598.2 218.2,586.2 210.2,570.2 222.2,570.2 214.2,558.2 222.2,542.2 198.2,518.2 206.2,506.2 186.2,478.2 162.2,466.2 170.2,446.2 190.2,446.2 214.2,418.2 218.2,402.2 206.2,386.2 226.2,346.2 214.2,322.2 238.2,290.2 234.2,278.2 246.2,274.2 250.2,230.2 270.2,202.2 270.2,190.2 298.2,194.2 298.2,214.2 306.2,218.2 338.2,202.2 354.2,210.2 354.2,190.2 374.2,170.2 402.2,162.2 414.2,170.2 414.2,190.2 434.2,206.2"/>
+      <text class="area-main-label" x="316" y="316" text-anchor="middle" style="font-size:26.2px;stroke-width:4.1px">長野県</text>
 
       <g class="area-pin" data-target="area-naganocity">
         <line class="area-pin-leader" x1="333.5" y1="258.1" x2="346.2" y2="172.5" style="stroke-width:1.3"/>
         <rect x="320.3" y="244.90000000000003" width="26.4" height="26.4" fill="transparent"/>
         <circle cx="333.5" cy="258.1" r="9.3" style="stroke-width:2.6"/>
-        <text x="346.2" y="172.5" text-anchor="middle" style="font-size:14.5px">長野市</text>
+        <text x="346.2" y="172.5" text-anchor="middle" style="font-size:16.7px">長野市</text>
       </g>
       <g class="area-pin" data-target="area-matsumoto">
         <line class="area-pin-leader" x1="288.4" y1="361.2" x2="215.5" y2="314.6" style="stroke-width:1.3"/>
         <rect x="275.2" y="348.0" width="26.4" height="26.4" fill="transparent"/>
         <circle cx="288.4" cy="361.2" r="9.3" style="stroke-width:2.6"/>
-        <text x="215.5" y="314.6" text-anchor="end" style="font-size:14.5px">松本</text>
+        <text x="215.5" y="314.6" text-anchor="end" style="font-size:16.7px">松本</text>
       </g>
       <g class="area-pin" data-target="area-kamikochi">
         <line class="area-pin-leader" x1="219.7" y1="358.2" x2="135.1" y2="340.2" style="stroke-width:1.3"/>
         <rect x="206.5" y="345.0" width="26.4" height="26.4" fill="transparent"/>
         <circle cx="219.7" cy="358.2" r="9.3" style="stroke-width:2.6"/>
-        <text x="135.1" y="340.2" text-anchor="end" style="font-size:14.5px">上高地</text>
+        <text x="135.1" y="340.2" text-anchor="end" style="font-size:16.7px">上高地</text>
       </g>
       <g class="area-pin" data-target="area-karuizawa">
         <line class="area-pin-leader" x1="422.4" y1="333.5" x2="502.0" y2="299.7" style="stroke-width:1.3"/>
         <rect x="409.2" y="320.3" width="26.4" height="26.4" fill="transparent"/>
         <circle cx="422.4" cy="333.5" r="9.3" style="stroke-width:2.6"/>
-        <text x="502.0" y="299.7" text-anchor="start" style="font-size:14.5px">軽井沢</text>
+        <text x="502.0" y="299.7" text-anchor="start" style="font-size:16.7px">軽井沢</text>
       </g>
       <g class="area-pin" data-target="area-hakuba">
         <line class="area-pin-leader" x1="265.8" y1="245.6" x2="235.5" y2="164.6" style="stroke-width:1.3"/>
         <rect x="252.60000000000002" y="232.4" width="26.4" height="26.4" fill="transparent"/>
         <circle cx="265.8" cy="245.6" r="9.3" style="stroke-width:2.6"/>
-        <text x="235.5" y="164.6" text-anchor="end" style="font-size:14.5px">白馬</text>
+        <text x="235.5" y="164.6" text-anchor="end" style="font-size:16.7px">白馬</text>
       </g>
     </svg>
   </div>

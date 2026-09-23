@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,37 @@
   <div class="area-map-wrap">
     <div class="area-map-title">長崎県内のエリア位置</div>
     <div class="area-map-hint">長崎県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 848.6 1008.6" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 929 1089" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="saga">
+        <path d="M552.3,552.3 L604.3,552.3 L628.3,576.3 L656.3,568.3 L652.3,592.3 L620.3,612.3 L612.3,640.3 L592.3,620.3 L568.3,644.3 L580.3,684.3 L548.3,672.3 L524.3,644.3 L528.3,628.3 L500.3,620.3 L492.3,592.3 L500.3,580.3 L512.3,596.3 L508.3,580.3 L516.3,564.3 L500.3,552.3 L504.3,544.3 L516.3,552.3 L516.3,528.3 L520.3,536.3 L536.3,536.3 L540.3,556.3 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="600" y="550" text-anchor="middle" fill="#7a9e6f">佐賀県</text>
+      </g>
       <path class="area-pref-shape" d="M448.3,240.3 L456.3,236.3 L464.3,244.3 L452.3,256.3 L456.3,272.3 L432.3,296.3 L428.3,312.3 L440.3,308.3 L432.3,324.3 L440.3,320.3 L428.3,336.3 L428.3,316.3 L420.3,324.3 L420.3,312.3 L416.3,324.3 L404.3,316.3 L412.3,316.3 L416.3,296.3 L424.3,296.3 L416.3,292.3 L432.3,276.3 L420.3,268.3 L428.3,248.3 L444.3,248.3 L448.3,240.3 Z M420.3,352.3 L408.3,376.3 L384.3,380.3 L396.3,324.3 L400.3,332.3 L416.3,336.3 L412.3,324.3 L416.3,340.3 L428.3,336.3 L420.3,352.3 Z M504.3,472.3 L508.3,480.3 L492.3,488.3 L476.3,472.3 L484.3,472.3 L480.3,460.3 L492.3,448.3 L504.3,456.3 L500.3,464.3 L508.3,468.3 L504.3,472.3 Z M348.3,676.3 L336.3,696.3 L340.3,676.3 L328.3,664.3 L340.3,660.3 L340.3,644.3 L348.3,644.3 L356.3,612.3 L348.3,656.3 L368.3,660.3 L356.3,668.3 L348.3,660.3 L348.3,676.3 Z M332.3,684.3 L320.3,680.3 L320.3,672.3 L328.3,680.3 L324.3,668.3 L332.3,684.3 Z M312.3,688.3 L316.3,676.3 L312.3,700.3 L300.3,680.3 L312.3,688.3 Z M260.3,708.3 L272.3,704.3 L276.3,712.3 L284.3,696.3 L300.3,736.3 L272.3,732.3 L272.3,752.3 L236.3,740.3 L240.3,732.3 L248.3,740.3 L252.3,736.3 L244.3,736.3 L256.3,724.3 L252.3,700.3 L260.3,708.3 Z M496.3,556.3 L484.3,560.3 L492.3,548.3 L496.3,556.3 Z M504.3,564.3 L516.3,572.3 L504.3,580.3 L504.3,564.3 Z M352.3,588.3 L360.3,576.3 L368.3,584.3 L352.3,588.3 Z M452.3,540.3 L440.3,544.3 L456.3,532.3 L452.3,540.3 Z M500.3,580.3 L492.3,592.3 L500.3,620.3 L528.3,628.3 L524.3,644.3 L548.3,672.3 L580.3,684.3 L552.3,704.3 L604.3,708.3 L612.3,728.3 L604.3,756.3 L564.3,772.3 L556.3,748.3 L576.3,732.3 L572.3,724.3 L552.3,720.3 L520.3,728.3 L508.3,752.3 L476.3,772.3 L492.3,752.3 L488.3,740.3 L496.3,744.3 L504.3,728.3 L492.3,736.3 L488.3,708.3 L472.3,704.3 L460.3,680.3 L472.3,636.3 L488.3,652.3 L484.3,668.3 L488.3,660.3 L500.3,668.3 L492.3,696.3 L536.3,708.3 L520.3,684.3 L524.3,664.3 L512.3,648.3 L500.3,656.3 L496.3,632.3 L484.3,632.3 L484.3,624.3 L468.3,636.3 L476.3,628.3 L464.3,620.3 L464.3,608.3 L464.3,616.3 L448.3,608.3 L464.3,584.3 L452.3,580.3 L456.3,568.3 L476.3,564.3 L476.3,576.3 L496.3,572.3 L500.3,580.3 Z M432.3,588.3 L428.3,604.3 L404.3,612.3 L424.3,600.3 L416.3,592.3 L428.3,572.3 L444.3,572.3 L452.3,560.3 L456.3,572.3 L432.3,588.3 Z M296.3,696.3 L296.3,688.3 L308.3,700.3 L296.3,708.3 L296.3,696.3 Z M492.3,640.3 L488.3,652.3 L484.3,640.3 L492.3,628.3 L492.3,640.3 Z"/>
+      <text class="area-main-label" x="507" y="587" text-anchor="middle" style="font-size:36.5px;stroke-width:5.7px">長崎県</text>
 
       <g class="area-pin" data-target="area-nagasakicity">
         <line class="area-pin-leader" x1="496.0" y1="734.3" x2="536.1" y2="831.1" style="stroke-width:1.8"/>
         <rect x="477.6" y="715.9" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="496.0" cy="734.3" r="12.9" style="stroke-width:3.7"/>
-        <text x="536.1" y="831.1" text-anchor="start" style="font-size:20.3px">長崎市</text>
+        <text x="536.1" y="831.1" text-anchor="start" style="font-size:23.3px">長崎市</text>
       </g>
       <g class="area-pin" data-target="area-sasebo">
         <line class="area-pin-leader" x1="464.4" y1="630.9" x2="518.8" y2="720.4" style="stroke-width:1.8"/>
         <rect x="446.0" y="612.5" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="464.4" cy="630.9" r="12.9" style="stroke-width:3.7"/>
-        <text x="518.8" y="720.4" text-anchor="start" style="font-size:20.3px">佐世保</text>
+        <text x="518.8" y="720.4" text-anchor="start" style="font-size:23.3px">佐世保</text>
       </g>
       <g class="area-pin" data-target="area-unzenshimabara">
         <line class="area-pin-leader" x1="578.4" y1="734.4" x2="649.6" y2="811.2" style="stroke-width:1.8"/>
         <rect x="560.0" y="716.0" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="578.4" cy="734.4" r="12.9" style="stroke-width:3.7"/>
-        <text x="649.6" y="811.2" text-anchor="start" style="font-size:20.3px">雲仙・島原</text>
+        <text x="649.6" y="811.2" text-anchor="start" style="font-size:23.3px">雲仙・島原</text>
       </g>
       <g class="area-pin" data-target="area-gotoislands">
         <line class="area-pin-leader" x1="283.7" y1="751.2" x2="217.2" y2="832.2" style="stroke-width:1.8"/>
         <rect x="265.3" y="732.8000000000001" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="283.7" cy="751.2" r="12.9" style="stroke-width:3.7"/>
-        <text x="217.2" y="832.2" text-anchor="end" style="font-size:20.3px">五島列島</text>
+        <text x="217.2" y="832.2" text-anchor="end" style="font-size:23.3px">五島列島</text>
       </g>
     </svg>
   </div>

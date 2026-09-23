@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,41 @@
   <div class="area-map-wrap">
     <div class="area-map-title">高知県内のエリア位置</div>
     <div class="area-map-hint">高知県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 946.4 850.4" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 1026 930" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tokushima">
+        <path d="M693.2,209.2 L725.2,201.2 L725.2,213.2 L737.2,217.2 L721.2,253.2 L749.2,281.2 L729.2,297.2 L757.2,305.2 L681.2,345.2 L661.2,373.2 L637.2,369.2 L629.2,353.2 L637.2,337.2 L609.2,333.2 L605.2,301.2 L581.2,309.2 L529.2,285.2 L537.2,253.2 L573.2,229.2 L601.2,241.2 L637.2,213.2 L689.2,221.2 L693.2,209.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="680" y="230" text-anchor="middle" fill="#7a9e6f">徳島県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ehime">
+        <path d="M309.2,513.2 L281.2,505.2 L281.2,517.2 L273.2,517.2 L277.2,497.2 L289.2,501.2 L265.2,477.2 L277.2,477.2 L269.2,461.2 L281.2,461.2 L269.2,457.2 L273.2,449.2 L261.2,441.2 L277.2,453.2 L293.2,437.2 L293.2,425.2 L277.2,425.2 L289.2,413.2 L257.2,413.2 L265.2,401.2 L257.2,397.2 L269.2,377.2 L245.2,373.2 L213.2,397.2 L181.2,401.2 L321.2,321.2 L345.2,245.2 L381.2,233.2 L373.2,217.2 L385.2,213.2 L417.2,269.2 L461.2,253.2 L501.2,261.2 L517.2,245.2 L537.2,253.2 L529.2,285.2 L433.2,301.2 L405.2,337.2 L393.2,377.2 L349.2,381.2 L365.2,417.2 L345.2,429.2 L321.2,461.2 L305.2,449.2 L317.2,501.2 L309.2,513.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="327" y="395" text-anchor="middle" fill="#c47a2f">愛媛県</text>
+      </g>
       <path class="area-pref-shape" d="M529.2,285.2 L581.2,309.2 L605.2,301.2 L609.2,333.2 L637.2,337.2 L629.2,353.2 L637.2,369.2 L661.2,373.2 L633.2,449.2 L585.2,385.2 L545.2,369.2 L505.2,377.2 L505.2,369.2 L509.2,381.2 L461.2,397.2 L485.2,397.2 L461.2,401.2 L453.2,413.2 L449.2,401.2 L437.2,417.2 L441.2,437.2 L433.2,461.2 L421.2,461.2 L405.2,493.2 L385.2,497.2 L385.2,529.2 L373.2,541.2 L385.2,565.2 L369.2,549.2 L341.2,557.2 L321.2,545.2 L305.2,553.2 L309.2,529.2 L325.2,525.2 L321.2,513.2 L309.2,513.2 L317.2,501.2 L305.2,449.2 L321.2,461.2 L345.2,429.2 L365.2,417.2 L349.2,381.2 L393.2,377.2 L405.2,337.2 L433.2,301.2 L529.2,285.2 Z M289.2,561.2 L285.2,565.2 L285.2,553.2 L289.2,561.2 Z"/>
+      <text class="area-main-label" x="446" y="359" text-anchor="middle" style="font-size:40.7px;stroke-width:6.4px">高知県</text>
 
       <g class="area-pin" data-target="area-kochicity">
         <line class="area-pin-leader" x1="490.1" y1="361.2" x2="535.0" y2="301.1" style="stroke-width:2.1"/>
         <rect x="469.5" y="340.59999999999997" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="490.1" cy="361.2" r="14.4" style="stroke-width:4.1"/>
-        <text x="535.0" y="301.1" text-anchor="start" style="font-size:22.6px">高知市・桂浜</text>
+        <text x="535.0" y="301.1" text-anchor="start" style="font-size:26.0px">高知市・桂浜</text>
       </g>
       <g class="area-pin" data-target="area-shimanto">
         <line class="area-pin-leader" x1="365.2" y1="494.0" x2="307.6" y2="542.0" style="stroke-width:2.1"/>
         <rect x="344.59999999999997" y="473.4" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="365.2" cy="494.0" r="14.4" style="stroke-width:4.1"/>
-        <text x="307.6" y="542.0" text-anchor="end" style="font-size:22.6px">四万十川</text>
+        <text x="307.6" y="542.0" text-anchor="end" style="font-size:26.0px">四万十川</text>
       </g>
       <g class="area-pin" data-target="area-niyodoriver">
         <line class="area-pin-leader" x1="438.4" y1="367.4" x2="443.8" y2="292.6" style="stroke-width:2.1"/>
         <rect x="417.79999999999995" y="346.79999999999995" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="438.4" cy="367.4" r="14.4" style="stroke-width:4.1"/>
-        <text x="443.8" y="292.6" text-anchor="middle" style="font-size:22.6px">仁淀川</text>
+        <text x="443.8" y="292.6" text-anchor="middle" style="font-size:26.0px">仁淀川</text>
       </g>
       <g class="area-pin" data-target="area-kashiwajima">
         <line class="area-pin-leader" x1="309.6" y1="545.4" x2="253.1" y2="594.7" style="stroke-width:2.1"/>
         <rect x="289.0" y="524.8" width="41.2" height="41.2" fill="transparent"/>
         <circle cx="309.6" cy="545.4" r="14.4" style="stroke-width:4.1"/>
-        <text x="253.1" y="594.7" text-anchor="end" style="font-size:22.6px">柏島</text>
+        <text x="253.1" y="594.7" text-anchor="end" style="font-size:26.0px">柏島</text>
       </g>
     </svg>
   </div>

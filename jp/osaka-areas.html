@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,49 @@
   <div class="area-map-wrap">
     <div class="area-map-title">大阪府内のエリア位置</div>
     <div class="area-map-hint">大阪府の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 356.5 412.5" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-98 -114 494 668" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kyoto">
+        <path d="M246.2,178.2 L234.2,146.2 L218.2,142.2 L222.2,130.2 L206.2,142.2 L174.2,110.2 L178.2,90.2 L138.2,82.2 L130.2,54.2 L110.2,62.2 L82.2,42.2 L86.2,18.2 L110.2,18.2 L110.2,-5.8 L106.2,-13.8 L86.2,-9.8 L70.2,-29.8 L74.2,-45.8 L82.2,-33.8 L78.2,-41.8 L146.2,-73.8 L162.2,-45.8 L130.2,-17.8 L142.2,-13.8 L150.2,-29.8 L150.2,-13.8 L166.2,-5.8 L162.2,10.2 L170.2,-1.8 L178.2,2.2 L170.2,-17.8 L194.2,-29.8 L198.2,-17.8 L194.2,6.2 L206.2,26.2 L254.2,34.2 L274.2,54.2 L262.2,110.2 L274.2,150.2 L290.2,150.2 L306.2,174.2 L310.2,190.2 L302.2,198.2 L286.2,186.2 L270.2,198.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="180" y="50" text-anchor="middle" fill="#7a9e6f">京都府</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nara">
+        <path d="M298.2,370.2 L278.2,382.2 L278.2,394.2 L270.2,394.2 L270.2,406.2 L266.2,406.2 L214.2,398.2 L222.2,374.2 L202.2,346.2 L226.2,318.2 L242.2,314.2 L226.2,278.2 L234.2,258.2 L226.2,222.2 L246.2,178.2 L270.2,198.2 L286.2,186.2 L302.2,198.2 L310.2,190.2 L318.2,206.2 L306.2,210.2 L314.2,214.2 L310.2,230.2 L346.2,250.2 L314.2,274.2 L326.2,294.2 L318.2,298.2 L326.2,310.2 L318.2,326.2 L322.2,354.2 L318.2,366.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="281" y="295" text-anchor="middle" fill="#c47a2f">奈良県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="wakayama">
+        <path d="M266.2,406.2 L278.2,430.2 L298.2,442.2 L282.2,462.2 L286.2,478.2 L254.2,498.2 L250.2,514.2 L242.2,514.2 L246.2,502.2 L178.2,482.2 L158.2,454.2 L170.2,442.2 L138.2,426.2 L118.2,398.2 L102.2,398.2 L114.2,378.2 L102.2,374.2 L126.2,362.2 L106.2,350.2 L122.2,342.2 L118.2,334.2 L134.2,334.2 L102.2,302.2 L110.2,290.2 L122.2,302.2 L226.2,278.2 L242.2,314.2 L226.2,318.2 L202.2,346.2 L222.2,374.2 L214.2,398.2 L266.2,406.2 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="188" y="395" text-anchor="middle" fill="#7a3b8c">和歌山県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hyogo">
+        <path d="M-45.8,186.2 L-41.8,174.2 L-57.8,150.2 L-49.8,138.2 L-53.8,110.2 L-21.8,78.2 L-25.8,54.2 L-1.8,46.2 L-1.8,30.2 L-29.8,-37.8 L6.2,-49.8 L74.2,-45.8 L70.2,-29.8 L86.2,-9.8 L106.2,-13.8 L110.2,-5.8 L110.2,18.2 L86.2,18.2 L82.2,42.2 L110.2,62.2 L130.2,54.2 L138.2,82.2 L178.2,90.2 L174.2,110.2 L162.2,114.2 L166.2,130.2 L190.2,142.2 L182.2,146.2 L190.2,190.2 L178.2,198.2 L154.2,190.2 L102.2,214.2 L42.2,174.2 L-13.8,178.2 L-13.8,162.2 L-25.8,182.2 L-37.8,174.2 L-45.8,186.2 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="62" y="96" text-anchor="middle" fill="#2f6690">兵庫県</text>
+      </g>
       <polygon class="area-pref-shape" points="174.2,110.2 206.2,142.2 222.2,130.2 218.2,142.2 234.2,146.2 246.2,178.2 226.2,222.2 234.2,258.2 226.2,278.2 122.2,302.2 110.2,290.2 138.2,286.2 166.2,258.2 178.2,222.2 186.2,230.2 178.2,198.2 190.2,190.2 182.2,146.2 190.2,142.2 166.2,130.2 162.2,114.2"/>
+      <text class="area-main-label" x="210" y="250" text-anchor="middle" style="font-size:22px;stroke-width:3px">大阪府</text>
 
       <g class="area-pin" data-target="area-centralosaka">
         <line class="area-pin-leader" x1="201.2" y1="166.5" x2="216.0" y2="131.9" style="stroke-width:0.8"/>
         <rect x="193.39999999999998" y="158.7" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="201.2" cy="166.5" r="5.4" style="stroke-width:1.6"/>
-        <text x="216.0" y="131.9" text-anchor="start" style="font-size:8.5px">大阪市中心部</text>
+        <text x="216.0" y="131.9" text-anchor="start" style="font-size:9.8px">大阪市中心部</text>
       </g>
       <g class="area-pin" data-target="area-osakacastle">
         <line class="area-pin-leader" x1="201.4" y1="157.7" x2="213.4" y2="122.1" style="stroke-width:0.8"/>
         <rect x="193.6" y="149.89999999999998" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="201.4" cy="157.7" r="5.4" style="stroke-width:1.6"/>
-        <text x="213.4" y="122.1" text-anchor="start" style="font-size:8.5px">大阪城・大阪北部</text>
+        <text x="213.4" y="122.1" text-anchor="start" style="font-size:9.8px">大阪城・大阪北部</text>
       </g>
       <g class="area-pin" data-target="area-bayarea">
         <line class="area-pin-leader" x1="185.6" y1="167.6" x2="181.7" y2="130.2" style="stroke-width:0.8"/>
         <rect x="177.79999999999998" y="159.79999999999998" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="185.6" cy="167.6" r="5.4" style="stroke-width:1.6"/>
-        <text x="181.7" y="130.2" text-anchor="middle" style="font-size:8.5px">ベイエリア</text>
+        <text x="181.7" y="130.2" text-anchor="middle" style="font-size:9.8px">ベイエリア</text>
       </g>
       <g class="area-pin" data-target="area-sakai">
         <line class="area-pin-leader" x1="197.1" y1="199.8" x2="231.6" y2="214.8" style="stroke-width:0.8"/>
         <rect x="189.29999999999998" y="192.0" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="197.1" cy="199.8" r="5.4" style="stroke-width:1.6"/>
-        <text x="231.6" y="214.8" text-anchor="start" style="font-size:8.5px">堺・南大阪</text>
+        <text x="231.6" y="214.8" text-anchor="start" style="font-size:9.8px">堺・南大阪</text>
       </g>
     </svg>
   </div>

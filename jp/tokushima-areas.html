@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,26 +67,39 @@
   <div class="area-map-wrap">
     <div class="area-map-title">徳島県内のエリア位置</div>
     <div class="area-map-hint">徳島県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 430.2 374.2" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-287 -40 757 545" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kagawa">
+        <path d="M109.1,153.1 L89.1,145.1 L101.1,105.1 L85.1,89.1 L109.1,101.1 L161.1,61.1 L189.1,73.1 L205.1,57.1 L209.1,77.1 L221.1,65.1 L233.1,77.1 L229.1,89.1 L265.1,109.1 L261.1,121.1 L209.1,113.1 L173.1,141.1 L145.1,129.1 L109.1,153.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="172" y="103" text-anchor="middle" fill="#7a9e6f">香川県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ehime">
+        <path d="M-118.9,413.1 L-146.9,405.1 L-146.9,417.1 L-154.9,417.1 L-150.9,397.1 L-138.9,401.1 L-162.9,377.1 L-150.9,377.1 L-158.9,361.1 L-146.9,361.1 L-158.9,357.1 L-154.9,349.1 L-166.9,341.1 L-150.9,353.1 L-134.9,337.1 L-134.9,325.1 L-150.9,325.1 L-138.9,313.1 L-170.9,313.1 L-162.9,301.1 L-170.9,297.1 L-158.9,277.1 L-182.9,273.1 L-214.9,297.1 L-246.9,301.1 L-106.9,221.1 L-82.9,145.1 L-46.9,133.1 L-54.9,117.1 L-42.9,113.1 L-10.9,169.1 L33.1,153.1 L73.1,161.1 L89.1,145.1 L109.1,153.1 L101.1,185.1 L5.1,201.1 L-22.9,237.1 L-34.9,277.1 L-78.9,281.1 L-62.9,317.1 L-82.9,329.1 L-106.9,361.1 L-122.9,349.1 L-110.9,401.1 L-118.9,413.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="-101" y="295" text-anchor="middle" fill="#c47a2f">愛媛県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kochi">
+        <path d="M101.1,185.1 L153.1,209.1 L177.1,201.1 L181.1,233.1 L209.1,237.1 L201.1,253.1 L209.1,269.1 L233.1,273.1 L205.1,349.1 L157.1,285.1 L117.1,269.1 L77.1,277.1 L77.1,269.1 L81.1,281.1 L33.1,297.1 L57.1,297.1 L33.1,301.1 L25.1,313.1 L21.1,301.1 L9.1,317.1 L13.1,337.1 L5.1,361.1 L-6.9,361.1 L-22.9,393.1 L-42.9,397.1 L-42.9,429.1 L-54.9,441.1 L-42.9,465.1 L-58.9,449.1 L-86.9,457.1 L-106.9,445.1 L-122.9,453.1 L-118.9,429.1 L-102.9,425.1 L-106.9,413.1 L-118.9,413.1 L-110.9,401.1 L-122.9,349.1 L-106.9,361.1 L-82.9,329.1 L-62.9,317.1 L-78.9,281.1 L-34.9,277.1 L-22.9,237.1 L5.1,201.1 L101.1,185.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="18" y="327" text-anchor="middle" fill="#7a3b8c">高知県</text>
+      </g>
       <path class="area-pref-shape" d="M301.1,109.1 L309.1,101.1 L305.1,117.1 L301.1,109.1 Z M265.1,109.1 L297.1,101.1 L297.1,113.1 L309.1,117.1 L293.1,153.1 L321.1,181.1 L301.1,197.1 L329.1,205.1 L253.1,245.1 L233.1,273.1 L209.1,269.1 L201.1,253.1 L209.1,237.1 L181.1,233.1 L177.1,201.1 L153.1,209.1 L101.1,185.1 L109.1,153.1 L145.1,129.1 L173.1,141.1 L209.1,113.1 L261.1,121.1 L265.1,109.1 Z"/>
+      <text class="area-main-label" x="200" y="290" text-anchor="middle" style="font-size:22px;stroke-width:3px">徳島県</text>
 
       <g class="area-pin" data-target="area-tokushimacity">
         <line class="area-pin-leader" x1="284.6" y1="155.3" x2="328.9" y2="144.2" style="stroke-width:0.9"/>
         <rect x="275.20000000000005" y="145.9" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="284.6" cy="155.3" r="6.5" style="stroke-width:1.9"/>
-        <text x="328.9" y="144.2" text-anchor="start" style="font-size:10.3px">徳島市</text>
+        <text x="328.9" y="144.2" text-anchor="start" style="font-size:11.8px">徳島市</text>
       </g>
       <g class="area-pin" data-target="area-naruto">
         <line class="area-pin-leader" x1="296.1" y1="125.5" x2="332.9" y2="98.4" style="stroke-width:0.9"/>
         <rect x="286.70000000000005" y="116.1" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="296.1" cy="125.5" r="6.5" style="stroke-width:1.9"/>
-        <text x="332.9" y="98.4" text-anchor="start" style="font-size:10.3px">鳴門</text>
+        <text x="332.9" y="98.4" text-anchor="start" style="font-size:11.8px">鳴門</text>
       </g>
       <g class="area-pin" data-target="area-iyavalley">
         <line class="area-pin-leader" x1="134.7" y1="209.8" x2="92.4" y2="227.2" style="stroke-width:0.9"/>
         <rect x="125.29999999999998" y="200.4" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="134.7" cy="209.8" r="6.5" style="stroke-width:1.9"/>
-        <text x="92.4" y="227.2" text-anchor="end" style="font-size:10.3px">祖谷渓</text>
+        <text x="92.4" y="227.2" text-anchor="end" style="font-size:11.8px">祖谷渓</text>
       </g>
     </svg>
   </div>

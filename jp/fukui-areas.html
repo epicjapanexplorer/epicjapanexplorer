@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,49 @@
   <div class="area-map-wrap">
     <div class="area-map-title">福井県内のエリア位置</div>
     <div class="area-map-hint">福井県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 498.2 450.2" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-55 -239 648 784" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="ishikawa">
+        <path d="M381.1,109.1 L393.1,121.1 L373.1,161.1 L353.1,165.1 L333.1,145.1 L293.1,141.1 L269.1,109.1 L329.1,49.1 L373.1,-22.9 L377.1,-66.9 L369.1,-82.9 L369.1,-102.9 L357.1,-106.9 L377.1,-158.9 L477.1,-198.9 L493.1,-194.9 L497.1,-178.9 L473.1,-174.9 L469.1,-138.9 L453.1,-142.9 L425.1,-110.9 L417.1,-126.9 L405.1,-122.9 L397.1,-86.9 L421.1,-78.9 L433.1,-94.9 L433.1,-54.9 L401.1,-46.9 L393.1,-6.9 L381.1,1.1 L389.1,17.1 L381.1,29.1 L385.1,45.1 L377.1,77.1 L381.1,109.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="395" y="-29" text-anchor="middle" fill="#7a9e6f">石川県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gifu">
+        <path d="M541.1,85.1 L553.1,109.1 L533.1,149.1 L545.1,165.1 L541.1,181.1 L517.1,209.1 L497.1,209.1 L489.1,229.1 L513.1,241.1 L533.1,269.1 L525.1,281.1 L549.1,305.1 L541.1,321.1 L549.1,333.1 L537.1,333.1 L545.1,349.1 L537.1,361.1 L509.1,377.1 L485.1,361.1 L457.1,369.1 L437.1,361.1 L413.1,329.1 L373.1,341.1 L357.1,373.1 L353.1,397.1 L325.1,369.1 L301.1,377.1 L293.1,373.1 L309.1,333.1 L305.1,321.1 L293.1,293.1 L281.1,293.1 L277.1,269.1 L297.1,233.1 L321.1,245.1 L325.1,237.1 L377.1,233.1 L389.1,217.1 L365.1,185.1 L373.1,161.1 L393.1,121.1 L381.1,109.1 L397.1,89.1 L413.1,97.1 L417.1,113.1 L453.1,69.1 L465.1,77.1 L485.1,69.1 L485.1,77.1 L501.1,69.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="433" y="241" text-anchor="middle" fill="#c47a2f">岐阜県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shiga">
+        <path d="M249.1,257.1 L277.1,269.1 L281.1,293.1 L293.1,293.1 L305.1,321.1 L309.1,333.1 L293.1,373.1 L301.1,377.1 L305.1,417.1 L289.1,457.1 L265.1,469.1 L237.1,457.1 L233.1,477.1 L221.1,481.1 L205.1,457.1 L189.1,457.1 L177.1,417.1 L189.1,361.1 L169.1,341.1 L181.1,325.1 L193.1,329.1 L205.1,301.1 L217.1,309.1 L241.1,297.1 L241.1,285.1 L253.1,289.1 L249.1,257.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="243" y="359" text-anchor="middle" fill="#7a3b8c">滋賀県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kyoto">
+        <path d="M161.1,485.1 L149.1,453.1 L133.1,449.1 L137.1,437.1 L121.1,449.1 L89.1,417.1 L93.1,397.1 L53.1,389.1 L45.1,361.1 L25.1,369.1 L-2.9,349.1 L1.1,325.1 L25.1,325.1 L25.1,301.1 L21.1,293.1 L1.1,297.1 L-14.9,277.1 L-10.9,261.1 L-2.9,273.1 L-6.9,265.1 L61.1,233.1 L77.1,261.1 L45.1,289.1 L57.1,293.1 L65.1,277.1 L65.1,293.1 L81.1,301.1 L77.1,317.1 L85.1,305.1 L93.1,309.1 L85.1,289.1 L109.1,277.1 L113.1,289.1 L109.1,313.1 L121.1,333.1 L169.1,341.1 L189.1,361.1 L177.1,417.1 L189.1,457.1 L205.1,457.1 L221.1,481.1 L225.1,497.1 L217.1,505.1 L201.1,493.1 L185.1,505.1 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="95" y="357" text-anchor="middle" fill="#2f6690">京都府</text>
+      </g>
       <polygon class="area-pref-shape" points="269.1,109.1 293.1,141.1 333.1,145.1 353.1,165.1 373.1,161.1 365.1,185.1 389.1,217.1 377.1,233.1 325.1,237.1 321.1,245.1 297.1,233.1 277.1,269.1 249.1,257.1 253.1,289.1 241.1,285.1 241.1,297.1 217.1,309.1 205.1,301.1 193.1,329.1 181.1,325.1 169.1,341.1 121.1,333.1 109.1,313.1 113.1,289.1 121.1,305.1 149.1,293.1 133.1,305.1 161.1,309.1 169.1,297.1 161.1,301.1 161.1,289.1 185.1,297.1 177.1,289.1 189.1,281.1 181.1,269.1 213.1,273.1 209.1,249.1 221.1,241.1 225.1,261.1 233.1,265.1 237.1,237.1 209.1,185.1 245.1,133.1 245.1,117.1"/>
+      <text class="area-main-label" x="229" y="219" text-anchor="middle" style="font-size:22px;stroke-width:3.3px">福井県</text>
 
       <g class="area-pin" data-target="area-eiheiji">
         <line class="area-pin-leader" x1="296.5" y1="166.9" x2="331.8" y2="120.7" style="stroke-width:1.1"/>
         <rect x="285.7" y="156.1" width="21.6" height="21.6" fill="transparent"/>
         <circle cx="296.5" cy="166.9" r="7.6" style="stroke-width:2.2"/>
-        <text x="331.8" y="120.7" text-anchor="start" style="font-size:11.9px">永平寺</text>
+        <text x="331.8" y="120.7" text-anchor="start" style="font-size:13.7px">永平寺</text>
       </g>
       <g class="area-pin" data-target="area-tojinbo">
         <line class="area-pin-leader" x1="249.7" y1="122.8" x2="258.6" y2="65.3" style="stroke-width:1.1"/>
         <rect x="238.89999999999998" y="112.0" width="21.6" height="21.6" fill="transparent"/>
         <circle cx="249.7" cy="122.8" r="7.6" style="stroke-width:2.2"/>
-        <text x="258.6" y="65.3" text-anchor="middle" style="font-size:11.9px">東尋坊</text>
+        <text x="258.6" y="65.3" text-anchor="middle" style="font-size:13.7px">東尋坊</text>
       </g>
       <g class="area-pin" data-target="area-awaraonsen">
         <line class="area-pin-leader" x1="272.4" y1="129.5" x2="291.3" y2="74.5" style="stroke-width:1.1"/>
         <rect x="261.59999999999997" y="118.7" width="21.6" height="21.6" fill="transparent"/>
         <circle cx="272.4" cy="129.5" r="7.6" style="stroke-width:2.2"/>
-        <text x="291.3" y="74.5" text-anchor="start" style="font-size:11.9px">あわら温泉</text>
+        <text x="291.3" y="74.5" text-anchor="start" style="font-size:13.7px">あわら温泉</text>
       </g>
       <g class="area-pin" data-target="area-tsuruga">
         <line class="area-pin-leader" x1="236.8" y1="263.9" x2="273.2" y2="309.3" style="stroke-width:1.1"/>
         <rect x="226.0" y="253.09999999999997" width="21.6" height="21.6" fill="transparent"/>
         <circle cx="236.8" cy="263.9" r="7.6" style="stroke-width:2.2"/>
-        <text x="273.2" y="309.3" text-anchor="start" style="font-size:11.9px">敦賀</text>
+        <text x="273.2" y="309.3" text-anchor="start" style="font-size:13.7px">敦賀</text>
       </g>
     </svg>
   </div>

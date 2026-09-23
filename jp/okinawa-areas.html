@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,38 +67,39 @@
   <div class="area-map-wrap">
     <div class="area-map-title">沖縄県内のエリア位置</div>
     <div class="area-map-hint">沖縄県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 438.7 466.7" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="0 0 439 467" xmlns="http://www.w3.org/2000/svg">
       <polygon class="area-pref-shape" points="209.4,221.4 225.4,209.4 205.4,201.4 201.4,173.4 229.4,181.4 229.4,197.4 257.4,193.4 253.4,185.4 289.4,141.4 297.4,161.4 297.4,177.4 281.4,201.4 261.4,201.4 257.4,217.4 233.4,217.4 237.4,225.4 213.4,241.4 185.4,241.4 205.4,277.4 185.4,265.4 165.4,297.4 181.4,305.4 141.4,325.4 141.4,293.4 169.4,269.4 161.4,237.4 181.4,241.4"/>
+      <text class="area-main-label" x="170" y="200" text-anchor="middle" style="font-size:22px;stroke-width:3px">沖縄県</text>
 
       <g class="area-pin" data-target="area-naha">
         <line class="area-pin-leader" x1="158.2" y1="294.9" x2="177.5" y2="328.3" style="stroke-width:1.0"/>
         <rect x="148.7" y="285.4" width="19.0" height="19.0" fill="transparent"/>
         <circle cx="158.2" cy="294.9" r="6.7" style="stroke-width:1.9"/>
-        <text x="177.5" y="328.3" text-anchor="start" style="font-size:10.5px">那覇・南部</text>
+        <text x="177.5" y="328.3" text-anchor="start" style="font-size:12.1px">那覇・南部</text>
       </g>
       <g class="area-pin" data-target="area-centralokinawa">
         <line class="area-pin-leader" x1="184.1" y1="266.8" x2="217.5" y2="247.5" style="stroke-width:1.0"/>
         <rect x="174.6" y="257.3" width="19.0" height="19.0" fill="transparent"/>
         <circle cx="184.1" cy="266.8" r="6.7" style="stroke-width:1.9"/>
-        <text x="217.5" y="247.5" text-anchor="start" style="font-size:10.5px">中部</text>
+        <text x="217.5" y="247.5" text-anchor="start" style="font-size:12.1px">中部</text>
       </g>
       <g class="area-pin" data-target="area-northernokinawa">
         <line class="area-pin-leader" x1="269.6" y1="178.9" x2="298.1" y2="152.8" style="stroke-width:1.0"/>
         <rect x="260.1" y="169.4" width="19.0" height="19.0" fill="transparent"/>
         <circle cx="269.6" cy="178.9" r="6.7" style="stroke-width:1.9"/>
-        <text x="298.1" y="152.8" text-anchor="start" style="font-size:10.5px">北部・やんばる</text>
+        <text x="298.1" y="152.8" text-anchor="start" style="font-size:12.1px">北部・やんばる</text>
       </g>
       <g class="area-pin" data-target="area-miyako">
         <line class="area-pin-leader" x1="93.4" y1="361.4" x2="80.2" y2="397.6" style="stroke-width:1.0"/>
         <rect x="83.9" y="351.9" width="19.0" height="19.0" fill="transparent"/>
         <circle cx="93.4" cy="361.4" r="6.7" style="stroke-width:1.9"/>
-        <text x="80.2" y="397.6" text-anchor="end" style="font-size:10.5px">宮古島</text>
+        <text x="80.2" y="397.6" text-anchor="end" style="font-size:12.1px">宮古島</text>
       </g>
       <g class="area-pin" data-target="area-ishigaki">
         <line class="area-pin-leader" x1="53.4" y1="413.4" x2="72.7" y2="446.8" style="stroke-width:1.0"/>
         <rect x="43.9" y="403.9" width="19.0" height="19.0" fill="transparent"/>
         <circle cx="53.4" cy="413.4" r="6.7" style="stroke-width:1.9"/>
-        <text x="72.7" y="446.8" text-anchor="start" style="font-size:10.5px">石垣・八重山諸島</text>
+        <text x="72.7" y="446.8" text-anchor="start" style="font-size:12.1px">石垣・八重山諸島</text>
       </g>
     </svg>
   </div>

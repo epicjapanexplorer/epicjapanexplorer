@@ -30,6 +30,9 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
@@ -64,32 +67,45 @@
   <div class="area-map-wrap">
     <div class="area-map-title">岡山県内のエリア位置</div>
     <div class="area-map-hint">岡山県の実際の県境データ(本サイトのメイン地図と同じデータ)— ピンをクリックすると該当エリアへ移動します。</div>
-    <svg class="area-map-svg" viewBox="0 0 434.6 430.6" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-201 -40 788 511" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tottori">
+        <path d="M99.3,171.3 L71.3,163.3 L87.3,139.3 L79.3,127.3 L111.3,119.3 L115.3,83.3 L91.3,51.3 L99.3,47.3 L107.3,63.3 L131.3,71.3 L163.3,55.3 L207.3,63.3 L291.3,59.3 L327.3,39.3 L355.3,107.3 L355.3,123.3 L331.3,131.3 L283.3,147.3 L279.3,123.3 L251.3,111.3 L255.3,103.3 L215.3,127.3 L199.3,107.3 L171.3,99.3 L159.3,123.3 L151.3,127.3 L155.3,139.3 L127.3,139.3 L131.3,155.3 L103.3,159.3 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="150" y="70" text-anchor="middle" fill="#7a9e6f">鳥取県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hyogo">
+        <path d="M311.3,263.3 L315.3,251.3 L299.3,227.3 L307.3,215.3 L303.3,187.3 L335.3,155.3 L331.3,131.3 L355.3,123.3 L355.3,107.3 L327.3,39.3 L363.3,27.3 L431.3,31.3 L427.3,47.3 L443.3,67.3 L463.3,63.3 L467.3,71.3 L467.3,95.3 L443.3,95.3 L439.3,119.3 L467.3,139.3 L487.3,131.3 L495.3,159.3 L535.3,167.3 L531.3,187.3 L519.3,191.3 L523.3,207.3 L547.3,219.3 L539.3,223.3 L547.3,267.3 L535.3,275.3 L511.3,267.3 L459.3,291.3 L399.3,251.3 L343.3,255.3 L343.3,239.3 L331.3,259.3 L319.3,251.3 L311.3,263.3 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="419" y="173" text-anchor="middle" fill="#c47a2f">兵庫県</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hiroshima">
+        <path d="M131.3,315.3 L127.3,323.3 L115.3,315.3 L127.3,327.3 L119.3,323.3 L111.3,343.3 L91.3,335.3 L91.3,323.3 L55.3,331.3 L43.3,347.3 L-4.7,351.3 L-12.7,367.3 L-40.7,375.3 L-48.7,367.3 L-60.7,379.3 L-56.7,367.3 L-68.7,343.3 L-60.7,335.3 L-92.7,331.3 L-124.7,359.3 L-120.7,371.3 L-140.7,363.3 L-144.7,339.3 L-152.7,331.3 L-152.7,303.3 L-160.7,295.3 L-140.7,275.3 L-132.7,251.3 L-136.7,243.3 L-112.7,223.3 L-80.7,231.3 L-72.7,219.3 L-52.7,227.3 L-20.7,219.3 L-32.7,199.3 L-8.7,187.3 L19.3,155.3 L71.3,163.3 L99.3,171.3 L111.3,183.3 L103.3,211.3 L119.3,231.3 L115.3,251.3 L131.3,315.3 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="-10" y="291" text-anchor="middle" fill="#7a3b8c">広島県</text>
+      </g>
       <polygon class="area-pref-shape" points="331.3,131.3 335.3,155.3 303.3,187.3 307.3,215.3 299.3,227.3 315.3,251.3 311.3,263.3 283.3,255.3 295.3,267.3 271.3,295.3 235.3,291.3 255.3,295.3 243.3,311.3 235.3,307.3 231.3,327.3 207.3,319.3 199.3,331.3 191.3,307.3 191.3,319.3 175.3,303.3 159.3,319.3 139.3,307.3 147.3,323.3 131.3,315.3 115.3,251.3 119.3,231.3 103.3,211.3 111.3,183.3 99.3,171.3 103.3,159.3 131.3,155.3 127.3,139.3 155.3,139.3 151.3,127.3 159.3,123.3 171.3,99.3 199.3,107.3 215.3,127.3 255.3,103.3 251.3,111.3 279.3,123.3 283.3,147.3"/>
+      <text class="area-main-label" x="210" y="188" text-anchor="middle" style="font-size:22px;stroke-width:3px">岡山県</text>
 
       <g class="area-pin" data-target="area-okayamacity">
         <line class="area-pin-leader" x1="231.7" y1="273.3" x2="252.3" y2="322.0" style="stroke-width:0.9"/>
         <rect x="222.29999999999998" y="263.90000000000003" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="231.7" cy="273.3" r="6.6" style="stroke-width:1.9"/>
-        <text x="252.3" y="322.0" text-anchor="start" style="font-size:10.4px">岡山市</text>
+        <text x="252.3" y="322.0" text-anchor="start" style="font-size:12.0px">岡山市</text>
       </g>
       <g class="area-pin" data-target="area-kurashiki">
         <line class="area-pin-leader" x1="201.2" y1="289.2" x2="194.1" y2="341.7" style="stroke-width:0.9"/>
         <rect x="191.79999999999998" y="279.8" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="201.2" cy="289.2" r="6.6" style="stroke-width:1.9"/>
-        <text x="194.1" y="341.7" text-anchor="middle" style="font-size:10.4px">倉敷</text>
+        <text x="194.1" y="341.7" text-anchor="middle" style="font-size:12.0px">倉敷</text>
       </g>
       <g class="area-pin" data-target="area-bizen">
         <line class="area-pin-leader" x1="282.8" y1="259.2" x2="330.1" y2="283.2" style="stroke-width:0.9"/>
         <rect x="273.40000000000003" y="249.79999999999998" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="282.8" cy="259.2" r="6.6" style="stroke-width:1.9"/>
-        <text x="330.1" y="283.2" text-anchor="start" style="font-size:10.4px">備前</text>
+        <text x="330.1" y="283.2" text-anchor="start" style="font-size:12.0px">備前</text>
       </g>
       <g class="area-pin" data-target="area-hiruzen">
         <line class="area-pin-leader" x1="213.8" y1="149.3" x2="216.5" y2="96.4" style="stroke-width:0.9"/>
         <rect x="204.4" y="139.9" width="18.8" height="18.8" fill="transparent"/>
         <circle cx="213.8" cy="149.3" r="6.6" style="stroke-width:1.9"/>
-        <text x="216.5" y="96.4" text-anchor="middle" style="font-size:10.4px">蒜山</text>
+        <text x="216.5" y="96.4" text-anchor="middle" style="font-size:12.0px">蒜山</text>
       </g>
     </svg>
   </div>
