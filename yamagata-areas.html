@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,49 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Yamagata</div>
     <div class="area-map-hint">Yamagata Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 525.6 661.6" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-259 -231 868 1032" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="akita">
+        <path d="M392.8,196.8 L364.8,216.8 L348.8,212.8 L332.8,208.8 L324.8,188.8 L268.8,176.8 L252.8,156.8 L212.8,160.8 L220.8,120.8 L240.8,84.8 L244.8,-3.2 L220.8,-35.2 L188.8,-23.2 L176.8,-59.2 L200.8,-47.2 L224.8,-79.2 L236.8,-115.2 L236.8,-147.2 L216.8,-167.2 L232.8,-163.2 L244.8,-179.2 L292.8,-171.2 L304.8,-183.2 L332.8,-163.2 L344.8,-171.2 L356.8,-163.2 L396.8,-191.2 L396.8,-171.2 L416.8,-171.2 L412.8,-127.2 L396.8,-107.2 L404.8,-35.2 L384.8,-31.2 L396.8,-15.2 L384.8,0.8 L392.8,20.8 L376.8,44.8 L364.8,88.8 L396.8,140.8 L384.8,152.8 L396.8,172.8 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="315" y="-9" text-anchor="middle" fill="#7a9e6f">Akita</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyagi">
+        <path d="M432.8,460.8 L416.8,460.8 L416.8,484.8 L400.8,484.8 L404.8,492.8 L384.8,484.8 L380.8,460.8 L344.8,460.8 L328.8,444.8 L304.8,444.8 L300.8,424.8 L328.8,416.8 L340.8,392.8 L336.8,368.8 L364.8,320.8 L348.8,276.8 L360.8,276.8 L368.8,244.8 L348.8,212.8 L364.8,216.8 L392.8,196.8 L432.8,216.8 L464.8,212.8 L456.8,228.8 L480.8,244.8 L496.8,224.8 L520.8,236.8 L528.8,180.8 L556.8,184.8 L568.8,212.8 L548.8,200.8 L552.8,220.8 L536.8,236.8 L548.8,256.8 L540.8,248.8 L524.8,260.8 L540.8,268.8 L528.8,292.8 L544.8,292.8 L544.8,308.8 L532.8,300.8 L540.8,316.8 L528.8,320.8 L532.8,332.8 L544.8,328.8 L536.8,336.8 L544.8,344.8 L544.8,360.8 L528.8,352.8 L532.8,340.8 L520.8,344.8 L528.8,336.8 L524.8,328.8 L456.8,340.8 L444.8,352.8 L460.8,360.8 L440.8,364.8 L452.8,368.8 L428.8,408.8 L432.8,460.8 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="461" y="326" text-anchor="middle" fill="#c47a2f">Miyagi</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="fukushima">
+        <path d="M412.8,720.8 L372.8,700.8 L372.8,716.8 L348.8,740.8 L308.8,704.8 L304.8,680.8 L280.8,664.8 L232.8,652.8 L132.8,716.8 L100.8,708.8 L104.8,652.8 L84.8,632.8 L100.8,608.8 L92.8,592.8 L96.8,580.8 L132.8,576.8 L136.8,564.8 L168.8,564.8 L160.8,528.8 L196.8,488.8 L184.8,480.8 L212.8,488.8 L236.8,484.8 L244.8,500.8 L260.8,496.8 L272.8,504.8 L296.8,500.8 L308.8,484.8 L300.8,480.8 L304.8,444.8 L328.8,444.8 L344.8,460.8 L380.8,460.8 L384.8,484.8 L404.8,492.8 L400.8,484.8 L416.8,484.8 L416.8,460.8 L432.8,460.8 L456.8,516.8 L456.8,624.8 L448.8,688.8 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="277" y="565" text-anchor="middle" fill="#7a3b8c">Fukushima</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="niigata">
+        <path d="M-191.2,756.8 L-203.2,712.8 L-219.2,700.8 L-163.2,680.8 L-127.2,652.8 L-99.2,652.8 L-39.2,604.8 L0.8,544.8 L20.8,488.8 L96.8,440.8 L100.8,448.8 L96.8,444.8 L120.8,416.8 L156.8,304.8 L188.8,316.8 L188.8,344.8 L224.8,368.8 L216.8,384.8 L184.8,396.8 L184.8,428.8 L172.8,460.8 L184.8,480.8 L196.8,488.8 L160.8,528.8 L168.8,564.8 L136.8,564.8 L132.8,576.8 L96.8,580.8 L92.8,592.8 L100.8,608.8 L84.8,632.8 L104.8,652.8 L100.8,708.8 L72.8,680.8 L64.8,696.8 L48.8,700.8 L52.8,720.8 L40.8,724.8 L40.8,736.8 L-7.2,760.8 L-7.2,732.8 L-27.2,716.8 L-27.2,696.8 L-39.2,688.8 L-67.2,696.8 L-87.2,716.8 L-87.2,736.8 L-103.2,728.8 L-135.2,744.8 L-143.2,740.8 L-143.2,720.8 L-171.2,716.8 L-171.2,728.8 L-191.2,756.8 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="26" y="605" text-anchor="middle" fill="#2f6690">Niigata</text>
+      </g>
       <polygon class="area-pref-shape" points="212.8,160.8 252.8,156.8 268.8,176.8 324.8,188.8 332.8,208.8 348.8,212.8 368.8,244.8 360.8,276.8 348.8,276.8 364.8,320.8 336.8,368.8 340.8,392.8 328.8,416.8 300.8,424.8 304.8,444.8 300.8,480.8 308.8,484.8 296.8,500.8 272.8,504.8 260.8,496.8 244.8,500.8 236.8,484.8 212.8,488.8 184.8,480.8 172.8,460.8 184.8,428.8 184.8,396.8 216.8,384.8 224.8,368.8 188.8,344.8 188.8,316.8 156.8,304.8 208.8,212.8"/>
+      <text class="area-main-label" x="268" y="278" text-anchor="middle" style="font-size:37.3px;stroke-width:5.8px">YAMAGATA</text>
 
       <g class="area-pin" data-target="area-yamagatacity">
         <line class="area-pin-leader" x1="315.3" y1="383.0" x2="374.5" y2="410.4" style="stroke-width:1.1"/>
         <rect x="303.90000000000003" y="371.6" width="22.8" height="22.8" fill="transparent"/>
         <circle cx="315.3" cy="383.0" r="8.0" style="stroke-width:2.3"/>
-        <text x="374.5" y="410.4" text-anchor="start" style="font-size:12.6px">Yamagata City &amp; Zao</text>
+        <text x="374.5" y="410.4" text-anchor="start" style="font-size:14.5px">Yamagata City &amp; Zao</text>
       </g>
       <g class="area-pin" data-target="area-yonezawa">
         <line class="area-pin-leader" x1="271.1" y1="462.5" x2="273.1" y2="527.7" style="stroke-width:1.1"/>
         <rect x="259.70000000000005" y="451.1" width="22.8" height="22.8" fill="transparent"/>
         <circle cx="271.1" cy="462.5" r="8.0" style="stroke-width:2.3"/>
-        <text x="273.1" y="527.7" text-anchor="middle" style="font-size:12.6px">Yonezawa</text>
+        <text x="273.1" y="527.7" text-anchor="middle" style="font-size:14.5px">Yonezawa</text>
       </g>
       <g class="area-pin" data-target="area-ginzan">
         <line class="area-pin-leader" x1="346.7" y1="301.0" x2="398.5" y2="261.4" style="stroke-width:1.1"/>
         <rect x="335.3" y="289.6" width="22.8" height="22.8" fill="transparent"/>
         <circle cx="346.7" cy="301.0" r="8.0" style="stroke-width:2.3"/>
-        <text x="398.5" y="261.4" text-anchor="start" style="font-size:12.6px">Ginzan Onsen</text>
+        <text x="398.5" y="261.4" text-anchor="start" style="font-size:14.5px">Ginzan Onsen</text>
       </g>
       <g class="area-pin" data-target="area-sakata">
         <line class="area-pin-leader" x1="217.6" y1="243.8" x2="191.9" y2="183.9" style="stroke-width:1.1"/>
         <rect x="206.2" y="232.4" width="22.8" height="22.8" fill="transparent"/>
         <circle cx="217.6" cy="243.8" r="8.0" style="stroke-width:2.3"/>
-        <text x="191.9" y="183.9" text-anchor="end" style="font-size:12.6px">Sakata &amp; Tsuruoka</text>
+        <text x="191.9" y="183.9" text-anchor="end" style="font-size:14.5px">Sakata &amp; Tsuruoka</text>
       </g>
     </svg>
   </div>

@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,38 +76,47 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Kagoshima</div>
     <div class="area-map-hint">Kagoshima Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 988.0 1184.0" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 1068 1264" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kumamoto">
+        <path d="M562.0,390.0 L542.0,366.0 L506.0,382.0 L486.0,366.0 L538.0,306.0 L530.0,282.0 L538.0,286.0 L534.0,278.0 L558.0,258.0 L514.0,258.0 L546.0,234.0 L550.0,214.0 L518.0,182.0 L514.0,162.0 L534.0,162.0 L530.0,150.0 L550.0,134.0 L566.0,138.0 L570.0,122.0 L602.0,142.0 L634.0,162.0 L642.0,150.0 L638.0,126.0 L662.0,126.0 L690.0,178.0 L686.0,202.0 L702.0,218.0 L686.0,218.0 L650.0,274.0 L630.0,282.0 L630.0,310.0 L650.0,338.0 L634.0,358.0 L646.0,382.0 L562.0,390.0 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="587" y="244" text-anchor="middle" fill="#7a9e6f">Kumamoto</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyazaki">
+        <path d="M702.0,218.0 L710.0,222.0 L730.0,218.0 L750.0,238.0 L782.0,238.0 L794.0,222.0 L810.0,226.0 L810.0,246.0 L818.0,246.0 L774.0,286.0 L770.0,302.0 L782.0,306.0 L766.0,310.0 L762.0,318.0 L770.0,322.0 L746.0,354.0 L722.0,422.0 L714.0,514.0 L694.0,534.0 L686.0,582.0 L666.0,574.0 L646.0,554.0 L654.0,542.0 L654.0,514.0 L626.0,510.0 L614.0,474.0 L594.0,466.0 L598.0,446.0 L578.0,426.0 L558.0,398.0 L562.0,390.0 L646.0,382.0 L634.0,358.0 L650.0,338.0 L630.0,310.0 L630.0,282.0 L650.0,274.0 L686.0,218.0 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="694" y="363" text-anchor="middle" fill="#c47a2f">Miyazaki</text>
+      </g>
       <path class="area-pref-shape" d="M426.0,786.0 L438.0,794.0 L426.0,798.0 Z M466.0,830.0 L462.0,806.0 L490.0,790.0 L526.0,814.0 L522.0,834.0 L498.0,850.0 L474.0,846.0 Z M590.0,802.0 L590.0,822.0 L570.0,826.0 L566.0,798.0 L582.0,786.0 L586.0,746.0 L614.0,706.0 L618.0,742.0 Z M486.0,366.0 L506.0,382.0 L542.0,366.0 L562.0,390.0 L558.0,398.0 L578.0,426.0 L598.0,446.0 L594.0,466.0 L614.0,474.0 L626.0,510.0 L654.0,514.0 L654.0,542.0 L646.0,554.0 L634.0,550.0 L614.0,574.0 L634.0,586.0 L626.0,602.0 L638.0,598.0 L610.0,610.0 L598.0,630.0 L534.0,662.0 L534.0,642.0 L554.0,630.0 L570.0,582.0 L546.0,546.0 L550.0,526.0 L526.0,514.0 L546.0,506.0 L550.0,522.0 L562.0,526.0 L578.0,502.0 L550.0,478.0 L534.0,486.0 L510.0,538.0 L518.0,582.0 L538.0,594.0 L530.0,614.0 L506.0,618.0 L494.0,594.0 L442.0,594.0 L446.0,578.0 L434.0,574.0 L442.0,566.0 L422.0,550.0 L458.0,550.0 L474.0,510.0 L462.0,474.0 L442.0,458.0 L454.0,430.0 L446.0,382.0 L458.0,374.0 L474.0,382.0 Z M458.0,338.0 L470.0,334.0 L466.0,342.0 Z M442.0,382.0 L430.0,358.0 L450.0,350.0 L454.0,366.0 Z M350.0,462.0 L358.0,450.0 L362.0,458.0 L342.0,490.0 L334.0,486.0 Z M382.0,446.0 L370.0,434.0 L390.0,434.0 Z"/>
+      <text class="area-main-label" x="540" y="419" text-anchor="middle" style="font-size:45.9px;stroke-width:7.2px">KAGOSHIMA</text>
 
       <g class="area-pin" data-target="area-kagoshimacity">
         <line class="area-pin-leader" x1="454.0" y1="590.0" x2="356.9" y2="590.0" style="stroke-width:2.1"/>
         <rect x="432.5" y="568.5" width="43.0" height="43.0" fill="transparent"/>
         <circle cx="454.0" cy="590.0" r="15.0" style="stroke-width:4.3"/>
-        <text x="356.9" y="590.0" text-anchor="end" style="font-size:23.6px">Kagoshima City &amp; Sakurajima</text>
+        <text x="356.9" y="590.0" text-anchor="end" style="font-size:27.1px">Kagoshima City &amp; Sakurajima</text>
       </g>
       <g class="area-pin" data-target="area-ibusuki">
         <line class="area-pin-leader" x1="414.0" y1="750.0" x2="380.8" y2="841.3" style="stroke-width:2.1"/>
         <rect x="392.5" y="728.5" width="43.0" height="43.0" fill="transparent"/>
         <circle cx="414.0" cy="750.0" r="15.0" style="stroke-width:4.3"/>
-        <text x="380.8" y="841.3" text-anchor="end" style="font-size:23.6px">Ibusuki</text>
+        <text x="380.8" y="841.3" text-anchor="end" style="font-size:27.1px">Ibusuki</text>
       </g>
       <g class="area-pin" data-target="area-kirishima">
         <line class="area-pin-leader" x1="554.0" y1="490.0" x2="638.1" y2="441.4" style="stroke-width:2.1"/>
         <rect x="532.5" y="468.5" width="43.0" height="43.0" fill="transparent"/>
         <circle cx="554.0" cy="490.0" r="15.0" style="stroke-width:4.3"/>
-        <text x="638.1" y="441.4" text-anchor="start" style="font-size:23.6px">Kirishima</text>
+        <text x="638.1" y="441.4" text-anchor="start" style="font-size:27.1px">Kirishima</text>
       </g>
       <g class="area-pin" data-target="area-yakushima">
         <line class="area-pin-leader" x1="454.0" y1="1030.0" x2="454.0" y2="1127.2" style="stroke-width:2.1"/>
         <rect x="432.5" y="1008.5" width="43.0" height="43.0" fill="transparent"/>
         <circle cx="454.0" cy="1030.0" r="15.0" style="stroke-width:4.3"/>
-        <text x="454.0" y="1127.2" text-anchor="middle" style="font-size:23.6px">Yakushima</text>
+        <text x="454.0" y="1127.2" text-anchor="middle" style="font-size:27.1px">Yakushima</text>
       </g>
       <g class="area-pin" data-target="area-amami">
         <line class="area-pin-leader" x1="534.0" y1="1150.0" x2="629.7" y2="1166.9" style="stroke-width:2.1"/>
         <rect x="512.5" y="1128.5" width="43.0" height="43.0" fill="transparent"/>
         <circle cx="534.0" cy="1150.0" r="15.0" style="stroke-width:4.3"/>
-        <text x="629.7" y="1166.9" text-anchor="start" style="font-size:23.6px">Amami</text>
+        <text x="629.7" y="1166.9" text-anchor="start" style="font-size:27.1px">Amami</text>
       </g>
     </svg>
   </div>

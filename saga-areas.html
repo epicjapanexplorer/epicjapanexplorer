@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,41 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Saga</div>
     <div class="area-map-hint">Saga Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 359.1 351.1" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 478 431" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukuoka">
+        <path d="M317.6,225.6 L285.6,205.6 L281.6,221.6 L265.6,217.6 L245.6,233.6 L249.6,245.6 L229.6,245.6 L229.6,221.6 L217.6,209.6 L225.6,181.6 L257.6,161.6 L261.6,137.6 L233.6,145.6 L209.6,121.6 L157.6,121.6 L185.6,105.6 L169.6,93.6 L197.6,73.6 L209.6,97.6 L237.6,93.6 L241.6,73.6 L225.6,81.6 L213.6,69.6 L233.6,73.6 L249.6,61.6 L257.6,33.6 L297.6,25.6 L301.6,13.6 L325.6,17.6 L309.6,33.6 L321.6,33.6 L329.6,21.6 L341.6,29.6 L369.6,13.6 L353.6,45.6 L365.6,53.6 L357.6,57.6 L377.6,101.6 L397.6,101.6 L393.6,129.6 L365.6,125.6 L337.6,141.6 L321.6,165.6 L325.6,185.6 L317.6,193.6 L329.6,205.6 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="281" y="118" text-anchor="middle" fill="#7a9e6f">Fukuoka</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nagasaki">
+        <path d="M105.6,149.6 L97.6,161.6 L105.6,189.6 L133.6,197.6 L129.6,213.6 L153.6,241.6 L185.6,253.6 L157.6,273.6 L209.6,277.6 L217.6,297.6 L209.6,325.6 L169.6,341.6 L161.6,317.6 L181.6,301.6 L177.6,293.6 L157.6,289.6 L125.6,297.6 L113.6,321.6 L81.6,341.6 L97.6,321.6 L93.6,309.6 L101.6,313.6 L109.6,297.6 L97.6,305.6 L93.6,277.6 L77.6,273.6 L65.6,249.6 L77.6,205.6 L93.6,221.6 L89.6,237.6 L93.6,229.6 L105.6,237.6 L97.6,265.6 L141.6,277.6 L125.6,253.6 L129.6,233.6 L117.6,217.6 L105.6,225.6 L101.6,201.6 L89.6,201.6 L89.6,193.6 L73.6,205.6 L81.6,197.6 L69.6,189.6 L69.6,177.6 L69.6,185.6 L53.6,177.6 L69.6,153.6 L57.6,149.6 L61.6,137.6 L81.6,133.6 L81.6,145.6 L101.6,141.6 L105.6,149.6 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="112" y="237" text-anchor="middle" fill="#c47a2f">Nagasaki</text>
+      </g>
       <polygon class="area-pref-shape" points="157.6,121.6 209.6,121.6 233.6,145.6 261.6,137.6 257.6,161.6 225.6,181.6 217.6,209.6 197.6,189.6 173.6,213.6 185.6,253.6 153.6,241.6 129.6,213.6 133.6,197.6 105.6,189.6 97.6,161.6 105.6,149.6 117.6,165.6 113.6,149.6 121.6,133.6 105.6,121.6 109.6,113.6 121.6,121.6 121.6,97.6 125.6,105.6 141.6,105.6 145.6,125.6"/>
+      <text class="area-main-label" x="157" y="185" text-anchor="middle" style="font-size:22px;stroke-width:3.2px">SAGA</text>
 
       <g class="area-pin" data-target="area-sagayoshinogari">
         <line class="area-pin-leader" x1="231.8" y1="179.4" x2="266.8" y2="189.0" style="stroke-width:0.8"/>
         <rect x="224.0" y="171.6" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="231.8" cy="179.4" r="5.5" style="stroke-width:1.6"/>
-        <text x="266.8" y="189.0" text-anchor="start" style="font-size:8.6px">Saga &amp; Yoshinogari</text>
+        <text x="266.8" y="189.0" text-anchor="start" style="font-size:9.9px">Saga &amp; Yoshinogari</text>
       </g>
       <g class="area-pin" data-target="area-karatsu">
         <line class="area-pin-leader" x1="150.6" y1="129.8" x2="143.4" y2="94.3" style="stroke-width:0.8"/>
         <rect x="142.79999999999998" y="122.00000000000001" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="150.6" cy="129.8" r="5.5" style="stroke-width:1.6"/>
-        <text x="143.4" y="94.3" text-anchor="middle" style="font-size:8.6px">Karatsu</text>
+        <text x="143.4" y="94.3" text-anchor="middle" style="font-size:9.9px">Karatsu</text>
       </g>
       <g class="area-pin" data-target="area-aritaimari">
         <line class="area-pin-leader" x1="130.2" y1="191.7" x2="107.6" y2="219.9" style="stroke-width:0.8"/>
         <rect x="122.39999999999999" y="183.89999999999998" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="130.2" cy="191.7" r="5.5" style="stroke-width:1.6"/>
-        <text x="107.6" y="219.9" text-anchor="end" style="font-size:8.6px">Arita &amp; Imari</text>
+        <text x="107.6" y="219.9" text-anchor="end" style="font-size:9.9px">Arita &amp; Imari</text>
       </g>
       <g class="area-pin" data-target="area-ureshinotakeo">
         <line class="area-pin-leader" x1="179.1" y1="208.2" x2="194.2" y2="241.1" style="stroke-width:0.8"/>
         <rect x="171.29999999999998" y="200.39999999999998" width="15.6" height="15.6" fill="transparent"/>
         <circle cx="179.1" cy="208.2" r="5.5" style="stroke-width:1.6"/>
-        <text x="194.2" y="241.1" text-anchor="start" style="font-size:8.6px">Ureshino &amp; Takeo</text>
+        <text x="194.2" y="241.1" text-anchor="start" style="font-size:9.9px">Ureshino &amp; Takeo</text>
       </g>
     </svg>
   </div>

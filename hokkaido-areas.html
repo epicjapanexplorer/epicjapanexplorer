@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,38 +76,39 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Hokkaido</div>
     <div class="area-map-hint">Hokkaido Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 3975.8 3495.8" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="0 0 3976 3496" xmlns="http://www.w3.org/2000/svg">
       <path class="area-pref-shape" d="M1189.9,2133.9 L1185.9,2153.9 L1173.9,2157.9 L1173.9,2121.9 L1197.9,2113.9 L1189.9,2133.9 Z M1305.9,2217.9 L1301.9,2173.9 L1285.9,2145.9 L1265.9,2141.9 L1257.9,2121.9 L1241.9,2117.9 L1233.9,2097.9 L1249.9,2065.9 L1241.9,2021.9 L1249.9,2009.9 L1285.9,2001.9 L1309.9,1965.9 L1321.9,1981.9 L1329.9,1977.9 L1345.9,1941.9 L1369.9,1921.9 L1329.9,1865.9 L1333.9,1837.9 L1361.9,1829.9 L1413.9,1869.9 L1457.9,1857.9 L1457.9,1869.9 L1485.9,1881.9 L1505.9,1869.9 L1529.9,1833.9 L1505.9,1733.9 L1517.9,1713.9 L1545.9,1701.9 L1561.9,1677.9 L1557.9,1585.9 L1573.9,1553.9 L1577.9,1513.9 L1565.9,1441.9 L1533.9,1365.9 L1545.9,1329.9 L1541.9,1305.9 L1549.9,1317.9 L1569.9,1313.9 L1593.9,1285.9 L1697.9,1393.9 L1729.9,1445.9 L1793.9,1513.9 L1909.9,1589.9 L2025.9,1609.9 L2029.9,1625.9 L2049.9,1645.9 L2125.9,1645.9 L2213.9,1537.9 L2221.9,1557.9 L2181.9,1649.9 L2181.9,1689.9 L2193.9,1713.9 L2233.9,1725.9 L2225.9,1733.9 L2229.9,1721.9 L2205.9,1721.9 L2225.9,1769.9 L2249.9,1797.9 L2265.9,1801.9 L2293.9,1769.9 L2321.9,1765.9 L2281.9,1797.9 L2273.9,1825.9 L2205.9,1837.9 L2197.9,1861.9 L2181.9,1881.9 L2161.9,1881.9 L2153.9,1873.9 L2157.9,1865.9 L2145.9,1861.9 L2133.9,1885.9 L2145.9,1893.9 L2085.9,1897.9 L2053.9,1885.9 L1993.9,1917.9 L1937.9,1981.9 L1901.9,2037.9 L1889.9,2073.9 L1893.9,2133.9 L1885.9,2165.9 L1829.9,2121.9 L1737.9,2085.9 L1625.9,2017.9 L1573.9,2009.9 L1585.9,1997.9 L1525.9,2029.9 L1461.9,2093.9 L1449.9,2081.9 L1465.9,2081.9 L1445.9,2077.9 L1437.9,2053.9 L1405.9,2021.9 L1361.9,2025.9 L1341.9,2053.9 L1329.9,2093.9 L1333.9,2109.9 L1381.9,2141.9 L1421.9,2141.9 L1457.9,2189.9 L1493.9,2201.9 L1501.9,2213.9 L1477.9,2233.9 L1461.9,2241.9 L1425.9,2225.9 L1413.9,2233.9 L1413.9,2217.9 L1401.9,2213.9 L1393.9,2233.9 L1365.9,2249.9 L1365.9,2285.9 L1333.9,2301.9 L1321.9,2321.9 L1293.9,2309.9 L1281.9,2285.9 L1285.9,2249.9 L1305.9,2217.9 Z M1457.9,1365.9 L1465.9,1353.9 L1481.9,1361.9 L1489.9,1381.9 L1473.9,1393.9 L1457.9,1381.9 L1457.9,1365.9 Z M1433.9,1313.9 L1433.9,1305.9 L1441.9,1313.9 L1437.9,1353.9 L1425.9,1313.9 L1433.9,1313.9 Z M2649.9,1241.9 L2641.9,1225.9 L2633.9,1225.9 L2625.9,1241.9 L2633.9,1265.9 L2629.9,1277.9 L2609.9,1285.9 L2601.9,1313.9 L2573.9,1309.9 L2577.9,1337.9 L2537.9,1373.9 L2537.9,1389.9 L2513.9,1389.9 L2513.9,1397.9 L2529.9,1405.9 L2529.9,1421.9 L2517.9,1433.9 L2501.9,1429.9 L2501.9,1449.9 L2489.9,1437.9 L2493.9,1457.9 L2481.9,1485.9 L2497.9,1489.9 L2517.9,1453.9 L2537.9,1449.9 L2557.9,1409.9 L2597.9,1373.9 L2605.9,1333.9 L2625.9,1345.9 L2649.9,1337.9 L2709.9,1269.9 L2761.9,1233.9 L2797.9,1225.9 L2801.9,1213.9 L2789.9,1197.9 L2801.9,1181.9 L2781.9,1173.9 L2757.9,1181.9 L2709.9,1253.9 L2665.9,1261.9 L2649.9,1241.9 Z M2333.9,1569.9 L2353.9,1545.9 L2385.9,1537.9 L2405.9,1509.9 L2417.9,1513.9 L2429.9,1489.9 L2389.9,1501.9 L2357.9,1481.9 L2345.9,1489.9 L2329.9,1529.9 L2293.9,1589.9 L2293.9,1601.9 L2237.9,1661.9 L2245.9,1689.9 L2265.9,1685.9 L2265.9,1701.9 L2269.9,1649.9 L2301.9,1629.9 L2305.9,1609.9 L2317.9,1609.9 L2321.9,1581.9 L2333.9,1569.9 Z M2461.9,1673.9 L2509.9,1633.9 L2489.9,1625.9 L2473.9,1637.9 L2477.9,1641.9 L2449.9,1649.9 L2449.9,1665.9 L2457.9,1661.9 L2461.9,1673.9 Z M2373.9,1741.9 L2389.9,1721.9 L2361.9,1729.9 L2373.9,1741.9 Z M2337.9,1757.9 L2345.9,1745.9 L2329.9,1749.9 L2337.9,1757.9 Z"/>
+      <text class="area-main-label" x="1900" y="2600" text-anchor="middle" style="font-size:110px;stroke-width:16px">HOKKAIDO</text>
 
       <g class="area-pin" data-target="area-sapporo">
         <line class="area-pin-leader" x1="1643.0" y1="1840.1" x2="1347.0" y2="1958.4" style="stroke-width:8.6"/>
         <rect x="1556.6" y="1753.6999999999998" width="172.8" height="172.8" fill="transparent"/>
         <circle cx="1643.0" cy="1840.1" r="60.5" style="stroke-width:17.3"/>
-        <text x="1347.0" y="1958.4" text-anchor="end" style="font-size:95.1px">Sapporo &amp; Otaru</text>
+        <text x="1347.0" y="1958.4" text-anchor="end" style="font-size:109.4px">Sapporo &amp; Otaru</text>
       </g>
       <g class="area-pin" data-target="area-hakodate">
         <line class="area-pin-leader" x1="1525.1" y1="2206.3" x2="1316.5" y2="2447.3" style="stroke-width:8.6"/>
         <rect x="1438.6999999999998" y="2119.9" width="172.8" height="172.8" fill="transparent"/>
         <circle cx="1525.1" cy="2206.3" r="60.5" style="stroke-width:17.3"/>
-        <text x="1316.5" y="2447.3" text-anchor="end" style="font-size:95.1px">Hakodate</text>
+        <text x="1316.5" y="2447.3" text-anchor="end" style="font-size:109.4px">Hakodate</text>
       </g>
       <g class="area-pin" data-target="area-furano">
         <line class="area-pin-leader" x1="1949.0" y1="1743.8" x2="1970.4" y2="2061.8" style="stroke-width:8.6"/>
         <rect x="1862.6" y="1657.3999999999999" width="172.8" height="172.8" fill="transparent"/>
         <circle cx="1949.0" cy="1743.8" r="60.5" style="stroke-width:17.3"/>
-        <text x="1970.4" y="2061.8" text-anchor="middle" style="font-size:95.1px">Furano &amp; Biei</text>
+        <text x="1970.4" y="2061.8" text-anchor="middle" style="font-size:109.4px">Furano &amp; Biei</text>
       </g>
       <g class="area-pin" data-target="area-asahikawa">
         <line class="area-pin-leader" x1="1981.6" y1="1655.7" x2="2134.5" y2="1376.0" style="stroke-width:8.6"/>
         <rect x="1895.1999999999998" y="1569.3" width="172.8" height="172.8" fill="transparent"/>
         <circle cx="1981.6" cy="1655.7" r="60.5" style="stroke-width:17.3"/>
-        <text x="2134.5" y="1376.0" text-anchor="start" style="font-size:95.1px">Asahikawa &amp; Daisetsuzan</text>
+        <text x="2134.5" y="1376.0" text-anchor="start" style="font-size:109.4px">Asahikawa &amp; Daisetsuzan</text>
       </g>
       <g class="area-pin" data-target="area-shiretoko">
         <line class="area-pin-leader" x1="2293.9" y1="1765.9" x2="2609.7" y2="1809.1" style="stroke-width:8.6"/>
         <rect x="2207.5" y="1679.5" width="172.8" height="172.8" fill="transparent"/>
         <circle cx="2293.9" cy="1765.9" r="60.5" style="stroke-width:17.3"/>
-        <text x="2609.7" y="1809.1" text-anchor="start" style="font-size:95.1px">Shiretoko &amp; E. Hokkaido</text>
+        <text x="2609.7" y="1809.1" text-anchor="start" style="font-size:109.4px">Shiretoko &amp; E. Hokkaido</text>
       </g>
     </svg>
   </div>

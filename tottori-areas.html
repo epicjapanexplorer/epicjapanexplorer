@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,45 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Tottori</div>
     <div class="area-map-hint">Tottori Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 847.1 695.1" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-66 -40 954 775" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="hyogo">
+        <path d="M521.5,505.5 L525.5,493.5 L509.5,469.5 L517.5,457.5 L513.5,429.5 L545.5,397.5 L541.5,373.5 L565.5,365.5 L565.5,349.5 L537.5,281.5 L573.5,269.5 L641.5,273.5 L637.5,289.5 L653.5,309.5 L673.5,305.5 L677.5,313.5 L677.5,337.5 L653.5,337.5 L649.5,361.5 L677.5,381.5 L697.5,373.5 L705.5,401.5 L745.5,409.5 L741.5,429.5 L729.5,433.5 L733.5,449.5 L757.5,461.5 L749.5,465.5 L757.5,509.5 L745.5,517.5 L721.5,509.5 L669.5,533.5 L609.5,493.5 L553.5,497.5 L553.5,481.5 L541.5,501.5 L529.5,493.5 L521.5,505.5 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="630" y="415" text-anchor="middle" fill="#7a9e6f">Hyogo</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="okayama">
+        <path d="M541.5,373.5 L545.5,397.5 L513.5,429.5 L517.5,457.5 L509.5,469.5 L525.5,493.5 L521.5,505.5 L493.5,497.5 L505.5,509.5 L481.5,537.5 L445.5,533.5 L465.5,537.5 L453.5,553.5 L445.5,549.5 L441.5,569.5 L417.5,561.5 L409.5,573.5 L401.5,549.5 L401.5,561.5 L385.5,545.5 L369.5,561.5 L349.5,549.5 L357.5,565.5 L341.5,557.5 L325.5,493.5 L329.5,473.5 L313.5,453.5 L321.5,425.5 L309.5,413.5 L313.5,401.5 L341.5,397.5 L337.5,381.5 L365.5,381.5 L361.5,369.5 L369.5,365.5 L381.5,341.5 L409.5,349.5 L425.5,369.5 L465.5,345.5 L461.5,353.5 L489.5,365.5 L493.5,389.5 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="420" y="465" text-anchor="middle" fill="#c47a2f">Okayama</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shimane">
+        <path d="M-18.5,489.5 L13.5,481.5 L73.5,425.5 L113.5,401.5 L137.5,369.5 L181.5,349.5 L193.5,325.5 L185.5,309.5 L253.5,293.5 L277.5,273.5 L289.5,285.5 L321.5,281.5 L309.5,289.5 L301.5,293.5 L325.5,325.5 L321.5,361.5 L289.5,369.5 L297.5,381.5 L281.5,405.5 L229.5,397.5 L201.5,429.5 L177.5,441.5 L189.5,461.5 L157.5,469.5 L137.5,461.5 L129.5,473.5 L97.5,465.5 L73.5,485.5 L77.5,493.5 L69.5,517.5 L49.5,537.5 L57.5,545.5 L41.5,553.5 L45.5,569.5 L33.5,585.5 L25.5,577.5 L1.5,585.5 L-6.5,569.5 L1.5,549.5 L-18.5,549.5 L-26.5,533.5 L-10.5,513.5 L-18.5,489.5 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="136" y="441" text-anchor="middle" fill="#7a3b8c">Shimane</text>
+      </g>
       <polygon class="area-pref-shape" points="309.5,413.5 281.5,405.5 297.5,381.5 289.5,369.5 321.5,361.5 325.5,325.5 301.5,293.5 309.5,289.5 317.5,305.5 341.5,313.5 373.5,297.5 417.5,305.5 501.5,301.5 537.5,281.5 565.5,349.5 565.5,365.5 541.5,373.5 493.5,389.5 489.5,365.5 461.5,353.5 465.5,345.5 425.5,369.5 409.5,349.5 381.5,341.5 369.5,365.5 361.5,369.5 365.5,381.5 337.5,381.5 341.5,397.5 313.5,401.5"/>
+      <text class="area-main-label" x="394" y="255" text-anchor="middle" style="font-size:41.0px;stroke-width:6.4px">TOTTORI</text>
 
       <g class="area-pin" data-target="area-tottoridunes">
         <line class="area-pin-leader" x1="515.3" y1="303.7" x2="558.7" y2="278.7" style="stroke-width:1.8"/>
         <rect x="496.9" y="285.3" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="515.3" cy="303.7" r="12.9" style="stroke-width:3.7"/>
-        <text x="558.7" y="278.7" text-anchor="start" style="font-size:20.3px">Tottori Sand Dunes &amp; Tottori City</text>
+        <text x="558.7" y="278.7" text-anchor="start" style="font-size:23.3px">Tottori Sand Dunes &amp; Tottori City</text>
       </g>
       <g class="area-pin" data-target="area-kurayoshimisasa">
         <line class="area-pin-leader" x1="426.2" y1="329.1" x2="426.2" y2="379.2" style="stroke-width:1.8"/>
         <rect x="407.8" y="310.70000000000005" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="426.2" cy="329.1" r="12.9" style="stroke-width:3.7"/>
-        <text x="426.2" y="379.2" text-anchor="middle" style="font-size:20.3px">Kurayoshi &amp; Misasa</text>
+        <text x="426.2" y="379.2" text-anchor="middle" style="font-size:23.3px">Kurayoshi &amp; Misasa</text>
       </g>
       <g class="area-pin" data-target="area-daisen">
         <line class="area-pin-leader" x1="366.5" y1="343.6" x2="318.4" y2="329.6" style="stroke-width:1.8"/>
         <rect x="348.1" y="325.20000000000005" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="366.5" cy="343.6" r="12.9" style="stroke-width:3.7"/>
-        <text x="318.4" y="329.6" text-anchor="end" style="font-size:20.3px">Mt. Daisen</text>
+        <text x="318.4" y="329.6" text-anchor="end" style="font-size:23.3px">Mt. Daisen</text>
       </g>
       <g class="area-pin" data-target="area-sakaiminato">
         <line class="area-pin-leader" x1="300.1" y1="301.7" x2="255.8" y2="278.1" style="stroke-width:1.8"/>
         <rect x="281.70000000000005" y="283.3" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="300.1" cy="301.7" r="12.9" style="stroke-width:3.7"/>
-        <text x="255.8" y="278.1" text-anchor="end" style="font-size:20.3px">Sakaiminato &amp; Yonago</text>
+        <text x="255.8" y="278.1" text-anchor="end" style="font-size:23.3px">Sakaiminato &amp; Yonago</text>
       </g>
     </svg>
   </div>

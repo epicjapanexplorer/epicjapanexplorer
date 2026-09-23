@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,45 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Wakayama</div>
     <div class="area-map-hint">Wakayama Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 539.5 579.5" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -84 640 704" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="osaka">
+        <path d="M243.8,3.8 L275.8,35.8 L291.8,23.8 L287.8,35.8 L303.8,39.8 L315.8,71.8 L295.8,115.8 L303.8,151.8 L295.8,171.8 L191.8,195.8 L179.8,183.8 L207.8,179.8 L235.8,151.8 L247.8,115.8 L255.8,123.8 L247.8,91.8 L259.8,83.8 L251.8,39.8 L259.8,35.8 L235.8,23.8 L231.8,7.8 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="258" y="90" text-anchor="middle" fill="#7a9e6f">Osaka</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nara">
+        <path d="M367.8,263.8 L347.8,275.8 L347.8,287.8 L339.8,287.8 L339.8,299.8 L335.8,299.8 L283.8,291.8 L291.8,267.8 L271.8,239.8 L295.8,211.8 L311.8,207.8 L295.8,171.8 L303.8,151.8 L295.8,115.8 L315.8,71.8 L339.8,91.8 L355.8,79.8 L371.8,91.8 L379.8,83.8 L387.8,99.8 L375.8,103.8 L383.8,107.8 L379.8,123.8 L415.8,143.8 L383.8,167.8 L395.8,187.8 L387.8,191.8 L395.8,203.8 L387.8,219.8 L391.8,247.8 L387.8,259.8 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="351" y="189" text-anchor="middle" fill="#c47a2f">Nara</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="mie">
+        <path d="M367.8,335.8 L347.8,323.8 L335.8,299.8 L339.8,299.8 L339.8,287.8 L347.8,287.8 L367.8,275.8 L367.8,263.8 L387.8,259.8 L391.8,247.8 L387.8,219.8 L395.8,203.8 L387.8,191.8 L395.8,187.8 L383.8,167.8 L415.8,143.8 L379.8,123.8 L383.8,107.8 L375.8,103.8 L387.8,99.8 L379.8,83.8 L375.8,67.8 L387.8,63.8 L391.8,43.8 L419.8,55.8 L443.8,43.8 L459.8,3.8 L455.8,-36.2 L479.8,-44.2 L507.8,-16.2 L527.8,15.8 L503.8,19.8 L507.8,35.8 L479.8,83.8 L475.8,115.8 L539.8,143.8 L547.8,163.8 L559.8,159.8 L555.8,175.8 L535.8,175.8 L555.8,179.8 L555.8,199.8 L539.8,203.8 L547.8,195.8 L535.8,187.8 L531.8,195.8 L507.8,199.8 L519.8,183.8 L503.8,183.8 L491.8,203.8 L491.8,195.8 L479.8,207.8 L471.8,199.8 L471.8,211.8 L463.8,203.8 L435.8,219.8 L423.8,227.8 L427.8,247.8 L419.8,243.8 L423.8,235.8 L407.8,247.8 L423.8,263.8 L415.8,263.8 L423.8,275.8 L411.8,267.8 L415.8,279.8 L387.8,295.8 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="443" y="176" text-anchor="middle" fill="#7a3b8c">Mie</text>
+      </g>
       <path class="area-pref-shape" d="M335.8,299.8 L347.8,323.8 L367.8,335.8 L351.8,355.8 L355.8,371.8 L323.8,391.8 L319.8,407.8 L311.8,407.8 L315.8,395.8 L247.8,375.8 L227.8,347.8 L239.8,335.8 L207.8,319.8 L187.8,291.8 L171.8,291.8 L183.8,271.8 L171.8,267.8 L195.8,255.8 L175.8,243.8 L191.8,235.8 L187.8,227.8 L203.8,227.8 L171.8,195.8 L179.8,183.8 L191.8,195.8 L295.8,171.8 L311.8,207.8 L295.8,211.8 L271.8,239.8 L291.8,267.8 L283.8,291.8 L335.8,299.8 Z M367.8,263.8 L367.8,275.8 L347.8,287.8 L347.8,275.8 L367.8,263.8 Z"/>
+      <text class="area-main-label" x="258" y="275" text-anchor="middle" style="font-size:27.5px;stroke-width:4.3px">WAKAYAMA</text>
 
       <g class="area-pin" data-target="area-wakayamacity">
         <line class="area-pin-leader" x1="186.8" y1="203.1" x2="151.9" y2="168.6" style="stroke-width:1.2"/>
         <rect x="175.10000000000002" y="191.4" width="23.4" height="23.4" fill="transparent"/>
         <circle cx="186.8" cy="203.1" r="8.2" style="stroke-width:2.3"/>
-        <text x="151.9" y="168.6" text-anchor="end" style="font-size:12.9px">Wakayama City &amp; Wakanoura</text>
+        <text x="151.9" y="168.6" text-anchor="end" style="font-size:14.8px">Wakayama City &amp; Wakanoura</text>
       </g>
       <g class="area-pin" data-target="area-shirahama">
         <line class="area-pin-leader" x1="227.5" y1="346.6" x2="198.2" y2="386.0" style="stroke-width:1.2"/>
         <rect x="215.8" y="334.90000000000003" width="23.4" height="23.4" fill="transparent"/>
         <circle cx="227.5" cy="346.6" r="8.2" style="stroke-width:2.3"/>
-        <text x="198.2" y="386.0" text-anchor="end" style="font-size:12.9px">Shirahama</text>
+        <text x="198.2" y="386.0" text-anchor="end" style="font-size:14.8px">Shirahama</text>
       </g>
       <g class="area-pin" data-target="area-kumanonachi">
         <line class="area-pin-leader" x1="357.4" y1="349.2" x2="397.1" y2="378.1" style="stroke-width:1.2"/>
         <rect x="345.7" y="337.5" width="23.4" height="23.4" fill="transparent"/>
         <circle cx="357.4" cy="349.2" r="8.2" style="stroke-width:2.3"/>
-        <text x="397.1" y="378.1" text-anchor="start" style="font-size:12.9px">Kumano &amp; Nachikatsuura</text>
+        <text x="397.1" y="378.1" text-anchor="start" style="font-size:14.8px">Kumano &amp; Nachikatsuura</text>
       </g>
       <g class="area-pin" data-target="area-koyasan">
         <line class="area-pin-leader" x1="279.8" y1="207.7" x2="284.8" y2="158.8" style="stroke-width:1.2"/>
         <rect x="268.1" y="196.0" width="23.4" height="23.4" fill="transparent"/>
         <circle cx="279.8" cy="207.7" r="8.2" style="stroke-width:2.3"/>
-        <text x="284.8" y="158.8" text-anchor="middle" style="font-size:12.9px">Koyasan</text>
+        <text x="284.8" y="158.8" text-anchor="middle" style="font-size:14.8px">Koyasan</text>
       </g>
     </svg>
   </div>

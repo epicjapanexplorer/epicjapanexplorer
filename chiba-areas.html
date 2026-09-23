@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,38 +76,51 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Chiba</div>
     <div class="area-map-hint">Chiba Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 443.2 523.2" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-144 -144 628 708" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="ibaraki">
+        <path d="M111.6,111.6 L111.6,111.6 L99.6,115.6 L91.6,87.6 L119.6,75.6 L123.6,59.6 L135.6,59.6 L147.6,39.6 L191.6,31.6 L203.6,3.6 L195.6,-36.4 L207.6,-44.4 L203.6,-56.4 L203.6,-100.4 L243.6,-64.4 L267.6,-88.4 L267.6,-104.4 L307.6,-84.4 L275.6,11.6 L279.6,35.6 L267.6,63.6 L275.6,103.6 L295.6,139.6 L287.6,147.6 L295.6,159.6 L299.6,143.6 L331.6,191.6 L259.6,143.6 L259.6,155.6 L187.6,171.6 L143.6,151.6 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="216" y="56" text-anchor="middle" fill="#7a9e6f">Ibaraki</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M87.6,83.6 L91.6,87.6 L99.6,115.6 L111.6,111.6 L111.6,111.6 L135.6,163.6 L135.6,191.6 L111.6,183.6 L103.6,191.6 L87.6,187.6 L63.6,199.6 L63.6,183.6 L35.6,195.6 L15.6,179.6 L-44.4,163.6 L-56.4,175.6 L-100.4,163.6 L-104.4,143.6 L-40.4,107.6 L-20.4,67.6 L23.6,75.6 L47.6,91.6 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="44" y="144" text-anchor="middle" fill="#c47a2f">Saitama</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tokyo">
+        <path d="M135.6,191.6 L139.6,211.6 L131.6,227.6 L107.6,223.6 L115.6,239.6 L99.6,243.6 L115.6,243.6 L115.6,255.6 L59.6,227.6 L47.6,235.6 L59.6,243.6 L51.6,243.6 L51.6,263.6 L35.6,243.6 L-20.4,219.6 L-40.4,207.6 L-56.4,175.6 L-44.4,163.6 L15.6,179.6 L35.6,195.6 L63.6,183.6 L63.6,199.6 L87.6,187.6 L103.6,191.6 L111.6,183.6 L135.6,191.6 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="66" y="214" text-anchor="middle" fill="#7a3b8c">Tokyo</text>
+      </g>
       <polygon class="area-pref-shape" points="131.6,227.6 139.6,211.6 135.6,191.6 135.6,163.6 111.6,111.6 143.6,151.6 187.6,171.6 259.6,155.6 259.6,143.6 331.6,191.6 331.6,207.6 291.6,207.6 247.6,251.6 239.6,339.6 187.6,355.6 139.6,411.6 111.6,395.6 131.6,387.6 123.6,375.6 127.6,363.6 123.6,343.6 131.6,323.6 115.6,307.6 127.6,291.6 139.6,295.6 139.6,279.6 163.6,267.6 183.6,243.6 155.6,215.6 135.6,231.6"/>
+      <text class="area-main-label" x="173" y="204" text-anchor="middle" style="font-size:27.0px;stroke-width:4.2px">CHIBA</text>
 
       <g class="area-pin" data-target="area-maihama">
         <line class="area-pin-leader" x1="147.2" y1="218.6" x2="116.1" y2="167.8" style="stroke-width:1.0"/>
         <rect x="137.6" y="209.0" width="19.2" height="19.2" fill="transparent"/>
         <circle cx="147.2" cy="218.6" r="6.7" style="stroke-width:1.9"/>
-        <text x="116.1" y="167.8" text-anchor="end" style="font-size:10.6px">Maihama</text>
+        <text x="116.1" y="167.8" text-anchor="end" style="font-size:12.2px">Maihama</text>
       </g>
       <g class="area-pin" data-target="area-narita">
         <line class="area-pin-leader" x1="224.9" y1="179.2" x2="257.0" y2="129.1" style="stroke-width:1.0"/>
         <rect x="215.3" y="169.6" width="19.2" height="19.2" fill="transparent"/>
         <circle cx="224.9" cy="179.2" r="6.7" style="stroke-width:1.9"/>
-        <text x="257.0" y="129.1" text-anchor="start" style="font-size:10.6px">Narita</text>
+        <text x="257.0" y="129.1" text-anchor="start" style="font-size:12.2px">Narita</text>
       </g>
       <g class="area-pin" data-target="area-kisarazu">
         <line class="area-pin-leader" x1="153.4" y1="284.2" x2="115.6" y2="330.3" style="stroke-width:1.0"/>
         <rect x="143.8" y="274.59999999999997" width="19.2" height="19.2" fill="transparent"/>
         <circle cx="153.4" cy="284.2" r="6.7" style="stroke-width:1.9"/>
-        <text x="115.6" y="330.3" text-anchor="end" style="font-size:10.6px">Kisarazu</text>
+        <text x="115.6" y="330.3" text-anchor="end" style="font-size:12.2px">Kisarazu</text>
       </g>
       <g class="area-pin" data-target="area-kujukuri">
         <line class="area-pin-leader" x1="245.3" y1="231.3" x2="300.4" y2="209.0" style="stroke-width:1.0"/>
         <rect x="235.70000000000002" y="221.70000000000002" width="19.2" height="19.2" fill="transparent"/>
         <circle cx="245.3" cy="231.3" r="6.7" style="stroke-width:1.9"/>
-        <text x="300.4" y="209.0" text-anchor="start" style="font-size:10.6px">Kujukuri</text>
+        <text x="300.4" y="209.0" text-anchor="start" style="font-size:12.2px">Kujukuri</text>
       </g>
       <g class="area-pin" data-target="area-minamiboso">
         <line class="area-pin-leader" x1="147.7" y1="402.2" x2="137.3" y2="460.8" style="stroke-width:1.0"/>
         <rect x="138.1" y="392.59999999999997" width="19.2" height="19.2" fill="transparent"/>
         <circle cx="147.7" cy="402.2" r="6.7" style="stroke-width:1.9"/>
-        <text x="137.3" y="460.8" text-anchor="middle" style="font-size:10.6px">Minami-Boso</text>
+        <text x="137.3" y="460.8" text-anchor="middle" style="font-size:12.2px">Minami-Boso</text>
       </g>
     </svg>
   </div>

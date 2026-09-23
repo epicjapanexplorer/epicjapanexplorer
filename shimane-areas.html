@@ -38,9 +38,13 @@
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-map-legend{margin-top:14px;font-size:12px;color:#9a9488;}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
   .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
   .area-body{padding:22px 24px 26px;}
@@ -73,32 +77,46 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Shimane</div>
     <div class="area-map-hint">Shimane Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 744.0 868.0" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-90 0 954 1020" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tottori">
+        <path d="M522.0,510.0 L494.0,502.0 L510.0,478.0 L502.0,466.0 L534.0,458.0 L538.0,422.0 L514.0,390.0 L522.0,386.0 L530.0,402.0 L554.0,410.0 L586.0,394.0 L630.0,402.0 L714.0,398.0 L750.0,378.0 L778.0,446.0 L778.0,462.0 L754.0,470.0 L706.0,486.0 L702.0,462.0 L674.0,450.0 L678.0,442.0 L638.0,466.0 L622.0,446.0 L594.0,438.0 L582.0,462.0 L574.0,466.0 L578.0,478.0 L550.0,478.0 L554.0,494.0 L526.0,498.0 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="650" y="420" text-anchor="middle" fill="#7a9e6f">Tottori</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hiroshima">
+        <path d="M554.0,654.0 L550.0,662.0 L538.0,654.0 L550.0,666.0 L542.0,662.0 L534.0,682.0 L514.0,674.0 L514.0,662.0 L478.0,670.0 L466.0,686.0 L418.0,690.0 L410.0,706.0 L382.0,714.0 L374.0,706.0 L362.0,718.0 L366.0,706.0 L354.0,682.0 L362.0,674.0 L330.0,670.0 L298.0,698.0 L302.0,710.0 L282.0,702.0 L278.0,678.0 L270.0,670.0 L270.0,642.0 L262.0,634.0 L282.0,614.0 L290.0,590.0 L286.0,582.0 L310.0,562.0 L342.0,570.0 L350.0,558.0 L370.0,566.0 L402.0,558.0 L390.0,538.0 L414.0,526.0 L442.0,494.0 L494.0,502.0 L522.0,510.0 L534.0,522.0 L526.0,550.0 L542.0,570.0 L538.0,590.0 L554.0,654.0 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="400" y="685" text-anchor="middle" fill="#c47a2f">Hiroshima</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamaguchi">
+        <path d="M194.0,586.0 L202.0,610.0 L186.0,630.0 L194.0,646.0 L214.0,646.0 L206.0,666.0 L214.0,682.0 L238.0,674.0 L246.0,682.0 L258.0,666.0 L254.0,650.0 L270.0,642.0 L270.0,670.0 L278.0,678.0 L282.0,702.0 L302.0,710.0 L302.0,730.0 L290.0,730.0 L294.0,762.0 L274.0,770.0 L274.0,802.0 L258.0,778.0 L242.0,778.0 L222.0,754.0 L202.0,762.0 L214.0,750.0 L198.0,738.0 L154.0,754.0 L142.0,742.0 L134.0,754.0 L130.0,746.0 L122.0,754.0 L122.0,738.0 L114.0,758.0 L98.0,766.0 L90.0,758.0 L78.0,766.0 L74.0,746.0 L50.0,730.0 L26.0,758.0 L26.0,730.0 L14.0,714.0 L30.0,694.0 L18.0,670.0 L30.0,654.0 L54.0,654.0 L34.0,646.0 L42.0,634.0 L78.0,642.0 L82.0,654.0 L110.0,654.0 L134.0,646.0 L130.0,634.0 L178.0,590.0 L186.0,594.0 L194.0,586.0 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="100" y="760" text-anchor="middle" fill="#7a3b8c">Yamaguchi</text>
+      </g>
+
       <path class="area-pref-shape" d="M482.0,242.0 L498.0,238.0 L486.0,254.0 L474.0,246.0 L478.0,262.0 L470.0,250.0 L482.0,242.0 Z M502.0,250.0 L494.0,262.0 L494.0,246.0 L502.0,242.0 L510.0,254.0 L502.0,250.0 Z M518.0,206.0 L538.0,186.0 L558.0,206.0 L554.0,222.0 L542.0,222.0 L550.0,230.0 L530.0,234.0 L518.0,206.0 Z M194.0,586.0 L226.0,578.0 L286.0,522.0 L326.0,498.0 L350.0,466.0 L394.0,446.0 L406.0,422.0 L398.0,406.0 L466.0,390.0 L490.0,370.0 L502.0,382.0 L534.0,378.0 L522.0,386.0 L514.0,390.0 L538.0,422.0 L534.0,458.0 L502.0,466.0 L510.0,478.0 L494.0,502.0 L442.0,494.0 L414.0,526.0 L390.0,538.0 L402.0,558.0 L370.0,566.0 L350.0,558.0 L342.0,570.0 L310.0,562.0 L286.0,582.0 L290.0,590.0 L282.0,614.0 L262.0,634.0 L270.0,642.0 L254.0,650.0 L258.0,666.0 L246.0,682.0 L238.0,674.0 L214.0,682.0 L206.0,666.0 L214.0,646.0 L194.0,646.0 L186.0,630.0 L202.0,610.0 L194.0,586.0 Z"/>
+      <text class="area-main-label" x="349" y="520" text-anchor="middle" style="font-size:41.0px;stroke-width:6.4px">SHIMANE</text>
 
       <g class="area-pin" data-target="area-matsue">
-        <line class="area-pin-leader" x1="488.9" y1="515.8" x2="563.3" y2="581.5" style="stroke-width:1.6"/>
-        <rect x="472.7" y="499.59999999999997" width="32.4" height="32.4" fill="transparent"/>
-        <circle cx="488.9" cy="515.8" r="11.3" style="stroke-width:3.2"/>
-        <text x="563.3" y="581.5" text-anchor="start" style="font-size:17.8px">Matsue</text>
+        <line class="area-pin-leader" x1="492" y1="400" x2="567.4" y2="464.4" style="stroke-width:1.6"/>
+        <rect x="475.8" y="383.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="492" cy="400" r="11.3" style="stroke-width:3.2"/>
+        <text x="567.4" y="464.4" text-anchor="start" style="font-size:20.5px">Matsue</text>
       </g>
       <g class="area-pin" data-target="area-izumo">
-        <line class="area-pin-leader" x1="409.5" y1="555.5" x2="416.4" y2="654.4" style="stroke-width:1.6"/>
-        <rect x="393.3" y="539.3" width="32.4" height="32.4" fill="transparent"/>
-        <circle cx="409.5" cy="555.5" r="11.3" style="stroke-width:3.2"/>
-        <text x="416.4" y="654.4" text-anchor="middle" style="font-size:17.8px">Izumo</text>
+        <line class="area-pin-leader" x1="401" y1="424" x2="409.2" y2="523.9" style="stroke-width:1.6"/>
+        <rect x="384.8" y="407.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="401" cy="424" r="11.3" style="stroke-width:3.2"/>
+        <text x="409.2" y="523.9" text-anchor="middle" style="font-size:20.5px">Izumo</text>
       </g>
       <g class="area-pin" data-target="area-iwamiginzan">
-        <line class="area-pin-leader" x1="358.3" y1="653.2" x2="338.8" y2="750.4" style="stroke-width:1.6"/>
-        <rect x="342.1" y="637.0" width="32.4" height="32.4" fill="transparent"/>
-        <circle cx="358.3" cy="653.2" r="11.3" style="stroke-width:3.2"/>
-        <text x="338.8" y="750.4" text-anchor="middle" style="font-size:17.8px">Iwami Ginzan</text>
+        <line class="area-pin-leader" x1="246.0" y1="618.0" x2="181.1" y2="693.0" style="stroke-width:1.6"/>
+        <rect x="229.8" y="601.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="246.0" cy="618.0" r="11.3" style="stroke-width:3.2"/>
+        <text x="181.1" y="693.0" text-anchor="end" style="font-size:20.5px">Iwami Ginzan</text>
       </g>
       <g class="area-pin" data-target="area-okiislands">
         <line class="area-pin-leader" x1="546.5" y1="239.2" x2="604.9" y2="159.1" style="stroke-width:1.6"/>
         <rect x="530.3" y="223.0" width="32.4" height="32.4" fill="transparent"/>
         <circle cx="546.5" cy="239.2" r="11.3" style="stroke-width:3.2"/>
-        <text x="604.9" y="159.1" text-anchor="start" style="font-size:17.8px">Oki Islands</text>
+        <text x="604.9" y="159.1" text-anchor="start" style="font-size:20.5px">Oki Islands</text>
       </g>
     </svg>
   </div>

@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,26 +76,39 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Iwate</div>
     <div class="area-map-hint">Iwate Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 576.3 732.3" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-76 -156 692 1024" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="aomori">
+        <path d="M4.1,168.1 L4.1,136.1 L-7.9,124.1 L16.1,88.1 L40.1,88.1 L64.1,72.1 L76.1,8.1 L60.1,-7.9 L72.1,-11.9 L76.1,-39.9 L100.1,-23.9 L116.1,-35.9 L132.1,-23.9 L140.1,36.1 L152.1,64.1 L176.1,48.1 L172.1,32.1 L180.1,16.1 L224.1,52.1 L236.1,40.1 L252.1,-23.9 L236.1,-51.9 L212.1,-27.9 L156.1,-15.9 L180.1,-115.9 L248.1,-71.9 L284.1,-91.9 L276.1,32.1 L284.1,88.1 L300.1,132.1 L316.1,128.1 L336.1,152.1 L312.1,180.1 L292.1,172.1 L276.1,184.1 L268.1,172.1 L216.1,212.1 L200.1,208.1 L204.1,164.1 L184.1,164.1 L184.1,144.1 L144.1,172.1 L132.1,164.1 L120.1,172.1 L92.1,152.1 L80.1,164.1 L32.1,156.1 L20.1,172.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="164" y="77" text-anchor="middle" fill="#7a9e6f">Aomori</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="akita">
+        <path d="M180.1,532.1 L152.1,552.1 L136.1,548.1 L120.1,544.1 L112.1,524.1 L56.1,512.1 L40.1,492.1 L0.1,496.1 L8.1,456.1 L28.1,420.1 L32.1,332.1 L8.1,300.1 L-23.9,312.1 L-35.9,276.1 L-11.9,288.1 L12.1,256.1 L24.1,220.1 L24.1,188.1 L4.1,168.1 L20.1,172.1 L32.1,156.1 L80.1,164.1 L92.1,152.1 L120.1,172.1 L132.1,164.1 L144.1,172.1 L184.1,144.1 L184.1,164.1 L204.1,164.1 L200.1,208.1 L184.1,228.1 L192.1,300.1 L172.1,304.1 L184.1,320.1 L172.1,336.1 L180.1,356.1 L164.1,380.1 L152.1,424.1 L184.1,476.1 L172.1,488.1 L184.1,508.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="102" y="326" text-anchor="middle" fill="#c47a2f">Akita</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyagi">
+        <path d="M220.1,796.1 L204.1,796.1 L204.1,820.1 L188.1,820.1 L192.1,828.1 L172.1,820.1 L168.1,796.1 L132.1,796.1 L116.1,780.1 L92.1,780.1 L88.1,760.1 L116.1,752.1 L128.1,728.1 L124.1,704.1 L152.1,656.1 L136.1,612.1 L148.1,612.1 L156.1,580.1 L136.1,548.1 L152.1,552.1 L180.1,532.1 L220.1,552.1 L252.1,548.1 L244.1,564.1 L268.1,580.1 L284.1,560.1 L308.1,572.1 L316.1,516.1 L344.1,520.1 L356.1,548.1 L336.1,536.1 L340.1,556.1 L324.1,572.1 L336.1,592.1 L328.1,584.1 L312.1,596.1 L328.1,604.1 L316.1,628.1 L332.1,628.1 L332.1,644.1 L320.1,636.1 L328.1,652.1 L316.1,656.1 L320.1,668.1 L332.1,664.1 L324.1,672.1 L332.1,680.1 L332.1,696.1 L316.1,688.1 L320.1,676.1 L308.1,680.1 L316.1,672.1 L312.1,664.1 L244.1,676.1 L232.1,688.1 L248.1,696.1 L228.1,700.1 L240.1,704.1 L216.1,744.1 L220.1,796.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="248" y="661" text-anchor="middle" fill="#7a3b8c">Miyagi</text>
+      </g>
       <polygon class="area-pref-shape" points="344.1,520.1 316.1,516.1 308.1,572.1 284.1,560.1 268.1,580.1 244.1,564.1 252.1,548.1 220.1,552.1 180.1,532.1 184.1,508.1 172.1,488.1 184.1,476.1 152.1,424.1 164.1,380.1 180.1,356.1 172.1,336.1 184.1,320.1 172.1,304.1 192.1,300.1 184.1,228.1 200.1,208.1 216.1,212.1 268.1,172.1 276.1,184.1 292.1,172.1 312.1,180.1 336.1,152.1 368.1,196.1 360.1,216.1 380.1,228.1 372.1,244.1 396.1,264.1 408.1,324.1 400.1,364.1 412.1,348.1 416.1,368.1 424.1,372.1 400.1,392.1 408.1,400.1 420.1,388.1 420.1,404.1 404.1,404.1 404.1,424.1 392.1,428.1 412.1,424.1 392.1,436.1 400.1,444.1 392.1,452.1 408.1,448.1 384.1,476.1 400.1,484.1 380.1,484.1 392.1,496.1 380.1,496.1 388.1,504.1 364.1,508.1 360.1,496.1 368.1,516.1 360.1,516.1 360.1,528.1 352.1,512.1"/>
+      <text class="area-main-label" x="320" y="317" text-anchor="middle" style="font-size:29.8px;stroke-width:4.7px">IWATE</text>
 
       <g class="area-pin" data-target="area-morioka">
         <line class="area-pin-leader" x1="247.9" y1="341.0" x2="184.6" y2="290.2" style="stroke-width:1.3"/>
         <rect x="235.4" y="328.5" width="25.0" height="25.0" fill="transparent"/>
         <circle cx="247.9" cy="341.0" r="8.8" style="stroke-width:2.5"/>
-        <text x="184.6" y="290.2" text-anchor="end" style="font-size:13.8px">Morioka</text>
+        <text x="184.6" y="290.2" text-anchor="end" style="font-size:15.9px">Morioka</text>
       </g>
       <g class="area-pin" data-target="area-hiraizumi">
         <line class="area-pin-leader" x1="240.2" y1="519.7" x2="195.4" y2="587.3" style="stroke-width:1.3"/>
         <rect x="227.7" y="507.20000000000005" width="25.0" height="25.0" fill="transparent"/>
         <circle cx="240.2" cy="519.7" r="8.8" style="stroke-width:2.5"/>
-        <text x="195.4" y="587.3" text-anchor="end" style="font-size:13.8px">Hiraizumi</text>
+        <text x="195.4" y="587.3" text-anchor="end" style="font-size:15.9px">Hiraizumi</text>
       </g>
       <g class="area-pin" data-target="area-sanriku">
         <line class="area-pin-leader" x1="403.1" y1="356.1" x2="475.1" y2="318.7" style="stroke-width:1.3"/>
         <rect x="390.6" y="343.6" width="25.0" height="25.0" fill="transparent"/>
         <circle cx="403.1" cy="356.1" r="8.8" style="stroke-width:2.5"/>
-        <text x="475.1" y="318.7" text-anchor="start" style="font-size:13.8px">Sanriku</text>
+        <text x="475.1" y="318.7" text-anchor="start" style="font-size:15.9px">Sanriku</text>
       </g>
     </svg>
   </div>

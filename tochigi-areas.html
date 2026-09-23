@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,38 +76,55 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Tochigi</div>
     <div class="area-map-hint">Tochigi Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 382.5 430.5" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-129 -153 600 640" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukushima">
+        <path d="M387.3,163.3 L347.3,143.3 L347.3,159.3 L323.3,183.3 L283.3,147.3 L279.3,123.3 L255.3,107.3 L207.3,95.3 L107.3,159.3 L75.3,151.3 L79.3,95.3 L59.3,75.3 L75.3,51.3 L67.3,35.3 L71.3,23.3 L107.3,19.3 L111.3,7.3 L143.3,7.3 L135.3,-28.7 L171.3,-68.7 L159.3,-76.7 L187.3,-68.7 L211.3,-72.7 L219.3,-56.7 L235.3,-60.7 L247.3,-52.7 L271.3,-56.7 L283.3,-72.7 L275.3,-76.7 L279.3,-112.7 L303.3,-112.7 L319.3,-96.7 L355.3,-96.7 L359.3,-72.7 L379.3,-64.7 L375.3,-72.7 L391.3,-72.7 L391.3,-96.7 L407.3,-96.7 L431.3,-40.7 L431.3,67.3 L423.3,131.3 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="252" y="8" text-anchor="middle" fill="#7a9e6f">Fukushima</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ibaraki">
+        <path d="M191.3,359.3 L191.3,359.3 L179.3,363.3 L171.3,335.3 L199.3,323.3 L203.3,307.3 L215.3,307.3 L227.3,287.3 L271.3,279.3 L283.3,251.3 L275.3,211.3 L287.3,203.3 L283.3,191.3 L283.3,147.3 L323.3,183.3 L347.3,159.3 L347.3,143.3 L387.3,163.3 L355.3,259.3 L359.3,283.3 L347.3,311.3 L355.3,351.3 L375.3,387.3 L367.3,395.3 L375.3,407.3 L379.3,391.3 L411.3,439.3 L339.3,391.3 L339.3,403.3 L267.3,419.3 L223.3,399.3 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="296" y="304" text-anchor="middle" fill="#c47a2f">Ibaraki</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M167.3,331.3 L171.3,335.3 L179.3,363.3 L191.3,359.3 L191.3,359.3 L215.3,411.3 L215.3,439.3 L191.3,431.3 L183.3,439.3 L167.3,435.3 L143.3,447.3 L143.3,431.3 L115.3,443.3 L95.3,427.3 L35.3,411.3 L23.3,423.3 L-20.7,411.3 L-24.7,391.3 L39.3,355.3 L59.3,315.3 L103.3,323.3 L127.3,339.3 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="123" y="392" text-anchor="middle" fill="#7a3b8c">Saitama</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gunma">
+        <path d="M167.3,331.3 L127.3,339.3 L103.3,323.3 L59.3,315.3 L39.3,355.3 L-24.7,391.3 L-40.7,383.3 L-40.7,359.3 L-52.7,347.3 L-40.7,343.3 L-48.7,319.3 L-36.7,311.3 L-40.7,287.3 L-76.7,287.3 L-88.7,267.3 L-84.7,239.3 L-64.7,223.3 L-68.7,215.3 L-32.7,203.3 L15.3,179.3 L15.3,167.3 L27.3,163.3 L23.3,143.3 L39.3,139.3 L47.3,123.3 L75.3,151.3 L107.3,159.3 L99.3,171.3 L111.3,179.3 L99.3,191.3 L95.3,227.3 L127.3,239.3 L103.3,291.3 L123.3,319.3 L159.3,315.3 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="29" y="257" text-anchor="middle" fill="#2f6690">Gunma</text>
+      </g>
       <polygon class="area-pref-shape" points="171.3,335.3 167.3,331.3 159.3,315.3 123.3,319.3 103.3,291.3 127.3,239.3 95.3,227.3 99.3,191.3 111.3,179.3 99.3,171.3 107.3,159.3 207.3,95.3 255.3,107.3 279.3,123.3 283.3,147.3 283.3,191.3 287.3,203.3 275.3,211.3 283.3,251.3 271.3,279.3 227.3,287.3 215.3,307.3 203.3,307.3 199.3,323.3"/>
+      <text class="area-main-label" x="240" y="235" text-anchor="middle" style="font-size:25.8px;stroke-width:4.0px">TOCHIGI</text>
 
       <g class="area-pin" data-target="area-nikko">
         <line class="area-pin-leader" x1="149.8" y1="196.3" x2="112.4" y2="164.5" style="stroke-width:0.8"/>
         <rect x="141.5" y="188.0" width="16.6" height="16.6" fill="transparent"/>
         <circle cx="149.8" cy="196.3" r="5.8" style="stroke-width:1.7"/>
-        <text x="112.4" y="164.5" text-anchor="end" style="font-size:9.1px">Nikko</text>
+        <text x="112.4" y="164.5" text-anchor="end" style="font-size:10.5px">Nikko</text>
       </g>
       <g class="area-pin" data-target="area-nasu">
         <line class="area-pin-leader" x1="234.7" y1="125.6" x2="252.5" y2="79.7" style="stroke-width:0.8"/>
         <rect x="226.39999999999998" y="117.3" width="16.6" height="16.6" fill="transparent"/>
         <circle cx="234.7" cy="125.6" r="5.8" style="stroke-width:1.7"/>
-        <text x="252.5" y="79.7" text-anchor="start" style="font-size:9.1px">Nasu</text>
+        <text x="252.5" y="79.7" text-anchor="start" style="font-size:10.5px">Nasu</text>
       </g>
       <g class="area-pin" data-target="area-kinugawa">
         <line class="area-pin-leader" x1="176.1" y1="178.6" x2="161.5" y2="131.7" style="stroke-width:0.8"/>
         <rect x="167.79999999999998" y="170.29999999999998" width="16.6" height="16.6" fill="transparent"/>
         <circle cx="176.1" cy="178.6" r="5.8" style="stroke-width:1.7"/>
-        <text x="161.5" y="131.7" text-anchor="end" style="font-size:9.1px">Kinugawa Onsen</text>
+        <text x="161.5" y="131.7" text-anchor="end" style="font-size:10.5px">Kinugawa Onsen</text>
       </g>
       <g class="area-pin" data-target="area-utsunomiya">
         <line class="area-pin-leader" x1="206.4" y1="241.8" x2="247.6" y2="268.7" style="stroke-width:0.8"/>
         <rect x="198.1" y="233.5" width="16.6" height="16.6" fill="transparent"/>
         <circle cx="206.4" cy="241.8" r="5.8" style="stroke-width:1.7"/>
-        <text x="247.6" y="268.7" text-anchor="start" style="font-size:9.1px">Utsunomiya</text>
+        <text x="247.6" y="268.7" text-anchor="start" style="font-size:10.5px">Utsunomiya</text>
       </g>
       <g class="area-pin" data-target="area-ashikaga">
         <line class="area-pin-leader" x1="119.5" y1="299.9" x2="83.1" y2="333.0" style="stroke-width:0.8"/>
         <rect x="111.2" y="291.59999999999997" width="16.6" height="16.6" fill="transparent"/>
         <circle cx="119.5" cy="299.9" r="5.8" style="stroke-width:1.7"/>
-        <text x="83.1" y="333.0" text-anchor="end" style="font-size:9.1px">Ashikaga</text>
+        <text x="83.1" y="333.0" text-anchor="end" style="font-size:10.5px">Ashikaga</text>
       </g>
     </svg>
   </div>

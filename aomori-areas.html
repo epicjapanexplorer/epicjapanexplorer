@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,41 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Aomori</div>
     <div class="area-map-hint">Aomori Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 844.5 828.5" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-40 -40 924 1026" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="iwate">
+        <path d="M602.2,886.2 L574.2,882.2 L566.2,938.2 L542.2,926.2 L526.2,946.2 L502.2,930.2 L510.2,914.2 L478.2,918.2 L438.2,898.2 L442.2,874.2 L430.2,854.2 L442.2,842.2 L410.2,790.2 L422.2,746.2 L438.2,722.2 L430.2,702.2 L442.2,686.2 L430.2,670.2 L450.2,666.2 L442.2,594.2 L458.2,574.2 L474.2,578.2 L526.2,538.2 L534.2,550.2 L550.2,538.2 L570.2,546.2 L594.2,518.2 L626.2,562.2 L618.2,582.2 L638.2,594.2 L630.2,610.2 L654.2,630.2 L666.2,690.2 L658.2,730.2 L670.2,714.2 L674.2,734.2 L682.2,738.2 L658.2,758.2 L666.2,766.2 L678.2,754.2 L678.2,770.2 L662.2,770.2 L662.2,790.2 L650.2,794.2 L670.2,790.2 L650.2,802.2 L658.2,810.2 L650.2,818.2 L666.2,814.2 L642.2,842.2 L658.2,850.2 L638.2,850.2 L650.2,862.2 L638.2,862.2 L646.2,870.2 L622.2,874.2 L618.2,862.2 L626.2,882.2 L618.2,882.2 L618.2,894.2 L610.2,878.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="578" y="765" text-anchor="middle" fill="#7a9e6f">Iwate</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="akita">
+        <path d="M438.2,898.2 L410.2,918.2 L394.2,914.2 L378.2,910.2 L370.2,890.2 L314.2,878.2 L298.2,858.2 L258.2,862.2 L266.2,822.2 L286.2,786.2 L290.2,698.2 L266.2,666.2 L234.2,678.2 L222.2,642.2 L246.2,654.2 L270.2,622.2 L282.2,586.2 L282.2,554.2 L262.2,534.2 L278.2,538.2 L290.2,522.2 L338.2,530.2 L350.2,518.2 L378.2,538.2 L390.2,530.2 L402.2,538.2 L442.2,510.2 L442.2,530.2 L462.2,530.2 L458.2,574.2 L442.2,594.2 L450.2,666.2 L430.2,670.2 L442.2,686.2 L430.2,702.2 L438.2,722.2 L422.2,746.2 L410.2,790.2 L442.2,842.2 L430.2,854.2 L442.2,874.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="361" y="692" text-anchor="middle" fill="#c47a2f">Akita</text>
+      </g>
       <polygon class="area-pref-shape" points="262.2,534.2 262.2,502.2 250.2,490.2 274.2,454.2 298.2,454.2 322.2,438.2 334.2,374.2 318.2,358.2 330.2,354.2 334.2,326.2 358.2,342.2 374.2,330.2 390.2,342.2 398.2,402.2 410.2,430.2 434.2,414.2 430.2,398.2 438.2,382.2 482.2,418.2 494.2,406.2 510.2,342.2 494.2,314.2 470.2,338.2 414.2,350.2 438.2,250.2 506.2,294.2 542.2,274.2 534.2,398.2 542.2,454.2 558.2,498.2 574.2,494.2 594.2,518.2 570.2,546.2 550.2,538.2 534.2,550.2 526.2,538.2 474.2,578.2 458.2,574.2 462.2,530.2 442.2,530.2 442.2,510.2 402.2,538.2 390.2,530.2 378.2,538.2 350.2,518.2 338.2,530.2 290.2,522.2 278.2,538.2"/>
+      <text class="area-main-label" x="422" y="361" text-anchor="middle" style="font-size:39.7px;stroke-width:6.2px">AOMORI</text>
 
       <g class="area-pin" data-target="area-aomori">
         <line class="area-pin-leader" x1="412.6" y1="430.3" x2="368.1" y2="368.6" style="stroke-width:1.8"/>
         <rect x="394.20000000000005" y="411.90000000000003" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="412.6" cy="430.3" r="12.9" style="stroke-width:3.7"/>
-        <text x="368.1" y="368.6" text-anchor="end" style="font-size:20.2px">Aomori City &amp; Asamushi</text>
+        <text x="368.1" y="368.6" text-anchor="end" style="font-size:23.2px">Aomori City &amp; Asamushi</text>
       </g>
       <g class="area-pin" data-target="area-hirosaki">
         <line class="area-pin-leader" x1="360.4" y1="484.5" x2="297.0" y2="526.6" style="stroke-width:1.8"/>
         <rect x="342.0" y="466.1" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="360.4" cy="484.5" r="12.9" style="stroke-width:3.7"/>
-        <text x="297.0" y="526.6" text-anchor="end" style="font-size:20.2px">Hirosaki</text>
+        <text x="297.0" y="526.6" text-anchor="end" style="font-size:23.2px">Hirosaki</text>
       </g>
       <g class="area-pin" data-target="area-oirase">
         <line class="area-pin-leader" x1="443.5" y1="472.2" x2="489.0" y2="533.2" style="stroke-width:1.8"/>
         <rect x="425.1" y="453.8" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="443.5" cy="472.2" r="12.9" style="stroke-width:3.7"/>
-        <text x="489.0" y="533.2" text-anchor="start" style="font-size:20.2px">Oirase Gorge</text>
+        <text x="489.0" y="533.2" text-anchor="start" style="font-size:23.2px">Oirase Gorge</text>
       </g>
       <g class="area-pin" data-target="area-hachinohe">
         <line class="area-pin-leader" x1="557.5" y1="506.7" x2="626.4" y2="538.9" style="stroke-width:1.8"/>
         <rect x="539.1" y="488.3" width="36.8" height="36.8" fill="transparent"/>
         <circle cx="557.5" cy="506.7" r="12.9" style="stroke-width:3.7"/>
-        <text x="626.4" y="538.9" text-anchor="start" style="font-size:20.2px">Hachinohe</text>
+        <text x="626.4" y="538.9" text-anchor="start" style="font-size:23.2px">Hachinohe</text>
       </g>
     </svg>
   </div>

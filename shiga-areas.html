@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,32 +76,49 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Shiga</div>
     <div class="area-map-hint">Shiga Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 298.5 382.5" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-145 -149 648 760" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukui">
+        <path d="M179.2,-68.8 L203.2,-36.8 L243.2,-32.8 L263.2,-12.8 L283.2,-16.8 L275.2,7.2 L299.2,39.2 L287.2,55.2 L235.2,59.2 L231.2,67.2 L207.2,55.2 L187.2,91.2 L159.2,79.2 L163.2,111.2 L151.2,107.2 L151.2,119.2 L127.2,131.2 L115.2,123.2 L103.2,151.2 L91.2,147.2 L79.2,163.2 L31.2,155.2 L19.2,135.2 L23.2,111.2 L31.2,127.2 L59.2,115.2 L43.2,127.2 L71.2,131.2 L79.2,119.2 L71.2,123.2 L71.2,111.2 L95.2,119.2 L87.2,111.2 L99.2,103.2 L91.2,91.2 L123.2,95.2 L119.2,71.2 L131.2,63.2 L135.2,83.2 L143.2,87.2 L147.2,59.2 L119.2,7.2 L155.2,-44.8 L155.2,-60.8 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="139" y="77" text-anchor="middle" fill="#7a9e6f">Fukui</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gifu">
+        <path d="M451.2,-92.8 L463.2,-68.8 L443.2,-28.8 L455.2,-12.8 L451.2,3.2 L427.2,31.2 L407.2,31.2 L399.2,51.2 L423.2,63.2 L443.2,91.2 L435.2,103.2 L459.2,127.2 L451.2,143.2 L459.2,155.2 L447.2,155.2 L455.2,171.2 L447.2,183.2 L419.2,199.2 L395.2,183.2 L367.2,191.2 L347.2,183.2 L323.2,151.2 L283.2,163.2 L267.2,195.2 L263.2,219.2 L235.2,191.2 L211.2,199.2 L203.2,195.2 L219.2,155.2 L215.2,143.2 L203.2,115.2 L191.2,115.2 L187.2,91.2 L207.2,55.2 L231.2,67.2 L235.2,59.2 L287.2,55.2 L299.2,39.2 L275.2,7.2 L283.2,-16.8 L303.2,-56.8 L291.2,-68.8 L307.2,-88.8 L323.2,-80.8 L327.2,-64.8 L363.2,-108.8 L375.2,-100.8 L395.2,-108.8 L395.2,-100.8 L411.2,-108.8 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="343" y="64" text-anchor="middle" fill="#c47a2f">Gifu</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="mie">
+        <path d="M123.2,571.2 L103.2,559.2 L91.2,535.2 L95.2,535.2 L95.2,523.2 L103.2,523.2 L123.2,511.2 L123.2,499.2 L143.2,495.2 L147.2,483.2 L143.2,455.2 L151.2,439.2 L143.2,427.2 L151.2,423.2 L139.2,403.2 L171.2,379.2 L135.2,359.2 L139.2,343.2 L131.2,339.2 L143.2,335.2 L135.2,319.2 L131.2,303.2 L143.2,299.2 L147.2,279.2 L175.2,291.2 L199.2,279.2 L215.2,239.2 L211.2,199.2 L235.2,191.2 L263.2,219.2 L283.2,251.2 L259.2,255.2 L263.2,271.2 L235.2,319.2 L231.2,351.2 L295.2,379.2 L303.2,399.2 L315.2,395.2 L311.2,411.2 L291.2,411.2 L311.2,415.2 L311.2,435.2 L295.2,439.2 L303.2,431.2 L291.2,423.2 L287.2,431.2 L263.2,435.2 L275.2,419.2 L259.2,419.2 L247.2,439.2 L247.2,431.2 L235.2,443.2 L227.2,435.2 L227.2,447.2 L219.2,439.2 L191.2,455.2 L179.2,463.2 L183.2,483.2 L175.2,479.2 L179.2,471.2 L163.2,483.2 L179.2,499.2 L171.2,499.2 L179.2,511.2 L167.2,503.2 L171.2,515.2 L143.2,531.2 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="199" y="412" text-anchor="middle" fill="#7a3b8c">Mie</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kyoto">
+        <path d="M71.2,307.2 L59.2,275.2 L43.2,271.2 L47.2,259.2 L31.2,271.2 L-0.8,239.2 L3.2,219.2 L-36.8,211.2 L-44.8,183.2 L-64.8,191.2 L-92.8,171.2 L-88.8,147.2 L-64.8,147.2 L-64.8,123.2 L-68.8,115.2 L-88.8,119.2 L-104.8,99.2 L-100.8,83.2 L-92.8,95.2 L-96.8,87.2 L-28.8,55.2 L-12.8,83.2 L-44.8,111.2 L-32.8,115.2 L-24.8,99.2 L-24.8,115.2 L-8.8,123.2 L-12.8,139.2 L-4.8,127.2 L3.2,131.2 L-4.8,111.2 L19.2,99.2 L23.2,111.2 L19.2,135.2 L31.2,155.2 L79.2,163.2 L99.2,183.2 L87.2,239.2 L99.2,279.2 L115.2,279.2 L131.2,303.2 L135.2,319.2 L127.2,327.2 L111.2,315.2 L95.2,327.2 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="5" y="179" text-anchor="middle" fill="#2f6690">Kyoto</text>
+      </g>
       <path class="area-pref-shape" d="M159.2,79.2 L187.2,91.2 L191.2,115.2 L203.2,115.2 L215.2,143.2 L219.2,155.2 L203.2,195.2 L211.2,199.2 L215.2,239.2 L199.2,279.2 L175.2,291.2 L147.2,279.2 L143.2,299.2 L131.2,303.2 L115.2,279.2 L99.2,279.2 L87.2,239.2 L99.2,183.2 L79.2,163.2 L91.2,147.2 L103.2,151.2 L115.2,123.2 L127.2,131.2 L151.2,119.2 L151.2,107.2 L163.2,111.2 L159.2,79.2 Z M159.2,131.2 L159.2,143.2 L151.2,131.2 L135.2,143.2 L143.2,175.2 L111.2,207.2 L111.2,223.2 L99.2,247.2 L107.2,259.2 L115.2,223.2 L139.2,219.2 L143.2,203.2 L179.2,179.2 L183.2,163.2 L159.2,131.2 Z"/>
+      <text class="area-main-label" x="95" y="90" text-anchor="middle" style="font-size:27.9px;stroke-width:4.4px">SHIGA</text>
 
       <g class="area-pin" data-target="area-hieizan">
         <line class="area-pin-leader" x1="90.8" y1="233.7" x2="59.1" y2="261.7" style="stroke-width:0.6"/>
         <rect x="84.3" y="227.2" width="13.0" height="13.0" fill="transparent"/>
         <circle cx="90.8" cy="233.7" r="4.5" style="stroke-width:1.3"/>
-        <text x="59.1" y="261.7" text-anchor="end" style="font-size:7.1px">Mt. Hiei</text>
+        <text x="59.1" y="261.7" text-anchor="end" style="font-size:17px">Mt. Hiei</text>
       </g>
       <g class="area-pin" data-target="area-hikone">
         <line class="area-pin-leader" x1="168.7" y1="185.4" x2="210.7" y2="190.8" style="stroke-width:0.6"/>
         <rect x="162.2" y="178.9" width="13.0" height="13.0" fill="transparent"/>
         <circle cx="168.7" cy="185.4" r="4.5" style="stroke-width:1.3"/>
-        <text x="210.7" y="190.8" text-anchor="start" style="font-size:7.1px">Hikone</text>
+        <text x="210.7" y="190.8" text-anchor="start" style="font-size:17px">Hikone</text>
       </g>
       <g class="area-pin" data-target="area-omihachiman">
         <line class="area-pin-leader" x1="138.8" y1="220.3" x2="128.1" y2="261.2" style="stroke-width:0.6"/>
         <rect x="132.3" y="213.8" width="13.0" height="13.0" fill="transparent"/>
         <circle cx="138.8" cy="220.3" r="4.5" style="stroke-width:1.3"/>
-        <text x="128.1" y="261.2" text-anchor="end" style="font-size:7.1px">Omihachiman</text>
+        <text x="128.1" y="261.2" text-anchor="end" style="font-size:17px">Omihachiman</text>
       </g>
       <g class="area-pin" data-target="area-biwako">
         <line class="area-pin-leader" x1="148.3" y1="167.4" x2="147.6" y2="125.2" style="stroke-width:0.6"/>
         <rect x="141.8" y="160.9" width="13.0" height="13.0" fill="transparent"/>
         <circle cx="148.3" cy="167.4" r="4.5" style="stroke-width:1.3"/>
-        <text x="147.6" y="125.2" text-anchor="middle" style="font-size:7.1px">Lake Biwa</text>
+        <text x="147.6" y="125.2" text-anchor="middle" style="font-size:17px">Lake Biwa</text>
       </g>
     </svg>
   </div>

@@ -34,11 +34,14 @@
   .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
   .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
   .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
   .area-pin{cursor:pointer;}
   .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
   .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
   .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
-  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:11px;fill:var(--sumi);}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
   .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
   .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
   .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
@@ -73,26 +76,55 @@
   <div class="area-map-wrap">
     <div class="area-map-title">Where each area sits within Gifu</div>
     <div class="area-map-hint">Gifu Prefecture's real boundary (same map data as the main site) — click a pin to jump to that area.</div>
-    <svg class="area-map-svg" viewBox="0 0 533.2 585.2" xmlns="http://www.w3.org/2000/svg">
+    <svg class="area-map-svg" viewBox="-79 -179 744 1028" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="toyama">
+        <path d="M392.6,144.6 L352.6,128.6 L336.6,136.6 L336.6,128.6 L316.6,136.6 L304.6,128.6 L268.6,172.6 L264.6,156.6 L248.6,148.6 L232.6,168.6 L228.6,136.6 L236.6,104.6 L232.6,88.6 L240.6,76.6 L232.6,60.6 L244.6,52.6 L252.6,12.6 L284.6,4.6 L272.6,28.6 L320.6,56.6 L352.6,40.6 L360.6,8.6 L400.6,-3.4 L416.6,8.6 L428.6,52.6 L424.6,96.6 L412.6,100.6 L416.6,112.6 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="315" y="89" text-anchor="middle" fill="#7a9e6f">Toyama</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ishikawa">
+        <path d="M232.6,168.6 L244.6,180.6 L224.6,220.6 L204.6,224.6 L184.6,204.6 L144.6,200.6 L120.6,168.6 L180.6,108.6 L224.6,36.6 L228.6,-7.4 L220.6,-23.4 L220.6,-43.4 L208.6,-47.4 L228.6,-99.4 L328.6,-139.4 L344.6,-135.4 L348.6,-119.4 L324.6,-115.4 L320.6,-79.4 L304.6,-83.4 L276.6,-51.4 L268.6,-67.4 L256.6,-63.4 L248.6,-27.4 L272.6,-19.4 L284.6,-35.4 L284.6,4.6 L252.6,12.6 L244.6,52.6 L232.6,60.6 L240.6,76.6 L232.6,88.6 L236.6,104.6 L228.6,136.6 L232.6,168.6 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="247" y="30" text-anchor="middle" fill="#c47a2f">Ishikawa</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="fukui">
+        <path d="M120.6,168.6 L144.6,200.6 L184.6,204.6 L204.6,224.6 L224.6,220.6 L216.6,244.6 L240.6,276.6 L228.6,292.6 L176.6,296.6 L172.6,304.6 L148.6,292.6 L128.6,328.6 L100.6,316.6 L104.6,348.6 L92.6,344.6 L92.6,356.6 L68.6,368.6 L56.6,360.6 L44.6,388.6 L32.6,384.6 L20.6,400.6 L-27.4,392.6 L-39.4,372.6 L-35.4,348.6 L-27.4,364.6 L0.6,352.6 L-15.4,364.6 L12.6,368.6 L20.6,356.6 L12.6,360.6 L12.6,348.6 L36.6,356.6 L28.6,348.6 L40.6,340.6 L32.6,328.6 L64.6,332.6 L60.6,308.6 L72.6,300.6 L76.6,320.6 L84.6,324.6 L88.6,296.6 L60.6,244.6 L96.6,192.6 L96.6,176.6 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="81" y="314" text-anchor="middle" fill="#7a3b8c">Fukui</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shiga">
+        <path d="M100.6,316.6 L128.6,328.6 L132.6,352.6 L144.6,352.6 L156.6,380.6 L160.6,392.6 L144.6,432.6 L152.6,436.6 L156.6,476.6 L140.6,516.6 L116.6,528.6 L88.6,516.6 L84.6,536.6 L72.6,540.6 L56.6,516.6 L40.6,516.6 L28.6,476.6 L40.6,420.6 L20.6,400.6 L32.6,384.6 L44.6,388.6 L56.6,360.6 L68.6,368.6 L92.6,356.6 L92.6,344.6 L104.6,348.6 L100.6,316.6 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="95" y="419" text-anchor="middle" fill="#2f6690">Shiga</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nagano">
+        <path d="M612.6,56.6 L576.6,68.6 L580.6,76.6 L560.6,92.6 L556.6,120.6 L568.6,140.6 L604.6,140.6 L608.6,164.6 L596.6,172.6 L604.6,196.6 L592.6,200.6 L604.6,212.6 L604.6,236.6 L620.6,244.6 L624.6,264.6 L612.6,272.6 L596.6,260.6 L572.6,268.6 L552.6,248.6 L512.6,292.6 L524.6,304.6 L512.6,312.6 L520.6,332.6 L504.6,352.6 L504.6,400.6 L444.6,440.6 L412.6,432.6 L392.6,444.6 L388.6,420.6 L396.6,408.6 L388.6,392.6 L400.6,392.6 L392.6,380.6 L400.6,364.6 L376.6,340.6 L384.6,328.6 L364.6,300.6 L340.6,288.6 L348.6,268.6 L368.6,268.6 L392.6,240.6 L396.6,224.6 L384.6,208.6 L404.6,168.6 L392.6,144.6 L416.6,112.6 L412.6,100.6 L424.6,96.6 L428.6,52.6 L448.6,24.6 L448.6,12.6 L476.6,16.6 L476.6,36.6 L484.6,40.6 L516.6,24.6 L532.6,32.6 L532.6,12.6 L552.6,-7.4 L580.6,-15.4 L592.6,-7.4 L592.6,12.6 L612.6,28.6 Z" fill="none" stroke="#a3324a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="494" y="201" text-anchor="middle" fill="#a3324a">Nagano</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="aichi">
+        <path d="M372.6,572.6 L276.6,596.6 L284.6,576.6 L296.6,584.6 L328.6,560.6 L336.6,572.6 L344.6,560.6 L340.6,548.6 L316.6,536.6 L308.6,552.6 L276.6,548.6 L260.6,536.6 L268.6,504.6 L252.6,548.6 L268.6,568.6 L256.6,568.6 L240.6,552.6 L244.6,532.6 L236.6,520.6 L236.6,500.6 L252.6,472.6 L224.6,488.6 L204.6,456.6 L208.6,432.6 L224.6,400.6 L264.6,388.6 L288.6,420.6 L308.6,428.6 L336.6,420.6 L360.6,436.6 L388.6,420.6 L392.6,444.6 L412.6,432.6 L444.6,440.6 L404.6,520.6 L372.6,540.6 Z" fill="none" stroke="#2f8f6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="301" y="505" text-anchor="middle" fill="#2f8f6f">Aichi</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="mie">
+        <path d="M64.6,808.6 L44.6,796.6 L32.6,772.6 L36.6,772.6 L36.6,760.6 L44.6,760.6 L64.6,748.6 L64.6,736.6 L84.6,732.6 L88.6,720.6 L84.6,692.6 L92.6,676.6 L84.6,664.6 L92.6,660.6 L80.6,640.6 L112.6,616.6 L76.6,596.6 L80.6,580.6 L72.6,576.6 L84.6,572.6 L76.6,556.6 L72.6,540.6 L84.6,536.6 L88.6,516.6 L116.6,528.6 L140.6,516.6 L156.6,476.6 L152.6,436.6 L176.6,428.6 L204.6,456.6 L224.6,488.6 L200.6,492.6 L204.6,508.6 L176.6,556.6 L172.6,588.6 L236.6,616.6 L244.6,636.6 L256.6,632.6 L252.6,648.6 L232.6,648.6 L252.6,652.6 L252.6,672.6 L236.6,676.6 L244.6,668.6 L232.6,660.6 L228.6,668.6 L204.6,672.6 L216.6,656.6 L200.6,656.6 L188.6,676.6 L188.6,668.6 L176.6,680.6 L168.6,672.6 L168.6,684.6 L160.6,676.6 L132.6,692.6 L120.6,700.6 L124.6,720.6 L116.6,716.6 L120.6,708.6 L104.6,720.6 L120.6,736.6 L112.6,736.6 L120.6,748.6 L108.6,740.6 L112.6,752.6 L84.6,768.6 Z" fill="none" stroke="#b8862f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="140" y="649" text-anchor="middle" fill="#b8862f">Mie</text>
+      </g>
       <polygon class="area-pref-shape" points="392.6,144.6 404.6,168.6 384.6,208.6 396.6,224.6 392.6,240.6 368.6,268.6 348.6,268.6 340.6,288.6 364.6,300.6 384.6,328.6 376.6,340.6 400.6,364.6 392.6,380.6 400.6,392.6 388.6,392.6 396.6,408.6 388.6,420.6 360.6,436.6 336.6,420.6 308.6,428.6 288.6,420.6 264.6,388.6 224.6,400.6 208.6,432.6 204.6,456.6 176.6,428.6 152.6,436.6 144.6,432.6 160.6,392.6 156.6,380.6 144.6,352.6 132.6,352.6 128.6,328.6 148.6,292.6 172.6,304.6 176.6,296.6 228.6,292.6 240.6,276.6 216.6,244.6 224.6,220.6 244.6,180.6 232.6,168.6 248.6,148.6 264.6,156.6 268.6,172.6 304.6,128.6 316.6,136.6 336.6,128.6 336.6,136.6 352.6,128.6"/>
+      <text class="area-main-label" x="260" y="440" text-anchor="middle" style="font-size:32.0px;stroke-width:5.0px">GIFU</text>
 
       <g class="area-pin" data-target="area-takayama">
         <line class="area-pin-leader" x1="320.3" y1="221.9" x2="348.5" y2="159.4" style="stroke-width:1.2"/>
         <rect x="308.7" y="210.3" width="23.2" height="23.2" fill="transparent"/>
         <circle cx="320.3" cy="221.9" r="8.1" style="stroke-width:2.3"/>
-        <text x="348.5" y="159.4" text-anchor="start" style="font-size:12.8px">Takayama</text>
+        <text x="348.5" y="159.4" text-anchor="start" style="font-size:14.7px">Takayama</text>
       </g>
       <g class="area-pin" data-target="area-shirakawago">
         <line class="area-pin-leader" x1="252.0" y1="194.7" x2="231.9" y2="129.2" style="stroke-width:1.2"/>
         <rect x="240.4" y="183.1" width="23.2" height="23.2" fill="transparent"/>
         <circle cx="252.0" cy="194.7" r="8.1" style="stroke-width:2.3"/>
-        <text x="231.9" y="129.2" text-anchor="end" style="font-size:12.8px">Shirakawa-go</text>
+        <text x="231.9" y="129.2" text-anchor="end" style="font-size:14.7px">Shirakawa-go</text>
       </g>
       <g class="area-pin" data-target="area-gero">
         <line class="area-pin-leader" x1="318.2" y1="305.6" x2="386.2" y2="314.9" style="stroke-width:1.2"/>
         <rect x="306.59999999999997" y="294.0" width="23.2" height="23.2" fill="transparent"/>
         <circle cx="318.2" cy="305.6" r="8.1" style="stroke-width:2.3"/>
-        <text x="386.2" y="314.9" text-anchor="start" style="font-size:12.8px">Gero Onsen</text>
+        <text x="386.2" y="314.9" text-anchor="start" style="font-size:14.7px">Gero Onsen</text>
       </g>
     </svg>
   </div>
