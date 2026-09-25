@@ -3433,6 +3433,27 @@ document.getElementById('topShareWidget').innerHTML = buildShareWidget(
   '映えるトラベル&グルメ — 日本47都道府県をめぐるインタラクティブマップ',
   true
 );
+
+/* ディープリンク: epicjapanexplorer.com/jp/#wakayama のようなURLで、
+   該当県をクリックした時と同じ状態(同じズーム・同じ詳細パネル)を
+   ページ読み込み時に再現する。hashchangeでも再チェックするので、
+   ページ内でハッシュを変更した場合や、戻る/進むボタンでも機能する。
+   都道府県のg要素にはid属性がなくクラス名(例: class="akita tohoku prefecture")
+   のみが付与されているため、getElementByIdではなくクラスセレクタで検索する。 */
+function selectPrefectureFromHashJP(){
+  const slug = decodeURIComponent(location.hash.replace(/^#/, '')).toLowerCase();
+  if(!slug) return;
+  if(!/^[a-z]+$/.test(slug)) return;
+  const el = document.querySelector('.' + slug + '.prefecture');
+  if(!el) return;
+  el.dispatchEvent(new MouseEvent('click', {bubbles:true, cancelable:true}));
+  setTimeout(()=>{
+    mapSection.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 400);
+}
+window.addEventListener('DOMContentLoaded', selectPrefectureFromHashJP);
+window.addEventListener('hashchange', selectPrefectureFromHashJP);
+selectPrefectureFromHashJP();
 </script>
 </body>
 </html>
