@@ -1125,14 +1125,6 @@
       </div>
     </div>
     <div id="mapAdSlotDesktopAnchor"></div>
-    <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner desktop-map-jr-banner" target="_blank" rel="noopener sponsored">
-      <span class="aff-banner-icon">🚆</span>
-      <span class="aff-banner-text">
-        <span class="aff-banner-title">Find Your Best JR Pass</span>
-      </span>
-      <span class="aff-banner-arrow">→</span>
-    </a>
-    <div id="prefAffiliatesAnchor"></div>
   </div>
 
   <div class="detail empty" id="detail">
@@ -3826,9 +3818,37 @@ function renderDetail(row){
   detail.classList.remove('empty');
   const youtubeSection = document.getElementById('youtube-section');
   const travelTipsSection = document.getElementById('travel-tips-section');
+  const epicDaysSectionEl = document.getElementById('epicDaysSection');
   if(youtubeSection) youtubeSection.style.display = 'none';
   if(travelTipsSection) travelTipsSection.style.display = 'none';
+  if(epicDaysSectionEl) epicDaysSectionEl.style.display = 'none';
   const videos = row[FIELD.video] || [];
+  const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => {
+    if(b.cities){
+      return `
+        <div class="aff-banner-grouped">
+          <div class="aff-group-title">${b.label}</div>
+          <div class="aff-city-list">
+            ${b.cities.map(c => `
+              <div class="aff-city-block">
+                <div class="aff-city-name">${c.label}</div>
+                <div class="aff-city-desc">${c.desc}</div>
+                <a href="${c.url}" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in ${c.short || c.label} →</a>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+    return `
+      <a href="${b.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
+        <span class="aff-banner-text">
+          <span class="aff-banner-title">${b.label}</span>
+        </span>
+        <span class="aff-banner-arrow">→</span>
+      </a>
+    `;
+  }).join('');
   detail.innerHTML = `
     <button class="back-btn" id="backToMap">← All 47 Prefectures</button>
     <div class="d-head">
@@ -3855,6 +3875,16 @@ function renderDetail(row){
     ${factGallery(row[FIELD.food], row[FIELD.code], 'food')}
 
     ${seasonalGuideHtml(row[FIELD.code])}
+
+    <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-icon">🚆</span>
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">Find Your Best JR Pass</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
+
+    ${affiliateBannersHtml}
 
     ${SHOW_AFFILIATE_BANNERS ? `
     <div class="aff-banners">
@@ -3948,6 +3978,7 @@ function renderDetail(row){
     hint.textContent = 'Click a prefecture to see details';
     if(youtubeSection) youtubeSection.style.display = '';
     if(travelTipsSection) travelTipsSection.style.display = '';
+    if(epicDaysSectionEl) epicDaysSectionEl.style.display = '';
   });
 
   if(row[FIELD.code] === 13){
@@ -3955,37 +3986,6 @@ function renderDetail(row){
   } else {
     showLeftMainMap();
   }
-
-  const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => {
-    if(b.cities){
-      return `
-        <div class="aff-banner-grouped">
-          <div class="aff-group-title">${b.label}</div>
-          <div class="aff-city-list">
-            ${b.cities.map(c => `
-              <div class="aff-city-block">
-                <div class="aff-city-name">${c.label}</div>
-                <div class="aff-city-desc">${c.desc}</div>
-                <a href="${c.url}" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in ${c.short || c.label} →</a>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      `;
-    }
-    return `
-      <a href="${b.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
-        <span class="aff-banner-text">
-          <span class="aff-banner-title">${b.label}</span>
-        </span>
-        <span class="aff-banner-arrow">→</span>
-      </a>
-    `;
-  }).join('');
-  const affiliatesAnchor = document.getElementById('prefAffiliatesAnchor');
-  if(affiliatesAnchor) affiliatesAnchor.innerHTML = affiliateBannersHtml;
-  const affiliatesAnchorMobile = document.getElementById('prefAffiliatesAnchorMobile');
-  if(affiliatesAnchorMobile) affiliatesAnchorMobile.innerHTML = affiliateBannersHtml;
 
   detail.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
