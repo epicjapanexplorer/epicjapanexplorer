@@ -1088,7 +1088,6 @@
       スクロールで拡大縮小、ドラッグで移動、または +/− ボタンをご利用ください。⤺ ボタンで全体表示に戻ります。都道府県の境界データ: <a href="https://github.com/geolonia/japanese-prefectures" target="_blank" rel="noopener">Geolonia japanese-prefectures</a> (GFDL)。
     </div>
     <div id="mapAdSlotDesktopAnchor"></div>
-    <div id="prefAffiliatesAnchor"></div>
   </div>
 
   <div class="detail empty" id="detail">
@@ -3117,10 +3116,20 @@ function renderDetail(row){
   const youtubeSection = document.getElementById('youtube-section');
   const youtubeSection2 = document.getElementById('youtube-section-2');
   const travelTipsSection = document.getElementById('travel-tips-section');
+  const epicDaysSectionEl = document.getElementById('epicDaysSection');
   if(youtubeSection) youtubeSection.style.display = 'none';
   if(youtubeSection2) youtubeSection2.style.display = 'none';
   if(travelTipsSection) travelTipsSection.style.display = 'none';
+  if(epicDaysSectionEl) epicDaysSectionEl.style.display = 'none';
   const videos = row[FIELD.video] || [];
+  const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => `
+    <a href="${b.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">${b.label}</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
+  `).join('');
   detail.innerHTML = `
     <button class="back-btn" id="backToMap">← 47都道府県に戻る</button>
     <div class="d-head">
@@ -3144,6 +3153,8 @@ function renderDetail(row){
     ${factGallery(row[FIELD.food], row[FIELD.code], 'food')}
 
     ${seasonalGuideHtml(row[FIELD.code])}
+
+    ${affiliateBannersHtml}
 
     ${SHOW_AFFILIATE_BANNERS ? `
     <div class="aff-banners">
@@ -3270,6 +3281,7 @@ function renderDetail(row){
     if(youtubeSection) youtubeSection.style.display = '';
     if(youtubeSection2) youtubeSection2.style.display = '';
     if(travelTipsSection) travelTipsSection.style.display = '';
+    if(epicDaysSectionEl) epicDaysSectionEl.style.display = '';
   });
 
   if(row[FIELD.code] === 13){
@@ -3277,19 +3289,6 @@ function renderDetail(row){
   } else {
     showLeftMainMap();
   }
-
-  const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => `
-    <a href="${b.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
-      <span class="aff-banner-text">
-        <span class="aff-banner-title">${b.label}</span>
-      </span>
-      <span class="aff-banner-arrow">→</span>
-    </a>
-  `).join('');
-  const affiliatesAnchor = document.getElementById('prefAffiliatesAnchor');
-  if(affiliatesAnchor) affiliatesAnchor.innerHTML = affiliateBannersHtml;
-  const affiliatesAnchorMobile = document.getElementById('prefAffiliatesAnchorMobile');
-  if(affiliatesAnchorMobile) affiliatesAnchorMobile.innerHTML = affiliateBannersHtml;
 
   detail.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
