@@ -851,6 +851,7 @@
   .desktop-map-jr-banner{display:none;}
   @media (min-width:941px){.desktop-map-jr-banner{display:flex;margin-top:16px;}}
   @media (min-width:941px){.mobile-jr-banner{display:none;}}
+  @media (max-width:940px){.detail-jr-banner{display:none;}}
   #prefAffiliatesAnchor{display:none;flex-direction:column;gap:10px;}
   #prefAffiliatesAnchor:not(:empty){margin-top:16px;}
   @media (min-width:941px){#prefAffiliatesAnchor{display:flex;}}
@@ -3876,7 +3877,7 @@ function renderDetail(row){
 
     ${seasonalGuideHtml(row[FIELD.code])}
 
-    <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner" target="_blank" rel="noopener sponsored">
+    <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner detail-jr-banner" target="_blank" rel="noopener sponsored">
       <span class="aff-banner-icon">🚆</span>
       <span class="aff-banner-text">
         <span class="aff-banner-title">Find Your Best JR Pass</span>
