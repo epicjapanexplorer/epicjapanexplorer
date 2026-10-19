@@ -1382,6 +1382,10 @@
   </div>
 </section>
 
+<nav class="all-prefs-nav" aria-label="47都道府県一覧" style="max-width:1100px;margin:48px auto 0;padding:0 6vw;">
+  <h2 style="font-family:var(--font-display);font-size:clamp(20px,3vw,26px);color:var(--aiiro-deep);margin:0 0 14px;">47都道府県から探す</h2>
+  <p style="font-size:14px;line-height:2.1;margin:0;" id="allPrefsLinks"><a href="hokkaido.html" style="color:var(--shu);">北海道</a> · <a href="aomori.html" style="color:var(--shu);">青森県</a> · <a href="iwate.html" style="color:var(--shu);">岩手県</a> · <a href="miyagi.html" style="color:var(--shu);">宮城県</a> · <a href="akita.html" style="color:var(--shu);">秋田県</a> · <a href="yamagata.html" style="color:var(--shu);">山形県</a> · <a href="fukushima.html" style="color:var(--shu);">福島県</a> · <a href="ibaraki.html" style="color:var(--shu);">茨城県</a> · <a href="tochigi.html" style="color:var(--shu);">栃木県</a> · <a href="gunma.html" style="color:var(--shu);">群馬県</a> · <a href="saitama.html" style="color:var(--shu);">埼玉県</a> · <a href="chiba.html" style="color:var(--shu);">千葉県</a> · <a href="tokyo.html" style="color:var(--shu);">東京都</a> · <a href="kanagawa.html" style="color:var(--shu);">神奈川県</a> · <a href="niigata.html" style="color:var(--shu);">新潟県</a> · <a href="toyama.html" style="color:var(--shu);">富山県</a> · <a href="ishikawa.html" style="color:var(--shu);">石川県</a> · <a href="fukui.html" style="color:var(--shu);">福井県</a> · <a href="yamanashi.html" style="color:var(--shu);">山梨県</a> · <a href="nagano.html" style="color:var(--shu);">長野県</a> · <a href="gifu.html" style="color:var(--shu);">岐阜県</a> · <a href="shizuoka.html" style="color:var(--shu);">静岡県</a> · <a href="aichi.html" style="color:var(--shu);">愛知県</a> · <a href="mie.html" style="color:var(--shu);">三重県</a> · <a href="shiga.html" style="color:var(--shu);">滋賀県</a> · <a href="kyoto.html" style="color:var(--shu);">京都府</a> · <a href="osaka.html" style="color:var(--shu);">大阪府</a> · <a href="hyogo.html" style="color:var(--shu);">兵庫県</a> · <a href="nara.html" style="color:var(--shu);">奈良県</a> · <a href="wakayama.html" style="color:var(--shu);">和歌山県</a> · <a href="tottori.html" style="color:var(--shu);">鳥取県</a> · <a href="shimane.html" style="color:var(--shu);">島根県</a> · <a href="okayama.html" style="color:var(--shu);">岡山県</a> · <a href="hiroshima.html" style="color:var(--shu);">広島県</a> · <a href="yamaguchi.html" style="color:var(--shu);">山口県</a> · <a href="tokushima.html" style="color:var(--shu);">徳島県</a> · <a href="kagawa.html" style="color:var(--shu);">香川県</a> · <a href="ehime.html" style="color:var(--shu);">愛媛県</a> · <a href="kochi.html" style="color:var(--shu);">高知県</a> · <a href="fukuoka.html" style="color:var(--shu);">福岡県</a> · <a href="saga.html" style="color:var(--shu);">佐賀県</a> · <a href="nagasaki.html" style="color:var(--shu);">長崎県</a> · <a href="kumamoto.html" style="color:var(--shu);">熊本県</a> · <a href="oita.html" style="color:var(--shu);">大分県</a> · <a href="miyazaki.html" style="color:var(--shu);">宮崎県</a> · <a href="kagoshima.html" style="color:var(--shu);">鹿児島県</a> · <a href="okinawa.html" style="color:var(--shu);">沖縄県</a></p>
+</nav>
 <footer>
   <span>© 2026 Baeru-Travel — 映えるトラベル&グルメ</span>
   <span><a href="about.html" style="color:var(--shu);font-weight:700;text-decoration:none;border-bottom:1px solid var(--shu);">クリエイターについて</a> · <a href="privacy.html" style="color:var(--shu);font-weight:700;text-decoration:none;border-bottom:1px solid var(--shu);">プライバシーポリシー</a> · Data: approximate reference values</span>
@@ -2992,6 +2996,10 @@ prefectureEls.forEach(g=>{
   g.addEventListener('mouseleave', ()=> tooltip.classList.remove('show'));
   g.addEventListener('click', ()=>{
     if(justDragged) return;
+    /* 各都道府県には専用ページ(例: okayama.html)がある。別の県をクリックしたらそのページへ移動し、
+       そのページ自身の県はその場で表示する。 */
+    const prefSlug = String(row[FIELD.name]).toLowerCase();
+    if(prefSlug !== window.STATIC_PREF_SLUG){ location.href = prefSlug + '.html'; return; }
     if(activeEl) activeEl.classList.remove('is-selected');
     g.classList.add('is-selected');
     activeEl = g;
@@ -3745,6 +3753,7 @@ function renderDetail(row){
 
   const backBtn = detail.querySelector('#backToMap');
   backBtn.addEventListener('click', ()=>{
+    if(window.STATIC_PREF_SLUG){ location.href = './'; return; }
     if(activeEl) activeEl.classList.remove('is-selected');
     activeEl = null;
     animateViewBox(FULL_VIEWBOX, 450);
@@ -3925,7 +3934,7 @@ document.getElementById('topShareWidget').innerHTML = buildShareWidget(
    都道府県のg要素にはid属性がなくクラス名(例: class="akita tohoku prefecture")
    のみが付与されているため、getElementByIdではなくクラスセレクタで検索する。 */
 function selectPrefectureFromHashJP(){
-  const slug = decodeURIComponent(location.hash.replace(/^#/, '')).toLowerCase();
+  const slug = (window.STATIC_PREF_SLUG || decodeURIComponent(location.hash.replace(/^#/, ''))).toLowerCase();
   if(!slug) return;
   if(!/^[a-z]+$/.test(slug)) return;
   const el = document.querySelector('.' + slug + '.prefecture');
