@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Think You Know Japan? | Epic Japan Explorer</title>
+<meta name="description" content="Test your knowledge of Japan's culture, customs, and everyday life with 10 quick True/False questions.">
+<link rel="canonical" href="https://epicjapanexplorer.com/quiz.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3;
+    --washi-deep:#ece3d0;
+    --sumi:#1e2222;
+    --aiiro:#1c3a5e;
+    --aiiro-deep:#122740;
+    --shu:#c1440e;
+    --shu-deep:#9c350a;
+    --gold:#b8862f;
+    --line:#d8cdb2;
+    --radius:2px;
+    --font-display:'Shippori Mincho', serif;
+    --font-body:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--washi);
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),
+      radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);
+    color:var(--sumi);
+    font-family:var(--font-body);
+    line-height:1.7;
+  }
+  a{color:inherit;}
+  ::selection{background:var(--shu);color:var(--washi);}
+
+  header{padding:48px 6vw 32px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:38px;height:38px;min-width:38px;flex:none;display:block;}
+  .brand .divider{width:1px;height:30px;background:var(--line);flex:none;}
+  .brand-name{
+    font-family:var(--font-display);font-weight:700;font-size:clamp(24px,4vw,32px);
+    color:var(--shu);line-height:1.1;
+  }
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:13px;font-weight:700;
+    color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;
+  }
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+
+  main{max-width:720px;margin:0 auto;padding:56px 6vw 80px;}
+  h1{
+    font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);
+    color:var(--aiiro-deep);margin:0 0 6px;
+  }
+  .name{
+    font-family:var(--font-display);font-weight:700;font-size:20px;color:var(--shu);
+    margin:0 0 28px;
+  }
+  p{font-size:15.5px;color:#33372f;margin:0 0 20px;}
+
+  .divider-rule{border:none;border-top:1px solid var(--line);margin:40px 0;}
+
+  h2{
+    font-family:var(--font-display);font-weight:700;font-size:20px;color:var(--aiiro-deep);
+    margin:0 0 14px;display:flex;align-items:center;gap:8px;
+  }
+  h2::before{content:"";width:18px;height:2px;background:var(--shu);}
+  .contact-box{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;
+  }
+  .contact-box a{color:var(--shu);font-weight:700;text-decoration:none;border-bottom:1px solid var(--shu);}
+  .note{font-size:13px;color:#9a9488;margin-top:14px;}
+
+  footer{
+    padding:36px 6vw 48px;border-top:1px solid var(--line);
+    font-size:12px;color:#7d7a70;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  main.quiz{max-width:680px;margin:0 auto;padding:40px 5vw 72px;}
+  .quiz h1{font-size:clamp(28px,6vw,40px);}
+  .quiz-intro{font-size:15.5px;color:#33372f;margin:0 0 24px;}
+  .q-progress{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+  .q-bar{height:4px;background:var(--line);margin-bottom:22px;}
+  .q-bar span{display:block;height:100%;width:0;background:var(--shu);transition:width .3s;}
+  .q-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;}
+  .q-text{font-family:var(--font-display);font-weight:700;font-size:clamp(19px,4.6vw,24px);color:var(--aiiro-deep);line-height:1.45;margin:0 0 20px;}
+  .q-answers{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .q-btn{font-family:var(--font-body);font-size:17px;font-weight:700;min-height:56px;padding:12px;border:2px solid var(--aiiro);background:#fff;color:var(--aiiro-deep);border-radius:var(--radius);cursor:pointer;}
+  .q-btn:hover:not(:disabled){background:var(--aiiro);color:#fff;}
+  .q-btn:disabled{cursor:default;}
+  .q-btn.is-correct{background:#2f7d4f;border-color:#2f7d4f;color:#fff;}
+  .q-btn.is-wrong{background:#b3321f;border-color:#b3321f;color:#fff;}
+  .q-btn.is-dim{opacity:.45;}
+  .q-feedback{margin-top:18px;padding:14px 16px;border-left:4px solid var(--line);background:var(--washi);font-size:15px;line-height:1.65;color:#33372f;}
+  .q-feedback.ok{border-color:#2f7d4f;}
+  .q-feedback.ng{border-color:#b3321f;}
+  .q-verdict{display:block;font-weight:900;font-size:16px;margin-bottom:4px;}
+  .q-feedback.ok .q-verdict{color:#2f7d4f;}
+  .q-feedback.ng .q-verdict{color:#b3321f;}
+  .q-next,.r-btn{font-family:var(--font-body);font-size:16px;font-weight:700;min-height:52px;padding:12px 24px;border:2px solid var(--shu);background:var(--shu);color:#fff;border-radius:var(--radius);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;}
+  .q-next{margin-top:18px;width:100%;}
+  .q-next:hover,.r-btn:hover{background:var(--shu-deep);border-color:var(--shu-deep);}
+  .r-btn.alt{background:#fff;color:var(--aiiro-deep);border-color:var(--aiiro);}
+  .r-btn.alt:hover{background:var(--aiiro);color:#fff;}
+  .result{text-align:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 20px;}
+  .r-score{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,8vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .r-msg{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,5vw,26px);color:var(--shu);margin:0 0 26px;}
+  .r-msg.perfect{font-size:clamp(24px,6.5vw,34px);animation:pop .8s ease-out;}
+  .r-msg.perfect::before{content:"\1F389  ";} .r-msg.perfect::after{content:"  \1F389";}
+  @keyframes pop{0%{transform:scale(.7);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+  .r-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+  .r-btns .r-btn{flex:1 1 180px;}
+  [hidden]{display:none !important;}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4714065032332222"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span>
+  </div>
+  <a class="back-link" href="./">&larr; Back to the map</a>
+</header>
+
+<main class="quiz">
+  <h1>Think You Know Japan?</h1>
+  <p class="quiz-intro">Test your knowledge of Japan&rsquo;s culture, customs, and everyday life with 10 quick questions!</p>
+
+  <section id="quizPlay" aria-live="polite">
+    <div class="q-progress" id="qProgress">Question 1 of 10</div>
+    <div class="q-bar"><span id="qBar"></span></div>
+    <div class="q-card">
+      <p class="q-text" id="qText"></p>
+      <div class="q-answers">
+        <button type="button" class="q-btn" id="btnTrue" data-v="true">True</button>
+        <button type="button" class="q-btn" id="btnFalse" data-v="false">False</button>
+      </div>
+      <div class="q-feedback" id="qFeedback" hidden></div>
+      <button type="button" class="q-next" id="qNext" hidden>Next Question</button>
+    </div>
+  </section>
+
+  <section id="quizResult" class="result" hidden>
+    <p class="r-score" id="rScore"></p>
+    <p class="r-msg" id="rMsg"></p>
+    <div class="r-btns">
+      <button type="button" class="r-btn" id="btnAgain">Try Again</button>
+      <a class="r-btn alt" id="btnHome" href="https://epicjapanexplorer.com/">Back to Home</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>&copy; 2026 Epic Japan Explorer &mdash; epicjapanexplorer</span>
+  <span><a href="./" style="color:var(--shu);font-weight:700;text-decoration:none;border-bottom:1px solid var(--shu);">&larr; Back to the map</a></span>
+</footer>
+
+<script>
+(function(){
+  var Q=[
+    {q:"Tipping is generally not expected at restaurants in Japan.",a:true,e:"Tipping is not customary in Japan. Some traditional luxury ryokan accept <i>kokorozuke</i>, a small token of appreciation, but it is never required."},
+    {q:"If food is difficult to pick up with chopsticks, it\u2019s okay to stab it.",a:false,e:"Stabbing food with chopsticks is considered bad manners. Try breaking the food into smaller pieces instead."},
+    {q:"The most visited hiking mountain in Japan is in Tokyo.",a:true,e:"Mount Takao in Hachioji, Tokyo, attracts many hikers year-round. It\u2019s popular for its easy access, nature, and hiking trails."},
+    {q:"If you\u2019re cold, you can jump straight into a hot spring bath.",a:false,e:"Wash yourself or rinse off with hot water before entering the communal bath. Follow the facility\u2019s bathing rules."},
+    {q:"People stand on different sides of escalators in Tokyo and Osaka.",a:true,e:"People generally stand on the left in Tokyo and on the right in Osaka. However, practices vary, and walking on escalators is discouraged for safety."},
+    {q:"Funerals in Japan are generally held at Shinto shrines.",a:false,e:"Most Japanese funerals follow Buddhist traditions. Shinto funerals do exist and are known as <i>shins\u014dsai</i>."},
+    {q:"Elementary school students in Japan clean their own classrooms.",a:true,e:"Students often clean classrooms and hallways themselves. This helps teach responsibility and cooperation."},
+    {q:"People clap their hands when praying at Buddhist temples.",a:false,e:"At Buddhist temples, people generally pray quietly with their hands together. Clapping is commonly associated with Shinto shrine rituals."},
+    {q:"The highest deity in Shinto is a goddess.",a:true,e:"Amaterasu, the sun goddess and ancestral deity of Japan\u2019s Imperial Family, is one of Shinto\u2019s most important deities."},
+    {q:"Talking on your phone on Japanese trains is considered bad manners.",a:true,e:"Passengers are generally expected to avoid phone calls on trains. Set your phone to silent mode and take calls after getting off."}
+  ];
+  var i=0,score=0,answered=false;
+  var $=function(id){return document.getElementById(id);};
+  var play=$('quizPlay'),res=$('quizResult'),bT=$('btnTrue'),bF=$('btnFalse'),fb=$('qFeedback'),nx=$('qNext');
+  function show(){
+    answered=false;
+    $('qProgress').textContent='Question '+(i+1)+' of '+Q.length;
+    $('qBar').style.width=(i/Q.length*100)+'%';
+    $('qText').textContent=Q[i].q;
+    [bT,bF].forEach(function(b){b.disabled=false;b.className='q-btn';});
+    fb.hidden=true;nx.hidden=true;
+    nx.textContent=(i===Q.length-1)?'See My Score':'Next Question';
+  }
+  function answer(val){
+    if(answered)return; answered=true;
+    var ok=(val===Q[i].a); if(ok)score++;
+    [bT,bF].forEach(function(b){
+      var v=(b.getAttribute('data-v')==='true');
+      b.disabled=true;
+      if(v===Q[i].a) b.classList.add('is-correct');
+      else if(v===val) b.classList.add('is-wrong');
+      else b.classList.add('is-dim');
+    });
+    fb.className='q-feedback '+(ok?'ok':'ng');
+    fb.innerHTML='<span class="q-verdict">'+(ok?'Correct!':'Not quite \u2014 the answer is '+(Q[i].a?'True':'False')+'.')+'</span>'+Q[i].e;
+    fb.hidden=false;nx.hidden=false;nx.focus({preventScroll:true});
+  }
+  function finish(){
+    play.hidden=true;res.hidden=false;
+    $('rScore').textContent='Your Score: '+score+' / '+Q.length;
+    var m=$('rMsg'),t;
+    if(score<=3)t="You\u2019re Just Getting Started!";
+    else if(score<=6)t="Not Bad, Japan Explorer!";
+    else if(score<=9)t="You Know Japan Pretty Well!";
+    else t="Wait\u2026 You\u2019re Japanese, aren\u2019t you?";
+    m.textContent=t; m.className='r-msg'+(score===10?' perfect':'');
+    window.scrollTo(0,0);
+  }
+  bT.addEventListener('click',function(){answer(true);});
+  bF.addEventListener('click',function(){answer(false);});
+  nx.addEventListener('click',function(){ if(!answered)return; i++; if(i>=Q.length)finish(); else show(); });
+  $('btnAgain').addEventListener('click',function(){i=0;score=0;res.hidden=true;play.hidden=false;show();window.scrollTo(0,0);});
+  show();
+})();
+</script>
+</body>
+</html>
