@@ -969,4 +969,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/okinawa.html"/>
   </url>
 
+  <url>
+    <loc>https://epicjapanexplorer.com/quiz.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
