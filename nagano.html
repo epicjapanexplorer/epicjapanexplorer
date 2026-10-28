@@ -447,6 +447,8 @@
   .aff-banner-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--sumi);}
   .aff-banner-sub{font-size:12.5px;color:#7a7f75;}
   .aff-banner-arrow{flex:none;font-size:16px;color:var(--shu);}
+  .aff-hotel-group{display:flex;flex-direction:column;gap:10px;}
+  .aff-hotel-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--sumi);margin:6px 0 0;}
   .aff-banner-grouped{
     flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;
   }
@@ -854,8 +856,8 @@
   #mapAdSlotDesktopAnchor .ad-slot{margin:16px 0 0;min-height:110px;}
   .desktop-map-jr-banner{display:none;}
   @media (min-width:941px){.desktop-map-jr-banner{display:flex;margin-top:16px;}}
-  @media (min-width:941px){.mobile-jr-banner{display:none;}}
-  @media (max-width:940px){.detail-jr-banner{display:none;}}
+  @media (min-width:941px){.mobile-jr-banner,.mobile-esim-banner{display:none;}}
+  @media (max-width:940px){.detail-jr-banner,.detail-esim-banner{display:none;}}
   #prefAffiliatesAnchor{display:none;flex-direction:column;gap:10px;}
   #prefAffiliatesAnchor:not(:empty){margin-top:16px;}
   @media (min-width:941px){#prefAffiliatesAnchor{display:flex;}}
@@ -1434,6 +1436,14 @@
     <div class="season-source-note">📊 Temperature data: Japan Meteorological Agency 30-year normals (1991–2020), Nagano station</div>
   
 
+    <a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner detail-esim-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-icon">📱</span>
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
+
     <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner detail-jr-banner" target="_blank" rel="noopener sponsored">
       <span class="aff-banner-icon">🚆</span>
       <span class="aff-banner-text">
@@ -1443,35 +1453,45 @@
     </a>
 
     
-        <div class="aff-banner-grouped">
-          <div class="aff-group-title">🏨 Where to Stay in Nagano</div>
-          <div class="aff-city-list">
-            
-              <div class="aff-city-block">
-                <div class="aff-city-name">Nagano City</div>
-                <div class="aff-city-desc">Zenkoji Temple, Mountains &amp; Local Cuisine</div>
-                <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=1124" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in Nagano City →</a>
-              </div>
-            
-              <div class="aff-city-block">
-                <div class="aff-city-name">Matsumoto</div>
-                <div class="aff-city-desc">Castle, Historic Streets &amp; Mountain Views</div>
-                <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=23118" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in Matsumoto →</a>
-              </div>
-            
-              <div class="aff-city-block">
-                <div class="aff-city-name">Karuizawa</div>
-                <div class="aff-city-desc">Resorts, Shopping &amp; Mountain Nature</div>
-                <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=250191" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in Karuizawa →</a>
-              </div>
-            
-              <div class="aff-city-block">
-                <div class="aff-city-name">Hakuba</div>
-                <div class="aff-city-desc">Skiing, Mountain Scenery &amp; Outdoor Adventures</div>
-                <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=105990" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in Hakuba →</a>
-              </div>
-            
-          </div>
+        <div class="aff-hotel-group">
+          <div class="aff-hotel-title">Where to Stay in Nagano</div>
+          
+            <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=1124" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in Nagano City</span>
+                <span class="aff-banner-sub">Zenkoji Temple, Mountains &amp; Local Cuisine</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          
+            <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=23118" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in Matsumoto</span>
+                <span class="aff-banner-sub">Castle, Historic Streets &amp; Mountain Views</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          
+            <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=250191" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in Karuizawa</span>
+                <span class="aff-banner-sub">Resorts, Shopping &amp; Mountain Nature</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          
+            <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=105990" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in Hakuba</span>
+                <span class="aff-banner-sub">Skiing, Mountain Scenery &amp; Outdoor Adventures</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          
         </div>
       
 
@@ -1818,6 +1838,14 @@
        right after this slot is moved to its final position (desktop vs
        mobile). Initializing the ad before that move could break it. -->
 </div>
+
+<a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner mobile-esim-banner" target="_blank" rel="noopener sponsored" style="margin:0 6vw 16px;">
+  <span class="aff-banner-icon">📱</span>
+  <span class="aff-banner-text">
+    <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+  </span>
+  <span class="aff-banner-arrow">→</span>
+</a>
 
 <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner mobile-jr-banner" target="_blank" rel="noopener sponsored" style="margin:0 6vw 48px;">
   <span class="aff-banner-icon">🚆</span>
@@ -4758,17 +4786,18 @@ function renderDetail(row){
   const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => {
     if(b.cities){
       return `
-        <div class="aff-banner-grouped">
-          <div class="aff-group-title">${b.label}</div>
-          <div class="aff-city-list">
-            ${b.cities.map(c => `
-              <div class="aff-city-block">
-                <div class="aff-city-name">${c.label}</div>
-                <div class="aff-city-desc">${c.desc}</div>
-                <a href="${c.url}" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in ${c.short || c.label} →</a>
-              </div>
-            `).join('')}
-          </div>
+        <div class="aff-hotel-group">
+          <div class="aff-hotel-title">${b.label.replace(/^\u{1F3E8}\s*/u, '')}</div>
+          ${b.cities.map(c => `
+            <a href="${c.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in ${c.short || c.label}</span>
+                <span class="aff-banner-sub">${c.desc}</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          `).join('')}
         </div>
       `;
     }
@@ -4808,6 +4837,14 @@ function renderDetail(row){
     ${factGallery(row[FIELD.food], row[FIELD.code], 'food')}
 
     ${seasonalGuideHtml(row[FIELD.code])}
+
+    <a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner detail-esim-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-icon">📱</span>
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
 
     <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner detail-jr-banner" target="_blank" rel="noopener sponsored">
       <span class="aff-banner-icon">🚆</span>

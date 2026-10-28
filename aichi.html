@@ -447,6 +447,8 @@
   .aff-banner-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--sumi);}
   .aff-banner-sub{font-size:12.5px;color:#7a7f75;}
   .aff-banner-arrow{flex:none;font-size:16px;color:var(--shu);}
+  .aff-hotel-group{display:flex;flex-direction:column;gap:10px;}
+  .aff-hotel-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--sumi);margin:6px 0 0;}
   .aff-banner-grouped{
     flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;
   }
@@ -854,8 +856,8 @@
   #mapAdSlotDesktopAnchor .ad-slot{margin:16px 0 0;min-height:110px;}
   .desktop-map-jr-banner{display:none;}
   @media (min-width:941px){.desktop-map-jr-banner{display:flex;margin-top:16px;}}
-  @media (min-width:941px){.mobile-jr-banner{display:none;}}
-  @media (max-width:940px){.detail-jr-banner{display:none;}}
+  @media (min-width:941px){.mobile-jr-banner,.mobile-esim-banner{display:none;}}
+  @media (max-width:940px){.detail-jr-banner,.detail-esim-banner{display:none;}}
   #prefAffiliatesAnchor{display:none;flex-direction:column;gap:10px;}
   #prefAffiliatesAnchor:not(:empty){margin-top:16px;}
   @media (min-width:941px){#prefAffiliatesAnchor{display:flex;}}
@@ -1343,6 +1345,14 @@
     <div class="season-source-note">📊 Temperature data: Japan Meteorological Agency 30-year normals (1991–2020), Nagoya station</div>
   
 
+    <a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner detail-esim-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-icon">📱</span>
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
+
     <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner detail-jr-banner" target="_blank" rel="noopener sponsored">
       <span class="aff-banner-icon">🚆</span>
       <span class="aff-banner-text">
@@ -1352,17 +1362,18 @@
     </a>
 
     
-        <div class="aff-banner-grouped">
-          <div class="aff-group-title">🏨 Where to Stay in Aichi</div>
-          <div class="aff-city-list">
-            
-              <div class="aff-city-block">
-                <div class="aff-city-name">Nagoya</div>
-                <div class="aff-city-desc">Castles, Gourmet Food &amp; City Life</div>
-                <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=13740" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in Nagoya →</a>
-              </div>
-            
-          </div>
+        <div class="aff-hotel-group">
+          <div class="aff-hotel-title">Where to Stay in Aichi</div>
+          
+            <a href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&amp;cid=1972835&amp;city=13740" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in Nagoya</span>
+                <span class="aff-banner-sub">Castles, Gourmet Food &amp; City Life</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          
         </div>
       
 
@@ -1632,6 +1643,14 @@
        right after this slot is moved to its final position (desktop vs
        mobile). Initializing the ad before that move could break it. -->
 </div>
+
+<a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner mobile-esim-banner" target="_blank" rel="noopener sponsored" style="margin:0 6vw 16px;">
+  <span class="aff-banner-icon">📱</span>
+  <span class="aff-banner-text">
+    <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+  </span>
+  <span class="aff-banner-arrow">→</span>
+</a>
 
 <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner mobile-jr-banner" target="_blank" rel="noopener sponsored" style="margin:0 6vw 48px;">
   <span class="aff-banner-icon">🚆</span>
@@ -4572,17 +4591,18 @@ function renderDetail(row){
   const affiliateBannersHtml = (PREFECTURE_AFFILIATES[row[FIELD.code]] || []).map(b => {
     if(b.cities){
       return `
-        <div class="aff-banner-grouped">
-          <div class="aff-group-title">${b.label}</div>
-          <div class="aff-city-list">
-            ${b.cities.map(c => `
-              <div class="aff-city-block">
-                <div class="aff-city-name">${c.label}</div>
-                <div class="aff-city-desc">${c.desc}</div>
-                <a href="${c.url}" class="aff-city-btn" target="_blank" rel="noopener sponsored">Search Hotels in ${c.short || c.label} →</a>
-              </div>
-            `).join('')}
-          </div>
+        <div class="aff-hotel-group">
+          <div class="aff-hotel-title">${b.label.replace(/^\u{1F3E8}\s*/u, '')}</div>
+          ${b.cities.map(c => `
+            <a href="${c.url}" class="aff-banner" target="_blank" rel="noopener sponsored">
+              <span class="aff-banner-icon">🏨</span>
+              <span class="aff-banner-text">
+                <span class="aff-banner-title">Search Hotels in ${c.short || c.label}</span>
+                <span class="aff-banner-sub">${c.desc}</span>
+              </span>
+              <span class="aff-banner-arrow">→</span>
+            </a>
+          `).join('')}
         </div>
       `;
     }
@@ -4622,6 +4642,14 @@ function renderDetail(row){
     ${factGallery(row[FIELD.food], row[FIELD.code], 'food')}
 
     ${seasonalGuideHtml(row[FIELD.code])}
+
+    <a href="https://p.sakuramobile.jp/idevaffiliate.php?id=693_9_3_13" class="aff-banner detail-esim-banner" target="_blank" rel="noopener sponsored">
+      <span class="aff-banner-icon">📱</span>
+      <span class="aff-banner-text">
+        <span class="aff-banner-title">Top Pick for Japan eSIM</span>
+      </span>
+      <span class="aff-banner-arrow">→</span>
+    </a>
 
     <a href="https://www.getjrpass.com/?ref=RYUICHIMFF72" class="aff-banner detail-jr-banner" target="_blank" rel="noopener sponsored">
       <span class="aff-banner-icon">🚆</span>
