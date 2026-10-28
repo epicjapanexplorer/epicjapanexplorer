@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福岡分區旅遊指南:福岡該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="福岡縣分區旅遊指南:福岡市、太宰府、糸島、柳川——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/fukuoka-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/fukuoka-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/fukuoka-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/fukuoka-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/fukuoka-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#fukuoka">← 返回地圖上的福岡</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>福岡分區導覽</h1>
+  <p class="page-lede">福岡縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在福岡的位置</div>
+    <div class="area-map-hint">福岡縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-40 -40 600 640" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="saga">
+        <path d="M100.1,208.1 L152.1,208.1 L176.1,232.1 L204.1,224.1 L200.1,248.1 L168.1,268.1 L160.1,296.1 L140.1,276.1 L116.1,300.1 L128.1,340.1 L96.1,328.1 L72.1,300.1 L76.1,284.1 L48.1,276.1 L40.1,248.1 L48.1,236.1 L60.1,252.1 L56.1,236.1 L64.1,220.1 L48.1,208.1 L52.1,200.1 L64.1,208.1 L64.1,184.1 L68.1,192.1 L84.1,192.1 L88.1,212.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="99" y="245" text-anchor="middle" fill="#7a9e6f">佐賀</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kumamoto">
+        <path d="M220.1,560.1 L200.1,536.1 L164.1,552.1 L144.1,536.1 L196.1,476.1 L188.1,452.1 L196.1,456.1 L192.1,448.1 L216.1,428.1 L172.1,428.1 L204.1,404.1 L208.1,384.1 L176.1,352.1 L172.1,332.1 L192.1,332.1 L188.1,320.1 L208.1,304.1 L224.1,308.1 L228.1,292.1 L260.1,312.1 L292.1,332.1 L300.1,320.1 L296.1,296.1 L320.1,296.1 L348.1,348.1 L344.1,372.1 L360.1,388.1 L344.1,388.1 L308.1,444.1 L288.1,452.1 L288.1,480.1 L308.1,508.1 L292.1,528.1 L304.1,552.1 L220.1,560.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="245" y="414" text-anchor="middle" fill="#c47a2f">熊本</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="oita">
+        <path d="M260.1,312.1 L272.1,292.1 L260.1,280.1 L268.1,272.1 L264.1,252.1 L280.1,228.1 L308.1,212.1 L336.1,216.1 L340.1,188.1 L392.1,204.1 L412.1,176.1 L448.1,192.1 L456.1,216.1 L444.1,248.1 L432.1,244.1 L432.1,256.1 L400.1,264.1 L404.1,280.1 L420.1,288.1 L484.1,284.1 L460.1,320.1 L484.1,320.1 L472.1,328.1 L484.1,336.1 L504.1,328.1 L508.1,340.1 L488.1,340.1 L480.1,356.1 L520.1,372.1 L496.1,372.1 L504.1,380.1 L488.1,392.1 L500.1,396.1 L476.1,400.1 L476.1,416.1 L468.1,416.1 L468.1,396.1 L452.1,392.1 L440.1,408.1 L408.1,408.1 L388.1,388.1 L368.1,392.1 L360.1,388.1 L344.1,372.1 L348.1,348.1 L320.1,296.1 L296.1,296.1 L300.1,320.1 L292.1,332.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="406" y="315" text-anchor="middle" fill="#7a3b8c">大分</text>
+      </g>
+      <polygon class="area-pref-shape" points="260.1,312.1 228.1,292.1 224.1,308.1 208.1,304.1 188.1,320.1 192.1,332.1 172.1,332.1 172.1,308.1 160.1,296.1 168.1,268.1 200.1,248.1 204.1,224.1 176.1,232.1 152.1,208.1 100.1,208.1 128.1,192.1 112.1,180.1 140.1,160.1 152.1,184.1 180.1,180.1 184.1,160.1 168.1,168.1 156.1,156.1 176.1,160.1 192.1,148.1 200.1,120.1 240.1,112.1 244.1,100.1 268.1,104.1 252.1,120.1 264.1,120.1 272.1,108.1 284.1,116.1 312.1,100.1 296.1,132.1 308.1,140.1 300.1,144.1 320.1,188.1 340.1,188.1 336.1,216.1 308.1,212.1 280.1,228.1 264.1,252.1 268.1,272.1 260.1,280.1 272.1,292.1"/>
+      <text class="area-main-label" x="224" y="154" text-anchor="middle" style="font-size:25.8px;stroke-width:4.0px">福岡</text>
+
+      <g class="area-pin" data-target="area-fukuokacity">
+        <line class="area-pin-leader" x1="176.4" y1="208.5" x2="123.1" y2="212.4" style="stroke-width:1.0"/>
+        <rect x="166.8" y="198.9" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="176.4" cy="208.5" r="6.7" style="stroke-width:1.9"/>
+        <text x="123.1" y="212.4" text-anchor="end" style="font-size:12.1px">福岡市</text>
+      </g>
+      <g class="area-pin" data-target="area-dazaifu">
+        <line class="area-pin-leader" x1="201.2" y1="227.6" x2="163.5" y2="265.6" style="stroke-width:1.0"/>
+        <rect x="191.6" y="218.0" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="201.2" cy="227.6" r="6.7" style="stroke-width:1.9"/>
+        <text x="163.5" y="265.6" text-anchor="end" style="font-size:12.1px">太宰府</text>
+      </g>
+      <g class="area-pin" data-target="area-itoshima">
+        <line class="area-pin-leader" x1="131.6" y1="214.5" x2="78.5" y2="219.9" style="stroke-width:1.0"/>
+        <rect x="122.0" y="204.9" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="131.6" cy="214.5" r="6.7" style="stroke-width:1.9"/>
+        <text x="78.5" y="219.9" text-anchor="end" style="font-size:12.1px">糸島</text>
+      </g>
+      <g class="area-pin" data-target="area-yanagawa">
+        <line class="area-pin-leader" x1="176.7" y1="316.7" x2="156.0" y2="366.0" style="stroke-width:1.0"/>
+        <rect x="167.1" y="307.09999999999997" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="176.7" cy="316.7" r="6.7" style="stroke-width:1.9"/>
+        <text x="156.0" y="366.0" text-anchor="end" style="font-size:12.1px">柳川</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-fukuokacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">福岡市</span><span class="area-tag">九州最大城市</span></div>
+      <p class="area-desc">九州最大的城市,以屋台(路邊攤)、博多拉麵,以及歷史與現代都會生活交融的熱鬧氣氛聞名。</p>
+      <ul class="area-highlights">
+        <li>屋台——露天攤販,供應拉麵與在地料理。</li>
+        <li>博多風豚骨拉麵,福岡的代表美食。</li>
+        <li>現代化、適合步行的城市,飲食文化豐富。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-dazaifu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">太宰府</span><span class="area-tag">學問之神的神社</span></div>
+      <p class="area-desc">太宰府天滿宮的所在地,是日本最重要的學問之神神社之一。</p>
+      <ul class="area-highlights">
+        <li>太宰府天滿宮,祈求學業有成的重要神社。</li>
+        <li>熱鬧的參道上有傳統點心與商店。</li>
+        <li>附近有九州國立博物館。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-itoshima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">糸島</span><span class="area-tag">海岸咖啡廳半島</span></div>
+      <p class="area-desc">風景優美的海岸半島,以海灘、咖啡廳與襯著大海、極為上鏡的神社鳥居聞名。</p>
+      <ul class="area-highlights">
+        <li>櫻井二見浦立於海中的標誌性鳥居。</li>
+        <li>海灘咖啡廳與小店日益增加。</li>
+        <li>從福岡市出發就能輕鬆抵達的熱門海灘。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yanagawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">柳川</span><span class="area-tag">水路與小船之城</span></div>
+      <p class="area-desc">以搭乘竹篙撐行的傳統小船遊覽歷史水道而聞名的水鄉。</p>
+      <ul class="area-highlights">
+        <li>搭乘傳統撐篙小船,遊覽城內縱橫的水道。</li>
+        <li>歷史悠久的城下町水路網。</li>
+        <li>柳川名物的在地鰻魚料理。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

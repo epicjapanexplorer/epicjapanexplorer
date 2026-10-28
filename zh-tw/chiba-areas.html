@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>千葉分區旅遊指南:千葉該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="千葉縣分區旅遊指南:舞濱、成田、木更津、九十九里、南房總——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/chiba-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/chiba-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/chiba-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/chiba-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/chiba-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#chiba">← 返回地圖上的千葉</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>千葉分區導覽</h1>
+  <p class="page-lede">千葉縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在千葉的位置</div>
+    <div class="area-map-hint">千葉縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-144 -144 628 708" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="ibaraki">
+        <path d="M111.6,111.6 L111.6,111.6 L99.6,115.6 L91.6,87.6 L119.6,75.6 L123.6,59.6 L135.6,59.6 L147.6,39.6 L191.6,31.6 L203.6,3.6 L195.6,-36.4 L207.6,-44.4 L203.6,-56.4 L203.6,-100.4 L243.6,-64.4 L267.6,-88.4 L267.6,-104.4 L307.6,-84.4 L275.6,11.6 L279.6,35.6 L267.6,63.6 L275.6,103.6 L295.6,139.6 L287.6,147.6 L295.6,159.6 L299.6,143.6 L331.6,191.6 L259.6,143.6 L259.6,155.6 L187.6,171.6 L143.6,151.6 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="216" y="56" text-anchor="middle" fill="#7a9e6f">茨城</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M87.6,83.6 L91.6,87.6 L99.6,115.6 L111.6,111.6 L111.6,111.6 L135.6,163.6 L135.6,191.6 L111.6,183.6 L103.6,191.6 L87.6,187.6 L63.6,199.6 L63.6,183.6 L35.6,195.6 L15.6,179.6 L-44.4,163.6 L-56.4,175.6 L-100.4,163.6 L-104.4,143.6 L-40.4,107.6 L-20.4,67.6 L23.6,75.6 L47.6,91.6 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="44" y="144" text-anchor="middle" fill="#c47a2f">埼玉</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tokyo">
+        <path d="M135.6,191.6 L139.6,211.6 L131.6,227.6 L107.6,223.6 L115.6,239.6 L99.6,243.6 L115.6,243.6 L115.6,255.6 L59.6,227.6 L47.6,235.6 L59.6,243.6 L51.6,243.6 L51.6,263.6 L35.6,243.6 L-20.4,219.6 L-40.4,207.6 L-56.4,175.6 L-44.4,163.6 L15.6,179.6 L35.6,195.6 L63.6,183.6 L63.6,199.6 L87.6,187.6 L103.6,191.6 L111.6,183.6 L135.6,191.6 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="66" y="214" text-anchor="middle" fill="#7a3b8c">東京</text>
+      </g>
+      <polygon class="area-pref-shape" points="131.6,227.6 139.6,211.6 135.6,191.6 135.6,163.6 111.6,111.6 143.6,151.6 187.6,171.6 259.6,155.6 259.6,143.6 331.6,191.6 331.6,207.6 291.6,207.6 247.6,251.6 239.6,339.6 187.6,355.6 139.6,411.6 111.6,395.6 131.6,387.6 123.6,375.6 127.6,363.6 123.6,343.6 131.6,323.6 115.6,307.6 127.6,291.6 139.6,295.6 139.6,279.6 163.6,267.6 183.6,243.6 155.6,215.6 135.6,231.6"/>
+      <text class="area-main-label" x="173" y="204" text-anchor="middle" style="font-size:27.0px;stroke-width:4.2px">千葉</text>
+
+      <g class="area-pin" data-target="area-maihama">
+        <line class="area-pin-leader" x1="147.2" y1="218.6" x2="116.1" y2="167.8" style="stroke-width:1.0"/>
+        <rect x="137.6" y="209.0" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="147.2" cy="218.6" r="6.7" style="stroke-width:1.9"/>
+        <text x="116.1" y="167.8" text-anchor="end" style="font-size:12.2px">舞濱</text>
+      </g>
+      <g class="area-pin" data-target="area-narita">
+        <line class="area-pin-leader" x1="224.9" y1="179.2" x2="257.0" y2="129.1" style="stroke-width:1.0"/>
+        <rect x="215.3" y="169.6" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="224.9" cy="179.2" r="6.7" style="stroke-width:1.9"/>
+        <text x="257.0" y="129.1" text-anchor="start" style="font-size:12.2px">成田</text>
+      </g>
+      <g class="area-pin" data-target="area-kisarazu">
+        <line class="area-pin-leader" x1="153.4" y1="284.2" x2="115.6" y2="330.3" style="stroke-width:1.0"/>
+        <rect x="143.8" y="274.59999999999997" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="153.4" cy="284.2" r="6.7" style="stroke-width:1.9"/>
+        <text x="115.6" y="330.3" text-anchor="end" style="font-size:12.2px">木更津</text>
+      </g>
+      <g class="area-pin" data-target="area-kujukuri">
+        <line class="area-pin-leader" x1="245.3" y1="231.3" x2="300.4" y2="209.0" style="stroke-width:1.0"/>
+        <rect x="235.70000000000002" y="221.70000000000002" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="245.3" cy="231.3" r="6.7" style="stroke-width:1.9"/>
+        <text x="300.4" y="209.0" text-anchor="start" style="font-size:12.2px">九十九里</text>
+      </g>
+      <g class="area-pin" data-target="area-minamiboso">
+        <line class="area-pin-leader" x1="147.7" y1="402.2" x2="137.3" y2="460.8" style="stroke-width:1.0"/>
+        <rect x="138.1" y="392.59999999999997" width="19.2" height="19.2" fill="transparent"/>
+        <circle cx="147.7" cy="402.2" r="6.7" style="stroke-width:1.9"/>
+        <text x="137.3" y="460.8" text-anchor="middle" style="font-size:12.2px">南房總</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-maihama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">舞濱</span><span class="area-tag">主題樂園度假區</span></div>
+      <p class="area-desc">東京迪士尼度假區的所在地——東京迪士尼樂園與東京迪士尼海洋——是全球遊客最多的主題樂園目的地之一。</p>
+      <ul class="area-highlights">
+        <li>東京迪士尼樂園——經典的迪士尼主題樂園體驗。</li>
+        <li>東京迪士尼海洋——日本獨有、以海洋為主題的樂園。</li>
+        <li>有電車直通東京,輕鬆就能一日往返。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-narita">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">成田</span><span class="area-tag">機場與寺院之町</span></div>
+      <p class="area-desc">以成田國際機場聞名,同時也是成田山新勝寺的所在地,這座大寺的參道上有熱鬧的商店與餐廳。</p>
+      <ul class="area-highlights">
+        <li>成田山新勝寺——創建超過1,000年的大寺院。</li>
+        <li>表參道——以鰻魚飯(うなぎ)餐廳聞名的參道。</li>
+        <li>鄰近成田機場,是方便的轉機停留地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kisarazu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">木更津</span><span class="area-tag">海灣棧橋與暢貨中心</span></div>
+      <p class="area-desc">東京灣畔的城市,以延伸入海的長長棧橋聞名,也是通往房總半島暢貨中心的門戶。</p>
+      <ul class="area-highlights">
+        <li>中之島鳥居——退潮時從海灣中矗立而出的醒目鳥居。</li>
+        <li>三井OUTLET PARK,是該地區規模最大的暢貨中心之一。</li>
+        <li>可經東京灣跨海公路(Aqua-Line)輕鬆抵達。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kujukuri">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">九十九里</span><span class="area-tag">太平洋海岸海灘</span></div>
+      <p class="area-desc">太平洋岸近60公里長的壯闊沙灘,深受衝浪與夏季海灘出遊的歡迎。</p>
+      <ul class="area-highlights">
+        <li>近60公里連綿不斷的沙灘。</li>
+        <li>關東地區首屈一指的衝浪勝地。</li>
+        <li>太平洋視野遼闊,日出時分尤其壯觀。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-minamiboso">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">南房總</span><span class="area-tag">花之海岸</span></div>
+      <p class="area-desc">房總半島南端,以溫暖的氣候、冬天也盛開的花田,以及悠閒的海岸風光聞名。</p>
+      <ul class="area-highlights">
+        <li>受惠於溫暖的氣候,花田在冬天也持續綻放。</li>
+        <li>一段悠閒、遊客較少的海岸線。</li>
+        <li>周邊漁村的新鮮海產。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

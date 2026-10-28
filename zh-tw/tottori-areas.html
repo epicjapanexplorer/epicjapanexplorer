@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鳥取分區旅遊指南:鳥取該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="鳥取縣分區旅遊指南:鳥取砂丘與鳥取市、倉吉與三朝、大山、境港與米子——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/tottori-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/tottori-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/tottori-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/tottori-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/tottori-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#tottori">← 返回地圖上的鳥取</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>鳥取分區導覽</h1>
+  <p class="page-lede">鳥取縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在鳥取的位置</div>
+    <div class="area-map-hint">鳥取縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-66 -40 954 775" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="hyogo">
+        <path d="M521.5,505.5 L525.5,493.5 L509.5,469.5 L517.5,457.5 L513.5,429.5 L545.5,397.5 L541.5,373.5 L565.5,365.5 L565.5,349.5 L537.5,281.5 L573.5,269.5 L641.5,273.5 L637.5,289.5 L653.5,309.5 L673.5,305.5 L677.5,313.5 L677.5,337.5 L653.5,337.5 L649.5,361.5 L677.5,381.5 L697.5,373.5 L705.5,401.5 L745.5,409.5 L741.5,429.5 L729.5,433.5 L733.5,449.5 L757.5,461.5 L749.5,465.5 L757.5,509.5 L745.5,517.5 L721.5,509.5 L669.5,533.5 L609.5,493.5 L553.5,497.5 L553.5,481.5 L541.5,501.5 L529.5,493.5 L521.5,505.5 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="630" y="415" text-anchor="middle" fill="#7a9e6f">兵庫</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="okayama">
+        <path d="M541.5,373.5 L545.5,397.5 L513.5,429.5 L517.5,457.5 L509.5,469.5 L525.5,493.5 L521.5,505.5 L493.5,497.5 L505.5,509.5 L481.5,537.5 L445.5,533.5 L465.5,537.5 L453.5,553.5 L445.5,549.5 L441.5,569.5 L417.5,561.5 L409.5,573.5 L401.5,549.5 L401.5,561.5 L385.5,545.5 L369.5,561.5 L349.5,549.5 L357.5,565.5 L341.5,557.5 L325.5,493.5 L329.5,473.5 L313.5,453.5 L321.5,425.5 L309.5,413.5 L313.5,401.5 L341.5,397.5 L337.5,381.5 L365.5,381.5 L361.5,369.5 L369.5,365.5 L381.5,341.5 L409.5,349.5 L425.5,369.5 L465.5,345.5 L461.5,353.5 L489.5,365.5 L493.5,389.5 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="420" y="465" text-anchor="middle" fill="#c47a2f">岡山</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shimane">
+        <path d="M-18.5,489.5 L13.5,481.5 L73.5,425.5 L113.5,401.5 L137.5,369.5 L181.5,349.5 L193.5,325.5 L185.5,309.5 L253.5,293.5 L277.5,273.5 L289.5,285.5 L321.5,281.5 L309.5,289.5 L301.5,293.5 L325.5,325.5 L321.5,361.5 L289.5,369.5 L297.5,381.5 L281.5,405.5 L229.5,397.5 L201.5,429.5 L177.5,441.5 L189.5,461.5 L157.5,469.5 L137.5,461.5 L129.5,473.5 L97.5,465.5 L73.5,485.5 L77.5,493.5 L69.5,517.5 L49.5,537.5 L57.5,545.5 L41.5,553.5 L45.5,569.5 L33.5,585.5 L25.5,577.5 L1.5,585.5 L-6.5,569.5 L1.5,549.5 L-18.5,549.5 L-26.5,533.5 L-10.5,513.5 L-18.5,489.5 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="136" y="441" text-anchor="middle" fill="#7a3b8c">島根</text>
+      </g>
+      <polygon class="area-pref-shape" points="309.5,413.5 281.5,405.5 297.5,381.5 289.5,369.5 321.5,361.5 325.5,325.5 301.5,293.5 309.5,289.5 317.5,305.5 341.5,313.5 373.5,297.5 417.5,305.5 501.5,301.5 537.5,281.5 565.5,349.5 565.5,365.5 541.5,373.5 493.5,389.5 489.5,365.5 461.5,353.5 465.5,345.5 425.5,369.5 409.5,349.5 381.5,341.5 369.5,365.5 361.5,369.5 365.5,381.5 337.5,381.5 341.5,397.5 313.5,401.5"/>
+      <text class="area-main-label" x="394" y="255" text-anchor="middle" style="font-size:41.0px;stroke-width:6.4px">鳥取</text>
+
+      <g class="area-pin" data-target="area-tottoridunes">
+        <line class="area-pin-leader" x1="515.3" y1="303.7" x2="558.7" y2="278.7" style="stroke-width:1.8"/>
+        <rect x="496.9" y="285.3" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="515.3" cy="303.7" r="12.9" style="stroke-width:3.7"/>
+        <text x="558.7" y="278.7" text-anchor="start" style="font-size:23.3px">鳥取砂丘與鳥取市</text>
+      </g>
+      <g class="area-pin" data-target="area-kurayoshimisasa">
+        <line class="area-pin-leader" x1="426.2" y1="329.1" x2="426.2" y2="379.2" style="stroke-width:1.8"/>
+        <rect x="407.8" y="310.70000000000005" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="426.2" cy="329.1" r="12.9" style="stroke-width:3.7"/>
+        <text x="426.2" y="379.2" text-anchor="middle" style="font-size:23.3px">倉吉與三朝</text>
+      </g>
+      <g class="area-pin" data-target="area-daisen">
+        <line class="area-pin-leader" x1="366.5" y1="343.6" x2="318.4" y2="329.6" style="stroke-width:1.8"/>
+        <rect x="348.1" y="325.20000000000005" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="366.5" cy="343.6" r="12.9" style="stroke-width:3.7"/>
+        <text x="318.4" y="329.6" text-anchor="end" style="font-size:23.3px">大山</text>
+      </g>
+      <g class="area-pin" data-target="area-sakaiminato">
+        <line class="area-pin-leader" x1="300.1" y1="301.7" x2="255.8" y2="278.1" style="stroke-width:1.8"/>
+        <rect x="281.70000000000005" y="283.3" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="300.1" cy="301.7" r="12.9" style="stroke-width:3.7"/>
+        <text x="255.8" y="278.1" text-anchor="end" style="font-size:23.3px">境港與米子</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-tottoridunes">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">鳥取砂丘與鳥取市</span><span class="area-tag">日本的大砂丘</span></div>
+      <p class="area-desc">日本唯一的大規模沙漠狀砂丘群,沿日本海海岸延伸,緊鄰縣廳所在地。</p>
+      <ul class="area-highlights">
+        <li>日本規模最大、最著名的砂丘。</li>
+        <li>在砂丘上騎駱駝與玩飛行傘。</li>
+        <li>砂之美術館,有精緻的大型沙雕。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kurayoshimisasa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">倉吉與三朝</span><span class="area-tag">白牆之町與溫泉</span></div>
+      <p class="area-desc">保存完好的白牆商家街景,搭配三朝溫泉,以全世界放射性(氡)含量最高(據稱具療效)的泉水之一而聞名。</p>
+      <ul class="area-highlights">
+        <li>倉吉保存完好的白壁土藏群。</li>
+        <li>三朝溫泉,以放射性(氡)含量異常高的泉水聞名。</li>
+        <li>鳥取寧靜而傳統的一隅。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-daisen">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">大山</span><span class="area-tag">中國地方最高峰</span></div>
+      <p class="area-desc">中國地方最高的山,可健行、滑雪,壯觀的山形常被比擬為富士山。</p>
+      <ul class="area-highlights">
+        <li>中國地方最高的山。</li>
+        <li>壯觀的山形常被暱稱為「出雲富士」。</li>
+        <li>夏季健行、冬季滑雪。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sakaiminato">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">境港與米子</span><span class="area-tag">漫畫港町</span></div>
+      <p class="area-desc">以鬼太郎漫畫角色雕像聞名的奇趣港町,鄰近交通樞紐米子。</p>
+      <ul class="area-highlights">
+        <li>水木茂之路,兩旁排列著深受喜愛的妖怪角色雕像。</li>
+        <li>有新鮮海產的現役漁港。</li>
+        <li>米子,該地區的主要交通樞紐。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

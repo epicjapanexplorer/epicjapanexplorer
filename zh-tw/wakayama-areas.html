@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>和歌山分區旅遊指南:和歌山該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="和歌山縣分區旅遊指南:和歌山市與和歌浦、白濱、熊野與那智勝浦、高野山——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/wakayama-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/wakayama-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/wakayama-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/wakayama-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/wakayama-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#wakayama">← 返回地圖上的和歌山</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>和歌山分區導覽</h1>
+  <p class="page-lede">和歌山縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在和歌山的位置</div>
+    <div class="area-map-hint">和歌山縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-40 -84 640 704" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="osaka">
+        <path d="M243.8,3.8 L275.8,35.8 L291.8,23.8 L287.8,35.8 L303.8,39.8 L315.8,71.8 L295.8,115.8 L303.8,151.8 L295.8,171.8 L191.8,195.8 L179.8,183.8 L207.8,179.8 L235.8,151.8 L247.8,115.8 L255.8,123.8 L247.8,91.8 L259.8,83.8 L251.8,39.8 L259.8,35.8 L235.8,23.8 L231.8,7.8 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="258" y="90" text-anchor="middle" fill="#7a9e6f">大阪</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nara">
+        <path d="M367.8,263.8 L347.8,275.8 L347.8,287.8 L339.8,287.8 L339.8,299.8 L335.8,299.8 L283.8,291.8 L291.8,267.8 L271.8,239.8 L295.8,211.8 L311.8,207.8 L295.8,171.8 L303.8,151.8 L295.8,115.8 L315.8,71.8 L339.8,91.8 L355.8,79.8 L371.8,91.8 L379.8,83.8 L387.8,99.8 L375.8,103.8 L383.8,107.8 L379.8,123.8 L415.8,143.8 L383.8,167.8 L395.8,187.8 L387.8,191.8 L395.8,203.8 L387.8,219.8 L391.8,247.8 L387.8,259.8 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="351" y="189" text-anchor="middle" fill="#c47a2f">奈良</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="mie">
+        <path d="M367.8,335.8 L347.8,323.8 L335.8,299.8 L339.8,299.8 L339.8,287.8 L347.8,287.8 L367.8,275.8 L367.8,263.8 L387.8,259.8 L391.8,247.8 L387.8,219.8 L395.8,203.8 L387.8,191.8 L395.8,187.8 L383.8,167.8 L415.8,143.8 L379.8,123.8 L383.8,107.8 L375.8,103.8 L387.8,99.8 L379.8,83.8 L375.8,67.8 L387.8,63.8 L391.8,43.8 L419.8,55.8 L443.8,43.8 L459.8,3.8 L455.8,-36.2 L479.8,-44.2 L507.8,-16.2 L527.8,15.8 L503.8,19.8 L507.8,35.8 L479.8,83.8 L475.8,115.8 L539.8,143.8 L547.8,163.8 L559.8,159.8 L555.8,175.8 L535.8,175.8 L555.8,179.8 L555.8,199.8 L539.8,203.8 L547.8,195.8 L535.8,187.8 L531.8,195.8 L507.8,199.8 L519.8,183.8 L503.8,183.8 L491.8,203.8 L491.8,195.8 L479.8,207.8 L471.8,199.8 L471.8,211.8 L463.8,203.8 L435.8,219.8 L423.8,227.8 L427.8,247.8 L419.8,243.8 L423.8,235.8 L407.8,247.8 L423.8,263.8 L415.8,263.8 L423.8,275.8 L411.8,267.8 L415.8,279.8 L387.8,295.8 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="443" y="176" text-anchor="middle" fill="#7a3b8c">三重</text>
+      </g>
+      <path class="area-pref-shape" d="M335.8,299.8 L347.8,323.8 L367.8,335.8 L351.8,355.8 L355.8,371.8 L323.8,391.8 L319.8,407.8 L311.8,407.8 L315.8,395.8 L247.8,375.8 L227.8,347.8 L239.8,335.8 L207.8,319.8 L187.8,291.8 L171.8,291.8 L183.8,271.8 L171.8,267.8 L195.8,255.8 L175.8,243.8 L191.8,235.8 L187.8,227.8 L203.8,227.8 L171.8,195.8 L179.8,183.8 L191.8,195.8 L295.8,171.8 L311.8,207.8 L295.8,211.8 L271.8,239.8 L291.8,267.8 L283.8,291.8 L335.8,299.8 Z M367.8,263.8 L367.8,275.8 L347.8,287.8 L347.8,275.8 L367.8,263.8 Z"/>
+      <text class="area-main-label" x="258" y="275" text-anchor="middle" style="font-size:27.5px;stroke-width:4.3px">和歌山</text>
+
+      <g class="area-pin" data-target="area-wakayamacity">
+        <line class="area-pin-leader" x1="186.8" y1="203.1" x2="151.9" y2="168.6" style="stroke-width:1.2"/>
+        <rect x="175.10000000000002" y="191.4" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="186.8" cy="203.1" r="8.2" style="stroke-width:2.3"/>
+        <text x="151.9" y="168.6" text-anchor="end" style="font-size:14.8px">和歌山市與和歌浦</text>
+      </g>
+      <g class="area-pin" data-target="area-shirahama">
+        <line class="area-pin-leader" x1="227.5" y1="346.6" x2="198.2" y2="386.0" style="stroke-width:1.2"/>
+        <rect x="215.8" y="334.90000000000003" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="227.5" cy="346.6" r="8.2" style="stroke-width:2.3"/>
+        <text x="198.2" y="386.0" text-anchor="end" style="font-size:14.8px">白濱</text>
+      </g>
+      <g class="area-pin" data-target="area-kumanonachi">
+        <line class="area-pin-leader" x1="357.4" y1="349.2" x2="397.1" y2="378.1" style="stroke-width:1.2"/>
+        <rect x="345.7" y="337.5" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="357.4" cy="349.2" r="8.2" style="stroke-width:2.3"/>
+        <text x="397.1" y="378.1" text-anchor="start" style="font-size:14.8px">熊野與那智勝浦</text>
+      </g>
+      <g class="area-pin" data-target="area-koyasan">
+        <line class="area-pin-leader" x1="279.8" y1="207.7" x2="284.8" y2="158.8" style="stroke-width:1.2"/>
+        <rect x="268.1" y="196.0" width="23.4" height="23.4" fill="transparent"/>
+        <circle cx="279.8" cy="207.7" r="8.2" style="stroke-width:2.3"/>
+        <text x="284.8" y="158.8" text-anchor="middle" style="font-size:14.8px">高野山</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-wakayamacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">和歌山市與和歌浦</span><span class="area-tag">城堡與風景海灣</span></div>
+      <p class="area-desc">縣廳所在地,有重建的城堡與和歌浦灣,這處海岸地區在日本古典和歌中廣受歌詠。</p>
+      <ul class="area-highlights">
+        <li>和歌山城,重建後俯瞰城市。</li>
+        <li>和歌浦灣,自古以來在古典詩歌中廣受歌詠。</li>
+        <li>悠閒的海濱縣廳所在地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shirahama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">白濱</span><span class="area-tag">海灘與古老溫泉</span></div>
+      <p class="area-desc">熱門的海灘度假小鎮,以白沙灘與日本最古老的溫泉之一聞名。</p>
+      <ul class="area-highlights">
+        <li>白良濱海灘,以潔白的沙灘聞名。</li>
+        <li>日本有文獻記載的最古老溫泉之一。</li>
+        <li>附近有壯觀的海岸奇岩。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kumanonachi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">熊野與那智勝浦</span><span class="area-tag">日本落差最大的瀑布</span></div>
+      <p class="area-desc">那智瀑布的所在地,日本落差最大的瀑布,也是神聖的熊野古道朝聖路線上的重要一站。</p>
+      <ul class="area-highlights">
+        <li>那智瀑布——日本落差最大的單段瀑布。</li>
+        <li>青岸渡寺的三重塔與瀑布構成的畫面。</li>
+        <li>列入聯合國教科文組織世界遺產的熊野古道朝聖路線上的重要一站。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-koyasan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">高野山</span><span class="area-tag">聖山上的寺院</span></div>
+      <p class="area-desc">神聖的山頂寺院群,也是聯合國教科文組織世界遺產,遊客可以住在有數百年歷史的寺院宿坊。</p>
+      <ul class="area-highlights">
+        <li>奧之院——位於高聳杉木之間、氣氛十足的廣大墓園。</li>
+        <li>在仍在運作的寺院住宿(宿坊)中過夜。</li>
+        <li>列入聯合國教科文組織世界遺產的真言宗信仰中心。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

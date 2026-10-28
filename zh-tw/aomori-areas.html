@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青森分區旅遊指南:青森該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="青森縣分區旅遊指南:青森市與淺蟲、弘前、奧入瀨溪流、八戶——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/aomori-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/aomori-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/aomori-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/aomori-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/aomori-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#aomori">← 返回地圖上的青森</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>青森分區導覽</h1>
+  <p class="page-lede">青森縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在青森的位置</div>
+    <div class="area-map-hint">青森縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-40 -40 924 1026" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="iwate">
+        <path d="M602.2,886.2 L574.2,882.2 L566.2,938.2 L542.2,926.2 L526.2,946.2 L502.2,930.2 L510.2,914.2 L478.2,918.2 L438.2,898.2 L442.2,874.2 L430.2,854.2 L442.2,842.2 L410.2,790.2 L422.2,746.2 L438.2,722.2 L430.2,702.2 L442.2,686.2 L430.2,670.2 L450.2,666.2 L442.2,594.2 L458.2,574.2 L474.2,578.2 L526.2,538.2 L534.2,550.2 L550.2,538.2 L570.2,546.2 L594.2,518.2 L626.2,562.2 L618.2,582.2 L638.2,594.2 L630.2,610.2 L654.2,630.2 L666.2,690.2 L658.2,730.2 L670.2,714.2 L674.2,734.2 L682.2,738.2 L658.2,758.2 L666.2,766.2 L678.2,754.2 L678.2,770.2 L662.2,770.2 L662.2,790.2 L650.2,794.2 L670.2,790.2 L650.2,802.2 L658.2,810.2 L650.2,818.2 L666.2,814.2 L642.2,842.2 L658.2,850.2 L638.2,850.2 L650.2,862.2 L638.2,862.2 L646.2,870.2 L622.2,874.2 L618.2,862.2 L626.2,882.2 L618.2,882.2 L618.2,894.2 L610.2,878.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="578" y="765" text-anchor="middle" fill="#7a9e6f">岩手</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="akita">
+        <path d="M438.2,898.2 L410.2,918.2 L394.2,914.2 L378.2,910.2 L370.2,890.2 L314.2,878.2 L298.2,858.2 L258.2,862.2 L266.2,822.2 L286.2,786.2 L290.2,698.2 L266.2,666.2 L234.2,678.2 L222.2,642.2 L246.2,654.2 L270.2,622.2 L282.2,586.2 L282.2,554.2 L262.2,534.2 L278.2,538.2 L290.2,522.2 L338.2,530.2 L350.2,518.2 L378.2,538.2 L390.2,530.2 L402.2,538.2 L442.2,510.2 L442.2,530.2 L462.2,530.2 L458.2,574.2 L442.2,594.2 L450.2,666.2 L430.2,670.2 L442.2,686.2 L430.2,702.2 L438.2,722.2 L422.2,746.2 L410.2,790.2 L442.2,842.2 L430.2,854.2 L442.2,874.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="361" y="692" text-anchor="middle" fill="#c47a2f">秋田</text>
+      </g>
+      <polygon class="area-pref-shape" points="262.2,534.2 262.2,502.2 250.2,490.2 274.2,454.2 298.2,454.2 322.2,438.2 334.2,374.2 318.2,358.2 330.2,354.2 334.2,326.2 358.2,342.2 374.2,330.2 390.2,342.2 398.2,402.2 410.2,430.2 434.2,414.2 430.2,398.2 438.2,382.2 482.2,418.2 494.2,406.2 510.2,342.2 494.2,314.2 470.2,338.2 414.2,350.2 438.2,250.2 506.2,294.2 542.2,274.2 534.2,398.2 542.2,454.2 558.2,498.2 574.2,494.2 594.2,518.2 570.2,546.2 550.2,538.2 534.2,550.2 526.2,538.2 474.2,578.2 458.2,574.2 462.2,530.2 442.2,530.2 442.2,510.2 402.2,538.2 390.2,530.2 378.2,538.2 350.2,518.2 338.2,530.2 290.2,522.2 278.2,538.2"/>
+      <text class="area-main-label" x="422" y="361" text-anchor="middle" style="font-size:39.7px;stroke-width:6.2px">青森</text>
+
+      <g class="area-pin" data-target="area-aomori">
+        <line class="area-pin-leader" x1="412.6" y1="430.3" x2="368.1" y2="368.6" style="stroke-width:1.8"/>
+        <rect x="394.20000000000005" y="411.90000000000003" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="412.6" cy="430.3" r="12.9" style="stroke-width:3.7"/>
+        <text x="368.1" y="368.6" text-anchor="end" style="font-size:23.2px">青森市與淺蟲</text>
+      </g>
+      <g class="area-pin" data-target="area-hirosaki">
+        <line class="area-pin-leader" x1="360.4" y1="484.5" x2="297.0" y2="526.6" style="stroke-width:1.8"/>
+        <rect x="342.0" y="466.1" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="360.4" cy="484.5" r="12.9" style="stroke-width:3.7"/>
+        <text x="297.0" y="526.6" text-anchor="end" style="font-size:23.2px">弘前</text>
+      </g>
+      <g class="area-pin" data-target="area-oirase">
+        <line class="area-pin-leader" x1="443.5" y1="472.2" x2="489.0" y2="533.2" style="stroke-width:1.8"/>
+        <rect x="425.1" y="453.8" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="443.5" cy="472.2" r="12.9" style="stroke-width:3.7"/>
+        <text x="489.0" y="533.2" text-anchor="start" style="font-size:23.2px">奧入瀨溪流</text>
+      </g>
+      <g class="area-pin" data-target="area-hachinohe">
+        <line class="area-pin-leader" x1="557.5" y1="506.7" x2="626.4" y2="538.9" style="stroke-width:1.8"/>
+        <rect x="539.1" y="488.3" width="36.8" height="36.8" fill="transparent"/>
+        <circle cx="557.5" cy="506.7" r="12.9" style="stroke-width:3.7"/>
+        <text x="626.4" y="538.9" text-anchor="start" style="font-size:23.2px">八戶</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-aomori">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">青森市與淺蟲</span><span class="area-tag">縣廳所在地</span></div>
+      <p class="area-desc">縣廳所在地,有為紀念夏季祭典而建、令人印象深刻的睡魔之家 Warasse,沿海岸不遠處則是寧靜的淺蟲溫泉小鎮。</p>
+      <ul class="area-highlights">
+        <li>睡魔之家 Warasse——常態展示巨大的祭典燈籠花車。</li>
+        <li>睡魔祭(8月初)——青森熱力四射的夏季盛典。</li>
+        <li>淺蟲溫泉——附近悠閒的海岸溫泉小鎮。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hirosaki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">弘前</span><span class="area-tag">城堡與櫻花</span></div>
+      <p class="area-desc">以日本最美的賞櫻景色之一聞名的城下町,襯著津輕蘋果園與保存完好的明治時代街景。</p>
+      <ul class="area-highlights">
+        <li>弘前公園——被公認為日本最佳賞櫻名所。</li>
+        <li>環繞市區的蘋果園——日本首屈一指的蘋果產地。</li>
+        <li>武家時代與明治西洋建築交織出迷人風情。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-oirase">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">奧入瀨溪流</span><span class="area-tag">森林溪谷</span></div>
+      <p class="area-desc">寧靜的森林河谷,沿途瀑布與覆滿青苔的巨石相伴,是日本最受讚譽的步道之一,秋天尤其鮮豔。</p>
+      <ul class="area-highlights">
+        <li>沿著奧入瀨川、平坦好走的14公里步道。</li>
+        <li>沿途有許多各具名稱的瀑布。</li>
+        <li>毗鄰風景優美的破火山口湖——十和田湖。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hachinohe">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">八戶</span><span class="area-tag">漁港</span></div>
+      <p class="area-desc">以熱鬧的早市與新鮮海產聞名的現役漁港,還有氣氛十足的橫丁小酒吧巷弄。</p>
+      <ul class="area-highlights">
+        <li>八戶朝市——日本規模最大的早市之一,僅週日舉辦。</li>
+        <li>彌勒橫丁——點著燈籠的狹窄巷弄裡,滿是小小的居酒屋。</li>
+        <li>與太平洋漁業傳統淵源深厚的現役港口。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

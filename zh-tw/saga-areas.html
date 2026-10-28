@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>佐賀分區旅遊指南:佐賀該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="佐賀縣分區旅遊指南:佐賀與吉野里、唐津、有田與伊萬里、嬉野與武雄——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/saga-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/saga-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/saga-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/saga-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/saga-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#saga">← 返回地圖上的佐賀</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>佐賀分區導覽</h1>
+  <p class="page-lede">佐賀縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在佐賀的位置</div>
+    <div class="area-map-hint">佐賀縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-40 -40 478 431" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukuoka">
+        <path d="M317.6,225.6 L285.6,205.6 L281.6,221.6 L265.6,217.6 L245.6,233.6 L249.6,245.6 L229.6,245.6 L229.6,221.6 L217.6,209.6 L225.6,181.6 L257.6,161.6 L261.6,137.6 L233.6,145.6 L209.6,121.6 L157.6,121.6 L185.6,105.6 L169.6,93.6 L197.6,73.6 L209.6,97.6 L237.6,93.6 L241.6,73.6 L225.6,81.6 L213.6,69.6 L233.6,73.6 L249.6,61.6 L257.6,33.6 L297.6,25.6 L301.6,13.6 L325.6,17.6 L309.6,33.6 L321.6,33.6 L329.6,21.6 L341.6,29.6 L369.6,13.6 L353.6,45.6 L365.6,53.6 L357.6,57.6 L377.6,101.6 L397.6,101.6 L393.6,129.6 L365.6,125.6 L337.6,141.6 L321.6,165.6 L325.6,185.6 L317.6,193.6 L329.6,205.6 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="281" y="118" text-anchor="middle" fill="#7a9e6f">福岡</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nagasaki">
+        <path d="M105.6,149.6 L97.6,161.6 L105.6,189.6 L133.6,197.6 L129.6,213.6 L153.6,241.6 L185.6,253.6 L157.6,273.6 L209.6,277.6 L217.6,297.6 L209.6,325.6 L169.6,341.6 L161.6,317.6 L181.6,301.6 L177.6,293.6 L157.6,289.6 L125.6,297.6 L113.6,321.6 L81.6,341.6 L97.6,321.6 L93.6,309.6 L101.6,313.6 L109.6,297.6 L97.6,305.6 L93.6,277.6 L77.6,273.6 L65.6,249.6 L77.6,205.6 L93.6,221.6 L89.6,237.6 L93.6,229.6 L105.6,237.6 L97.6,265.6 L141.6,277.6 L125.6,253.6 L129.6,233.6 L117.6,217.6 L105.6,225.6 L101.6,201.6 L89.6,201.6 L89.6,193.6 L73.6,205.6 L81.6,197.6 L69.6,189.6 L69.6,177.6 L69.6,185.6 L53.6,177.6 L69.6,153.6 L57.6,149.6 L61.6,137.6 L81.6,133.6 L81.6,145.6 L101.6,141.6 L105.6,149.6 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="112" y="237" text-anchor="middle" fill="#c47a2f">長崎</text>
+      </g>
+      <polygon class="area-pref-shape" points="157.6,121.6 209.6,121.6 233.6,145.6 261.6,137.6 257.6,161.6 225.6,181.6 217.6,209.6 197.6,189.6 173.6,213.6 185.6,253.6 153.6,241.6 129.6,213.6 133.6,197.6 105.6,189.6 97.6,161.6 105.6,149.6 117.6,165.6 113.6,149.6 121.6,133.6 105.6,121.6 109.6,113.6 121.6,121.6 121.6,97.6 125.6,105.6 141.6,105.6 145.6,125.6"/>
+      <text class="area-main-label" x="157" y="185" text-anchor="middle" style="font-size:22px;stroke-width:3.2px">佐賀</text>
+
+      <g class="area-pin" data-target="area-sagayoshinogari">
+        <line class="area-pin-leader" x1="231.8" y1="179.4" x2="266.8" y2="189.0" style="stroke-width:0.8"/>
+        <rect x="224.0" y="171.6" width="15.6" height="15.6" fill="transparent"/>
+        <circle cx="231.8" cy="179.4" r="5.5" style="stroke-width:1.6"/>
+        <text x="266.8" y="189.0" text-anchor="start" style="font-size:9.9px">佐賀與吉野里</text>
+      </g>
+      <g class="area-pin" data-target="area-karatsu">
+        <line class="area-pin-leader" x1="150.6" y1="129.8" x2="143.4" y2="94.3" style="stroke-width:0.8"/>
+        <rect x="142.79999999999998" y="122.00000000000001" width="15.6" height="15.6" fill="transparent"/>
+        <circle cx="150.6" cy="129.8" r="5.5" style="stroke-width:1.6"/>
+        <text x="143.4" y="94.3" text-anchor="middle" style="font-size:9.9px">唐津</text>
+      </g>
+      <g class="area-pin" data-target="area-aritaimari">
+        <line class="area-pin-leader" x1="130.2" y1="191.7" x2="107.6" y2="219.9" style="stroke-width:0.8"/>
+        <rect x="122.39999999999999" y="183.89999999999998" width="15.6" height="15.6" fill="transparent"/>
+        <circle cx="130.2" cy="191.7" r="5.5" style="stroke-width:1.6"/>
+        <text x="107.6" y="219.9" text-anchor="end" style="font-size:9.9px">有田與伊萬里</text>
+      </g>
+      <g class="area-pin" data-target="area-ureshinotakeo">
+        <line class="area-pin-leader" x1="179.1" y1="208.2" x2="194.2" y2="241.1" style="stroke-width:0.8"/>
+        <rect x="171.29999999999998" y="200.39999999999998" width="15.6" height="15.6" fill="transparent"/>
+        <circle cx="179.1" cy="208.2" r="5.5" style="stroke-width:1.6"/>
+        <text x="194.2" y="241.1" text-anchor="start" style="font-size:9.9px">嬉野與武雄</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-sagayoshinogari">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">佐賀與吉野里</span><span class="area-tag">古代考古遺址</span></div>
+      <p class="area-desc">縣廳所在地,鄰近日本最大且最重要的古代考古遺址之一吉野里。</p>
+      <ul class="area-highlights">
+        <li>吉野里——日本規模最大的彌生時代考古遺址之一。</li>
+        <li>重建的古代環濠聚落建築。</li>
+        <li>窺探日本古代彌生文化的難得窗口。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-karatsu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">唐津</span><span class="area-tag">城堡與唐津宮日祭</span></div>
+      <p class="area-desc">歷史悠久的城堡與陶瓷之町,每年秋天都有精緻的唐津宮日祭曳山花車。</p>
+      <ul class="area-highlights">
+        <li>唐津宮日祭——有巨大曳山花車的精緻秋季祭典。</li>
+        <li>唐津燒,卓越的在地陶藝傳統。</li>
+        <li>俯瞰海灣的風景城堡。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-aritaimari">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">有田與伊萬里</span><span class="area-tag">日本瓷器的發源地</span></div>
+      <p class="area-desc">日本瓷器的發源地,擁有數百年不間斷的製陶傳統與仍在運作的窯場小鎮。</p>
+      <ul class="area-highlights">
+        <li>日本瓷器生產的發源地。</li>
+        <li>歷史達數百年且仍在運作的窯場與瓷器店。</li>
+        <li>一年一度的有田陶瓷器市集,重要的陶瓷盛事。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ureshinotakeo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">嬉野與武雄</span><span class="area-tag">美肌溫泉</span></div>
+      <p class="area-desc">兩處歷史悠久的溫泉小鎮,以柔滑、使肌膚光滑的泉質與傳統旅館待客之道聞名。</p>
+      <ul class="area-highlights">
+        <li>以柔滑、潤澤肌膚而著稱的溫泉泉質。</li>
+        <li>在較為寧靜的環境中享受傳統旅館的待客之道。</li>
+        <li>相較於人潮較多的溫泉鄉,是悠閒的選擇。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茨城分區旅遊指南:茨城該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="茨城縣分區旅遊指南:水戶、大洗、筑波、鹿島——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/ibaraki-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/ibaraki-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/ibaraki-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/ibaraki-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/ibaraki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#ibaraki">← 返回地圖上的茨城</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>茨城分區導覽</h1>
+  <p class="page-lede">茨城縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在茨城的位置</div>
+    <div class="area-map-hint">茨城縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-122 -182 630 852" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukushima">
+        <path d="M330.3,134.3 L290.3,114.3 L290.3,130.3 L266.3,154.3 L226.3,118.3 L222.3,94.3 L198.3,78.3 L150.3,66.3 L50.3,130.3 L18.3,122.3 L22.3,66.3 L2.3,46.3 L18.3,22.3 L10.3,6.3 L14.3,-5.7 L50.3,-9.7 L54.3,-21.7 L86.3,-21.7 L78.3,-57.7 L114.3,-97.7 L102.3,-105.7 L130.3,-97.7 L154.3,-101.7 L162.3,-85.7 L178.3,-89.7 L190.3,-81.7 L214.3,-85.7 L226.3,-101.7 L218.3,-105.7 L222.3,-141.7 L246.3,-141.7 L262.3,-125.7 L298.3,-125.7 L302.3,-101.7 L322.3,-93.7 L318.3,-101.7 L334.3,-101.7 L334.3,-125.7 L350.3,-125.7 L374.3,-69.7 L374.3,38.3 L366.3,102.3 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="195" y="-21" text-anchor="middle" fill="#7a9e6f">福島</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tochigi">
+        <path d="M114.3,306.3 L110.3,302.3 L102.3,286.3 L66.3,290.3 L46.3,262.3 L70.3,210.3 L38.3,198.3 L42.3,162.3 L54.3,150.3 L42.3,142.3 L50.3,130.3 L150.3,66.3 L198.3,78.3 L222.3,94.3 L226.3,118.3 L226.3,162.3 L230.3,174.3 L218.3,182.3 L226.3,222.3 L214.3,250.3 L170.3,258.3 L158.3,278.3 L146.3,278.3 L142.3,294.3 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="136" y="204" text-anchor="middle" fill="#c47a2f">栃木</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M110.3,302.3 L114.3,306.3 L122.3,334.3 L134.3,330.3 L134.3,330.3 L158.3,382.3 L158.3,410.3 L134.3,402.3 L126.3,410.3 L110.3,406.3 L86.3,418.3 L86.3,402.3 L58.3,414.3 L38.3,398.3 L-21.7,382.3 L-33.7,394.3 L-77.7,382.3 L-81.7,362.3 L-17.7,326.3 L2.3,286.3 L46.3,294.3 L70.3,310.3 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="66" y="363" text-anchor="middle" fill="#7a3b8c">埼玉</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="chiba">
+        <path d="M154.3,446.3 L162.3,430.3 L158.3,410.3 L158.3,382.3 L134.3,330.3 L166.3,370.3 L210.3,390.3 L282.3,374.3 L282.3,362.3 L354.3,410.3 L354.3,426.3 L314.3,426.3 L270.3,470.3 L262.3,558.3 L210.3,574.3 L162.3,630.3 L134.3,614.3 L154.3,606.3 L146.3,594.3 L150.3,582.3 L146.3,562.3 L154.3,542.3 L138.3,526.3 L150.3,510.3 L162.3,514.3 L162.3,498.3 L186.3,486.3 L206.3,462.3 L178.3,434.3 L158.3,450.3 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="196" y="479" text-anchor="middle" fill="#2f6690">千葉</text>
+      </g>
+      <polygon class="area-pref-shape" points="134.3,330.3 134.3,330.3 122.3,334.3 114.3,306.3 142.3,294.3 146.3,278.3 158.3,278.3 170.3,258.3 214.3,250.3 226.3,222.3 218.3,182.3 230.3,174.3 226.3,162.3 226.3,118.3 266.3,154.3 290.3,130.3 290.3,114.3 330.3,134.3 298.3,230.3 302.3,254.3 290.3,282.3 298.3,322.3 318.3,358.3 310.3,366.3 318.3,378.3 322.3,362.3 354.3,410.3 282.3,362.3 282.3,374.3 210.3,390.3 166.3,370.3"/>
+      <text class="area-main-label" x="239" y="207" text-anchor="middle" style="font-size:27.1px;stroke-width:4.2px">茨城</text>
+
+      <g class="area-pin" data-target="area-mito">
+        <line class="area-pin-leader" x1="271.6" y1="261.9" x2="328.5" y2="239.8" style="stroke-width:1.0"/>
+        <rect x="261.40000000000003" y="251.7" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="271.6" cy="261.9" r="7.1" style="stroke-width:2.0"/>
+        <text x="328.5" y="239.8" text-anchor="start" style="font-size:12.9px">水戶</text>
+      </g>
+      <g class="area-pin" data-target="area-oarai">
+        <line class="area-pin-leader" x1="298.7" y1="269.4" x2="359.4" y2="264.1" style="stroke-width:1.0"/>
+        <rect x="288.5" y="259.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="298.7" cy="269.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="359.4" y="264.1" text-anchor="start" style="font-size:12.9px">大洗</text>
+      </g>
+      <g class="area-pin" data-target="area-tsukuba">
+        <line class="area-pin-leader" x1="202.5" y1="325.4" x2="167.2" y2="375.1" style="stroke-width:1.0"/>
+        <rect x="192.3" y="315.2" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="202.5" cy="325.4" r="7.1" style="stroke-width:2.0"/>
+        <text x="167.2" y="375.1" text-anchor="end" style="font-size:12.9px">筑波</text>
+      </g>
+      <g class="area-pin" data-target="area-kashima">
+        <line class="area-pin-leader" x1="309.2" y1="352.1" x2="350.3" y2="397.1" style="stroke-width:1.0"/>
+        <rect x="299.0" y="341.90000000000003" width="20.4" height="20.4" fill="transparent"/>
+        <circle cx="309.2" cy="352.1" r="7.1" style="stroke-width:2.0"/>
+        <text x="350.3" y="397.1" text-anchor="start" style="font-size:12.9px">鹿島</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-mito">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">水戶</span><span class="area-tag">縣廳所在地</span></div>
+      <p class="area-desc">縣廳所在地,擁有日本三大名園之一的偕樂園,每年春天以梅花聞名。</p>
+      <ul class="area-highlights">
+        <li>偕樂園——日本三大名園之一,梅花季(2月至3月)最美。</li>
+        <li>水戶城遺跡與相鄰的弘道館,曾是日本最大的藩校。</li>
+        <li>規模小巧、適合步行的市中心。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-oarai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">大洗</span><span class="area-tag">海濱小鎮</span></div>
+      <p class="area-desc">悠閒的海濱小鎮,以海邊神社、大型水族館與海灘聞名——是從水戶出發的熱門一日遊。</p>
+      <ul class="area-highlights">
+        <li>大洗磯前神社——屹立於浪花中的鳥居。</li>
+        <li>大洗水族館(Aqua World Oarai)——日本最大的水族館之一。</li>
+        <li>夏季適合游泳與衝浪的沙灘。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsukuba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">筑波</span><span class="area-tag">科學城</span></div>
+      <p class="area-desc">筑波山下規劃而成的科學城,有大型研究機構、太空中心與山頂全景。</p>
+      <ul class="area-highlights">
+        <li>JAXA筑波太空中心——火箭與太空展示。</li>
+        <li>筑波山纜車——關東平原全景。</li>
+        <li>現代化、適合步行的規劃城市,有寬闊的綠蔭大道。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kashima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">鹿島</span><span class="area-tag">古老神社與港口</span></div>
+      <p class="area-desc">鹿島神宮的所在地,是日本最古老且最受崇敬的神社之一,同時也是大型工業港都,擁有悠久的足球傳統。</p>
+      <ul class="area-highlights">
+        <li>鹿島神宮——日本最古老也最重要的神社之一。</li>
+        <li>神社境內的神聖鹿園。</li>
+        <li>鹿島鹿角(Kashima Antlers)的主場,日本最具傳奇色彩的足球俱樂部之一。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

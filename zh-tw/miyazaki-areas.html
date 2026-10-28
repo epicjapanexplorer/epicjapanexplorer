@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宮崎分區旅遊指南:宮崎該去哪些地方 | Epic Japan Explorer</title>
+<meta name="description" content="宮崎縣分區旅遊指南:宮崎市與青島、高千穗、都井岬——各區的特色與必訪景點。">
+<link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/miyazaki-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/miyazaki-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/miyazaki-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/miyazaki-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/miyazaki-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif TC', serif; --font-body:'Noto Sans TC', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#miyazaki">← 返回地圖上的宮崎</a>
+</header>
+
+<main>
+  <div class="eyebrow">都道府縣分區旅遊指南</div>
+  <h1>宮崎分區導覽</h1>
+  <p class="page-lede">宮崎縣可分成幾個各具特色的區域。點擊地圖上的標記,或向下捲動,逐一了解各區。</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">各區在宮崎的位置</div>
+    <div class="area-map-hint">宮崎縣的實際行政界線(與主網站使用相同的地圖資料)——點擊標記即可跳至該區。</div>
+    <svg class="area-map-svg" viewBox="-40 -40 779 883" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="oita">
+        <path d="M263.7,143.7 L275.7,123.7 L263.7,111.7 L271.7,103.7 L267.7,83.7 L283.7,59.7 L311.7,43.7 L339.7,47.7 L343.7,19.7 L395.7,35.7 L415.7,7.7 L451.7,23.7 L459.7,47.7 L447.7,79.7 L435.7,75.7 L435.7,87.7 L403.7,95.7 L407.7,111.7 L423.7,119.7 L487.7,115.7 L463.7,151.7 L487.7,151.7 L475.7,159.7 L487.7,167.7 L507.7,159.7 L511.7,171.7 L491.7,171.7 L483.7,187.7 L523.7,203.7 L499.7,203.7 L507.7,211.7 L491.7,223.7 L503.7,227.7 L479.7,231.7 L479.7,247.7 L471.7,247.7 L471.7,227.7 L455.7,223.7 L443.7,239.7 L411.7,239.7 L391.7,219.7 L371.7,223.7 L363.7,219.7 L347.7,203.7 L351.7,179.7 L323.7,127.7 L299.7,127.7 L303.7,151.7 L295.7,163.7 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="410" y="147" text-anchor="middle" fill="#7a9e6f">大分</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kumamoto">
+        <path d="M223.7,391.7 L203.7,367.7 L167.7,383.7 L147.7,367.7 L199.7,307.7 L191.7,283.7 L199.7,287.7 L195.7,279.7 L219.7,259.7 L175.7,259.7 L207.7,235.7 L211.7,215.7 L179.7,183.7 L175.7,163.7 L195.7,163.7 L191.7,151.7 L211.7,135.7 L227.7,139.7 L231.7,123.7 L263.7,143.7 L295.7,163.7 L303.7,151.7 L299.7,127.7 L323.7,127.7 L351.7,179.7 L347.7,203.7 L363.7,219.7 L347.7,219.7 L311.7,275.7 L291.7,283.7 L291.7,311.7 L311.7,339.7 L295.7,359.7 L307.7,383.7 L223.7,391.7 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="248" y="245" text-anchor="middle" fill="#c47a2f">熊本</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kagoshima">
+        <path d="M147.7,367.7 L167.7,383.7 L203.7,367.7 L223.7,391.7 L219.7,399.7 L239.7,427.7 L259.7,447.7 L255.7,467.7 L275.7,475.7 L287.7,511.7 L315.7,515.7 L315.7,543.7 L307.7,555.7 L295.7,551.7 L275.7,575.7 L295.7,587.7 L287.7,603.7 L299.7,599.7 L271.7,611.7 L259.7,631.7 L195.7,663.7 L195.7,643.7 L215.7,631.7 L231.7,583.7 L207.7,547.7 L211.7,527.7 L187.7,515.7 L207.7,507.7 L211.7,523.7 L223.7,527.7 L239.7,503.7 L211.7,479.7 L195.7,487.7 L171.7,539.7 L179.7,583.7 L199.7,595.7 L191.7,615.7 L167.7,619.7 L155.7,595.7 L103.7,595.7 L107.7,579.7 L95.7,575.7 L103.7,567.7 L83.7,551.7 L119.7,551.7 L135.7,511.7 L123.7,475.7 L103.7,459.7 L115.7,431.7 L107.7,383.7 L119.7,375.7 L135.7,383.7 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="201" y="522" text-anchor="middle" fill="#7a3b8c">鹿兒島</text>
+      </g>
+      <polygon class="area-pref-shape" points="363.7,219.7 371.7,223.7 391.7,219.7 411.7,239.7 443.7,239.7 455.7,223.7 471.7,227.7 471.7,247.7 479.7,247.7 435.7,287.7 431.7,303.7 443.7,307.7 427.7,311.7 423.7,319.7 431.7,323.7 407.7,355.7 383.7,423.7 375.7,515.7 355.7,535.7 347.7,583.7 327.7,575.7 307.7,555.7 315.7,543.7 315.7,515.7 287.7,511.7 275.7,475.7 255.7,467.7 259.7,447.7 239.7,427.7 219.7,399.7 223.7,391.7 307.7,383.7 295.7,359.7 311.7,339.7 291.7,311.7 291.7,283.7 311.7,275.7 347.7,219.7"/>
+      <text class="area-main-label" x="356" y="294" text-anchor="middle" style="font-size:33.5px;stroke-width:5.2px">宮崎</text>
+
+      <g class="area-pin" data-target="area-miyazakicity">
+        <line class="area-pin-leader" x1="374.8" y1="447.5" x2="390.9" y2="517.3" style="stroke-width:1.5"/>
+        <rect x="359.6" y="432.3" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="374.8" cy="447.5" r="10.6" style="stroke-width:3.0"/>
+        <text x="390.9" y="517.3" text-anchor="middle" style="font-size:19.2px">宮崎市與青島</text>
+      </g>
+      <g class="area-pin" data-target="area-takachiho">
+        <line class="area-pin-leader" x1="349.6" y1="254.2" x2="345.8" y2="182.7" style="stroke-width:1.5"/>
+        <rect x="334.40000000000003" y="239.0" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="349.6" cy="254.2" r="10.6" style="stroke-width:3.0"/>
+        <text x="345.8" y="182.7" text-anchor="middle" style="font-size:19.2px">高千穗</text>
+      </g>
+      <g class="area-pin" data-target="area-capetoi">
+        <line class="area-pin-leader" x1="360.0" y1="584.0" x2="361.4" y2="655.6" style="stroke-width:1.5"/>
+        <rect x="344.8" y="568.8" width="30.4" height="30.4" fill="transparent"/>
+        <circle cx="360.0" cy="584.0" r="10.6" style="stroke-width:3.0"/>
+        <text x="361.4" y="655.6" text-anchor="middle" style="font-size:19.2px">都井岬</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-miyazakicity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">宮崎市與青島</span><span class="area-tag">亞熱帶縣廳所在地</span></div>
+      <p class="area-desc">縣廳所在地,以亞熱帶棕櫚樹成排的街道,以及外海充滿神話色彩的小島青島聞名。</p>
+      <ul class="area-highlights">
+        <li>棕櫚樹成排的街道,讓城市有亞熱帶度假勝地的氛圍。</li>
+        <li>青島,被獨特「鬼之洗衣板」岩層環繞的小島。</li>
+        <li>悠閒而陽光充足的海岸氛圍。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-takachiho">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">高千穗</span><span class="area-tag">神話峽谷</span></div>
+      <p class="area-desc">與日本古代創世傳說相關的神話峽谷,以壯觀的懸崖、瀑布與傳統的夜神樂舞聞名。</p>
+      <ul class="area-highlights">
+        <li>高千穗峽壯觀的懸崖與真名井瀑布。</li>
+        <li>根源於古代神話的夜神樂舞蹈演出。</li>
+        <li>與日本神道創世神話淵源深厚。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-capetoi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">都井岬</span><span class="area-tag">野生馬群</span></div>
+      <p class="area-desc">偏遠而風勢強勁的海岬,以在長滿青草的海岸丘陵上自由奔馳的野馬聞名。</p>
+      <ul class="area-highlights">
+        <li>野馬(岬馬)在海岬上自由奔馳。</li>
+        <li>風勢強勁、遼闊的海岸草原景色。</li>
+        <li>宮崎偏遠、鮮少人造訪的一隅。</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>
