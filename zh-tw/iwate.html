@@ -14,7 +14,8 @@
 <title>岩手縣旅遊指南:遼闊的東北 | Epic Japan Explorer</title>
 <link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/iwate.html">
 <link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/iwate.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/iwate.html">
+<link rel="alternate" hreflang="zh-TW" href="https://epicjapanexplorer.com/zh-tw/iwate.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/iwate.html">
 <link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/iwate.html">
 <meta name="description" content="探索聯合國教科文組織認定的寺院、壯麗峽谷、傳統蕎麥麵文化、崎嶇海岸線與遼闊的山谷。">
 <link rel="canonical" href="https://epicjapanexplorer.com/zh-tw/iwate.html">
@@ -95,6 +96,20 @@
     border-bottom:1px solid transparent; transition:color .15s ease, border-color .15s ease;
   }
   .lang-switch:hover{color:var(--shu); border-color:var(--shu);}
+  /* ---- language menu ---- */
+  .lang-menu{position:absolute; top:14px; right:6vw; z-index:20; font-size:12.5px; font-weight:700;}
+  .lang-btn{display:inline-flex; align-items:center; gap:6px; background:transparent; border:0; border-bottom:1px solid transparent; padding:6px 2px; font:inherit; color:#9a9488; cursor:pointer; transition:color .15s ease, border-color .15s ease;}
+  .lang-btn:hover, .lang-btn[aria-expanded="true"]{color:var(--shu); border-color:var(--shu);}
+  .lang-btn:focus-visible, .lang-list a:focus-visible{outline:2px solid var(--shu); outline-offset:2px;}
+  .lang-caret{font-size:10px; transition:transform .15s ease;}
+  .lang-btn[aria-expanded="true"] .lang-caret{transform:rotate(180deg);}
+  .lang-list{position:absolute; top:100%; right:0; margin:6px 0 0; padding:6px 0; list-style:none; min-width:150px; max-width:calc(100vw - 24px); background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 8px 24px rgba(30,34,34,.14);}
+  .lang-list[hidden]{display:none;}
+  .lang-list a{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:9px 14px; color:var(--sumi); text-decoration:none; font-weight:500; white-space:nowrap;}
+  .lang-list a:hover, .lang-list a:focus{background:var(--washi); color:var(--shu);}
+  .lang-list a[aria-checked="true"]{font-weight:700; color:var(--shu);}
+  .lang-check{visibility:hidden;}
+  .lang-list a[aria-checked="true"] .lang-check{visibility:visible;}
   .hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;}
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;}
@@ -894,7 +909,6 @@
     font-size:12.5px;color:#6a5a2f;background:#fbf6e9;
   }
   :lang(zh) *{font-style:normal !important;}
-  .lang-switch.lang-switch-2{right:calc(6vw + 118px);}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4714065032332222"
      crossorigin="anonymous"></script>
@@ -902,7 +916,36 @@
 <body>
 
 <header>
-  <a class="lang-switch" href="https://epicjapanexplorer.com/">Read in English →</a><a class="lang-switch lang-switch-2" href="https://epicjapanexplorer.com/jp/">日本語</a>
+  <div class="lang-menu" id="langMenu"><button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langList" aria-label="語言: 繁體中文"><span aria-hidden="true">🌐</span><span>繁體中文</span><span class="lang-caret" aria-hidden="true">▼</span></button><ul class="lang-list" id="langList" role="menu" aria-label="語言" hidden><li role="none"><a role="menuitemradio" aria-checked="false" href="https://epicjapanexplorer.com/" hreflang="en" lang="en" data-base="/"><span>English</span><span class="lang-check" aria-hidden="true">✓</span></a></li><li role="none"><a role="menuitemradio" aria-checked="false" href="https://epicjapanexplorer.com/jp/" hreflang="ja" lang="ja" data-base="/jp/"><span>日本語</span><span class="lang-check" aria-hidden="true">✓</span></a></li><li role="none"><a role="menuitemradio" aria-checked="true" href="https://epicjapanexplorer.com/zh-tw/" hreflang="zh-TW" lang="zh-TW" data-base="/zh-tw/" aria-current="true"><span>繁體中文</span><span class="lang-check" aria-hidden="true">✓</span></a></li><li role="none"><a role="menuitemradio" aria-checked="false" href="https://epicjapanexplorer.com/ko/" hreflang="ko" lang="ko" data-base="/ko/"><span>한국어</span><span class="lang-check" aria-hidden="true">✓</span></a></li></ul></div>
+<script>
+(function(){
+  var menu=document.getElementById('langMenu'); if(!menu) return;
+  var btn=document.getElementById('langBtn'), list=document.getElementById('langList');
+  var links=[].slice.call(list.querySelectorAll('a'));
+  var PREFIXES=['/jp/','/zh-tw/','/ko/'];
+  // Same file name exists in every published language, so map the current page 1:1 (index keeps its #prefecture hash).
+  function syncLinks(){
+    var seg=location.pathname.split('/').pop(); var rest=(/\.html$/.test(seg)&&seg!=='index.html')?seg:'';
+    var hash=(rest===''?location.hash:'');
+    links.forEach(function(a){ a.setAttribute('href', a.getAttribute('data-base')+rest+hash); });
+  }
+  function open(focusFirst){ list.hidden=false; btn.setAttribute('aria-expanded','true'); if(focusFirst){ (list.querySelector('a[aria-checked="true"]')||links[0]).focus(); } }
+  function close(ret){ list.hidden=true; btn.setAttribute('aria-expanded','false'); if(ret) btn.focus(); }
+  btn.addEventListener('click',function(){ list.hidden?open(false):close(false); });
+  btn.addEventListener('keydown',function(e){ if(e.key==='ArrowDown'){ e.preventDefault(); open(true); } });
+  list.addEventListener('keydown',function(e){
+    var i=links.indexOf(document.activeElement);
+    if(e.key==='ArrowDown'){ e.preventDefault(); links[(i+1)%links.length].focus(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); links[(i-1+links.length)%links.length].focus(); }
+    else if(e.key==='Home'){ e.preventDefault(); links[0].focus(); }
+    else if(e.key==='End'){ e.preventDefault(); links[links.length-1].focus(); }
+    else if(e.key==='Tab'){ close(false); }
+  });
+  document.addEventListener('click',function(e){ if(!menu.contains(e.target)) close(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!list.hidden){ close(true); } });
+  window.addEventListener('hashchange',syncLinks); syncLinks();
+})();
+</script>
   <div class="hero-grid">
     <div class="hero-text">
       <div class="brand"><svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg><span class="divider"></span><span class="brand-name">Epic<span class="accent"> Japan</span> Explorer</span></div>
