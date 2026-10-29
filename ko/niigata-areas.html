@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>니가타 지역별 여행 가이드: 니가타에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="니가타 지역별 가이드: 니가타시, 사도섬, 에치고유자와, 쓰바메산조, 무라카미·세나미 온천 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/niigata-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/niigata-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/niigata-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/niigata-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/niigata-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/niigata-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#niigata">← 지도로 돌아가기: 니가타</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>니가타 지역별 가이드</h1>
+  <p class="page-lede">니가타현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">니가타 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">니가타현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-40 -40 1211 1267" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="yamagata">
+        <path d="M775.4,199.4 L815.4,195.4 L831.4,215.4 L887.4,227.4 L895.4,247.4 L911.4,251.4 L931.4,283.4 L923.4,315.4 L911.4,315.4 L927.4,359.4 L899.4,407.4 L903.4,431.4 L891.4,455.4 L863.4,463.4 L867.4,483.4 L863.4,519.4 L871.4,523.4 L859.4,539.4 L835.4,543.4 L823.4,535.4 L807.4,539.4 L799.4,523.4 L775.4,527.4 L747.4,519.4 L735.4,499.4 L747.4,467.4 L747.4,435.4 L779.4,423.4 L787.4,407.4 L751.4,383.4 L751.4,355.4 L719.4,343.4 L771.4,251.4 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="831" y="400" text-anchor="middle" fill="#7a9e6f">야마가타</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="fukushima">
+        <path d="M975.4,759.4 L935.4,739.4 L935.4,755.4 L911.4,779.4 L871.4,743.4 L867.4,719.4 L843.4,703.4 L795.4,691.4 L695.4,755.4 L663.4,747.4 L667.4,691.4 L647.4,671.4 L663.4,647.4 L655.4,631.4 L659.4,619.4 L695.4,615.4 L699.4,603.4 L731.4,603.4 L723.4,567.4 L759.4,527.4 L747.4,519.4 L775.4,527.4 L799.4,523.4 L807.4,539.4 L823.4,535.4 L835.4,543.4 L859.4,539.4 L871.4,523.4 L863.4,519.4 L867.4,483.4 L891.4,483.4 L907.4,499.4 L943.4,499.4 L947.4,523.4 L967.4,531.4 L963.4,523.4 L979.4,523.4 L979.4,499.4 L995.4,499.4 L1019.4,555.4 L1019.4,663.4 L1011.4,727.4 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="840" y="604" text-anchor="middle" fill="#c47a2f">후쿠시마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gunma">
+        <path d="M755.4,927.4 L715.4,935.4 L691.4,919.4 L647.4,911.4 L627.4,951.4 L563.4,987.4 L547.4,979.4 L547.4,955.4 L535.4,943.4 L547.4,939.4 L539.4,915.4 L551.4,907.4 L547.4,883.4 L511.4,883.4 L499.4,863.4 L503.4,835.4 L523.4,819.4 L519.4,811.4 L555.4,799.4 L603.4,775.4 L603.4,763.4 L615.4,759.4 L611.4,739.4 L627.4,735.4 L635.4,719.4 L663.4,747.4 L695.4,755.4 L687.4,767.4 L699.4,775.4 L687.4,787.4 L683.4,823.4 L715.4,835.4 L691.4,887.4 L711.4,915.4 L747.4,911.4 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="617" y="853" text-anchor="middle" fill="#7a3b8c">군마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nagano">
+        <path d="M555.4,799.4 L519.4,811.4 L523.4,819.4 L503.4,835.4 L499.4,863.4 L511.4,883.4 L547.4,883.4 L551.4,907.4 L539.4,915.4 L547.4,939.4 L535.4,943.4 L547.4,955.4 L547.4,979.4 L563.4,987.4 L567.4,1007.4 L555.4,1015.4 L539.4,1003.4 L515.4,1011.4 L495.4,991.4 L455.4,1035.4 L467.4,1047.4 L455.4,1055.4 L463.4,1075.4 L447.4,1095.4 L447.4,1143.4 L387.4,1183.4 L355.4,1175.4 L335.4,1187.4 L331.4,1163.4 L339.4,1151.4 L331.4,1135.4 L343.4,1135.4 L335.4,1123.4 L343.4,1107.4 L319.4,1083.4 L327.4,1071.4 L307.4,1043.4 L283.4,1031.4 L291.4,1011.4 L311.4,1011.4 L335.4,983.4 L339.4,967.4 L327.4,951.4 L347.4,911.4 L335.4,887.4 L359.4,855.4 L355.4,843.4 L367.4,839.4 L371.4,795.4 L391.4,767.4 L391.4,755.4 L419.4,759.4 L419.4,779.4 L427.4,783.4 L459.4,767.4 L475.4,775.4 L475.4,755.4 L495.4,735.4 L523.4,727.4 L535.4,735.4 L535.4,755.4 L555.4,771.4 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="437" y="944" text-anchor="middle" fill="#2f6690">나가노</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="toyama">
+        <path d="M335.4,887.4 L295.4,871.4 L279.4,879.4 L279.4,871.4 L259.4,879.4 L247.4,871.4 L211.4,915.4 L207.4,899.4 L191.4,891.4 L175.4,911.4 L171.4,879.4 L179.4,847.4 L175.4,831.4 L183.4,819.4 L175.4,803.4 L187.4,795.4 L195.4,755.4 L227.4,747.4 L215.4,771.4 L263.4,799.4 L295.4,783.4 L303.4,751.4 L343.4,739.4 L359.4,751.4 L371.4,795.4 L367.4,839.4 L355.4,843.4 L359.4,855.4 Z" fill="none" stroke="#a3324a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="258" y="832" text-anchor="middle" fill="#a3324a">도야마</text>
+      </g>
+      <path class="area-pref-shape" d="M371.4,795.4 L359.4,751.4 L343.4,739.4 L399.4,719.4 L435.4,691.4 L463.4,691.4 L523.4,643.4 L563.4,583.4 L583.4,527.4 L659.4,479.4 L663.4,487.4 L659.4,483.4 L683.4,455.4 L719.4,343.4 L751.4,355.4 L751.4,383.4 L787.4,407.4 L779.4,423.4 L747.4,435.4 L747.4,467.4 L735.4,499.4 L747.4,519.4 L759.4,527.4 L723.4,567.4 L731.4,603.4 L699.4,603.4 L695.4,615.4 L659.4,619.4 L655.4,631.4 L663.4,647.4 L647.4,671.4 L667.4,691.4 L663.4,747.4 L635.4,719.4 L627.4,735.4 L611.4,739.4 L615.4,759.4 L603.4,763.4 L603.4,775.4 L555.4,799.4 L555.4,771.4 L535.4,755.4 L535.4,735.4 L523.4,727.4 L495.4,735.4 L475.4,755.4 L475.4,775.4 L459.4,767.4 L427.4,783.4 L419.4,779.4 L419.4,759.4 L391.4,755.4 L391.4,767.4 L371.4,795.4 Z M487.4,527.4 L455.4,531.4 L483.4,495.4 L475.4,483.4 L463.4,491.4 L463.4,467.4 L479.4,435.4 L515.4,399.4 L499.4,463.4 L527.4,467.4 L515.4,503.4 L487.4,527.4 Z"/>
+      <text class="area-main-label" x="480" y="680" text-anchor="middle" style="font-size:52.1px;stroke-width:8.1px">니가타</text>
+
+      <g class="area-pin" data-target="area-niigatacity">
+        <line class="area-pin-leader" x1="618.5" y1="504.0" x2="659.4" y2="410.7" style="stroke-width:2.5"/>
+        <rect x="593.9" y="479.4" width="49.2" height="49.2" fill="transparent"/>
+        <circle cx="618.5" cy="504.0" r="17.2" style="stroke-width:4.9"/>
+        <text x="659.4" y="410.7" text-anchor="start" style="font-size:31.0px">니가타시</text>
+      </g>
+      <g class="area-pin" data-target="area-sado">
+        <line class="area-pin-leader" x1="487.5" y1="470.1" x2="437.0" y2="381.6" style="stroke-width:2.5"/>
+        <rect x="462.9" y="445.5" width="49.2" height="49.2" fill="transparent"/>
+        <circle cx="487.5" cy="470.1" r="17.2" style="stroke-width:4.9"/>
+        <text x="437.0" y="381.6" text-anchor="end" style="font-size:31.0px">사도섬</text>
+      </g>
+      <g class="area-pin" data-target="area-yuzawa">
+        <line class="area-pin-leader" x1="573.4" y1="751.9" x2="575.9" y2="853.7" style="stroke-width:2.5"/>
+        <rect x="548.8" y="727.3" width="49.2" height="49.2" fill="transparent"/>
+        <circle cx="573.4" cy="751.9" r="17.2" style="stroke-width:4.9"/>
+        <text x="575.9" y="853.7" text-anchor="middle" style="font-size:31.0px">에치고유자와</text>
+      </g>
+      <g class="area-pin" data-target="area-tsubamesanjo">
+        <line class="area-pin-leader" x1="601.6" y1="564.6" x2="656.2" y2="478.7" style="stroke-width:2.5"/>
+        <rect x="577.0" y="540.0" width="49.2" height="49.2" fill="transparent"/>
+        <circle cx="601.6" cy="564.6" r="17.2" style="stroke-width:4.9"/>
+        <text x="656.2" y="478.7" text-anchor="start" style="font-size:31.0px">쓰바메산조</text>
+      </g>
+      <g class="area-pin" data-target="area-murakami">
+        <line class="area-pin-leader" x1="706.1" y1="425.5" x2="765.6" y2="342.9" style="stroke-width:2.5"/>
+        <rect x="681.5" y="400.9" width="49.2" height="49.2" fill="transparent"/>
+        <circle cx="706.1" cy="425.5" r="17.2" style="stroke-width:4.9"/>
+        <text x="765.6" y="342.9" text-anchor="start" style="font-size:31.0px">무라카미·세나미 온천</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-niigatacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">니가타시</span><span class="area-tag">동해의 항구</span></div>
+      <p class="area-desc">쌀, 양조장, 강변 도시 풍경으로 알려진 현청 소재지이자 동해의 주요 항구입니다.</p>
+      <ul class="area-highlights">
+        <li>시음할 수 있는 수많은 지역 양조장.</li>
+        <li>후루마치 등 역사적인 게이샤 거리.</li>
+        <li>반다이 다리와 경치 좋은 강변 도심.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-sado">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">사도섬</span><span class="area-tag">외딴 섬의 유산</span></div>
+      <p class="area-desc">한때 금광과 정치범 유배지로 쓰였던 역사 깊은 외딴 섬으로, 오늘날에는 전통 북 연주 다이코와 극적인 해안 풍경으로 알려져 있습니다.</p>
+      <ul class="area-highlights">
+        <li>사도 금산 — 견학할 수 있는 역사적인 금광.</li>
+        <li>세계 굴지의 다이코 연주 단체 중 하나인 고도(鼓童)의 본거지.</li>
+        <li>극적인 해안 풍경과 전통 다라이부네(통배) 체험.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-yuzawa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">에치고유자와</span><span class="area-tag">스키 리조트와 '설국'</span></div>
+      <p class="area-desc">도쿄에서 신칸센으로 쉽게 갈 수 있는 유명한 스키 리조트 마을로, 가와바타의 소설 「설국」의 배경으로도 유명합니다.</p>
+      <ul class="area-highlights">
+        <li>도쿄에서 신칸센으로 불과 1시간 거리의 주요 스키 리조트.</li>
+        <li>가와바타의 노벨상과 연관된 소설 「설국」의 실제 배경.</li>
+        <li>슬로프에서 하루를 보낸 뒤 몸을 담글 수 있는 온천.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tsubamesanjo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">쓰바메산조</span><span class="area-tag">금속 공예 도시</span></div>
+      <p class="area-desc">식기부터 정밀 공구까지 금속 공예 기술로 전국적으로 유명한 쌍둥이 도시의 제조 거점입니다.</p>
+      <ul class="area-highlights">
+        <li>이름난 금속 가공과 식기 제작 기술.</li>
+        <li>지역 금속 공방의 공장 견학과 체험.</li>
+        <li>전형적인 관광지라기보다 현역 공예 산업 도시.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-murakami">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">무라카미·세나미 온천</span><span class="area-tag">성하마을과 연어 문화</span></div>
+      <p class="area-desc">연어 문화와 요리로 알려진 해안 가까이의 역사적인 성하마을로, 동해의 세나미 온천 리조트가 가까이 있습니다.</p>
+      <ul class="area-highlights">
+        <li>수 세기에 걸친 연어잡이와 보존 문화.</li>
+        <li>옛 성터 근처에 보존된 상인 마을 거리 풍경.</li>
+        <li>가까이에 있는 해안 온천 리조트, 세나미 온천.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

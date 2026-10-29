@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>에히메 지역별 여행 가이드: 에히메에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="에히메 지역별 가이드: 마쓰야마·도고, 이마바리·시마나미 해도, 우치코·오즈, 우와지마·난요 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/ehime-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/ehime-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/ehime-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/ehime-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/ehime-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/ehime-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#ehime">← 지도로 돌아가기: 에히메</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>에히메 지역별 가이드</h1>
+  <p class="page-lede">에히메현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">에히메 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">에히메현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-40 -40 1026 1014" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kagawa">
+        <path d="M651.1,375.1 L631.1,367.1 L643.1,327.1 L627.1,311.1 L651.1,323.1 L703.1,283.1 L731.1,295.1 L747.1,279.1 L751.1,299.1 L763.1,287.1 L775.1,299.1 L771.1,311.1 L807.1,331.1 L803.1,343.1 L751.1,335.1 L715.1,363.1 L687.1,351.1 L651.1,375.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="714" y="325" text-anchor="middle" fill="#7a9e6f">가가와</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tokushima">
+        <path d="M807.1,331.1 L839.1,323.1 L839.1,335.1 L851.1,339.1 L835.1,375.1 L863.1,403.1 L843.1,419.1 L871.1,427.1 L795.1,467.1 L775.1,495.1 L751.1,491.1 L743.1,475.1 L751.1,459.1 L723.1,455.1 L719.1,423.1 L695.1,431.1 L643.1,407.1 L651.1,375.1 L687.1,351.1 L715.1,363.1 L751.1,335.1 L803.1,343.1 L807.1,331.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="772" y="398" text-anchor="middle" fill="#c47a2f">도쿠시마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kochi">
+        <path d="M643.1,407.1 L695.1,431.1 L719.1,423.1 L723.1,455.1 L751.1,459.1 L743.1,475.1 L751.1,491.1 L775.1,495.1 L747.1,571.1 L699.1,507.1 L659.1,491.1 L619.1,499.1 L619.1,491.1 L623.1,503.1 L575.1,519.1 L599.1,519.1 L575.1,523.1 L567.1,535.1 L563.1,523.1 L551.1,539.1 L555.1,559.1 L547.1,583.1 L535.1,583.1 L519.1,615.1 L499.1,619.1 L499.1,651.1 L487.1,663.1 L499.1,687.1 L483.1,671.1 L455.1,679.1 L435.1,667.1 L419.1,675.1 L423.1,651.1 L439.1,647.1 L435.1,635.1 L423.1,635.1 L431.1,623.1 L419.1,571.1 L435.1,583.1 L459.1,551.1 L479.1,539.1 L463.1,503.1 L507.1,499.1 L519.1,459.1 L547.1,423.1 L643.1,407.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="560" y="549" text-anchor="middle" fill="#7a3b8c">고치</text>
+      </g>
+      <path class="area-pref-shape" d="M431.1,379.1 L419.1,375.1 L435.1,363.1 L431.1,379.1 Z M515.1,319.1 L499.1,319.1 L515.1,295.1 L523.1,307.1 L515.1,319.1 Z M535.1,315.1 L539.1,315.1 L535.1,323.1 L523.1,319.1 L535.1,315.1 Z M527.1,335.1 L511.1,343.1 L515.1,323.1 L535.1,327.1 L527.1,335.1 Z M423.1,635.1 L395.1,627.1 L395.1,639.1 L387.1,639.1 L391.1,619.1 L403.1,623.1 L379.1,599.1 L391.1,599.1 L383.1,583.1 L395.1,583.1 L383.1,579.1 L387.1,571.1 L375.1,563.1 L391.1,575.1 L407.1,559.1 L407.1,547.1 L391.1,547.1 L403.1,535.1 L371.1,535.1 L379.1,523.1 L371.1,519.1 L383.1,499.1 L359.1,495.1 L327.1,519.1 L295.1,523.1 L435.1,443.1 L459.1,367.1 L495.1,355.1 L487.1,339.1 L499.1,335.1 L531.1,391.1 L575.1,375.1 L615.1,383.1 L631.1,367.1 L651.1,375.1 L643.1,407.1 L547.1,423.1 L519.1,459.1 L507.1,499.1 L463.1,503.1 L479.1,539.1 L459.1,551.1 L435.1,583.1 L419.1,571.1 L431.1,623.1 L423.1,635.1 Z"/>
+      <text class="area-main-label" x="441" y="435" text-anchor="middle" style="font-size:44.1px;stroke-width:6.9px">에히메</text>
+
+      <g class="area-pin" data-target="area-matsuyama">
+        <line class="area-pin-leader" x1="455.1" y1="404.0" x2="449.5" y2="324.9" style="stroke-width:2.1"/>
+        <rect x="434.5" y="383.4" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="455.1" cy="404.0" r="14.4" style="stroke-width:4.1"/>
+        <text x="449.5" y="324.9" text-anchor="middle" style="font-size:26.0px">마쓰야마·도고</text>
+      </g>
+      <g class="area-pin" data-target="area-imabari">
+        <line class="area-pin-leader" x1="504.8" y1="352.7" x2="535.1" y2="279.5" style="stroke-width:2.1"/>
+        <rect x="484.2" y="332.09999999999997" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="504.8" cy="352.7" r="14.4" style="stroke-width:4.1"/>
+        <text x="535.1" y="279.5" text-anchor="start" style="font-size:26.0px">이마바리·시마나미 해도</text>
+      </g>
+      <g class="area-pin" data-target="area-uchikoozu">
+        <line class="area-pin-leader" x1="408.8" y1="469.4" x2="330.3" y2="479.9" style="stroke-width:2.1"/>
+        <rect x="388.2" y="448.79999999999995" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="408.8" cy="469.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="330.3" y="479.9" text-anchor="end" style="font-size:26.0px">우치코·오즈</text>
+      </g>
+      <g class="area-pin" data-target="area-uwajima">
+        <line class="area-pin-leader" x1="411.1" y1="543.3" x2="370.5" y2="611.4" style="stroke-width:2.1"/>
+        <rect x="390.5" y="522.6999999999999" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="411.1" cy="543.3" r="14.4" style="stroke-width:4.1"/>
+        <text x="370.5" y="611.4" text-anchor="end" style="font-size:26.0px">우와지마·난요</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-matsuyama">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">마쓰야마·도고</span><span class="area-tag">성과 유서 깊은 온천</span></div>
+      <p class="area-desc">일본 최고 수준의 현존 원형 성 중 하나와 일본에서 가장 오래된 온천 중 하나인 도고 온천이 있는 현청 소재지입니다.</p>
+      <ul class="area-highlights">
+        <li>마쓰야마성 — 일본 최고 수준의 현존 원형 성 중 하나.</li>
+        <li>도고 온천, 일본에서 기록상 가장 오래된 온천 중 하나.</li>
+        <li>소설가 나쓰메 소세키와의 깊은 인연.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-imabari">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">이마바리·시마나미 해도</span><span class="area-tag">자전거 여행의 관문</span></div>
+      <p class="area-desc">세토 내해를 가로지르는 아름다운 자전거 코스 시마나미 해도의 출발점인 조선업 도시입니다.</p>
+      <ul class="area-highlights">
+        <li>시마나미 해도 자전거 코스의 남쪽 출발점.</li>
+        <li>조선업과 수건 제조업이 번성.</li>
+        <li>세토 내해 섬들 사이를 잇는 극적인 다리 횡단.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-uchikoozu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">우치코·오즈</span><span class="area-tag">보존된 공예 마을</span></div>
+      <p class="area-desc">전통 밀랍·종이 공예와 강변에 복원된 성으로 알려진, 아름답게 보존된 역사 마을입니다.</p>
+      <ul class="area-highlights">
+        <li>전통 밀랍 생산과 얽힌 우치코의 보존된 마을 풍경.</li>
+        <li>충실하게 복원된 목조 성, 오즈성.</li>
+        <li>마쓰야마보다 한적하고 전통적인 대안.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-uwajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">우와지마·난요</span><span class="area-tag">외딴 남쪽 해안</span></div>
+      <p class="area-desc">독특한 성, 투우 전통, 아름다운 우와해 양식업으로 알려진 외딴 남부 해안 지역입니다.</p>
+      <ul class="area-highlights">
+        <li>일본에 현존하는 원형 성 중 하나인 우와지마성.</li>
+        <li>도규(소 대 소 스모)라는 지역 전통.</li>
+        <li>우와해 해안선을 따라 이어지는 아름다운 진주·어류 양식장.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

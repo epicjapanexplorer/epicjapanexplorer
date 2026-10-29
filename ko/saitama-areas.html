@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사이타마 지역별 여행 가이드: 사이타마에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="사이타마 지역별 가이드: 가와고에, 지치부, 오미야, 나가토로 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/saitama-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/saitama-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/saitama-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/saitama-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/saitama-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/saitama-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#saitama">← 지도로 돌아가기: 사이타마</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>사이타마 지역별 가이드</h1>
+  <p class="page-lede">사이타마현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">사이타마 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">사이타마현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-238 -178 796 644" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="ibaraki">
+        <path d="M298.2,126.2 L298.2,126.2 L286.2,130.2 L278.2,102.2 L306.2,90.2 L310.2,74.2 L322.2,74.2 L334.2,54.2 L378.2,46.2 L390.2,18.2 L382.2,-21.8 L394.2,-29.8 L390.2,-41.8 L390.2,-85.8 L430.2,-49.8 L454.2,-73.8 L454.2,-89.8 L494.2,-69.8 L462.2,26.2 L466.2,50.2 L454.2,78.2 L462.2,118.2 L482.2,154.2 L474.2,162.2 L482.2,174.2 L486.2,158.2 L518.2,206.2 L446.2,158.2 L446.2,170.2 L374.2,186.2 L330.2,166.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="402" y="71" text-anchor="middle" fill="#7a9e6f">이바라키</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tochigi">
+        <path d="M278.2,102.2 L274.2,98.2 L266.2,82.2 L230.2,86.2 L210.2,58.2 L234.2,6.2 L202.2,-5.8 L206.2,-41.8 L218.2,-53.8 L206.2,-61.8 L214.2,-73.8 L314.2,-137.8 L362.2,-125.8 L386.2,-109.8 L390.2,-85.8 L390.2,-41.8 L394.2,-29.8 L382.2,-21.8 L390.2,18.2 L378.2,46.2 L334.2,54.2 L322.2,74.2 L310.2,74.2 L306.2,90.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="300" y="0" text-anchor="middle" fill="#c47a2f">도치기</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gunma">
+        <path d="M274.2,98.2 L234.2,106.2 L210.2,90.2 L166.2,82.2 L146.2,122.2 L82.2,158.2 L66.2,150.2 L66.2,126.2 L54.2,114.2 L66.2,110.2 L58.2,86.2 L70.2,78.2 L66.2,54.2 L30.2,54.2 L18.2,34.2 L22.2,6.2 L42.2,-9.8 L38.2,-17.8 L74.2,-29.8 L122.2,-53.8 L122.2,-65.8 L134.2,-69.8 L130.2,-89.8 L146.2,-93.8 L154.2,-109.8 L182.2,-81.8 L214.2,-73.8 L206.2,-61.8 L218.2,-53.8 L206.2,-41.8 L202.2,-5.8 L234.2,6.2 L210.2,58.2 L230.2,86.2 L266.2,82.2 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="136" y="24" text-anchor="middle" fill="#7a3b8c">군마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="chiba">
+        <path d="M318.2,242.2 L326.2,226.2 L322.2,206.2 L322.2,178.2 L298.2,126.2 L330.2,166.2 L374.2,186.2 L446.2,170.2 L446.2,158.2 L518.2,206.2 L518.2,222.2 L478.2,222.2 L434.2,266.2 L426.2,354.2 L374.2,370.2 L326.2,426.2 L298.2,410.2 L318.2,402.2 L310.2,390.2 L314.2,378.2 L310.2,358.2 L318.2,338.2 L302.2,322.2 L314.2,306.2 L326.2,310.2 L326.2,294.2 L350.2,282.2 L370.2,258.2 L342.2,230.2 L322.2,246.2 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="359" y="275" text-anchor="middle" fill="#2f6690">지바</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tokyo">
+        <path d="M322.2,206.2 L326.2,226.2 L318.2,242.2 L294.2,238.2 L302.2,254.2 L286.2,258.2 L302.2,258.2 L302.2,270.2 L246.2,242.2 L234.2,250.2 L246.2,258.2 L238.2,258.2 L238.2,278.2 L222.2,258.2 L166.2,234.2 L146.2,222.2 L130.2,190.2 L142.2,178.2 L202.2,194.2 L222.2,210.2 L250.2,198.2 L250.2,214.2 L274.2,202.2 L290.2,206.2 L298.2,198.2 L322.2,206.2 Z" fill="none" stroke="#a3324a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="253" y="229" text-anchor="middle" fill="#a3324a">도쿄</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamanashi">
+        <path d="M-17.8,246.2 L-25.8,226.2 L-13.8,218.2 L-25.8,206.2 L14.2,162.2 L34.2,182.2 L58.2,174.2 L74.2,186.2 L86.2,178.2 L130.2,190.2 L146.2,222.2 L166.2,234.2 L162.2,270.2 L126.2,302.2 L78.2,314.2 L58.2,294.2 L42.2,326.2 L46.2,354.2 L26.2,362.2 L10.2,326.2 L-9.8,322.2 L-5.8,278.2 Z" fill="none" stroke="#2f8f6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="53" y="253" text-anchor="middle" fill="#2f8f6f">야마나시</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="nagano">
+        <path d="M74.2,-29.8 L38.2,-17.8 L42.2,-9.8 L22.2,6.2 L18.2,34.2 L30.2,54.2 L66.2,54.2 L70.2,78.2 L58.2,86.2 L66.2,110.2 L54.2,114.2 L66.2,126.2 L66.2,150.2 L82.2,158.2 L86.2,178.2 L74.2,186.2 L58.2,174.2 L34.2,182.2 L14.2,162.2 L-25.8,206.2 L-13.8,218.2 L-25.8,226.2 L-17.8,246.2 L-33.8,266.2 L-33.8,314.2 L-93.8,354.2 L-125.8,346.2 L-145.8,358.2 L-149.8,334.2 L-141.8,322.2 L-149.8,306.2 L-137.8,306.2 L-145.8,294.2 L-137.8,278.2 L-161.8,254.2 L-153.8,242.2 L-173.8,214.2 L-197.8,202.2 L-189.8,182.2 L-169.8,182.2 L-145.8,154.2 L-141.8,138.2 L-153.8,122.2 L-133.8,82.2 L-145.8,58.2 L-121.8,26.2 L-125.8,14.2 L-113.8,10.2 L-109.8,-33.8 L-89.8,-61.8 L-89.8,-73.8 L-61.8,-69.8 L-61.8,-49.8 L-53.8,-45.8 L-21.8,-61.8 L-5.8,-53.8 L-5.8,-73.8 L14.2,-93.8 L42.2,-101.8 L54.2,-93.8 L54.2,-73.8 L74.2,-57.8 Z" fill="none" stroke="#b8862f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="-44" y="115" text-anchor="middle" fill="#b8862f">나가노</text>
+      </g>
+      <polygon class="area-pref-shape" points="274.2,98.2 278.2,102.2 286.2,130.2 298.2,126.2 298.2,126.2 322.2,178.2 322.2,206.2 298.2,198.2 290.2,206.2 274.2,202.2 250.2,214.2 250.2,198.2 222.2,210.2 202.2,194.2 142.2,178.2 130.2,190.2 86.2,178.2 82.2,158.2 146.2,122.2 166.2,82.2 210.2,90.2 234.2,106.2"/>
+      <text class="area-main-label" x="230" y="107" text-anchor="middle" style="font-size:34.2px;stroke-width:5.3px">사이타마</text>
+
+      <g class="area-pin" data-target="area-kawagoe">
+        <line class="area-pin-leader" x1="237.9" y1="169.7" x2="263.5" y2="205.3" style="stroke-width:0.9"/>
+        <rect x="229.1" y="160.89999999999998" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="237.9" cy="169.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="263.5" y="205.3" text-anchor="start" style="font-size:11.2px">가와고에</text>
+      </g>
+      <g class="area-pin" data-target="area-chichibu">
+        <line class="area-pin-leader" x1="156.7" y1="152.6" x2="113.0" y2="148.9" style="stroke-width:0.9"/>
+        <rect x="147.89999999999998" y="143.79999999999998" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="156.7" cy="152.6" r="6.2" style="stroke-width:1.8"/>
+        <text x="113.0" y="148.9" text-anchor="end" style="font-size:11.2px">지치부</text>
+      </g>
+      <g class="area-pin" data-target="area-omiya">
+        <line class="area-pin-leader" x1="266.0" y1="174.5" x2="306.1" y2="192.0" style="stroke-width:0.9"/>
+        <rect x="257.2" y="165.7" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="266.0" cy="174.5" r="6.2" style="stroke-width:1.8"/>
+        <text x="306.1" y="192.0" text-anchor="start" style="font-size:11.2px">오미야</text>
+      </g>
+      <g class="area-pin" data-target="area-nagatoro">
+        <line class="area-pin-leader" x1="159.5" y1="121.1" x2="120.8" y2="100.4" style="stroke-width:0.9"/>
+        <rect x="150.7" y="112.3" width="17.6" height="17.6" fill="transparent"/>
+        <circle cx="159.5" cy="121.1" r="6.2" style="stroke-width:1.8"/>
+        <text x="120.8" y="100.4" text-anchor="end" style="font-size:11.2px">나가토로</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kawagoe">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">가와고에</span><span class="area-tag">'작은 에도'</span></div>
+      <p class="area-desc">보존된 창고 거리와 종루로 '작은 에도'라 불리며, 도쿄에서 쉽게 다녀올 수 있는 인기 당일치기 코스입니다.</p>
+      <ul class="area-highlights">
+        <li>구라즈쿠리 창고 거리 — 에도 시대 상인 건축.</li>
+        <li>역사적인 목조 종루이자 도시의 상징인 도키노카네.</li>
+        <li>전통 과자점이 늘어선 과자 골목(가시야 요코초).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-chichibu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">지치부</span><span class="area-tag">산과 꽃잔디</span></div>
+      <p class="area-desc">시바자쿠라(꽃잔디) 꽃밭, 활기찬 밤 축제, 경치 좋은 강 협곡으로 유명한 산으로 둘러싸인 지역입니다.</p>
+      <ul class="area-highlights">
+        <li>시바자쿠라 언덕 — 매년 봄 선명하게 펼쳐지는 꽃잔디 밭.</li>
+        <li>일본 3대 수레 축제 중 하나인 지치부 밤 축제.</li>
+        <li>잔잔한 급류 래프팅을 즐길 수 있는 나가토로 협곡.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-omiya">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오미야</span><span class="area-tag">철도와 신사</span></div>
+      <p class="area-desc">일본 최대급 철도박물관 중 하나와, 지역에서 가장 오래되고 존경받는 신사 중 하나인 히카와 신사가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>철도박물관 — 역사적인 기관차를 전시한 일본 최대급 박물관 중 하나.</li>
+        <li>나무가 늘어선 긴 참배길로 이어지는 히카와 신사.</li>
+        <li>간토 전역으로 쉽게 이동할 수 있는 주요 철도 거점.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-nagatoro">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">나가토로</span><span class="area-tag">강 협곡</span></div>
+      <p class="area-desc">아라카와강을 따라 극적인 기암을 지나는 잔잔한 래프팅으로 알려진 경치 좋은 강 계곡입니다.</p>
+      <ul class="area-highlights">
+        <li>아라카와강을 내려가는 잔잔한 래프팅.</li>
+        <li>이와타타미 — 강변을 따라 이어지는 극적인 층층 암석 지형.</li>
+        <li>사이타마 중심부에서 쉽게 다녀오는 인기 자연 나들이.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

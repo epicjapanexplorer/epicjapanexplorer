@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도쿠시마 지역별 여행 가이드: 도쿠시마에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="도쿠시마 지역별 가이드: 도쿠시마시, 나루토, 이야 계곡 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/tokushima-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/tokushima-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/tokushima-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/tokushima-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/tokushima-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/tokushima-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#tokushima">← 지도로 돌아가기: 도쿠시마</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>도쿠시마 지역별 가이드</h1>
+  <p class="page-lede">도쿠시마현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">도쿠시마 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">도쿠시마현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-287 -40 757 545" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="kagawa">
+        <path d="M109.1,153.1 L89.1,145.1 L101.1,105.1 L85.1,89.1 L109.1,101.1 L161.1,61.1 L189.1,73.1 L205.1,57.1 L209.1,77.1 L221.1,65.1 L233.1,77.1 L229.1,89.1 L265.1,109.1 L261.1,121.1 L209.1,113.1 L173.1,141.1 L145.1,129.1 L109.1,153.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="172" y="103" text-anchor="middle" fill="#7a9e6f">가가와</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ehime">
+        <path d="M-118.9,413.1 L-146.9,405.1 L-146.9,417.1 L-154.9,417.1 L-150.9,397.1 L-138.9,401.1 L-162.9,377.1 L-150.9,377.1 L-158.9,361.1 L-146.9,361.1 L-158.9,357.1 L-154.9,349.1 L-166.9,341.1 L-150.9,353.1 L-134.9,337.1 L-134.9,325.1 L-150.9,325.1 L-138.9,313.1 L-170.9,313.1 L-162.9,301.1 L-170.9,297.1 L-158.9,277.1 L-182.9,273.1 L-214.9,297.1 L-246.9,301.1 L-106.9,221.1 L-82.9,145.1 L-46.9,133.1 L-54.9,117.1 L-42.9,113.1 L-10.9,169.1 L33.1,153.1 L73.1,161.1 L89.1,145.1 L109.1,153.1 L101.1,185.1 L5.1,201.1 L-22.9,237.1 L-34.9,277.1 L-78.9,281.1 L-62.9,317.1 L-82.9,329.1 L-106.9,361.1 L-122.9,349.1 L-110.9,401.1 L-118.9,413.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="-101" y="295" text-anchor="middle" fill="#c47a2f">에히메</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kochi">
+        <path d="M101.1,185.1 L153.1,209.1 L177.1,201.1 L181.1,233.1 L209.1,237.1 L201.1,253.1 L209.1,269.1 L233.1,273.1 L205.1,349.1 L157.1,285.1 L117.1,269.1 L77.1,277.1 L77.1,269.1 L81.1,281.1 L33.1,297.1 L57.1,297.1 L33.1,301.1 L25.1,313.1 L21.1,301.1 L9.1,317.1 L13.1,337.1 L5.1,361.1 L-6.9,361.1 L-22.9,393.1 L-42.9,397.1 L-42.9,429.1 L-54.9,441.1 L-42.9,465.1 L-58.9,449.1 L-86.9,457.1 L-106.9,445.1 L-122.9,453.1 L-118.9,429.1 L-102.9,425.1 L-106.9,413.1 L-118.9,413.1 L-110.9,401.1 L-122.9,349.1 L-106.9,361.1 L-82.9,329.1 L-62.9,317.1 L-78.9,281.1 L-34.9,277.1 L-22.9,237.1 L5.1,201.1 L101.1,185.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="18" y="327" text-anchor="middle" fill="#7a3b8c">고치</text>
+      </g>
+      <path class="area-pref-shape" d="M301.1,109.1 L309.1,101.1 L305.1,117.1 L301.1,109.1 Z M265.1,109.1 L297.1,101.1 L297.1,113.1 L309.1,117.1 L293.1,153.1 L321.1,181.1 L301.1,197.1 L329.1,205.1 L253.1,245.1 L233.1,273.1 L209.1,269.1 L201.1,253.1 L209.1,237.1 L181.1,233.1 L177.1,201.1 L153.1,209.1 L101.1,185.1 L109.1,153.1 L145.1,129.1 L173.1,141.1 L209.1,113.1 L261.1,121.1 L265.1,109.1 Z"/>
+      <text class="area-main-label" x="200" y="290" text-anchor="middle" style="font-size:32.6px;stroke-width:5.1px">도쿠시마</text>
+
+      <g class="area-pin" data-target="area-tokushimacity">
+        <line class="area-pin-leader" x1="284.6" y1="155.3" x2="328.9" y2="144.2" style="stroke-width:0.9"/>
+        <rect x="275.20000000000005" y="145.9" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="284.6" cy="155.3" r="6.5" style="stroke-width:1.9"/>
+        <text x="328.9" y="144.2" text-anchor="start" style="font-size:11.8px">도쿠시마시</text>
+      </g>
+      <g class="area-pin" data-target="area-naruto">
+        <line class="area-pin-leader" x1="296.1" y1="125.5" x2="332.9" y2="98.4" style="stroke-width:0.9"/>
+        <rect x="286.70000000000005" y="116.1" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="296.1" cy="125.5" r="6.5" style="stroke-width:1.9"/>
+        <text x="332.9" y="98.4" text-anchor="start" style="font-size:11.8px">나루토</text>
+      </g>
+      <g class="area-pin" data-target="area-iyavalley">
+        <line class="area-pin-leader" x1="134.7" y1="209.8" x2="92.4" y2="227.2" style="stroke-width:0.9"/>
+        <rect x="125.29999999999998" y="200.4" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="134.7" cy="209.8" r="6.5" style="stroke-width:1.9"/>
+        <text x="92.4" y="227.2" text-anchor="end" style="font-size:11.8px">이야 계곡</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-tokushimacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">도쿠시마시</span><span class="area-tag">아와 오도리의 고향</span></div>
+      <p class="area-desc">매년 8월 거리를 가득 채우는 아와 오도리 춤 축제로 전국적으로 유명한 현청 소재지입니다.</p>
+      <ul class="area-highlights">
+        <li>아와 오도리 — 일본 최대급이자 가장 유명한 춤 축제 중 하나.</li>
+        <li>전용 공연장에서 일 년 내내 열리는 아와 오도리 공연.</li>
+        <li>비잔산 기슭의 강변 도심.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-naruto">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">나루토</span><span class="area-tag">조수 소용돌이</span></div>
+      <p class="area-desc">도쿠시마와 아와지섬 사이 해협의 강력한 조수 소용돌이, 나루토 소용돌이가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>세계 최대급 조수 소용돌이 중 하나인 나루토 소용돌이.</li>
+        <li>관람선과 유리 바닥 다리 보행로.</li>
+        <li>세토 내해의 조류가 태평양과 만나 생기는 극적인 조수 흐름.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-iyavalley">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">이야 계곡</span><span class="area-tag">외딴 덩굴다리</span></div>
+      <p class="area-desc">덩굴다리, 온천, 극적인 계곡 풍경으로 알려진 외지고 가파른 산골 협곡입니다.</p>
+      <ul class="area-highlights">
+        <li>협곡에 놓인 역사적인 덩굴 현수교.</li>
+        <li>산속에 숨어 있는 외딴 온천 료칸.</li>
+        <li>일본에서 가장 외진 지역 중 하나로 꼽히는 극적이고 가파른 계곡 풍경.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

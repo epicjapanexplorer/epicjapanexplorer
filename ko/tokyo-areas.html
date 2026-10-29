@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도쿄 지역별 여행 가이드: 도쿄에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="도쿄 지역별 가이드: 도쿄역, 아사쿠사, 긴자, 신주쿠·시부야, 오다이바 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/tokyo-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/tokyo-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/tokyo-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/tokyo-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/tokyo-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/tokyo-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#tokyo">← 지도로 돌아가기: 도쿄</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>도쿄 지역별 가이드</h1>
+  <p class="page-lede">도쿄도는 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">도쿄 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">도쿄도의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-89 -40 624 435" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="saitama">
+        <path d="M250.7,26.7 L254.7,30.7 L262.7,58.7 L274.7,54.7 L274.7,54.7 L298.7,106.7 L298.7,134.7 L274.7,126.7 L266.7,134.7 L250.7,130.7 L226.7,142.7 L226.7,126.7 L198.7,138.7 L178.7,122.7 L118.7,106.7 L106.7,118.7 L62.7,106.7 L58.7,86.7 L122.7,50.7 L142.7,10.7 L186.7,18.7 L210.7,34.7 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="207" y="87" text-anchor="middle" fill="#7a9e6f">사이타마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="chiba">
+        <path d="M294.7,170.7 L302.7,154.7 L298.7,134.7 L298.7,106.7 L274.7,54.7 L306.7,94.7 L350.7,114.7 L422.7,98.7 L422.7,86.7 L494.7,134.7 L494.7,150.7 L454.7,150.7 L410.7,194.7 L402.7,282.7 L350.7,298.7 L302.7,354.7 L274.7,338.7 L294.7,330.7 L286.7,318.7 L290.7,306.7 L286.7,286.7 L294.7,266.7 L278.7,250.7 L290.7,234.7 L302.7,238.7 L302.7,222.7 L326.7,210.7 L346.7,186.7 L318.7,158.7 L298.7,174.7 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="336" y="204" text-anchor="middle" fill="#c47a2f">지바</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kanagawa">
+        <path d="M142.7,162.7 L198.7,186.7 L214.7,206.7 L214.7,186.7 L222.7,186.7 L210.7,178.7 L222.7,170.7 L278.7,198.7 L262.7,214.7 L246.7,210.7 L258.7,226.7 L246.7,226.7 L246.7,254.7 L270.7,266.7 L254.7,282.7 L258.7,294.7 L242.7,294.7 L246.7,274.7 L234.7,258.7 L206.7,250.7 L162.7,262.7 L146.7,274.7 L150.7,298.7 L142.7,298.7 L118.7,282.7 L118.7,230.7 L102.7,230.7 L138.7,198.7 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="206" y="236" text-anchor="middle" fill="#7a3b8c">가나가와</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamanashi">
+        <path d="M-41.3,174.7 L-49.3,154.7 L-37.3,146.7 L-49.3,134.7 L-9.3,90.7 L10.7,110.7 L34.7,102.7 L50.7,114.7 L62.7,106.7 L106.7,118.7 L122.7,150.7 L142.7,162.7 L138.7,198.7 L102.7,230.7 L54.7,242.7 L34.7,222.7 L18.7,254.7 L22.7,282.7 L2.7,290.7 L-13.3,254.7 L-33.3,250.7 L-29.3,206.7 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="29" y="182" text-anchor="middle" fill="#2f6690">야마나시</text>
+      </g>
+      <path class="area-pref-shape" d="M298.7,134.7 L302.7,154.7 L294.7,170.7 L270.7,166.7 L278.7,182.7 L262.7,186.7 L278.7,186.7 L278.7,198.7 L222.7,170.7 L210.7,178.7 L222.7,186.7 L214.7,186.7 L214.7,206.7 L198.7,186.7 L142.7,162.7 L122.7,150.7 L106.7,118.7 L118.7,106.7 L178.7,122.7 L198.7,138.7 L226.7,126.7 L226.7,142.7 L250.7,130.7 L266.7,134.7 L274.7,126.7 L298.7,134.7 Z"/>
+      <text class="area-main-label" x="229" y="123" text-anchor="middle" style="font-size:26.8px;stroke-width:4.2px">도쿄</text>
+
+      <g class="area-pin" data-target="area-tokyostation">
+        <line class="area-pin-leader" x1="272.5" y1="164.3" x2="342.9" y2="164.3" style="stroke-width:0.9"/>
+        <rect x="263.6" y="155.4" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="272.5" cy="164.3" r="6.2" style="stroke-width:1.8"/>
+        <text x="342.9" y="164.3" text-anchor="start" style="font-size:11.3px">도쿄역</text>
+      </g>
+      <g class="area-pin" data-target="area-asakusa">
+        <line class="area-pin-leader" x1="288.7" y1="140.7" x2="334.0" y2="86.8" style="stroke-width:0.9"/>
+        <rect x="279.8" y="131.79999999999998" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="288.7" cy="140.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="334.0" y="86.8" text-anchor="start" style="font-size:11.3px">아사쿠사</text>
+      </g>
+      <g class="area-pin" data-target="area-ginza">
+        <line class="area-pin-leader" x1="284.7" y1="180.7" x2="338.7" y2="226.0" style="stroke-width:0.9"/>
+        <rect x="275.8" y="171.79999999999998" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="284.7" cy="180.7" r="6.2" style="stroke-width:1.8"/>
+        <text x="338.7" y="226.0" text-anchor="start" style="font-size:11.3px">긴자</text>
+      </g>
+      <g class="area-pin" data-target="area-shinjuku">
+        <line class="area-pin-leader" x1="259.9" y1="161.0" x2="189.4" y2="161.0" style="stroke-width:0.9"/>
+        <rect x="250.99999999999997" y="152.1" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="259.9" cy="161.0" r="6.2" style="stroke-width:1.8"/>
+        <text x="189.4" y="161.0" text-anchor="end" style="font-size:11.3px">신주쿠·시부야</text>
+      </g>
+      <g class="area-pin" data-target="area-odaiba">
+        <line class="area-pin-leader" x1="274.2" y1="180.5" x2="274.2" y2="250.9" style="stroke-width:0.9"/>
+        <rect x="265.3" y="171.6" width="17.8" height="17.8" fill="transparent"/>
+        <circle cx="274.2" cy="180.5" r="6.2" style="stroke-width:1.8"/>
+        <text x="274.2" y="250.9" text-anchor="middle" style="font-size:11.3px">오다이바</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-tokyostation">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">도쿄역</span><span class="area-tag">도쿄의 관문</span></div>
+      <p class="area-desc">황거의 해자, 정원, 그 앞의 넓은 공공 광장에서 불과 몇 걸음 거리에 있는 도시의 웅장한 붉은 벽돌 철도 관문입니다.</p>
+      <ul class="area-highlights">
+        <li>복원된 도쿄역 붉은 벽돌 마루노우치 역사.</li>
+        <li>일반에 공개된 황거 동쪽 정원.</li>
+        <li>일본 거의 모든 곳으로 이어지는 중심 거점.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-asakusa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">아사쿠사</span><span class="area-tag">도쿄의 전통적인 중심</span></div>
+      <p class="area-desc">센소지와 그 앞으로 이어지는 북적이는 나카미세 상점가를 중심으로 한 도쿄에서 가장 전통적인 지구입니다.</p>
+      <ul class="area-highlights">
+        <li>센소지 — 도쿄에서 가장 오래되고 방문객이 많은 사찰.</li>
+        <li>간식과 기념품을 파는 상점가, 나카미세도리.</li>
+        <li>스미다강변에서 바라보는 도쿄 스카이트리 전망.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ginza">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">긴자</span><span class="area-tag">고급 쇼핑 지구</span></div>
+      <p class="area-desc">대표 백화점, 고급 부티크, 우아한 식당으로 알려진 도쿄의 대표 고급 쇼핑 지구입니다.</p>
+      <ul class="area-highlights">
+        <li>일본과 해외 명품 브랜드의 플래그십 스토어.</li>
+        <li>주말 보행자 전용 '긴자 호코샤 덴고쿠(보행자 천국)' 도로 통제.</li>
+        <li>도쿄에서 가장 유서 깊은 백화점 몇 곳.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shinjuku">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">신주쿠·시부야</span><span class="area-tag">고층 빌딩과 청춘 문화</span></div>
+      <p class="area-desc">고층 빌딩가와 나이트라이프의 신주쿠, 유명한 스크램블 교차로와 청춘 문화의 시부야라는 도쿄의 두 대표 거점입니다.</p>
+      <ul class="area-highlights">
+        <li>신주쿠의 고층 빌딩가와 세계에서 가장 붐비는 철도역.</li>
+        <li>시부야 스크램블 교차로 — 도쿄에서 가장 유명한 교차로.</li>
+        <li>두 지구 모두 빽빽한 나이트라이프, 식당, 쇼핑.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-odaiba">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오다이바</span><span class="area-tag">미래적인 워터프런트</span></div>
+      <p class="area-desc">쇼핑몰, 대관람차, 레인보 브리지 전망이 있는 도쿄만 인공섬의 미래적인 워터프런트 지구입니다.</p>
+      <ul class="area-highlights">
+        <li>레인보 브리지와 도쿄만 스카이라인 전망.</li>
+        <li>팀랩 디지털 아트 박물관을 비롯한 첨단 기술 명소.</li>
+        <li>실물 크기 건담 동상 등 대중문화 랜드마크.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

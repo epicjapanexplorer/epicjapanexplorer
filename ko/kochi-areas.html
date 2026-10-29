@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고치 지역별 여행 가이드: 고치에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="고치 지역별 가이드: 고치시·가쓰라하마, 시만토, 니요도강, 가시와지마 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/kochi-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/kochi-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/kochi-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/kochi-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/kochi-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/kochi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#kochi">← 지도로 돌아가기: 고치</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>고치 지역별 가이드</h1>
+  <p class="page-lede">고치현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">고치 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">고치현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-40 -40 1026 930" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tokushima">
+        <path d="M693.2,209.2 L725.2,201.2 L725.2,213.2 L737.2,217.2 L721.2,253.2 L749.2,281.2 L729.2,297.2 L757.2,305.2 L681.2,345.2 L661.2,373.2 L637.2,369.2 L629.2,353.2 L637.2,337.2 L609.2,333.2 L605.2,301.2 L581.2,309.2 L529.2,285.2 L537.2,253.2 L573.2,229.2 L601.2,241.2 L637.2,213.2 L689.2,221.2 L693.2,209.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="658" y="276" text-anchor="middle" fill="#7a9e6f">도쿠시마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ehime">
+        <path d="M309.2,513.2 L281.2,505.2 L281.2,517.2 L273.2,517.2 L277.2,497.2 L289.2,501.2 L265.2,477.2 L277.2,477.2 L269.2,461.2 L281.2,461.2 L269.2,457.2 L273.2,449.2 L261.2,441.2 L277.2,453.2 L293.2,437.2 L293.2,425.2 L277.2,425.2 L289.2,413.2 L257.2,413.2 L265.2,401.2 L257.2,397.2 L269.2,377.2 L245.2,373.2 L213.2,397.2 L181.2,401.2 L321.2,321.2 L345.2,245.2 L381.2,233.2 L373.2,217.2 L385.2,213.2 L417.2,269.2 L461.2,253.2 L501.2,261.2 L517.2,245.2 L537.2,253.2 L529.2,285.2 L433.2,301.2 L405.2,337.2 L393.2,377.2 L349.2,381.2 L365.2,417.2 L345.2,429.2 L321.2,461.2 L305.2,449.2 L317.2,501.2 L309.2,513.2 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="327" y="395" text-anchor="middle" fill="#c47a2f">에히메</text>
+      </g>
+      <path class="area-pref-shape" d="M529.2,285.2 L581.2,309.2 L605.2,301.2 L609.2,333.2 L637.2,337.2 L629.2,353.2 L637.2,369.2 L661.2,373.2 L633.2,449.2 L585.2,385.2 L545.2,369.2 L505.2,377.2 L505.2,369.2 L509.2,381.2 L461.2,397.2 L485.2,397.2 L461.2,401.2 L453.2,413.2 L449.2,401.2 L437.2,417.2 L441.2,437.2 L433.2,461.2 L421.2,461.2 L405.2,493.2 L385.2,497.2 L385.2,529.2 L373.2,541.2 L385.2,565.2 L369.2,549.2 L341.2,557.2 L321.2,545.2 L305.2,553.2 L309.2,529.2 L325.2,525.2 L321.2,513.2 L309.2,513.2 L317.2,501.2 L305.2,449.2 L321.2,461.2 L345.2,429.2 L365.2,417.2 L349.2,381.2 L393.2,377.2 L405.2,337.2 L433.2,301.2 L529.2,285.2 Z M289.2,561.2 L285.2,565.2 L285.2,553.2 L289.2,561.2 Z"/>
+      <text class="area-main-label" x="446" y="352" text-anchor="middle" style="font-size:44.1px;stroke-width:6.9px">고치</text>
+
+      <g class="area-pin" data-target="area-kochicity">
+        <line class="area-pin-leader" x1="490.1" y1="361.2" x2="535.0" y2="301.1" style="stroke-width:2.1"/>
+        <rect x="469.5" y="340.59999999999997" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="490.1" cy="361.2" r="14.4" style="stroke-width:4.1"/>
+        <text x="535.0" y="301.1" text-anchor="start" style="font-size:26.0px">고치시·가쓰라하마</text>
+      </g>
+      <g class="area-pin" data-target="area-shimanto">
+        <line class="area-pin-leader" x1="365.2" y1="494.0" x2="307.6" y2="542.0" style="stroke-width:2.1"/>
+        <rect x="344.59999999999997" y="473.4" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="365.2" cy="494.0" r="14.4" style="stroke-width:4.1"/>
+        <text x="307.6" y="542.0" text-anchor="end" style="font-size:26.0px">시만토</text>
+      </g>
+      <g class="area-pin" data-target="area-niyodoriver">
+        <line class="area-pin-leader" x1="438.4" y1="367.4" x2="443.8" y2="292.6" style="stroke-width:2.1"/>
+        <rect x="417.79999999999995" y="346.79999999999995" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="438.4" cy="367.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="443.8" y="292.6" text-anchor="middle" style="font-size:26.0px">니요도강</text>
+      </g>
+      <g class="area-pin" data-target="area-kashiwajima">
+        <line class="area-pin-leader" x1="309.6" y1="545.4" x2="253.1" y2="594.7" style="stroke-width:2.1"/>
+        <rect x="289.0" y="524.8" width="41.2" height="41.2" fill="transparent"/>
+        <circle cx="309.6" cy="545.4" r="14.4" style="stroke-width:4.1"/>
+        <text x="253.1" y="594.7" text-anchor="end" style="font-size:26.0px">가시와지마</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kochicity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">고치시·가쓰라하마</span><span class="area-tag">료마의 고향</span></div>
+      <p class="area-desc">전설적인 사무라이 사카모토 료마와 얽힌 현존 원형 성과 경치 좋은 가쓰라하마 해변이 있는 현청 소재지입니다.</p>
+      <ul class="area-highlights">
+        <li>일본에 몇 안 되는 현존 원형 성 중 하나인 고치성.</li>
+        <li>사카모토 료마 동상이 있는 가쓰라하마 해변.</li>
+        <li>수 세기 전부터 이어져 온 활기찬 일요 시장 전통.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-shimanto">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">시만토</span><span class="area-tag">일본 마지막 청류</span></div>
+      <p class="area-desc">'일본 마지막 청류'로 불리는 시만토강이 있으며, 소박한 침하교로 유명합니다.</p>
+      <ul class="area-highlights">
+        <li>흔히 '일본 마지막 청류'로 불립니다.</li>
+        <li>친카바시 — 난간 없는 소박한 침하교.</li>
+        <li>때 묻지 않은 자연 속에서 즐기는 카누와 강 액티비티.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-niyodoriver">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">니요도강</span><span class="area-tag">선명한 푸른 물</span></div>
+      <p class="area-desc">일본에서 가장 맑고 선명한 푸른 물을 품은 것으로 유명한 강입니다.</p>
+      <ul class="area-highlights">
+        <li>선명한 청록빛 물색으로 유명합니다.</li>
+        <li>강을 따라 이어지는 인기 수영·사진 명소.</li>
+        <li>한적하고 덜 알려진 자연 명소.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kashiwajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">가시와지마</span><span class="area-tag">투명한 스노클링</span></div>
+      <p class="area-desc">유난히 맑은 바다와 일본 최고 수준의 스노클링·다이빙 명소로 알려진 작은 섬입니다.</p>
+      <ul class="area-highlights">
+        <li>스노클링과 다이빙을 즐기기 좋은 일본에서 가장 맑은 바다 중 하나.</li>
+        <li>온대 위도임에도 풍부한 산호와 해양 생물.</li>
+        <li>외딴 곳의 아담한 섬 여행지.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아키타 지역별 여행 가이드: 아키타에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="아키타 지역별 가이드: 아키타시, 오가, 가쿠노다테, 다자와호 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/akita-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/akita-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/akita-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/akita-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/akita-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/akita-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#akita">← 지도로 돌아가기: 아키타</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>아키타 지역별 가이드</h1>
+  <p class="page-lede">아키타현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">아키타 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">아키타현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-40 -158 682 1036" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="aomori">
+        <path d="M182.0,166.0 L182.0,134.0 L170.0,122.0 L194.0,86.0 L218.0,86.0 L242.0,70.0 L254.0,6.0 L238.0,-10.0 L250.0,-14.0 L254.0,-42.0 L278.0,-26.0 L294.0,-38.0 L310.0,-26.0 L318.0,34.0 L330.0,62.0 L354.0,46.0 L350.0,30.0 L358.0,14.0 L402.0,50.0 L414.0,38.0 L430.0,-26.0 L414.0,-54.0 L390.0,-30.0 L334.0,-18.0 L358.0,-118.0 L426.0,-74.0 L462.0,-94.0 L454.0,30.0 L462.0,86.0 L478.0,130.0 L494.0,126.0 L514.0,150.0 L490.0,178.0 L470.0,170.0 L454.0,182.0 L446.0,170.0 L394.0,210.0 L378.0,206.0 L382.0,162.0 L362.0,162.0 L362.0,142.0 L322.0,170.0 L310.0,162.0 L298.0,170.0 L270.0,150.0 L258.0,162.0 L210.0,154.0 L198.0,170.0 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="342" y="75" text-anchor="middle" fill="#7a9e6f">아오모리</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="iwate">
+        <path d="M522.0,518.0 L494.0,514.0 L486.0,570.0 L462.0,558.0 L446.0,578.0 L422.0,562.0 L430.0,546.0 L398.0,550.0 L358.0,530.0 L362.0,506.0 L350.0,486.0 L362.0,474.0 L330.0,422.0 L342.0,378.0 L358.0,354.0 L350.0,334.0 L362.0,318.0 L350.0,302.0 L370.0,298.0 L362.0,226.0 L378.0,206.0 L394.0,210.0 L446.0,170.0 L454.0,182.0 L470.0,170.0 L490.0,178.0 L514.0,150.0 L546.0,194.0 L538.0,214.0 L558.0,226.0 L550.0,242.0 L574.0,262.0 L586.0,322.0 L578.0,362.0 L590.0,346.0 L594.0,366.0 L602.0,370.0 L578.0,390.0 L586.0,398.0 L598.0,386.0 L598.0,402.0 L582.0,402.0 L582.0,422.0 L570.0,426.0 L590.0,422.0 L570.0,434.0 L578.0,442.0 L570.0,450.0 L586.0,446.0 L562.0,474.0 L578.0,482.0 L558.0,482.0 L570.0,494.0 L558.0,494.0 L566.0,502.0 L542.0,506.0 L538.0,494.0 L546.0,514.0 L538.0,514.0 L538.0,526.0 L530.0,510.0 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="498" y="397" text-anchor="middle" fill="#c47a2f">이와테</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyagi">
+        <path d="M398.0,794.0 L382.0,794.0 L382.0,818.0 L366.0,818.0 L370.0,826.0 L350.0,818.0 L346.0,794.0 L310.0,794.0 L294.0,778.0 L270.0,778.0 L266.0,758.0 L294.0,750.0 L306.0,726.0 L302.0,702.0 L330.0,654.0 L314.0,610.0 L326.0,610.0 L334.0,578.0 L314.0,546.0 L330.0,550.0 L358.0,530.0 L398.0,550.0 L430.0,546.0 L422.0,562.0 L446.0,578.0 L462.0,558.0 L486.0,570.0 L494.0,514.0 L522.0,518.0 L534.0,546.0 L514.0,534.0 L518.0,554.0 L502.0,570.0 L514.0,590.0 L506.0,582.0 L490.0,594.0 L506.0,602.0 L494.0,626.0 L510.0,626.0 L510.0,642.0 L498.0,634.0 L506.0,650.0 L494.0,654.0 L498.0,666.0 L510.0,662.0 L502.0,670.0 L510.0,678.0 L510.0,694.0 L494.0,686.0 L498.0,674.0 L486.0,678.0 L494.0,670.0 L490.0,662.0 L422.0,674.0 L410.0,686.0 L426.0,694.0 L406.0,698.0 L418.0,702.0 L394.0,742.0 L398.0,794.0 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="426" y="659" text-anchor="middle" fill="#7a3b8c">미야기</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamagata">
+        <path d="M178.0,494.0 L218.0,490.0 L234.0,510.0 L290.0,522.0 L298.0,542.0 L314.0,546.0 L334.0,578.0 L326.0,610.0 L314.0,610.0 L330.0,654.0 L302.0,702.0 L306.0,726.0 L294.0,750.0 L266.0,758.0 L270.0,778.0 L266.0,814.0 L274.0,818.0 L262.0,834.0 L238.0,838.0 L226.0,830.0 L210.0,834.0 L202.0,818.0 L178.0,822.0 L150.0,814.0 L138.0,794.0 L150.0,762.0 L150.0,730.0 L182.0,718.0 L190.0,702.0 L154.0,678.0 L154.0,650.0 L122.0,638.0 L174.0,546.0 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="233" y="694" text-anchor="middle" fill="#2f6690">야마가타</text>
+      </g>
+      <polygon class="area-pref-shape" points="358.0,530.0 330.0,550.0 314.0,546.0 298.0,542.0 290.0,522.0 234.0,510.0 218.0,490.0 178.0,494.0 186.0,454.0 206.0,418.0 210.0,330.0 186.0,298.0 154.0,310.0 142.0,274.0 166.0,286.0 190.0,254.0 202.0,218.0 202.0,186.0 182.0,166.0 198.0,170.0 210.0,154.0 258.0,162.0 270.0,150.0 298.0,170.0 310.0,162.0 322.0,170.0 362.0,142.0 362.0,162.0 382.0,162.0 378.0,206.0 362.0,226.0 370.0,298.0 350.0,302.0 362.0,318.0 350.0,334.0 358.0,354.0 342.0,378.0 330.0,422.0 362.0,474.0 350.0,486.0 362.0,506.0"/>
+      <text class="area-main-label" x="280" y="241" text-anchor="middle" style="font-size:29.3px;stroke-width:4.6px">아키타</text>
+
+      <g class="area-pin" data-target="area-akitacity">
+        <line class="area-pin-leader" x1="228.2" y1="296.5" x2="202.3" y2="367.6" style="stroke-width:1.1"/>
+        <rect x="216.79999999999998" y="285.1" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="228.2" cy="296.5" r="8.0" style="stroke-width:2.3"/>
+        <text x="202.3" y="367.6" text-anchor="end" style="font-size:14.4px">아키타시</text>
+      </g>
+      <g class="area-pin" data-target="area-oga">
+        <line class="area-pin-leader" x1="142.0" y1="274.0" x2="76.4" y2="236.1" style="stroke-width:1.1"/>
+        <rect x="130.6" y="262.6" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="142.0" cy="274.0" r="8.0" style="stroke-width:2.3"/>
+        <text x="76.4" y="236.1" text-anchor="end" style="font-size:14.4px">오가</text>
+      </g>
+      <g class="area-pin" data-target="area-kakunodate">
+        <line class="area-pin-leader" x1="319.5" y1="332.4" x2="393.6" y2="348.2" style="stroke-width:1.1"/>
+        <rect x="308.1" y="321.0" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="319.5" cy="332.4" r="8.0" style="stroke-width:2.3"/>
+        <text x="393.6" y="348.2" text-anchor="start" style="font-size:14.4px">가쿠노다테</text>
+      </g>
+      <g class="area-pin" data-target="area-tazawako">
+        <line class="area-pin-leader" x1="346.6" y1="315.2" x2="421.7" y2="305.1" style="stroke-width:1.1"/>
+        <rect x="335.20000000000005" y="303.8" width="22.8" height="22.8" fill="transparent"/>
+        <circle cx="346.6" cy="315.2" r="8.0" style="stroke-width:2.3"/>
+        <text x="421.7" y="305.1" text-anchor="start" style="font-size:14.4px">다자와호</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-akitacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">아키타시</span><span class="area-tag">현청 소재지</span></div>
+      <p class="area-desc">안도 다다오가 설계한 인상적인 미술관과, 불을 밝힌 대나무 장대를 손으로 세우는 여름 간토 축제가 있는 현청 소재지입니다.</p>
+      <ul class="area-highlights">
+        <li>아키타현립미술관 — 안도 다다오의 건축.</li>
+        <li>간토 축제(8월 초) — 불 켠 등롱을 매단 장대를 세우는 축제.</li>
+        <li>아키타 민속예능전승관 — 간토 장대를 직접 체험해 보세요.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-oga">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오가</span><span class="area-tag">반도와 민속</span></div>
+      <p class="area-desc">동해에 면한 거친 반도로, 매년 섣달그믐 밤에 집집을 찾아오는 무서운 얼굴의 나마하게 민속 신의 고향으로 유명합니다.</p>
+      <ul class="area-highlights">
+        <li>나마하게관 — 방대한 가면 컬렉션과 생생한 시연.</li>
+        <li>간푸잔 회전 전망대 — 반도의 탁 트인 파노라마 전망.</li>
+        <li>반도 해안 드라이브 코스를 따라 이어지는 웅장한 해안 절벽.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kakunodate">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">가쿠노다테</span><span class="area-tag">무사 마을</span></div>
+      <p class="area-desc">'미치노쿠의 작은 교토'로 불리는, 에도 시대 무사 마을이 아름답게 보존된 곳으로, 옛 골목을 따라 늘어선 수양벚나무로 유명합니다.</p>
+      <ul class="area-highlights">
+        <li>일부는 일반에 공개되는 보존된 무사 저택.</li>
+        <li>봄의 히노키나이강 벚꽃 제방길.</li>
+        <li>벚꽃이 절정인 4월 하순~5월 초에 방문하는 것이 가장 좋습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-tazawako">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">다자와호</span><span class="area-tag">일본에서 가장 깊은 호수</span></div>
+      <p class="area-desc">일본에서 가장 깊은 호수로, 완전히 얼지 않는 코발트빛 물이 인상적이며, 근처 산속에는 소박한 뉴토 온천이 숨어 있습니다.</p>
+      <ul class="area-highlights">
+        <li>다쓰코상 — 지역 전설과 얽힌 황금 동상.</li>
+        <li>호반을 도는 호수 유람선.</li>
+        <li>뉴토 온천 — 외딴 곳에 있는 소박한 온천 료칸.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

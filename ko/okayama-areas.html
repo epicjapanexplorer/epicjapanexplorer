@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오카야마 지역별 여행 가이드: 오카야마에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="오카야마 지역별 가이드: 오카야마시, 구라시키, 비젠, 히루젠 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/okayama-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/okayama-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/okayama-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/okayama-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/okayama-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/okayama-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#okayama">← 지도로 돌아가기: 오카야마</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>오카야마 지역별 가이드</h1>
+  <p class="page-lede">오카야마현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">오카야마 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">오카야마현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-201 -40 788 511" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tottori">
+        <path d="M99.3,171.3 L71.3,163.3 L87.3,139.3 L79.3,127.3 L111.3,119.3 L115.3,83.3 L91.3,51.3 L99.3,47.3 L107.3,63.3 L131.3,71.3 L163.3,55.3 L207.3,63.3 L291.3,59.3 L327.3,39.3 L355.3,107.3 L355.3,123.3 L331.3,131.3 L283.3,147.3 L279.3,123.3 L251.3,111.3 L255.3,103.3 L215.3,127.3 L199.3,107.3 L171.3,99.3 L159.3,123.3 L151.3,127.3 L155.3,139.3 L127.3,139.3 L131.3,155.3 L103.3,159.3 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="150" y="70" text-anchor="middle" fill="#7a9e6f">돗토리</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hyogo">
+        <path d="M311.3,263.3 L315.3,251.3 L299.3,227.3 L307.3,215.3 L303.3,187.3 L335.3,155.3 L331.3,131.3 L355.3,123.3 L355.3,107.3 L327.3,39.3 L363.3,27.3 L431.3,31.3 L427.3,47.3 L443.3,67.3 L463.3,63.3 L467.3,71.3 L467.3,95.3 L443.3,95.3 L439.3,119.3 L467.3,139.3 L487.3,131.3 L495.3,159.3 L535.3,167.3 L531.3,187.3 L519.3,191.3 L523.3,207.3 L547.3,219.3 L539.3,223.3 L547.3,267.3 L535.3,275.3 L511.3,267.3 L459.3,291.3 L399.3,251.3 L343.3,255.3 L343.3,239.3 L331.3,259.3 L319.3,251.3 L311.3,263.3 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="419" y="173" text-anchor="middle" fill="#c47a2f">효고</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hiroshima">
+        <path d="M131.3,315.3 L127.3,323.3 L115.3,315.3 L127.3,327.3 L119.3,323.3 L111.3,343.3 L91.3,335.3 L91.3,323.3 L55.3,331.3 L43.3,347.3 L-4.7,351.3 L-12.7,367.3 L-40.7,375.3 L-48.7,367.3 L-60.7,379.3 L-56.7,367.3 L-68.7,343.3 L-60.7,335.3 L-92.7,331.3 L-124.7,359.3 L-120.7,371.3 L-140.7,363.3 L-144.7,339.3 L-152.7,331.3 L-152.7,303.3 L-160.7,295.3 L-140.7,275.3 L-132.7,251.3 L-136.7,243.3 L-112.7,223.3 L-80.7,231.3 L-72.7,219.3 L-52.7,227.3 L-20.7,219.3 L-32.7,199.3 L-8.7,187.3 L19.3,155.3 L71.3,163.3 L99.3,171.3 L111.3,183.3 L103.3,211.3 L119.3,231.3 L115.3,251.3 L131.3,315.3 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="-10" y="291" text-anchor="middle" fill="#7a3b8c">히로시마</text>
+      </g>
+      <polygon class="area-pref-shape" points="331.3,131.3 335.3,155.3 303.3,187.3 307.3,215.3 299.3,227.3 315.3,251.3 311.3,263.3 283.3,255.3 295.3,267.3 271.3,295.3 235.3,291.3 255.3,295.3 243.3,311.3 235.3,307.3 231.3,327.3 207.3,319.3 199.3,331.3 191.3,307.3 191.3,319.3 175.3,303.3 159.3,319.3 139.3,307.3 147.3,323.3 131.3,315.3 115.3,251.3 119.3,231.3 103.3,211.3 111.3,183.3 99.3,171.3 103.3,159.3 131.3,155.3 127.3,139.3 155.3,139.3 151.3,127.3 159.3,123.3 171.3,99.3 199.3,107.3 215.3,127.3 255.3,103.3 251.3,111.3 279.3,123.3 283.3,147.3"/>
+      <text class="area-main-label" x="210" y="181" text-anchor="middle" style="font-size:33.9px;stroke-width:5.3px">오카야마</text>
+
+      <g class="area-pin" data-target="area-okayamacity">
+        <line class="area-pin-leader" x1="231.7" y1="273.3" x2="252.3" y2="322.0" style="stroke-width:0.9"/>
+        <rect x="222.29999999999998" y="263.90000000000003" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="231.7" cy="273.3" r="6.6" style="stroke-width:1.9"/>
+        <text x="252.3" y="322.0" text-anchor="start" style="font-size:12.0px">오카야마시</text>
+      </g>
+      <g class="area-pin" data-target="area-kurashiki">
+        <line class="area-pin-leader" x1="201.2" y1="289.2" x2="194.1" y2="341.7" style="stroke-width:0.9"/>
+        <rect x="191.79999999999998" y="279.8" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="201.2" cy="289.2" r="6.6" style="stroke-width:1.9"/>
+        <text x="194.1" y="341.7" text-anchor="middle" style="font-size:12.0px">구라시키</text>
+      </g>
+      <g class="area-pin" data-target="area-bizen">
+        <line class="area-pin-leader" x1="282.8" y1="259.2" x2="330.1" y2="283.2" style="stroke-width:0.9"/>
+        <rect x="273.40000000000003" y="249.79999999999998" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="282.8" cy="259.2" r="6.6" style="stroke-width:1.9"/>
+        <text x="330.1" y="283.2" text-anchor="start" style="font-size:12.0px">비젠</text>
+      </g>
+      <g class="area-pin" data-target="area-hiruzen">
+        <line class="area-pin-leader" x1="213.8" y1="149.3" x2="216.5" y2="96.4" style="stroke-width:0.9"/>
+        <rect x="204.4" y="139.9" width="18.8" height="18.8" fill="transparent"/>
+        <circle cx="213.8" cy="149.3" r="6.6" style="stroke-width:1.9"/>
+        <text x="216.5" y="96.4" text-anchor="middle" style="font-size:12.0px">히루젠</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-okayamacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오카야마시</span><span class="area-tag">정원과 검은 성</span></div>
+      <p class="area-desc">일본 3대 정원 중 하나인 고라쿠엔이 인상적인 검은 벽의 성 옆에 있는 현청 소재지입니다.</p>
+      <ul class="area-highlights">
+        <li>고라쿠엔 — 일본 3대 회유식 정원 중 하나.</li>
+        <li>검은 외관 때문에 '까마귀성'이라 불리는 오카야마성.</li>
+        <li>걷기 좋은 강변 도심.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kurashiki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">구라시키</span><span class="area-tag">운하 창고 마을</span></div>
+      <p class="area-desc">흰 벽 창고가 아름답게 보존된 운하 마을로, 지금은 갤러리, 카페, 유명한 서양 미술관이 들어서 있습니다.</p>
+      <ul class="area-highlights">
+        <li>미관지구 — 보존된 운하변 창고.</li>
+        <li>일본 최초의 서양 미술관 중 하나인 오하라 미술관.</li>
+        <li>버드나무 늘어선 운하를 따라 즐기는 뱃놀이.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-bizen">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">비젠</span><span class="area-tag">고대 도자기 마을</span></div>
+      <p class="area-desc">일본에서 가장 오래되고 개성 있는 무유 도자기 전통 중 하나인 비젠야키로 유명한 역사적인 도자기 마을입니다.</p>
+      <ul class="area-highlights">
+        <li>비젠야키 — 수 세기의 전통을 지닌 무유 석기.</li>
+        <li>방문객에게 열려 있는 수많은 현역 가마와 도자기 공방.</li>
+        <li>일본의 '6대 고요(古窯)' 중 하나.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-hiruzen">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">히루젠</span><span class="area-tag">고원 낙농 지대</span></div>
+      <p class="area-desc">낙농장, 하이킹, 느긋한 고산 분위기로 알려진 서늘한 화산 고원 지역입니다.</p>
+      <ul class="area-highlights">
+        <li>신선한 우유, 치즈, 아이스크림을 생산하는 낙농장.</li>
+        <li>서늘한 고원 하이킹 코스.</li>
+        <li>느긋하고 가족 친화적인 분위기.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미야기 지역별 여행 가이드: 미야기에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="미야기 지역별 가이드: 센다이, 마쓰시마, 자오, 이시노마키·산리쿠 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/miyagi-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/miyagi-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/miyagi-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/miyagi-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/miyagi-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/miyagi-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#miyagi">← 지도로 돌아가기: 미야기</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>미야기 지역별 가이드</h1>
+  <p class="page-lede">미야기현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">미야기 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">미야기현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-70 -226 750 1012" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="iwate">
+        <path d="M442.1,190.1 L414.1,186.1 L406.1,242.1 L382.1,230.1 L366.1,250.1 L342.1,234.1 L350.1,218.1 L318.1,222.1 L278.1,202.1 L282.1,178.1 L270.1,158.1 L282.1,146.1 L250.1,94.1 L262.1,50.1 L278.1,26.1 L270.1,6.1 L282.1,-9.9 L270.1,-25.9 L290.1,-29.9 L282.1,-101.9 L298.1,-121.9 L314.1,-117.9 L366.1,-157.9 L374.1,-145.9 L390.1,-157.9 L410.1,-149.9 L434.1,-177.9 L466.1,-133.9 L458.1,-113.9 L478.1,-101.9 L470.1,-85.9 L494.1,-65.9 L506.1,-5.9 L498.1,34.1 L510.1,18.1 L514.1,38.1 L522.1,42.1 L498.1,62.1 L506.1,70.1 L518.1,58.1 L518.1,74.1 L502.1,74.1 L502.1,94.1 L490.1,98.1 L510.1,94.1 L490.1,106.1 L498.1,114.1 L490.1,122.1 L506.1,118.1 L482.1,146.1 L498.1,154.1 L478.1,154.1 L490.1,166.1 L478.1,166.1 L486.1,174.1 L462.1,178.1 L458.1,166.1 L466.1,186.1 L458.1,186.1 L458.1,198.1 L450.1,182.1 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="418" y="69" text-anchor="middle" fill="#7a9e6f">이와테</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="akita">
+        <path d="M278.1,202.1 L250.1,222.1 L234.1,218.1 L218.1,214.1 L210.1,194.1 L154.1,182.1 L138.1,162.1 L98.1,166.1 L106.1,126.1 L126.1,90.1 L130.1,2.1 L106.1,-29.9 L74.1,-17.9 L62.1,-53.9 L86.1,-41.9 L110.1,-73.9 L122.1,-109.9 L122.1,-141.9 L102.1,-161.9 L118.1,-157.9 L130.1,-173.9 L178.1,-165.9 L190.1,-177.9 L218.1,-157.9 L230.1,-165.9 L242.1,-157.9 L282.1,-185.9 L282.1,-165.9 L302.1,-165.9 L298.1,-121.9 L282.1,-101.9 L290.1,-29.9 L270.1,-25.9 L282.1,-9.9 L270.1,6.1 L278.1,26.1 L262.1,50.1 L250.1,94.1 L282.1,146.1 L270.1,158.1 L282.1,178.1 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="200" y="-4" text-anchor="middle" fill="#c47a2f">아키타</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamagata">
+        <path d="M98.1,166.1 L138.1,162.1 L154.1,182.1 L210.1,194.1 L218.1,214.1 L234.1,218.1 L254.1,250.1 L246.1,282.1 L234.1,282.1 L250.1,326.1 L222.1,374.1 L226.1,398.1 L214.1,422.1 L186.1,430.1 L190.1,450.1 L186.1,486.1 L194.1,490.1 L182.1,506.1 L158.1,510.1 L146.1,502.1 L130.1,506.1 L122.1,490.1 L98.1,494.1 L70.1,486.1 L58.1,466.1 L70.1,434.1 L70.1,402.1 L102.1,390.1 L110.1,374.1 L74.1,350.1 L74.1,322.1 L42.1,310.1 L94.1,218.1 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="153" y="366" text-anchor="middle" fill="#7a3b8c">야마가타</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="fukushima">
+        <path d="M298.1,726.1 L258.1,706.1 L258.1,722.1 L234.1,746.1 L194.1,710.1 L190.1,686.1 L166.1,670.1 L118.1,658.1 L18.1,722.1 L-13.9,714.1 L-9.9,658.1 L-29.9,638.1 L-13.9,614.1 L-21.9,598.1 L-17.9,586.1 L18.1,582.1 L22.1,570.1 L54.1,570.1 L46.1,534.1 L82.1,494.1 L70.1,486.1 L98.1,494.1 L122.1,490.1 L130.1,506.1 L146.1,502.1 L158.1,510.1 L182.1,506.1 L194.1,490.1 L186.1,486.1 L190.1,450.1 L214.1,450.1 L230.1,466.1 L266.1,466.1 L270.1,490.1 L290.1,498.1 L286.1,490.1 L302.1,490.1 L302.1,466.1 L318.1,466.1 L342.1,522.1 L342.1,630.1 L334.1,694.1 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="162" y="570" text-anchor="middle" fill="#2f6690">후쿠시마</text>
+      </g>
+      <path class="area-pref-shape" d="M318.1,466.1 L302.1,466.1 L302.1,490.1 L286.1,490.1 L290.1,498.1 L270.1,490.1 L266.1,466.1 L230.1,466.1 L214.1,450.1 L190.1,450.1 L186.1,430.1 L214.1,422.1 L226.1,398.1 L222.1,374.1 L250.1,326.1 L234.1,282.1 L246.1,282.1 L254.1,250.1 L234.1,218.1 L250.1,222.1 L278.1,202.1 L318.1,222.1 L350.1,218.1 L342.1,234.1 L366.1,250.1 L382.1,230.1 L406.1,242.1 L414.1,186.1 L442.1,190.1 L454.1,218.1 L434.1,206.1 L438.1,226.1 L422.1,242.1 L434.1,262.1 L426.1,254.1 L410.1,266.1 L426.1,274.1 L414.1,298.1 L430.1,298.1 L430.1,314.1 L418.1,306.1 L426.1,322.1 L414.1,326.1 L418.1,338.1 L430.1,334.1 L422.1,342.1 L430.1,350.1 L430.1,366.1 L414.1,358.1 L418.1,346.1 L406.1,350.1 L414.1,342.1 L410.1,334.1 L342.1,346.1 L330.1,358.1 L346.1,366.1 L326.1,370.1 L338.1,374.1 L314.1,414.1 L318.1,466.1 Z M358.1,350.1 L362.1,358.1 L354.1,358.1 L358.1,350.1 Z"/>
+      <text class="area-main-label" x="346" y="250" text-anchor="middle" style="font-size:32.3px;stroke-width:5.0px">미야기</text>
+
+      <g class="area-pin" data-target="area-sendai">
+        <line class="area-pin-leader" x1="294.5" y1="368.3" x2="272.0" y2="430.2" style="stroke-width:1.4"/>
+        <rect x="280.6" y="354.40000000000003" width="27.8" height="27.8" fill="transparent"/>
+        <circle cx="294.5" cy="368.3" r="9.7" style="stroke-width:2.8"/>
+        <text x="272.0" y="430.2" text-anchor="end" style="font-size:17.6px">센다이</text>
+      </g>
+      <g class="area-pin" data-target="area-matsushima">
+        <line class="area-pin-leader" x1="330.0" y1="343.4" x2="274.1" y2="378.2" style="stroke-width:1.4"/>
+        <rect x="316.1" y="329.5" width="27.8" height="27.8" fill="transparent"/>
+        <circle cx="330.0" cy="343.4" r="9.7" style="stroke-width:2.8"/>
+        <text x="274.1" y="378.2" text-anchor="end" style="font-size:17.6px">마쓰시마</text>
+      </g>
+      <g class="area-pin" data-target="area-zao">
+        <line class="area-pin-leader" x1="211.7" y1="398.3" x2="149.9" y2="420.8" style="stroke-width:1.4"/>
+        <rect x="197.79999999999998" y="384.40000000000003" width="27.8" height="27.8" fill="transparent"/>
+        <circle cx="211.7" cy="398.3" r="9.7" style="stroke-width:2.8"/>
+        <text x="149.9" y="420.8" text-anchor="end" style="font-size:17.6px">자오</text>
+      </g>
+      <g class="area-pin" data-target="area-ishinomaki">
+        <line class="area-pin-leader" x1="379.2" y1="328.4" x2="444.4" y2="319.5" style="stroke-width:1.4"/>
+        <rect x="365.3" y="314.5" width="27.8" height="27.8" fill="transparent"/>
+        <circle cx="379.2" cy="328.4" r="9.7" style="stroke-width:2.8"/>
+        <text x="444.4" y="319.5" text-anchor="start" style="font-size:17.6px">이시노마키·산리쿠</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-sendai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">센다이</span><span class="area-tag">도호쿠 최대의 도시</span></div>
+      <p class="area-desc">가로수 길 때문에 '숲의 도시'로 불리며, 다테 마사무네의 성 터와 매년 8월의 활기찬 칠석 축제로 유명한 도호쿠 최대의 도시입니다.</p>
+      <ul class="area-highlights">
+        <li>센다이 칠석 축제 — 정교한 장식 띠가 상점가를 가득 채웁니다.</li>
+        <li>아오바성 터와 영주 다테 마사무네의 동상.</li>
+        <li>즌다 모치 — 으깬 풋콩으로 만든 향토 과자.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-matsushima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">마쓰시마</span><span class="area-tag">일본 3대 절경 중 하나</span></div>
+      <p class="area-desc">수백 개의 소나무 덮인 작은 섬이 흩어져 있는 만으로, 일본 3대 절경 중 하나이며 관광 유람선으로 보는 것이 가장 좋습니다.</p>
+      <ul class="area-highlights">
+        <li>260개가 넘는 소나무 덮인 작은 섬을 도는 경치 좋은 유람.</li>
+        <li>즈이간지 — 9세기에 창건된 역사적인 선종 사찰.</li>
+        <li>마쓰시마만의 명물, 신선한 굴구이.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-zao">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">자오</span><span class="area-tag">수빙과 화구호</span></div>
+      <p class="area-desc">미야기와 야마가타에 걸친 화산 산맥으로, 겨울의 '수빙(스노 몬스터)'(서리로 뒤덮인 나무)과 청록빛 화구호 오카마로 유명합니다.</p>
+      <ul class="area-highlights">
+        <li>겨울의 '수빙' — 바람이 빚어낸 서리에 갇힌 나무들.</li>
+        <li>오카마 화구호 — 인상적인 청록빛 화산호.</li>
+        <li>경계 건너 야마가타 쪽 자오 온천에서 이후 몸을 담글 수 있습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-ishinomaki">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">이시노마키·산리쿠</span><span class="area-tag">어업 도시와 해안</span></div>
+      <p class="area-desc">굴, 극적인 바다 풍경, 재해 이후 복구의 상징으로 알려진 재건된 어업 도시이자, 미야기 산리쿠 해안으로 가는 관문입니다.</p>
+      <ul class="area-highlights">
+        <li>이시노마키 현역 항구의 신선한 굴과 해산물.</li>
+        <li>긴카산 — 앞바다에 있는 신성한 섬 신사.</li>
+        <li>2011년 쓰나미를 되새기는 복구 기념 유적.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

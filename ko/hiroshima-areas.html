@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>히로시마 지역별 여행 가이드: 히로시마에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="히로시마 지역별 가이드: 히로시마시, 미야지마, 구레·에타지마, 오노미치 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/hiroshima-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/hiroshima-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/hiroshima-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/hiroshima-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/hiroshima-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/hiroshima-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#hiroshima">← 지도로 돌아가기: 히로시마</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>히로시마 지역별 가이드</h1>
+  <p class="page-lede">히로시마현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">히로시마 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">히로시마현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-156 -40 824 597" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="okayama">
+        <path d="M624.5,108.5 L628.5,132.5 L596.5,164.5 L600.5,192.5 L592.5,204.5 L608.5,228.5 L604.5,240.5 L576.5,232.5 L588.5,244.5 L564.5,272.5 L528.5,268.5 L548.5,272.5 L536.5,288.5 L528.5,284.5 L524.5,304.5 L500.5,296.5 L492.5,308.5 L484.5,284.5 L484.5,296.5 L468.5,280.5 L452.5,296.5 L432.5,284.5 L440.5,300.5 L424.5,292.5 L408.5,228.5 L412.5,208.5 L396.5,188.5 L404.5,160.5 L392.5,148.5 L396.5,136.5 L424.5,132.5 L420.5,116.5 L448.5,116.5 L444.5,104.5 L452.5,100.5 L464.5,76.5 L492.5,84.5 L508.5,104.5 L548.5,80.5 L544.5,88.5 L572.5,100.5 L576.5,124.5 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="503" y="200" text-anchor="middle" fill="#7a9e6f">오카야마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="shimane">
+        <path d="M64.5,224.5 L96.5,216.5 L156.5,160.5 L196.5,136.5 L220.5,104.5 L264.5,84.5 L276.5,60.5 L268.5,44.5 L336.5,28.5 L360.5,8.5 L372.5,20.5 L404.5,16.5 L392.5,24.5 L384.5,28.5 L408.5,60.5 L404.5,96.5 L372.5,104.5 L380.5,116.5 L364.5,140.5 L312.5,132.5 L284.5,164.5 L260.5,176.5 L272.5,196.5 L240.5,204.5 L220.5,196.5 L212.5,208.5 L180.5,200.5 L156.5,220.5 L160.5,228.5 L152.5,252.5 L132.5,272.5 L140.5,280.5 L124.5,288.5 L128.5,304.5 L116.5,320.5 L108.5,312.5 L84.5,320.5 L76.5,304.5 L84.5,284.5 L64.5,284.5 L56.5,268.5 L72.5,248.5 L64.5,224.5 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="219" y="176" text-anchor="middle" fill="#c47a2f">시마네</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamaguchi">
+        <path d="M64.5,224.5 L72.5,248.5 L56.5,268.5 L64.5,284.5 L84.5,284.5 L76.5,304.5 L84.5,320.5 L108.5,312.5 L116.5,320.5 L128.5,304.5 L124.5,288.5 L140.5,280.5 L140.5,308.5 L148.5,316.5 L152.5,340.5 L172.5,348.5 L172.5,368.5 L160.5,368.5 L164.5,400.5 L144.5,408.5 L144.5,440.5 L128.5,416.5 L112.5,416.5 L92.5,392.5 L72.5,400.5 L84.5,388.5 L68.5,376.5 L24.5,392.5 L12.5,380.5 L4.5,392.5 L0.5,384.5 L-7.5,392.5 L-7.5,376.5 L-15.5,396.5 L-31.5,404.5 L-39.5,396.5 L-51.5,404.5 L-55.5,384.5 L-79.5,368.5 L-103.5,396.5 L-103.5,368.5 L-115.5,352.5 L-99.5,332.5 L-111.5,308.5 L-99.5,292.5 L-75.5,292.5 L-95.5,284.5 L-87.5,272.5 L-51.5,280.5 L-47.5,292.5 L-19.5,292.5 L4.5,284.5 L0.5,272.5 L48.5,228.5 L56.5,232.5 L64.5,224.5 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="36" y="336" text-anchor="middle" fill="#7a3b8c">야마구치</text>
+      </g>
+      <path class="area-pref-shape" d="M424.5,292.5 L420.5,300.5 L408.5,292.5 L420.5,304.5 L412.5,300.5 L404.5,320.5 L384.5,312.5 L384.5,300.5 L348.5,308.5 L336.5,324.5 L288.5,328.5 L280.5,344.5 L252.5,352.5 L244.5,344.5 L232.5,356.5 L236.5,344.5 L224.5,320.5 L232.5,312.5 L200.5,308.5 L168.5,336.5 L172.5,348.5 L152.5,340.5 L148.5,316.5 L140.5,308.5 L140.5,280.5 L132.5,272.5 L152.5,252.5 L160.5,228.5 L156.5,220.5 L180.5,200.5 L212.5,208.5 L220.5,196.5 L240.5,204.5 L272.5,196.5 L260.5,176.5 L284.5,164.5 L312.5,132.5 L364.5,140.5 L392.5,148.5 L404.5,160.5 L396.5,188.5 L412.5,208.5 L408.5,228.5 L424.5,292.5 Z M312.5,344.5 L304.5,356.5 L296.5,344.5 L316.5,336.5 L312.5,344.5 Z M216.5,348.5 L212.5,332.5 L224.5,336.5 L220.5,368.5 L208.5,368.5 L216.5,356.5 L200.5,336.5 L216.5,348.5 Z M192.5,324.5 L196.5,332.5 L180.5,340.5 L192.5,324.5 Z M272.5,360.5 L264.5,356.5 L276.5,356.5 L272.5,360.5 Z M228.5,364.5 L236.5,364.5 L232.5,376.5 L244.5,376.5 L236.5,384.5 L212.5,380.5 L224.5,356.5 L236.5,356.5 L228.5,364.5 Z M368.5,328.5 L368.5,340.5 L356.5,328.5 L368.5,328.5 Z M360.5,332.5 L344.5,340.5 L348.5,332.5 L360.5,332.5 Z M372.5,308.5 L380.5,312.5 L368.5,320.5 L372.5,308.5 Z"/>
+      <text class="area-main-label" x="283" y="221" text-anchor="middle" style="font-size:35.4px;stroke-width:5.5px">히로시마</text>
+
+      <g class="area-pin" data-target="area-hiroshimacity">
+        <line class="area-pin-leader" x1="218.1" y1="288.6" x2="158.8" y2="271.4" style="stroke-width:1.2"/>
+        <rect x="206.0" y="276.5" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="218.1" cy="288.6" r="8.5" style="stroke-width:2.4"/>
+        <text x="158.8" y="271.4" text-anchor="end" style="font-size:15.3px">히로시마시</text>
+      </g>
+      <g class="area-pin" data-target="area-miyajima">
+        <line class="area-pin-leader" x1="190.8" y1="311.8" x2="129.2" y2="315.7" style="stroke-width:1.2"/>
+        <rect x="178.70000000000002" y="299.7" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="190.8" cy="311.8" r="8.5" style="stroke-width:2.4"/>
+        <text x="129.2" y="315.7" text-anchor="end" style="font-size:15.3px">미야지마</text>
+      </g>
+      <g class="area-pin" data-target="area-kureetajima">
+        <line class="area-pin-leader" x1="240.3" y1="324.3" x2="184.4" y2="350.4" style="stroke-width:1.2"/>
+        <rect x="228.20000000000002" y="312.2" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="240.3" cy="324.3" r="8.5" style="stroke-width:2.4"/>
+        <text x="184.4" y="350.4" text-anchor="end" style="font-size:15.3px">구레·에타지마</text>
+      </g>
+      <g class="area-pin" data-target="area-onomichi">
+        <line class="area-pin-leader" x1="369.1" y1="282.4" x2="428.7" y2="266.6" style="stroke-width:1.2"/>
+        <rect x="357.0" y="270.29999999999995" width="24.2" height="24.2" fill="transparent"/>
+        <circle cx="369.1" cy="282.4" r="8.5" style="stroke-width:2.4"/>
+        <text x="428.7" y="266.6" text-anchor="start" style="font-size:15.3px">오노미치</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-hiroshimacity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">히로시마시</span><span class="area-tag">평화기념 도시</span></div>
+      <p class="area-desc">평화와 추모를 중심으로 재건된 도시로, 평화기념공원과 유네스코 세계유산 원폭 돔이 있습니다.</p>
+      <ul class="area-highlights">
+        <li>유네스코 세계유산 평화 기념물, 원폭 돔.</li>
+        <li>평화기념공원과 자료관.</li>
+        <li>1945년 이후 재건된 현대적이고 불굴의 도심.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-miyajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">미야지마</span><span class="area-tag">바다 위 도리이</span></div>
+      <p class="area-desc">이쓰쿠시마 신사의 '떠 있는' 붉은 도리이와 자유롭게 돌아다니는 사슴으로 유명한 신성한 섬입니다.</p>
+      <ul class="area-highlights">
+        <li>만조 때 바다 위에 떠 있는 듯 보이는 이쓰쿠시마 신사의 상징적인 도리이.</li>
+        <li>섬 곳곳에서 자유롭게 돌아다니는 사슴.</li>
+        <li>미센산 정상으로 오르는 로프웨이에서 보는 탁 트인 전망.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kureetajima">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">구레·에타지마</span><span class="area-tag">군항 유산</span></div>
+      <p class="area-desc">풍부한 해양 유산을 지닌 역사적인 군항 도시로, 가까이 경치 좋은 섬 에타지마가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>대일본제국 해군 조선소의 역사적 유산.</li>
+        <li>유명한 전함을 다룬 야마토 뮤지엄.</li>
+        <li>에타지마의 아름답고 한적한 해안 도로.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-onomichi">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오노미치</span><span class="area-tag">언덕 위 사찰 마을</span></div>
+      <p class="area-desc">좁은 골목과 사찰이 이어지는 언덕 위 항구 마을로, 경치 좋은 시마나미 해도 자전거 코스의 출발점으로 알려져 있습니다.</p>
+      <ul class="area-highlights">
+        <li>좁고 운치 있는 골목을 따라 오르는 언덕 위 '사찰 순례길(템플 워크)'.</li>
+        <li>시마나미 해도 자전거 코스의 출발점.</li>
+        <li>세토 내해를 내려다보는 느긋한 항구 마을 분위기.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

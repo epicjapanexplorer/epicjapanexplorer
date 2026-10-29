@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>후쿠시마 지역별 여행 가이드: 후쿠시마에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="후쿠시마 지역별 가이드: 아이즈와카마쓰, 기타카타, 반다이·이나와시로 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/fukushima-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/fukushima-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/fukushima-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/fukushima-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/fukushima-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/fukushima-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#fukushima">← 지도로 돌아가기: 후쿠시마</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>후쿠시마 지역별 가이드</h1>
+  <p class="page-lede">후쿠시마현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">후쿠시마 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">후쿠시마현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-118 -102 982 920" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="yamagata">
+        <path d="M353.8,-58.2 L393.8,-62.2 L409.8,-42.2 L465.8,-30.2 L473.8,-10.2 L489.8,-6.2 L509.8,25.8 L501.8,57.8 L489.8,57.8 L505.8,101.8 L477.8,149.8 L481.8,173.8 L469.8,197.8 L441.8,205.8 L445.8,225.8 L441.8,261.8 L449.8,265.8 L437.8,281.8 L413.8,285.8 L401.8,277.8 L385.8,281.8 L377.8,265.8 L353.8,269.8 L325.8,261.8 L313.8,241.8 L325.8,209.8 L325.8,177.8 L357.8,165.8 L365.8,149.8 L329.8,125.8 L329.8,97.8 L297.8,85.8 L349.8,-6.2 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="409" y="142" text-anchor="middle" fill="#7a9e6f">야마가타</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyagi">
+        <path d="M573.8,241.8 L557.8,241.8 L557.8,265.8 L541.8,265.8 L545.8,273.8 L525.8,265.8 L521.8,241.8 L485.8,241.8 L469.8,225.8 L445.8,225.8 L441.8,205.8 L469.8,197.8 L481.8,173.8 L477.8,149.8 L505.8,101.8 L489.8,57.8 L501.8,57.8 L509.8,25.8 L489.8,-6.2 L505.8,-2.2 L533.8,-22.2 L573.8,-2.2 L605.8,-6.2 L597.8,9.8 L621.8,25.8 L637.8,5.8 L661.8,17.8 L669.8,-38.2 L697.8,-34.2 L709.8,-6.2 L689.8,-18.2 L693.8,1.8 L677.8,17.8 L689.8,37.8 L681.8,29.8 L665.8,41.8 L681.8,49.8 L669.8,73.8 L685.8,73.8 L685.8,89.8 L673.8,81.8 L681.8,97.8 L669.8,101.8 L673.8,113.8 L685.8,109.8 L677.8,117.8 L685.8,125.8 L685.8,141.8 L669.8,133.8 L673.8,121.8 L661.8,125.8 L669.8,117.8 L665.8,109.8 L597.8,121.8 L585.8,133.8 L601.8,141.8 L581.8,145.8 L593.8,149.8 L569.8,189.8 L573.8,241.8 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="602" y="107" text-anchor="middle" fill="#c47a2f">미야기</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="ibaraki">
+        <path d="M357.8,697.8 L357.8,697.8 L345.8,701.8 L337.8,673.8 L365.8,661.8 L369.8,645.8 L381.8,645.8 L393.8,625.8 L437.8,617.8 L449.8,589.8 L441.8,549.8 L453.8,541.8 L449.8,529.8 L449.8,485.8 L489.8,521.8 L513.8,497.8 L513.8,481.8 L553.8,501.8 L521.8,597.8 L525.8,621.8 L513.8,649.8 L521.8,689.8 L541.8,725.8 L533.8,733.8 L541.8,745.8 L545.8,729.8 L577.8,777.8 L505.8,729.8 L505.8,741.8 L433.8,757.8 L389.8,737.8 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="462" y="642" text-anchor="middle" fill="#7a3b8c">이바라키</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="tochigi">
+        <path d="M337.8,673.8 L333.8,669.8 L325.8,653.8 L289.8,657.8 L269.8,629.8 L293.8,577.8 L261.8,565.8 L265.8,529.8 L277.8,517.8 L265.8,509.8 L273.8,497.8 L373.8,433.8 L421.8,445.8 L445.8,461.8 L449.8,485.8 L449.8,529.8 L453.8,541.8 L441.8,549.8 L449.8,589.8 L437.8,617.8 L393.8,625.8 L381.8,645.8 L369.8,645.8 L365.8,661.8 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="360" y="572" text-anchor="middle" fill="#2f6690">도치기</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="gunma">
+        <path d="M333.8,669.8 L293.8,677.8 L269.8,661.8 L225.8,653.8 L205.8,693.8 L141.8,729.8 L125.8,721.8 L125.8,697.8 L113.8,685.8 L125.8,681.8 L117.8,657.8 L129.8,649.8 L125.8,625.8 L89.8,625.8 L77.8,605.8 L81.8,577.8 L101.8,561.8 L97.8,553.8 L133.8,541.8 L181.8,517.8 L181.8,505.8 L193.8,501.8 L189.8,481.8 L205.8,477.8 L213.8,461.8 L241.8,489.8 L273.8,497.8 L265.8,509.8 L277.8,517.8 L265.8,529.8 L261.8,565.8 L293.8,577.8 L269.8,629.8 L289.8,657.8 L325.8,653.8 Z" fill="none" stroke="#a3324a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="196" y="596" text-anchor="middle" fill="#a3324a">군마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="niigata">
+        <path d="M-50.2,537.8 L-62.2,493.8 L-78.2,481.8 L-22.2,461.8 L13.8,433.8 L41.8,433.8 L101.8,385.8 L141.8,325.8 L161.8,269.8 L237.8,221.8 L241.8,229.8 L237.8,225.8 L261.8,197.8 L297.8,85.8 L329.8,97.8 L329.8,125.8 L365.8,149.8 L357.8,165.8 L325.8,177.8 L325.8,209.8 L313.8,241.8 L325.8,261.8 L337.8,269.8 L301.8,309.8 L309.8,345.8 L277.8,345.8 L273.8,357.8 L237.8,361.8 L233.8,373.8 L241.8,389.8 L225.8,413.8 L245.8,433.8 L241.8,489.8 L213.8,461.8 L205.8,477.8 L189.8,481.8 L193.8,501.8 L181.8,505.8 L181.8,517.8 L133.8,541.8 L133.8,513.8 L113.8,497.8 L113.8,477.8 L101.8,469.8 L73.8,477.8 L53.8,497.8 L53.8,517.8 L37.8,509.8 L5.8,525.8 L-2.2,521.8 L-2.2,501.8 L-30.2,497.8 L-30.2,509.8 L-50.2,537.8 Z" fill="none" stroke="#2f8f6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="167" y="386" text-anchor="middle" fill="#2f8f6f">니가타</text>
+      </g>
+      <polygon class="area-pref-shape" points="553.8,501.8 513.8,481.8 513.8,497.8 489.8,521.8 449.8,485.8 445.8,461.8 421.8,445.8 373.8,433.8 273.8,497.8 241.8,489.8 245.8,433.8 225.8,413.8 241.8,389.8 233.8,373.8 237.8,361.8 273.8,357.8 277.8,345.8 309.8,345.8 301.8,309.8 337.8,269.8 325.8,261.8 353.8,269.8 377.8,265.8 385.8,281.8 401.8,277.8 413.8,285.8 437.8,281.8 449.8,265.8 441.8,261.8 445.8,225.8 469.8,225.8 485.8,241.8 521.8,241.8 525.8,265.8 545.8,273.8 541.8,265.8 557.8,265.8 557.8,241.8 573.8,241.8 597.8,297.8 597.8,405.8 589.8,469.8"/>
+      <text class="area-main-label" x="418" y="390" text-anchor="middle" style="font-size:42.2px;stroke-width:6.6px">후쿠시마</text>
+
+      <g class="area-pin" data-target="area-aizuwakamatsu">
+        <line class="area-pin-leader" x1="382.0" y1="346.2" x2="305.9" y2="346.4" style="stroke-width:1.8"/>
+        <rect x="364.1" y="328.3" width="35.8" height="35.8" fill="transparent"/>
+        <circle cx="382.0" cy="346.2" r="12.5" style="stroke-width:3.6"/>
+        <text x="305.9" y="346.4" text-anchor="end" style="font-size:22.7px">아이즈와카마쓰</text>
+      </g>
+      <g class="area-pin" data-target="area-kitakata">
+        <line class="area-pin-leader" x1="369.6" y1="308.5" x2="309.4" y2="262.0" style="stroke-width:1.8"/>
+        <rect x="351.70000000000005" y="290.6" width="35.8" height="35.8" fill="transparent"/>
+        <circle cx="369.6" cy="308.5" r="12.5" style="stroke-width:3.6"/>
+        <text x="309.4" y="262.0" text-anchor="end" style="font-size:22.7px">기타카타</text>
+      </g>
+      <g class="area-pin" data-target="area-bandai">
+        <line class="area-pin-leader" x1="416.9" y1="321.1" x2="413.1" y2="245.1" style="stroke-width:1.8"/>
+        <rect x="399.0" y="303.20000000000005" width="35.8" height="35.8" fill="transparent"/>
+        <circle cx="416.9" cy="321.1" r="12.5" style="stroke-width:3.6"/>
+        <text x="413.1" y="245.1" text-anchor="middle" style="font-size:22.7px">반다이·이나와시로</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-aizuwakamatsu">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">아이즈와카마쓰</span><span class="area-tag">성과 사무라이 역사</span></div>
+      <p class="area-desc">사무라이 역사가 깊이 밴 성하마을로, 재건된 쓰루가성과 비극적인 뱟코타이(백호대) 소년병의 이야기가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>쓰루가성 — 일본에서는 드문 붉은 기와지붕의 재건된 천수각.</li>
+        <li>이이모리야마 — 뱟코타이(백호대) 소년병이 마지막 항전을 한 곳.</li>
+        <li>옛 성하마을 일대에 보존된 무사 저택.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-kitakata">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">기타카타</span><span class="area-tag">라멘과 사케 창고</span></div>
+      <p class="area-desc">인구 대비 가게 수가 일본에서 손꼽힐 만큼 라멘으로 전국적으로 유명하고, 전통 양조장 창고가 줄지어 선 작은 마을입니다.</p>
+      <ul class="area-highlights">
+        <li>작은 마을에 빼곡히 들어찬 수십 곳의 유명 라멘집.</li>
+        <li>검은 기와를 얹은 전통 양조장 창고(구라).</li>
+        <li>가까운 아이즈와카마쓰와 묶어 다녀오는 당일치기 코스로 인기.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-bandai">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">반다이·이나와시로</span><span class="area-tag">호수와 고원</span></div>
+      <p class="area-desc">이나와시로호와 반다이산을 중심으로 한 고원 리조트 지역으로, 하이킹, 온천, 도호쿠 최고 수준의 가을 단풍을 즐길 수 있습니다.</p>
+      <ul class="area-highlights">
+        <li>이나와시로호 — 맑은 물빛의 일본 최대급 호수 중 하나.</li>
+        <li>반다이산 — 극적인 화산 풍경과 하이킹 코스.</li>
+        <li>고시키누마 '오색 늪' — 선명한 빛깔의 화산 연못.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

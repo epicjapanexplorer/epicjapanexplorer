@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>구마모토 지역별 여행 가이드: 구마모토에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="구마모토 지역별 가이드: 구마모토시, 아소, 아마쿠사 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/kumamoto-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/kumamoto-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/kumamoto-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/kumamoto-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/kumamoto-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/kumamoto-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#kumamoto">← 지도로 돌아가기: 구마모토</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>구마모토 지역별 가이드</h1>
+  <p class="page-lede">구마모토현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">구마모토 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">구마모토현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-40 -108 656 812" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="fukuoka">
+        <path d="M316.5,144.5 L284.5,124.5 L280.5,140.5 L264.5,136.5 L244.5,152.5 L248.5,164.5 L228.5,164.5 L228.5,140.5 L216.5,128.5 L224.5,100.5 L256.5,80.5 L260.5,56.5 L232.5,64.5 L208.5,40.5 L156.5,40.5 L184.5,24.5 L168.5,12.5 L196.5,-7.5 L208.5,16.5 L236.5,12.5 L240.5,-7.5 L224.5,0.5 L212.5,-11.5 L232.5,-7.5 L248.5,-19.5 L256.5,-47.5 L296.5,-55.5 L300.5,-67.5 L324.5,-63.5 L308.5,-47.5 L320.5,-47.5 L328.5,-59.5 L340.5,-51.5 L368.5,-67.5 L352.5,-35.5 L364.5,-27.5 L356.5,-23.5 L376.5,20.5 L396.5,20.5 L392.5,48.5 L364.5,44.5 L336.5,60.5 L320.5,84.5 L324.5,104.5 L316.5,112.5 L328.5,124.5 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="280" y="37" text-anchor="middle" fill="#7a9e6f">후쿠오카</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="oita">
+        <path d="M316.5,144.5 L328.5,124.5 L316.5,112.5 L324.5,104.5 L320.5,84.5 L336.5,60.5 L364.5,44.5 L392.5,48.5 L396.5,20.5 L448.5,36.5 L468.5,8.5 L504.5,24.5 L512.5,48.5 L500.5,80.5 L488.5,76.5 L488.5,88.5 L456.5,96.5 L460.5,112.5 L476.5,120.5 L540.5,116.5 L516.5,152.5 L540.5,152.5 L528.5,160.5 L540.5,168.5 L560.5,160.5 L564.5,172.5 L544.5,172.5 L536.5,188.5 L576.5,204.5 L552.5,204.5 L560.5,212.5 L544.5,224.5 L556.5,228.5 L532.5,232.5 L532.5,248.5 L524.5,248.5 L524.5,228.5 L508.5,224.5 L496.5,240.5 L464.5,240.5 L444.5,220.5 L424.5,224.5 L416.5,220.5 L400.5,204.5 L404.5,180.5 L376.5,128.5 L352.5,128.5 L356.5,152.5 L348.5,164.5 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="463" y="148" text-anchor="middle" fill="#c47a2f">오이타</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="miyazaki">
+        <path d="M416.5,220.5 L424.5,224.5 L444.5,220.5 L464.5,240.5 L496.5,240.5 L508.5,224.5 L524.5,228.5 L524.5,248.5 L532.5,248.5 L488.5,288.5 L484.5,304.5 L496.5,308.5 L480.5,312.5 L476.5,320.5 L484.5,324.5 L460.5,356.5 L436.5,424.5 L428.5,516.5 L408.5,536.5 L400.5,584.5 L380.5,576.5 L360.5,556.5 L368.5,544.5 L368.5,516.5 L340.5,512.5 L328.5,476.5 L308.5,468.5 L312.5,448.5 L292.5,428.5 L272.5,400.5 L276.5,392.5 L360.5,384.5 L348.5,360.5 L364.5,340.5 L344.5,312.5 L344.5,284.5 L364.5,276.5 L400.5,220.5 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="408" y="365" text-anchor="middle" fill="#7a3b8c">미야자키</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="kagoshima">
+        <path d="M200.5,368.5 L220.5,384.5 L256.5,368.5 L276.5,392.5 L272.5,400.5 L292.5,428.5 L312.5,448.5 L308.5,468.5 L328.5,476.5 L340.5,512.5 L368.5,516.5 L368.5,544.5 L360.5,556.5 L348.5,552.5 L328.5,576.5 L348.5,588.5 L340.5,604.5 L352.5,600.5 L324.5,612.5 L312.5,632.5 L248.5,664.5 L248.5,644.5 L268.5,632.5 L284.5,584.5 L260.5,548.5 L264.5,528.5 L240.5,516.5 L260.5,508.5 L264.5,524.5 L276.5,528.5 L292.5,504.5 L264.5,480.5 L248.5,488.5 L224.5,540.5 L232.5,584.5 L252.5,596.5 L244.5,616.5 L220.5,620.5 L208.5,596.5 L156.5,596.5 L160.5,580.5 L148.5,576.5 L156.5,568.5 L136.5,552.5 L172.5,552.5 L188.5,512.5 L176.5,476.5 L156.5,460.5 L168.5,432.5 L160.5,384.5 L172.5,376.5 L188.5,384.5 Z" fill="none" stroke="#2f6690" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="254" y="523" text-anchor="middle" fill="#2f6690">가고시마</text>
+      </g>
+      <path class="area-pref-shape" d="M156.5,272.5 L176.5,276.5 L176.5,316.5 L144.5,352.5 L128.5,356.5 L128.5,332.5 L144.5,328.5 L124.5,324.5 L140.5,284.5 L136.5,272.5 L156.5,272.5 Z M204.5,312.5 L180.5,312.5 L172.5,296.5 L200.5,280.5 L228.5,280.5 L216.5,312.5 L204.5,312.5 Z M220.5,260.5 L228.5,260.5 L228.5,276.5 L216.5,276.5 L220.5,260.5 Z M276.5,392.5 L256.5,368.5 L220.5,384.5 L200.5,368.5 L252.5,308.5 L244.5,284.5 L252.5,288.5 L248.5,280.5 L272.5,260.5 L228.5,260.5 L260.5,236.5 L264.5,216.5 L232.5,184.5 L228.5,164.5 L248.5,164.5 L244.5,152.5 L264.5,136.5 L280.5,140.5 L284.5,124.5 L316.5,144.5 L348.5,164.5 L356.5,152.5 L352.5,128.5 L376.5,128.5 L404.5,180.5 L400.5,204.5 L416.5,220.5 L400.5,220.5 L364.5,276.5 L344.5,284.5 L344.5,312.5 L364.5,340.5 L348.5,360.5 L360.5,384.5 L276.5,392.5 Z"/>
+      <text class="area-main-label" x="301" y="181" text-anchor="middle" style="font-size:28.2px;stroke-width:4.4px">구마모토</text>
+
+      <g class="area-pin" data-target="area-kumamotocity">
+        <line class="area-pin-leader" x1="282.0" y1="207.6" x2="310.0" y2="150.7" style="stroke-width:1.2"/>
+        <rect x="270.2" y="195.79999999999998" width="23.6" height="23.6" fill="transparent"/>
+        <circle cx="282.0" cy="207.6" r="8.2" style="stroke-width:2.4"/>
+        <text x="310.0" y="150.7" text-anchor="start" style="font-size:14.8px">구마모토시</text>
+      </g>
+      <g class="area-pin" data-target="area-aso">
+        <line class="area-pin-leader" x1="367.7" y1="190.6" x2="420.7" y2="155.7" style="stroke-width:1.2"/>
+        <rect x="355.9" y="178.79999999999998" width="23.6" height="23.6" fill="transparent"/>
+        <circle cx="367.7" cy="190.6" r="8.2" style="stroke-width:2.4"/>
+        <text x="420.7" y="155.7" text-anchor="start" style="font-size:14.8px">아소</text>
+      </g>
+      <g class="area-pin" data-target="area-amakusa">
+        <line class="area-pin-leader" x1="171.2" y1="279.8" x2="108.6" y2="290.2" style="stroke-width:1.2"/>
+        <rect x="159.39999999999998" y="268.0" width="23.6" height="23.6" fill="transparent"/>
+        <circle cx="171.2" cy="279.8" r="8.2" style="stroke-width:2.4"/>
+        <text x="108.6" y="290.2" text-anchor="end" style="font-size:14.8px">아마쿠사</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-kumamotocity">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">구마모토시</span><span class="area-tag">성과 구마몬</span></div>
+      <p class="area-desc">일본에서 가장 견고한 봉건 시대 요새 중 하나인 구마모토성과 사랑받는 마스코트 곰 구마몬의 고장입니다.</p>
+      <ul class="area-highlights">
+        <li>일본 3대 명성 중 하나인 구마모토성.</li>
+        <li>엄청난 인기를 누리는 현의 마스코트, 구마몬.</li>
+        <li>옛 도카이도를 본뜬 정원, 스이젠지 조주엔.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-aso">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">아소</span><span class="area-tag">거대한 화산 칼데라</span></div>
+      <p class="area-desc">광활한 초원, 활화구, 극적인 탁 트인 전망을 갖춘 세계 최대급 화산 칼데라 중 하나가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>세계 최대급 화산 칼데라 중 하나.</li>
+        <li>상황이 허락하면 가까이 다가갈 수 있는 활화구.</li>
+        <li>전통 방식으로 소를 방목하는 광활한 초원.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-amakusa">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">아마쿠사</span><span class="area-tag">섬과 돌고래</span></div>
+      <p class="area-desc">돌고래 관찰, 숨은 기독교 유산, 온화하고 느긋한 해안 분위기로 알려진 섬들이 흩어진 지역입니다.</p>
+      <ul class="area-highlights">
+        <li>이 지역의 대표 체험, 야생 돌고래 관찰 투어.</li>
+        <li>유네스코와 연관된 숨은 기독교 유산 유적.</li>
+        <li>느긋하고 아름다운 섬 호핑 분위기.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>

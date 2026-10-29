@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시마네 지역별 여행 가이드: 시마네에서 가볼 만한 곳 | Epic Japan Explorer</title>
+<meta name="description" content="시마네 지역별 가이드: 마쓰에, 이즈모, 이와미 긴잔, 오키 제도 — 각 지역의 특징과 볼거리.">
+<link rel="canonical" href="https://epicjapanexplorer.com/ko/shimane-areas.html">
+<link rel="alternate" hreflang="en" href="https://epicjapanexplorer.com/shimane-areas.html">
+<link rel="alternate" hreflang="ja" href="https://epicjapanexplorer.com/jp/shimane-areas.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://epicjapanexplorer.com/zh-tw/shimane-areas.html">
+<link rel="alternate" hreflang="ko" href="https://epicjapanexplorer.com/ko/shimane-areas.html">
+<link rel="alternate" hreflang="x-default" href="https://epicjapanexplorer.com/shimane-areas.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --washi:#f4efe3; --washi-deep:#ece3d0; --sumi:#1e2222; --aiiro:#1c3a5e; --aiiro-deep:#122740;
+    --shu:#c1440e; --shu-deep:#9c350a; --gold:#b8862f; --line:#d8cdb2; --radius:2px;
+    --font-display:'Noto Serif KR', serif; --font-body:'Noto Sans KR', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--washi);background-image:radial-gradient(circle at 15% 10%, rgba(28,58,94,0.05), transparent 45%),radial-gradient(circle at 90% 80%, rgba(193,68,14,0.06), transparent 40%);color:var(--sumi);font-family:var(--font-body);line-height:1.7;}
+  a{color:inherit;}
+  header{padding:40px 6vw 28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:4px;}
+  .brand .mark{width:34px;height:34px;min-width:34px;flex:none;display:block;}
+  .brand .divider{width:1px;height:26px;background:var(--line);flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);color:var(--shu);line-height:1.1;}
+  .brand-name .accent{color:var(--aiiro-deep);}
+  .back-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--aiiro-deep);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;}
+  .back-link:hover{color:var(--shu);border-color:var(--shu);}
+  main{max-width:920px;margin:0 auto;padding:48px 6vw 80px;}
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);color:var(--aiiro-deep);margin:0 0 10px;}
+  .page-lede{font-size:15.5px;color:#5a5f5f;max-width:640px;margin-bottom:36px;}
+  .area-map-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:40px;}
+  .area-map-title{font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--aiiro-deep);margin-bottom:4px;}
+  .area-map-hint{font-size:12.5px;color:#9a9488;margin-bottom:18px;}
+  .area-map-svg{width:100%;height:auto;max-width:460px;display:block;margin:0 auto;}
+  .area-pref-shape{fill:var(--washi-deep);stroke:var(--line);stroke-width:2;}
+  .area-pin{cursor:pointer;}
+  .area-pin-leader{stroke:#9a9488;stroke-width:1;stroke-dasharray:2 2;}
+  .area-pin:hover .area-pin-leader, .area-pin.is-active .area-pin-leader{stroke:var(--shu);}
+  .area-pin circle{fill:var(--aiiro-deep);stroke:#fff;stroke-width:2;transition:fill .15s ease;}
+  .area-pin text{font-family:var(--font-display);font-weight:700;font-size:15px;fill:var(--sumi);}
+  .area-pin:hover circle, .area-pin.is-active circle{fill:var(--shu);}
+  .area-pin:hover text, .area-pin.is-active text{fill:var(--shu);}
+  .area-neighbor-shape path{transition:fill-opacity .15s ease;}
+  .area-neighbor-label{font-family:var(--font-body);font-weight:700;font-size:17px;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;}
+  .area-main-label{font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:0.03em;fill:var(--aiiro-deep);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round;}
+  .area-map-legend{margin-top:14px;font-size:12px;color:#9a9488;}
+  .area-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;scroll-margin-top:20px;transition:box-shadow .2s ease;}
+  .area-card.is-highlight{box-shadow:0 0 0 2px var(--shu);}
+  .area-body{padding:22px 24px 26px;}
+  .area-name-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .area-name{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--aiiro-deep);}
+  .area-tag{font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--shu);}
+  .area-desc{font-size:14.5px;color:#33372f;margin:0 0 16px;}
+  .area-highlights{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .area-highlights li{font-size:13px;color:#454a45;padding-left:16px;position:relative;}
+  .area-highlights li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;background:var(--shu);border-radius:50%;}
+  .area-highlights b{color:var(--sumi);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12,100 L60,22 L108,100 Z" fill="#1c3a5e"/><path d="M60,22 L74,50 L46,50 Z" fill="#f4efe3"/></svg>
+    <span class="divider"></span>
+    <span class="brand-name">Epic<span class="accent">Japan</span>Explorer</span>
+  </div>
+  <a class="back-link" href="index.html#shimane">← 지도로 돌아가기: 시마네</a>
+</header>
+
+<main>
+  <div class="eyebrow">도도부현 지역별 여행 가이드</div>
+  <h1>시마네 지역별 가이드</h1>
+  <p class="page-lede">시마네현은 저마다 개성이 뚜렷한 여러 지역으로 나뉩니다. 지도의 핀을 클릭하거나 아래로 스크롤해 지역별로 살펴보세요.</p>
+
+  <div class="area-map-wrap">
+    <div class="area-map-title">시마네 안에서 각 지역의 위치</div>
+    <div class="area-map-hint">시마네현의 실제 행정 경계입니다(메인 사이트와 같은 지도 데이터). 핀을 클릭하면 해당 지역으로 이동합니다.</div>
+    <svg class="area-map-svg" viewBox="-90 0 954 1020" xmlns="http://www.w3.org/2000/svg">
+      <g class="area-neighbor-shape" data-neighbor="tottori">
+        <path d="M522.0,510.0 L494.0,502.0 L510.0,478.0 L502.0,466.0 L534.0,458.0 L538.0,422.0 L514.0,390.0 L522.0,386.0 L530.0,402.0 L554.0,410.0 L586.0,394.0 L630.0,402.0 L714.0,398.0 L750.0,378.0 L778.0,446.0 L778.0,462.0 L754.0,470.0 L706.0,486.0 L702.0,462.0 L674.0,450.0 L678.0,442.0 L638.0,466.0 L622.0,446.0 L594.0,438.0 L582.0,462.0 L574.0,466.0 L578.0,478.0 L550.0,478.0 L554.0,494.0 L526.0,498.0 Z" fill="none" stroke="#7a9e6f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="650" y="420" text-anchor="middle" fill="#7a9e6f">돗토리</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="hiroshima">
+        <path d="M554.0,654.0 L550.0,662.0 L538.0,654.0 L550.0,666.0 L542.0,662.0 L534.0,682.0 L514.0,674.0 L514.0,662.0 L478.0,670.0 L466.0,686.0 L418.0,690.0 L410.0,706.0 L382.0,714.0 L374.0,706.0 L362.0,718.0 L366.0,706.0 L354.0,682.0 L362.0,674.0 L330.0,670.0 L298.0,698.0 L302.0,710.0 L282.0,702.0 L278.0,678.0 L270.0,670.0 L270.0,642.0 L262.0,634.0 L282.0,614.0 L290.0,590.0 L286.0,582.0 L310.0,562.0 L342.0,570.0 L350.0,558.0 L370.0,566.0 L402.0,558.0 L390.0,538.0 L414.0,526.0 L442.0,494.0 L494.0,502.0 L522.0,510.0 L534.0,522.0 L526.0,550.0 L542.0,570.0 L538.0,590.0 L554.0,654.0 Z" fill="none" stroke="#c47a2f" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="400" y="685" text-anchor="middle" fill="#c47a2f">히로시마</text>
+      </g>
+      <g class="area-neighbor-shape" data-neighbor="yamaguchi">
+        <path d="M194.0,586.0 L202.0,610.0 L186.0,630.0 L194.0,646.0 L214.0,646.0 L206.0,666.0 L214.0,682.0 L238.0,674.0 L246.0,682.0 L258.0,666.0 L254.0,650.0 L270.0,642.0 L270.0,670.0 L278.0,678.0 L282.0,702.0 L302.0,710.0 L302.0,730.0 L290.0,730.0 L294.0,762.0 L274.0,770.0 L274.0,802.0 L258.0,778.0 L242.0,778.0 L222.0,754.0 L202.0,762.0 L214.0,750.0 L198.0,738.0 L154.0,754.0 L142.0,742.0 L134.0,754.0 L130.0,746.0 L122.0,754.0 L122.0,738.0 L114.0,758.0 L98.0,766.0 L90.0,758.0 L78.0,766.0 L74.0,746.0 L50.0,730.0 L26.0,758.0 L26.0,730.0 L14.0,714.0 L30.0,694.0 L18.0,670.0 L30.0,654.0 L54.0,654.0 L34.0,646.0 L42.0,634.0 L78.0,642.0 L82.0,654.0 L110.0,654.0 L134.0,646.0 L130.0,634.0 L178.0,590.0 L186.0,594.0 L194.0,586.0 Z" fill="none" stroke="#7a3b8c" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text class="area-neighbor-label" x="100" y="760" text-anchor="middle" fill="#7a3b8c">야마구치</text>
+      </g>
+
+      <path class="area-pref-shape" d="M482.0,242.0 L498.0,238.0 L486.0,254.0 L474.0,246.0 L478.0,262.0 L470.0,250.0 L482.0,242.0 Z M502.0,250.0 L494.0,262.0 L494.0,246.0 L502.0,242.0 L510.0,254.0 L502.0,250.0 Z M518.0,206.0 L538.0,186.0 L558.0,206.0 L554.0,222.0 L542.0,222.0 L550.0,230.0 L530.0,234.0 L518.0,206.0 Z M194.0,586.0 L226.0,578.0 L286.0,522.0 L326.0,498.0 L350.0,466.0 L394.0,446.0 L406.0,422.0 L398.0,406.0 L466.0,390.0 L490.0,370.0 L502.0,382.0 L534.0,378.0 L522.0,386.0 L514.0,390.0 L538.0,422.0 L534.0,458.0 L502.0,466.0 L510.0,478.0 L494.0,502.0 L442.0,494.0 L414.0,526.0 L390.0,538.0 L402.0,558.0 L370.0,566.0 L350.0,558.0 L342.0,570.0 L310.0,562.0 L286.0,582.0 L290.0,590.0 L282.0,614.0 L262.0,634.0 L270.0,642.0 L254.0,650.0 L258.0,666.0 L246.0,682.0 L238.0,674.0 L214.0,682.0 L206.0,666.0 L214.0,646.0 L194.0,646.0 L186.0,630.0 L202.0,610.0 L194.0,586.0 Z"/>
+      <text class="area-main-label" x="349" y="520" text-anchor="middle" style="font-size:41.0px;stroke-width:6.4px">시마네</text>
+
+      <g class="area-pin" data-target="area-matsue">
+        <line class="area-pin-leader" x1="492" y1="400" x2="567.4" y2="464.4" style="stroke-width:1.6"/>
+        <rect x="475.8" y="383.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="492" cy="400" r="11.3" style="stroke-width:3.2"/>
+        <text x="567.4" y="464.4" text-anchor="start" style="font-size:20.5px">마쓰에</text>
+      </g>
+      <g class="area-pin" data-target="area-izumo">
+        <line class="area-pin-leader" x1="401" y1="424" x2="338" y2="372" style="stroke-width:1.6"/>
+        <rect x="384.8" y="407.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="401" cy="424" r="11.3" style="stroke-width:3.2"/>
+        <text x="338" y="372" text-anchor="end" style="font-size:20.5px">이즈모</text>
+      </g>
+      <g class="area-pin" data-target="area-iwamiginzan">
+        <line class="area-pin-leader" x1="246.0" y1="618.0" x2="181.1" y2="693.0" style="stroke-width:1.6"/>
+        <rect x="229.8" y="601.8" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="246.0" cy="618.0" r="11.3" style="stroke-width:3.2"/>
+        <text x="181.1" y="693.0" text-anchor="end" style="font-size:20.5px">이와미 긴잔</text>
+      </g>
+      <g class="area-pin" data-target="area-okiislands">
+        <line class="area-pin-leader" x1="546.5" y1="239.2" x2="604.9" y2="159.1" style="stroke-width:1.6"/>
+        <rect x="530.3" y="223.0" width="32.4" height="32.4" fill="transparent"/>
+        <circle cx="546.5" cy="239.2" r="11.3" style="stroke-width:3.2"/>
+        <text x="604.9" y="159.1" text-anchor="start" style="font-size:20.5px">오키 제도</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="area-card" id="area-matsue">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">마쓰에</span><span class="area-tag">호반의 성하마을</span></div>
+      <p class="area-desc">호수와 운하 네트워크를 중심으로 형성된 성하마을로, 일본에 몇 안 되는 현존 원형 성과 신지호의 인상적인 석양이 있습니다.</p>
+      <ul class="area-highlights">
+        <li>마쓰에성 — 일본에 몇 안 되는 현존 원형 성 중 하나.</li>
+        <li>역사적인 성하마을을 누비는 운하 유람선.</li>
+        <li>신지호의 유명한 석양 전망.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-izumo">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">이즈모</span><span class="area-tag">일본의 고대 신사</span></div>
+      <p class="area-desc">일본 신화와 인연 맺기 전설에 깊이 얽힌, 일본에서 가장 오래되고 중요한 신사 중 하나인 이즈모타이샤가 있습니다.</p>
+      <ul class="area-highlights">
+        <li>이즈모타이샤 — 일본에서 가장 오래되고 신성한 신사 중 하나.</li>
+        <li>일본 최대급 중 하나인 거대한 시메나와(신성한 줄).</li>
+        <li>매년 가을 일본의 신들이 모인다고 여겨지는 곳.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-iwamiginzan">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">이와미 긴잔</span><span class="area-tag">유네스코 은광</span></div>
+      <p class="area-desc">한때 세계 최대급이었던 유네스코 세계유산 옛 은광으로, 보존된 산골 마을 안에 자리합니다.</p>
+      <ul class="area-highlights">
+        <li>한때 세계적인 은 산지였던 유네스코 세계유산 광산 유적.</li>
+        <li>방문객이 걸어서 둘러볼 수 있는 갱도.</li>
+        <li>보존된 역사적인 광산 마을.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area-card" id="area-okiislands">
+    <div class="area-body">
+      <div class="area-name-row"><span class="area-name">오키 제도</span><span class="area-tag">외딴 지오파크 섬</span></div>
+      <p class="area-desc">극적인 해안 절벽, 세계지질공원 지위, 느린 섬의 삶으로 알려진 외지고 험준한 화산 섬 무리입니다.</p>
+      <ul class="area-highlights">
+        <li>독특한 지질로 얻은 유네스코 세계지질공원 지위.</li>
+        <li>극적인 해안 절벽과 험준한 해안 풍경.</li>
+        <li>외지고 느린 섬의 분위기.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.area-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if(!target) return;
+      target.scrollIntoView({behavior:'smooth', block:'center'});
+      target.classList.add('is-highlight');
+      document.querySelectorAll('.area-pin').forEach(p => p.classList.remove('is-active'));
+      pin.classList.add('is-active');
+      setTimeout(()=> target.classList.remove('is-highlight'), 1800);
+    });
+  });
+</script>
+
+</body>
+</html>
