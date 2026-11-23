@@ -2407,7 +2407,7 @@ function shareKakao(btn, url, text){
   const link = url || (canon ? canon.href : location.href.split('#')[0]);
   try{
     if(!window.Kakao) throw new Error('Kakao SDK unavailable');
-    if(!Kakao.isInitialized()) Kakao.init('53160b36517b5806695424050948fd83');
+    if(!Kakao.isInitialized()) Kakao.init('d2aff141c3cdabc7e550fedab18ff4bf');
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
