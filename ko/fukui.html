@@ -2677,14 +2677,15 @@ function copyShareLink(id, encodedUrl){
 function shareKakao(btn, url, text){
   const meta = (sel)=>{ const e=document.querySelector(sel); return e ? e.getAttribute('content') : ''; };
   const canon = document.querySelector('link[rel="canonical"]');
-  const link = url || (canon ? canon.href : location.href.split('#')[0]);
+  /* Always share the page the visitor is on (ignore the URL/text passed by the widget) */
+  const link = canon ? canon.href : location.href.split('#')[0];
   try{
     if(!window.Kakao) throw new Error('Kakao SDK unavailable');
     if(!Kakao.isInitialized()) Kakao.init('d2aff141c3cdabc7e550fedab18ff4bf');
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: text || meta('meta[property="og:title"]') || document.title,
+        title: meta('meta[property="og:title"]') || document.title,
         description: meta('meta[property="og:description"]') || meta('meta[name="description"]'),
         imageUrl: meta('meta[property="og:image"]'),
         link: { mobileWebUrl: link, webUrl: link }
