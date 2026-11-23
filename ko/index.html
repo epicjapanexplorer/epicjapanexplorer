@@ -912,6 +912,7 @@
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4714065032332222"
      crossorigin="anonymous"></script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" integrity="sha384-TiCkg70vsv9ub24UAKUXxkhErsd8OU2idZxndc1g155w5bNTHS55jyDqnQdaQWTn" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -2370,6 +2371,7 @@ function buildShareWidget(url, text, compact){
   return `
     <div class="share-widget${compact ? ' compact' : ''}">
       <span class="share-label">공유</span>
+      <button type="button" class="share-icon share-kakao-btn" aria-label="카카오톡에 공유" title="카카오톡에 공유" onclick="shareKakao(this, decodeURIComponent('${encodedUrl.replace(/'/g, "\\'")}'), decodeURIComponent('${encodedText.replace(/'/g, "\\'")}'))"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.58 2 11c0 2.85 1.87 5.35 4.69 6.77l-.95 3.5a.4.4 0 0 0 .6.43L10.4 19.4c.53.07 1.06.1 1.6.1 5.5 0 10-3.58 10-8S17.5 3 12 3Z"/></svg></button>
       <a class="share-icon" href="${naverUrl}" target="_blank" rel="noopener" aria-label="네이버 블로그에 공유" title="네이버 블로그에 공유">
         <svg viewBox="0 0 24 24"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727v12.845Z"></path></svg>
       </a>
@@ -2397,6 +2399,30 @@ function copyShareLink(id, encodedUrl){
     btn.classList.add('is-copied');
     setTimeout(()=> btn.classList.remove('is-copied'), 1600);
   }).catch(()=>{});
+}
+
+function shareKakao(btn, url, text){
+  const meta = (sel)=>{ const e=document.querySelector(sel); return e ? e.getAttribute('content') : ''; };
+  const canon = document.querySelector('link[rel="canonical"]');
+  const link = url || (canon ? canon.href : location.href.split('#')[0]);
+  try{
+    if(!window.Kakao) throw new Error('Kakao SDK unavailable');
+    if(!Kakao.isInitialized()) Kakao.init('53160b36517b5806695424050948fd83');
+    Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: text || meta('meta[property="og:title"]') || document.title,
+        description: meta('meta[property="og:description"]') || meta('meta[name="description"]'),
+        imageUrl: meta('meta[property="og:image"]'),
+        link: { mobileWebUrl: link, webUrl: link }
+      },
+      buttons: [{ title: '웹사이트 보기', link: { mobileWebUrl: link, webUrl: link } }]
+    });
+  }catch(err){
+    /* SDK blocked/offline: fall back to copying the link */
+    const copy = btn && btn.parentNode ? btn.parentNode.querySelector('.share-copy-btn') : null;
+    if(copy) copy.click();
+  }
 }
 
 
